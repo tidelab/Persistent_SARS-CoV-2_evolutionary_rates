@@ -1,0 +1,33 @@
+[1] "Chaguza-pt-1"
+[1] "TreeDater Strict clock"
+
+Phylogenetic tree with 30 tips and 29 internal nodes.
+
+Tip labels:
+  Chaguza-pt-1|2021-09-13, Chaguza-pt-1|2021-09-27, Chaguza-pt-1|2022-02-10, Chaguza-pt-1|2022-02-23, Chaguza-pt-1|2022-03-07, Chaguza-pt-1|2021-11-16, ...
+
+Rooted; includes branch lengths.
+
+ Time of common ancestor 
+2021.08905749668 
+
+ Time to common ancestor (before most recent sample) 
+1.08902469510303 
+
+ Weighted mean substitution rate (adjusted by branch lengths) 
+0.000904964532100332 
+
+ Unadjusted mean substitution rate 
+0.000904964532100332 
+
+ Clock model  
+strict 
+
+ Coefficient of variation of rates 
+0 
+[1] "Estimating confidence intervals for rates and dates by a parametric bootstrap"
+
+ For more detailed output, $trees provides a list of each fit to each simulation 
+
+
+Time of common ancestor	2.021089e+03	2.021017e+03	2.021093e+03	Mean substitution rate	9.049645e-04	7.352042e-04	1.113923e-03	

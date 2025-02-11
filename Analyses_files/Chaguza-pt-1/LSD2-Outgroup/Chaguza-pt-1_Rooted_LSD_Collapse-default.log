@@ -1,0 +1,226 @@
+IQ-TREE multicore version 2.1.2 COVID-edition for Mac OS X 64-bit built Oct 22 2020
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    dlmp133362.dlce.shh.mpg.de (AVX512, FMA3, 16 GB RAM)
+Command: /Users/oeversti/iqtree-2.1.2-MacOSX/bin/iqtree2 -s Chaguza-pt-1_maskedRefMafft.fasta --prefix Chaguza-pt-1_Rooted_LSD_Collapse-default -m MFP -B 1000 -o NC_045512.2|2019-12-30 --date TAXNAME --date-ci 100 --redo
+Seed:    508598 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Aug 20 13:42:30 2023
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file Chaguza-pt-1_maskedRefMafft.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 265 sites contain only gaps or ambiguous characters.
+Alignment has 31 sequences with 29903 columns, 182 distinct patterns
+73 parsimony-informative, 42 singleton sites, 29788 constant sites
+                         Gap/Ambiguity  Composition  p-value
+   1  NC_045512.2|2019-12-30     0.89%    passed     99.49%
+   2  Chaguza-pt-1|2021-09-13    0.96%    passed     99.98%
+   3  Chaguza-pt-1|2021-09-27    0.93%    passed    100.00%
+   4  Chaguza-pt-1|2021-02-08    0.89%    passed    100.00%
+   5  Chaguza-pt-1|2021-02-18    0.89%    passed    100.00%
+   6  Chaguza-pt-1|2021-02-26    0.97%    passed     99.96%
+   7  Chaguza-pt-1|2021-03-05    0.91%    passed    100.00%
+   8  Chaguza-pt-1|2021-04-05    0.93%    passed     99.99%
+   9  Chaguza-pt-1|2021-05-03    0.91%    passed    100.00%
+  10  Chaguza-pt-1|2021-05-24    0.91%    passed    100.00%
+  11  Chaguza-pt-1|2021-06-28    0.89%    passed     99.99%
+  12  Chaguza-pt-1|2022-02-10    2.51%    passed     99.62%
+  13  Chaguza-pt-1|2022-02-23    1.51%    passed     99.93%
+  14  Chaguza-pt-1|2022-03-07    1.72%    passed     99.82%
+  15  Chaguza-pt-1|2021-04-19    1.95%    passed     99.84%
+  16  Chaguza-pt-1|2021-06-01    0.89%    passed    100.00%
+  17  Chaguza-pt-1|2021-06-14    0.89%    passed    100.00%
+  18  Chaguza-pt-1|2021-06-21    0.90%    passed     99.99%
+  19  Chaguza-pt-1|2021-07-12    0.89%    passed     99.98%
+  20  Chaguza-pt-1|2021-07-25    2.04%    passed     99.95%
+  21  Chaguza-pt-1|2021-08-29    1.93%    passed     99.89%
+  22  Chaguza-pt-1|2021-09-08    1.88%    passed     99.91%
+  23  Chaguza-pt-1|2021-10-04    0.89%    passed     99.99%
+  24  Chaguza-pt-1|2021-10-12    0.97%    passed     99.97%
+  25  Chaguza-pt-1|2021-10-19    0.95%    passed     99.98%
+  26  Chaguza-pt-1|2021-11-03    1.63%    passed     99.58%
+  27  Chaguza-pt-1|2021-11-09    5.11%    passed     97.98%
+  28  Chaguza-pt-1|2021-11-16    0.90%    passed     99.97%
+  29  Chaguza-pt-1|2021-12-27    2.15%    passed     99.91%
+  30  Chaguza-pt-1|2021-12-20    4.55%    passed     99.82%
+  31  Chaguza-pt-1|2021-12-07    2.16%    passed     99.94%
+****  TOTAL                      1.50%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: Chaguza-pt-1|2021-02-18 is identical to Chaguza-pt-1|2021-02-08 but kept for subsequent analysis
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.001 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -41434.604
+Optimal log-likelihood: -41434.526
+Rate parameters:  A-C: 0.82135  A-G: 1.78524  A-T: 0.08010  C-G: 0.57125  C-T: 5.76350  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.322
+Proportion of invariable sites: 0.499
+Gamma shape alpha: 0.020
+Parameters optimization took 1 rounds (0.007 sec)
+Time for fast ML tree search: 0.056 seconds
+
+NOTE: ModelFinder requires 2 MB RAM!
+ModelFinder will test up to 286 DNA models (sample size: 29903) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         41461.656    67  83057.312    83057.618    83613.795
+  2  GTR+F+I       41421.573    68  82979.147    82979.461    83543.935
+  3  GTR+F+G4      41443.054    68  83022.107    83022.422    83586.896
+  4  GTR+F+I+G4    41434.490    69  83006.981    83007.305    83580.075
+  5  GTR+F+R2      41456.015    69  83050.030    83050.354    83623.124
+  6  GTR+F+R3      41450.551    71  83043.101    83043.444    83632.807
+ 15  SYM+I         42316.772    65  84763.544    84763.831    85303.415
+ 28  TVM+F+I       41433.470    67  83000.939    83001.245    83557.422
+ 41  TVMe+I        42328.902    64  84785.804    84786.083    85317.370
+ 54  TIM3+F+I      41429.680    66  82991.361    82991.657    83539.538
+ 67  TIM3e+I       42323.178    63  84772.356    84772.626    85295.616
+ 80  TIM2+F+I      41427.791    66  82987.582    82987.879    83535.760
+ 93  TIM2e+I       42321.836    63  84769.672    84769.943    85292.932
+106  TIM+F+I       41424.695    66  82981.390    82981.686    83529.567
+119  TIMe+I        42318.389    63  84762.777    84763.047    85286.037
+132  TPM3u+F+I     41441.791    65  83013.582    83013.870    83553.454
+145  TPM3+F+I      41441.791    65  83013.582    83013.870    83553.454
+158  TPM2u+F+I     41439.200    65  83008.400    83008.687    83548.271
+171  TPM2+F+I      41439.200    65  83008.400    83008.687    83548.271
+184  K3Pu+F+I      41436.371    65  83002.742    83003.030    83542.614
+197  K3P+I         42330.425    62  84784.850    84785.112    85299.804
+210  TN+F+I        41430.177    65  82990.354    82990.642    83530.226
+223  TNe+I         42323.188    62  84770.376    84770.637    85285.330
+236  HKY+F+I       41442.003    64  83012.007    83012.286    83543.573
+249  K2P+I         42335.205    61  84792.410    84792.664    85299.059
+262  F81+F+I       41493.800    63  83113.601    83113.871    83636.861
+275  JC+I          42384.823    60  84889.645    84889.890    85387.988
+Akaike Information Criterion:           GTR+F+I
+Corrected Akaike Information Criterion: GTR+F+I
+Bayesian Information Criterion:         TIM+F+I
+Best-fit model: TIM+F+I chosen according to BIC
+
+All model information printed to Chaguza-pt-1_Rooted_LSD_Collapse-default.model.gz
+CPU time for ModelFinder: 0.243 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.250 seconds (0h:0m:0s)
+Generating 1000 samples for ultrafast bootstrap (seed: 508598)...
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -41424.695
+Optimal log-likelihood: -41424.640
+Rate parameters:  A-C: 1.00000  A-G: 1.72076  A-T: 0.25545  C-G: 0.25545  C-T: 6.33568  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.322
+Proportion of invariable sites: 0.977
+Parameters optimization took 1 rounds (0.002 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.003027 sec (of wall-clock time) 0.002995 sec(of CPU time)
+Computing RapidNJ tree took 0.000187 sec (of wall-clock time) 0.000160 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -41440.885
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.070 second
+Computing log-likelihood of 98 initial trees ... 0.045 seconds
+Current best score: -41424.640
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -41424.450
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -41424.382
+Iteration 10 / LogL: -41425.984 / Time: 0h:0m:0s
+Iteration 20 / LogL: -41425.973 / Time: 0h:0m:0s
+Finish initializing candidate tree set (11)
+Current best tree score: -41424.382 / CPU time: 0.389
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -41424.500 / Time: 0h:0m:0s (0h:0m:1s left)
+Iteration 40 / LogL: -41424.463 / Time: 0h:0m:0s (0h:0m:1s left)
+Iteration 50 / LogL: -41424.610 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -41450.888
+Iteration 60 / LogL: -41424.473 / Time: 0h:0m:1s (0h:0m:0s left)
+Iteration 70 / LogL: -41425.416 / Time: 0h:0m:1s (0h:0m:0s left)
+Iteration 80 / LogL: -41424.481 / Time: 0h:0m:1s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -41424.376
+Iteration 90 / LogL: -41424.452 / Time: 0h:0m:1s (0h:0m:0s left)
+Iteration 100 / LogL: -41424.519 / Time: 0h:0m:1s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -41451.752
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.995
+TREE SEARCH COMPLETED AFTER 103 ITERATIONS / Time: 0h:0m:1s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -41424.376
+Optimal log-likelihood: -41424.374
+Rate parameters:  A-C: 1.00000  A-G: 1.98415  A-T: 0.26257  C-G: 0.26257  C-T: 6.27758  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.322
+Proportion of invariable sites: 0.977
+Parameters optimization took 1 rounds (0.002 sec)
+BEST SCORE FOUND : -41424.374
+Creating bootstrap support values...
+Split supports printed to NEXUS file Chaguza-pt-1_Rooted_LSD_Collapse-default.splits.nex
+Total tree length: 0.004
+
+Total number of iterations: 103
+CPU time used for tree search: 1.948 sec (0h:0m:1s)
+Wall-clock time used for tree search: 1.786 sec (0h:0m:1s)
+Total CPU time used: 2.021 sec (0h:0m:2s)
+Total wall-clock time used: 1.863 sec (0h:0m:1s)
+
+Computing bootstrap consensus tree...
+Reading input file Chaguza-pt-1_Rooted_LSD_Collapse-default.splits.nex...
+31 taxa and 225 splits.
+Consensus tree written to Chaguza-pt-1_Rooted_LSD_Collapse-default.contree
+Reading input trees file Chaguza-pt-1_Rooted_LSD_Collapse-default.contree
+Log-likelihood of consensus tree: -41425.093
+
+Analysis results written to: 
+  IQ-TREE report:                Chaguza-pt-1_Rooted_LSD_Collapse-default.iqtree
+  Maximum-likelihood tree:       Chaguza-pt-1_Rooted_LSD_Collapse-default.treefile
+  Likelihood distances:          Chaguza-pt-1_Rooted_LSD_Collapse-default.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          Chaguza-pt-1_Rooted_LSD_Collapse-default.splits.nex
+  Consensus tree:                Chaguza-pt-1_Rooted_LSD_Collapse-default.contree
+  Screen log file:               Chaguza-pt-1_Rooted_LSD_Collapse-default.log
+
+--- Start phylogenetic dating ---
+Extracting date from node names...
+31 dates extracted
+Building time tree by least-square dating (LSD) with command:
+lsd -i Chaguza-pt-1_Rooted_LSD_Collapse-default.timetree.subst -s 29903 -o Chaguza-pt-1_Rooted_LSD_Collapse-default.timetree -f 100 -g Chaguza-pt-1_Rooted_LSD_Collapse-default.timetree.outgroup -d Chaguza-pt-1_Rooted_LSD_Collapse-default.timetree.date 
+Reroot the tree(s) using given outgroups ...
+
+TREE 1
+*PROCESSING:
+Reading the tree ... 
+Collapse 8 (over 29) internal branches having branch length <= 1.67e-05
+ (settable via option -l)
+Parameter to adjust variances was set to 0.000334 (settable via option -b)
+Minimum branch length of time scaled tree (settable via option -u and -U): 0
+Estimating the root position on the branch defined by given outgroups ...
+Computing confidence intervals using sequence length 29903 and a lognormal
+ relaxed clock with mean 1, standard deviation 0.2 (settable via option -q)
+*WARNINGS:
+- 27.5862% internal branches were collapsed.
+*RESULTS:
+- Dating results:
+ rate 0.00056848, tMRCA 2019-11-22 , objective function 0.000489898
+- Results with confidence intervals:
+ rate 0.00056848 [0.000434406; 0.000737941], tMRCA 2019-11-22 [2019-09-21; 2019-12-30], objective function 0.000489898
+
+TOTAL ELAPSED TIME: 0.00667 seconds
+LSD results written to:
+  LSD report:                  Chaguza-pt-1_Rooted_LSD_Collapse-default.timetree.lsd
+  Time tree in nexus format:   Chaguza-pt-1_Rooted_LSD_Collapse-default.timetree.nex
+  Time tree in newick format:  Chaguza-pt-1_Rooted_LSD_Collapse-default.timetree.nwk
+
+--- End phylogenetic dating ---
+Date and Time: Sun Aug 20 13:42:32 2023

@@ -1,0 +1,290 @@
+IQ-TREE 2.1.2 COVID-edition built Oct 22 2020
+
+Input file name: Chaguza-pt-1_maskedRefRemMafft.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 22763
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+Since you used least square dating (LSD) please also cite: 
+
+Thu-Hien To, Matthieu Jung, Samantha Lycett, Olivier Gascuel (2016)
+Fast dating using least-squares criteria and algorithms. Syst. Biol. 65:82-97.
+https://doi.org/10.1093/sysbio/syv068
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 30 sequences with 29903 nucleotide sites
+Number of constant sites: 29804 (= 99.6689% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 29804 (= 99.6689% of all sites)
+Number of parsimony informative sites: 72
+Number of distinct site patterns: 178
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TN+F+I
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+TN+F+I           -41260.841   82647.682 +    0.051   82647.953 +   0.0515   83170.942 +    0.881
+TIM+F+I          -41258.651   82645.302 +    0.168   82645.581 +    0.169   83176.868 -   0.0455
+TIM2+F+I         -41259.203   82646.407 +   0.0965   82646.685 +    0.097   83177.972 -   0.0262
+HKY+F+I          -41269.587   82663.173 - 2.21e-05   82663.435 - 2.24e-05   83178.127 -   0.0243
+TIM3+F+I         -41259.521   82647.041 +   0.0703   82647.320 +   0.0706   83178.607 -   0.0191
+K3Pu+F+I         -41267.138   82660.277 - 9.39e-05   82660.547 - 9.48e-05   83183.537 -  0.00162
+TPM2u+F+I        -41268.049   82662.098 - 3.78e-05   82662.369 - 3.81e-05   83185.358 - 0.000653
+TPM2+F+I         -41268.049   82662.098 - 3.78e-05   82662.369 - 3.81e-05   83185.358 - 0.000653
+TPM3u+F+I        -41268.493   82662.985 - 2.42e-05   82663.256 - 2.45e-05   83186.245 - 0.000419
+TPM3+F+I         -41268.493   82662.985 - 2.42e-05   82663.256 - 2.45e-05   83186.245 - 0.000419
+GTR+F+I          -41255.353   82642.706 +    0.614   82643.002 +    0.612   83190.883 - 4.12e-05
+TVM+F+I          -41264.369   82658.737 - 0.000203   82659.025 - 0.000203   83198.609 - 8.66e-07
+GTR+F+I+G4       -41267.795   82669.589 - 8.93e-07   82669.894 - 8.85e-07   83226.072 - 9.42e-13
+GTR+F+G4         -41275.262   82682.523 - 1.39e-09   82682.819 - 1.38e-09   83230.700 - 9.31e-14
+GTR+F            -41291.361   82712.721 - 3.84e-16   82713.009 - 3.85e-16   83252.593 - 1.64e-18
+GTR+F+R2         -41286.398   82706.797 - 7.43e-15   82707.102 - 7.37e-15   83263.279 - 7.84e-21
+F81+F+I          -41319.142   82760.283 - 1.81e-26   82760.537 - 1.84e-26   83266.932 - 1.26e-21
+GTR+F+R3         -41281.983   82701.967 - 8.32e-14   82702.290 - 8.17e-14   83275.061 - 2.17e-23
+TNe+I            -42155.694   84431.389 -        0   84431.634 -        0   84929.732 -        0
+TIMe+I           -42153.909   84429.818 -        0   84430.071 -        0   84936.466 -        0
+K2P+I            -42164.749   84447.498 -        0   84447.735 -        0   84937.535 -        0
+TIM2e+I          -42154.720   84431.440 -        0   84431.694 -        0   84938.089 -        0
+TIM3e+I          -42155.242   84432.484 -        0   84432.737 -        0   84939.132 -        0
+K3P+I            -42162.792   84445.584 -        0   84445.829 -        0   84943.927 -        0
+SYM+I            -42152.145   84430.290 -        0   84430.560 -        0   84953.550 -        0
+TVMe+I           -42161.519   84447.038 -        0   84447.300 -        0   84961.992 -        0
+JC+I             -42212.473   84540.945 -        0   84541.174 -        0   85022.677 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: TN+F+I
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 4.1655
+  A-T: 1.0000
+  C-G: 1.0000
+  C-T: 12.1801
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2987
+  pi(C) = 0.1835
+  pi(G) = 0.196
+  pi(T) = 0.3218
+
+Rate matrix Q:
+
+  A   -0.5447   0.07564    0.3365    0.1326
+  C    0.1231    -1.819   0.08078     1.615
+  G    0.5127   0.07564    -0.721    0.1326
+  T    0.1231    0.9213   0.08078    -1.125
+
+Model of rate heterogeneity: Invar
+Proportion of invariable sites: 0.9805
+
+ Category  Relative_rate  Proportion
+  0         0              0.9805
+  1         51.38          0.01946
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -41260.4172 (s.e. 111.6266)
+Unconstrained log-likelihood (without tree): -57277.3333
+Number of free parameters (#branches + #model parameters): 63
+Akaike information criterion (AIC) score: 82646.8345
+Corrected Akaike information criterion (AICc) score: 82647.1047
+Bayesian information criterion (BIC) score: 83170.0945
+
+Total tree length (sum of branch lengths): 0.0038
+Sum of internal branch lengths: 0.0025 (66.1262% of tree length)
+
+WARNING: 9 near-zero internal branches (<0.0000) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Chaguza-pt-1|2021-09-13' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++**Chaguza-pt-1|2021-09-13
+|
+|                                        +**Chaguza-pt-1|2021-09-27
+|                                     +**| (29)
+|                                     |  |  +--Chaguza-pt-1|2021-08-29
+|                                     |  +--| (72)
+|                                     |     +**Chaguza-pt-1|2021-09-08
+|                                  +**| (45)
+|                                  |  |                      +--Chaguza-pt-1|2022-02-10
+|                                  |  |               +------| (100)
+|                                  |  |               |      |   +**Chaguza-pt-1|2022-02-23
+|                                  |  |               |      +---| (99)
+|                                  |  |               |          +**Chaguza-pt-1|2022-03-07
+|                                  |  |     +---------| (100)
+|                                  |  |     |         +**Chaguza-pt-1|2021-11-16
+|                                  |  |  +--| (88)
+|                                  |  |  |  +**Chaguza-pt-1|2021-10-04
+|                                  |  +--| (62)
+|                                  |     +**Chaguza-pt-1|2021-10-19
+|                     +------------| (99)
+|                     |            +**Chaguza-pt-1|2021-10-12
+|                  +--| (69)
+|                  |  |                  +------Chaguza-pt-1|2021-12-27
+|                  |  +------------------| (100)
+|                  |                     +---------------Chaguza-pt-1|2021-12-20
+|               +**| (36)
+|               |  |      +**Chaguza-pt-1|2021-02-08
+|               |  |   +**| (81)
+|               |  |   |  +**Chaguza-pt-1|2021-02-18
+|               |  +---| (63)
+|               |      +--Chaguza-pt-1|2021-02-26
+|            +--| (47)
+|            |  |  +**Chaguza-pt-1|2021-03-05
+|            |  +--| (46)
+|            |     |  +**Chaguza-pt-1|2021-05-03
+|            |     +--| (88)
+|            |        +**Chaguza-pt-1|2021-05-24
+|         +--| (93)
+|         |  +--Chaguza-pt-1|2021-04-05
+|    +----| (99)
+|    |    +**Chaguza-pt-1|2021-04-19
++----| (95)
+|    |     +**Chaguza-pt-1|2021-06-01
+|    |  +**| (84)
+|    |  |  +**Chaguza-pt-1|2021-06-14
+|    +**| (87)
+|       +**Chaguza-pt-1|2021-06-21
+|
+|        +**Chaguza-pt-1|2021-06-28
+|     +**| (49)
+|     |  +**Chaguza-pt-1|2021-07-12
+|  +**| (48)
+|  |  +**Chaguza-pt-1|2021-07-25
++**| (72)
+   |  +**Chaguza-pt-1|2021-11-03
+   +--| (86)
+      |  +**Chaguza-pt-1|2021-11-09
+      +--| (88)
+         +**Chaguza-pt-1|2021-12-07
+
+Tree in newick format:
+
+(Chaguza-pt-1|2021-09-13:0.0000010000,(((((((((Chaguza-pt-1|2021-09-27:0.0000010000,(Chaguza-pt-1|2021-08-29:0.0000670300,Chaguza-pt-1|2021-09-08:0.0000010000)72:0.0000674609)29:0.0000010000,((((Chaguza-pt-1|2022-02-10:0.0000684055,(Chaguza-pt-1|2022-02-23:0.0000010000,Chaguza-pt-1|2022-03-07:0.0000010000)99:0.0001421846)100:0.0002139120,Chaguza-pt-1|2021-11-16:0.0000010000)100:0.0003185342,Chaguza-pt-1|2021-10-04:0.0000010000)88:0.0000906270,Chaguza-pt-1|2021-10-19:0.0000010000)62:0.0000809033)45:0.0000020373,Chaguza-pt-1|2021-10-12:0.0000010000)99:0.0004140046,(Chaguza-pt-1|2021-12-27:0.0002110317,Chaguza-pt-1|2021-12-20:0.0005005139)100:0.0005675706)69:0.0000591526,((Chaguza-pt-1|2021-02-08:0.0000010000,Chaguza-pt-1|2021-02-18:0.0000010000)81:0.0000010000,Chaguza-pt-1|2021-02-26:0.0000334422)63:0.0001337780)36:0.0000303220,(Chaguza-pt-1|2021-03-05:0.0000010000,(Chaguza-pt-1|2021-05-03:0.0000010000,Chaguza-pt-1|2021-05-24:0.0000010000)88:0.0000668860)46:0.0000334422)47:0.0000334422,Chaguza-pt-1|2021-04-05:0.0000680391)93:0.0000583100,Chaguza-pt-1|2021-04-19:0.0000010000)99:0.0001784529,((Chaguza-pt-1|2021-06-01:0.0000010000,Chaguza-pt-1|2021-06-14:0.0000010000)84:0.0000323290,Chaguza-pt-1|2021-06-21:0.0000010000)87:0.0000010000)95:0.0001665968,(((Chaguza-pt-1|2021-06-28:0.0000010000,Chaguza-pt-1|2021-07-12:0.0000010000)49:0.0000010000,Chaguza-pt-1|2021-07-25:0.0000010000)48:0.0000010000,(Chaguza-pt-1|2021-11-03:0.0000010000,(Chaguza-pt-1|2021-11-09:0.0000010000,Chaguza-pt-1|2021-12-07:0.0000022862)88:0.0000816305)86:0.0000847867)72:0.0000020138);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -41261.233620
+Robinson-Foulds distance between ML tree and consensus tree: 4
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--Chaguza-pt-1|2021-09-13
+|
+|                                     +--Chaguza-pt-1|2021-09-27
+|                                  +--| (29)
+|                                  |  |                         +--Chaguza-pt-1|2022-02-10
+|                                  |  |                  +------| (100)
+|                                  |  |                  |      |   +--Chaguza-pt-1|2022-02-23
+|                                  |  |                  |      +---| (99)
+|                                  |  |                  |          +--Chaguza-pt-1|2022-03-07
+|                                  |  |        +---------| (100)
+|                                  |  |        |         +--Chaguza-pt-1|2021-11-16
+|                                  |  |     +--| (88)
+|                                  |  |     |  +--Chaguza-pt-1|2021-10-04
+|                                  |  |  +--| (62)
+|                                  |  |  |  +--Chaguza-pt-1|2021-10-19
+|                                  |  +--| (47)
+|                                  |     +--Chaguza-pt-1|2021-10-12
+|                     +------------| (99)
+|                     |            |  +--Chaguza-pt-1|2021-08-29
+|                     |            +--| (72)
+|                     |               +--Chaguza-pt-1|2021-09-08
+|                  +--| (69)
+|                  |  |                  +------Chaguza-pt-1|2021-12-27
+|                  |  +------------------| (100)
+|                  |                     +---------------Chaguza-pt-1|2021-12-20
+|               +--| (36)
+|               |  |      +--Chaguza-pt-1|2021-02-08
+|               |  |   +--| (81)
+|               |  |   |  +--Chaguza-pt-1|2021-02-18
+|               |  +---| (63)
+|               |      +--Chaguza-pt-1|2021-02-26
+|            +--| (47)
+|            |  |  +--Chaguza-pt-1|2021-03-05
+|            |  +--| (46)
+|            |     |  +--Chaguza-pt-1|2021-05-03
+|            |     +--| (88)
+|            |        +--Chaguza-pt-1|2021-05-24
+|         +--| (93)
+|         |  +--Chaguza-pt-1|2021-04-05
+|    +----| (99)
+|    |    +--Chaguza-pt-1|2021-04-19
++----| (95)
+|    |     +--Chaguza-pt-1|2021-06-01
+|    |  +--| (84)
+|    |  |  +--Chaguza-pt-1|2021-06-14
+|    +**| (87)
+|       +--Chaguza-pt-1|2021-06-21
+|
+|        +--Chaguza-pt-1|2021-06-28
+|     +--| (49)
+|     |  +--Chaguza-pt-1|2021-07-12
+|  +--| (48)
+|  |  +--Chaguza-pt-1|2021-07-25
++--| (72)
+   |  +--Chaguza-pt-1|2021-11-03
+   +--| (86)
+      |  +--Chaguza-pt-1|2021-11-09
+      +--| (88)
+         +--Chaguza-pt-1|2021-12-07
+
+
+Consensus tree in newick format: 
+
+(Chaguza-pt-1|2021-09-13:0.0000020138,((((((((Chaguza-pt-1|2021-09-27:0.0000020138,(((((Chaguza-pt-1|2022-02-10:0.0000683429,(Chaguza-pt-1|2022-02-23:0.0000020138,Chaguza-pt-1|2022-03-07:0.0000020138)99:0.0001417260)100:0.0002134155,Chaguza-pt-1|2021-11-16:0.0000020138)100:0.0003189046,Chaguza-pt-1|2021-10-04:0.0000020138)88:0.0000905729,Chaguza-pt-1|2021-10-19:0.0000020138)62:0.0000799006,Chaguza-pt-1|2021-10-12:0.0000020138)47:0.0000020373)29:0.0000020138,(Chaguza-pt-1|2021-08-29:0.0000680826,Chaguza-pt-1|2021-09-08:0.0000020138)72:0.0000667222)99:0.0004150139,(Chaguza-pt-1|2021-12-27:0.0002100551,Chaguza-pt-1|2021-12-20:0.0005001825)100:0.0005672566)69:0.0000588249,((Chaguza-pt-1|2021-02-08:0.0000020138,Chaguza-pt-1|2021-02-18:0.0000020138)81:0.0000020138,Chaguza-pt-1|2021-02-26:0.0000334422)63:0.0001331099)36:0.0000325536,(Chaguza-pt-1|2021-03-05:0.0000307515,(Chaguza-pt-1|2021-05-03:0.0000020138,Chaguza-pt-1|2021-05-24:0.0000615497)88:0.0000049183)46:0.0000022547)47:0.0000334422,Chaguza-pt-1|2021-04-05:0.0000675165)93:0.0000571194,Chaguza-pt-1|2021-04-19:0.0000020138)99:0.0001766452,((Chaguza-pt-1|2021-06-01:0.0000020138,Chaguza-pt-1|2021-06-14:0.0000020138)84:0.0000322583,Chaguza-pt-1|2021-06-21:0.0000020138)87:0.0000010977)95:0.0001652543,(((Chaguza-pt-1|2021-06-28:0.0000020138,Chaguza-pt-1|2021-07-12:0.0000020138)49:0.0000020138,Chaguza-pt-1|2021-07-25:0.0000020138)48:0.0000020138,(Chaguza-pt-1|2021-11-03:0.0000020138,(Chaguza-pt-1|2021-11-09:0.0000020138,Chaguza-pt-1|2021-12-07:0.0000020295)88:0.0000813078)86:0.0000842009)72:0.0000024167);
+
+TIME STAMP
+----------
+
+Date and time: Tue May  2 15:30:09 2023
+Total CPU time used: 2.237976 seconds (0h:0m:2s)
+Total wall-clock time used: 2.13406682 seconds (0h:0m:2s)
+

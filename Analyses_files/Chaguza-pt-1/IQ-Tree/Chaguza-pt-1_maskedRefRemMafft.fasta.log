@@ -1,0 +1,173 @@
+IQ-TREE multicore version 2.1.2 COVID-edition for Mac OS X 64-bit built Oct 22 2020
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    dlmp133362.w-staff.shh.mpg.de (AVX512, FMA3, 16 GB RAM)
+Command: /Users/oeversti/iqtree-2.1.2-MacOSX/bin/iqtree2 -s Chaguza-pt-1_maskedRefRemMafft.fasta -m MFP
+Seed:    261711 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Mar  9 16:23:22 2023
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file Chaguza-pt-1_maskedRefRemMafft.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 265 sites contain only gaps or ambiguous characters.
+Alignment has 30 sequences with 29903 columns, 178 distinct patterns
+72 parsimony-informative, 27 singleton sites, 29804 constant sites
+                         Gap/Ambiguity  Composition  p-value
+   1  Chaguza-pt-1|2021-09-13    0.96%    passed     99.98%
+   2  Chaguza-pt-1|2021-09-27    0.93%    passed    100.00%
+   3  Chaguza-pt-1|2021-02-08    0.89%    passed    100.00%
+   4  Chaguza-pt-1|2021-02-18    0.89%    passed    100.00%
+   5  Chaguza-pt-1|2021-02-26    0.97%    passed     99.95%
+   6  Chaguza-pt-1|2021-03-05    0.91%    passed    100.00%
+   7  Chaguza-pt-1|2021-04-05    0.93%    passed     99.99%
+   8  Chaguza-pt-1|2021-05-03    0.91%    passed    100.00%
+   9  Chaguza-pt-1|2021-05-24    0.91%    passed     99.99%
+  10  Chaguza-pt-1|2021-06-28    0.89%    passed     99.99%
+  11  Chaguza-pt-1|2022-02-10    2.51%    passed     99.65%
+  12  Chaguza-pt-1|2022-02-23    1.51%    passed     99.93%
+  13  Chaguza-pt-1|2022-03-07    1.72%    passed     99.84%
+  14  Chaguza-pt-1|2021-04-19    1.95%    passed     99.81%
+  15  Chaguza-pt-1|2021-06-01    0.89%    passed    100.00%
+  16  Chaguza-pt-1|2021-06-14    0.89%    passed    100.00%
+  17  Chaguza-pt-1|2021-06-21    0.90%    passed     99.99%
+  18  Chaguza-pt-1|2021-07-12    0.89%    passed     99.99%
+  19  Chaguza-pt-1|2021-07-25    2.04%    passed     99.93%
+  20  Chaguza-pt-1|2021-08-29    1.93%    passed     99.87%
+  21  Chaguza-pt-1|2021-09-08    1.88%    passed     99.90%
+  22  Chaguza-pt-1|2021-10-04    0.89%    passed     99.99%
+  23  Chaguza-pt-1|2021-10-12    0.97%    passed     99.98%
+  24  Chaguza-pt-1|2021-10-19    0.95%    passed     99.99%
+  25  Chaguza-pt-1|2021-11-03    1.63%    passed     99.62%
+  26  Chaguza-pt-1|2021-11-09    5.11%    passed     98.05%
+  27  Chaguza-pt-1|2021-11-16    0.90%    passed     99.98%
+  28  Chaguza-pt-1|2021-12-27    2.15%    passed     99.90%
+  29  Chaguza-pt-1|2021-12-20    4.55%    passed     99.79%
+  30  Chaguza-pt-1|2021-12-07    2.16%    passed     99.94%
+****  TOTAL                      1.52%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: Chaguza-pt-1|2021-02-18 is identical to Chaguza-pt-1|2021-02-08 but kept for subsequent analysis
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.001 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -41269.913
+Optimal log-likelihood: -41269.905
+Rate parameters:  A-C: 0.99810  A-G: 2.50703  A-T: 0.14389  C-G: 0.95192  C-T: 7.61085  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.322
+Proportion of invariable sites: 0.499
+Gamma shape alpha: 0.020
+Parameters optimization took 1 rounds (0.007 sec)
+Time for fast ML tree search: 0.055 seconds
+
+NOTE: ModelFinder requires 1 MB RAM!
+ModelFinder will test up to 286 DNA models (sample size: 29903) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         41293.382    65  82716.764    82717.052    83256.636
+  2  GTR+F+I       41257.517    66  82647.034    82647.331    83195.212
+  3  GTR+F+G4      41277.366    66  82686.732    82687.028    83234.909
+  4  GTR+F+I+G4    41269.903    67  82673.806    82674.112    83230.289
+  5  GTR+F+R2      41288.515    67  82711.029    82711.335    83267.512
+  6  GTR+F+R3      41284.068    69  82706.136    82706.460    83279.230
+ 15  SYM+I         42152.945    63  84431.891    84432.161    84955.151
+ 28  TVM+F+I       41267.653    65  82665.306    82665.593    83205.177
+ 41  TVMe+I        42163.413    62  84450.825    84451.087    84965.779
+ 54  TIM3+F+I      41261.746    64  82651.491    82651.770    83183.057
+ 67  TIM3e+I       42156.131    61  84434.261    84434.515    84940.910
+ 80  TIM2+F+I      41261.336    64  82650.671    82650.950    83182.237
+ 93  TIM2e+I       42155.555    61  84433.110    84433.364    84939.759
+106  TIM+F+I       41260.189    64  82648.378    82648.657    83179.944
+119  TIMe+I        42154.218    61  84430.436    84430.690    84937.085
+132  TPM3u+F+I     41271.999    63  82669.997    82670.268    83193.257
+145  TPM3+F+I      41271.999    63  82669.997    82670.268    83193.257
+158  TPM2u+F+I     41271.340    63  82668.681    82668.951    83191.941
+171  TPM2+F+I      41271.340    63  82668.681    82668.951    83191.941
+184  K3Pu+F+I      41270.261    63  82666.522    82666.792    83189.782
+197  K3P+I         42164.626    60  84449.253    84449.498    84947.596
+210  TN+F+I        41262.742    63  82651.485    82651.755    83174.745
+223  TNe+I         42156.312    60  84432.623    84432.869    84930.966
+236  HKY+F+I       41272.781    62  82669.562    82669.824    83184.517
+249  K2P+I         42166.694    59  84451.388    84451.625    84941.425
+262  F81+F+I       41322.406    61  82766.812    82767.066    83273.461
+275  JC+I          42214.417    58  84544.834    84545.063    85026.565
+Akaike Information Criterion:           GTR+F+I
+Corrected Akaike Information Criterion: GTR+F+I
+Bayesian Information Criterion:         TN+F+I
+Best-fit model: TN+F+I chosen according to BIC
+
+All model information printed to Chaguza-pt-1_maskedRefRemMafft.fasta.model.gz
+CPU time for ModelFinder: 0.222 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.232 seconds (0h:0m:0s)
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -41262.742
+Optimal log-likelihood: -41262.724
+Rate parameters:  A-C: 1.00000  A-G: 3.92192  A-T: 1.00000  C-G: 1.00000  C-T: 12.27163  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.322
+Proportion of invariable sites: 0.980
+Parameters optimization took 1 rounds (0.001 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.004798 sec (of wall-clock time) 0.004559 sec(of CPU time)
+Computing RapidNJ tree took 0.000088 sec (of wall-clock time) 0.000097 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -41279.132
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.063 second
+Computing log-likelihood of 98 initial trees ... 0.055 seconds
+Current best score: -41261.388
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -41260.424
+Iteration 10 / LogL: -41262.783 / Time: 0h:0m:0s
+Iteration 20 / LogL: -41260.508 / Time: 0h:0m:0s
+Finish initializing candidate tree set (13)
+Current best tree score: -41260.424 / CPU time: 0.246
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -41260.492 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 40 / LogL: -41262.129 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 50 / LogL: -41264.130 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 60 / LogL: -41262.892 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 70 / LogL: -41260.858 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 80 / LogL: -41260.516 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 90 / LogL: -41260.466 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 100 / LogL: -41260.511 / Time: 0h:0m:0s (0h:0m:0s left)
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -41260.424
+Optimal log-likelihood: -41260.420
+Rate parameters:  A-C: 1.00000  A-G: 3.88841  A-T: 1.00000  C-G: 1.00000  C-T: 12.13600  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.322
+Proportion of invariable sites: 0.980
+Parameters optimization took 1 rounds (0.002 sec)
+BEST SCORE FOUND : -41260.420
+Total tree length: 0.004
+
+Total number of iterations: 102
+CPU time used for tree search: 1.106 sec (0h:0m:1s)
+Wall-clock time used for tree search: 0.938 sec (0h:0m:0s)
+Total CPU time used: 1.126 sec (0h:0m:1s)
+Total wall-clock time used: 0.956 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                Chaguza-pt-1_maskedRefRemMafft.fasta.iqtree
+  Maximum-likelihood tree:       Chaguza-pt-1_maskedRefRemMafft.fasta.treefile
+  Likelihood distances:          Chaguza-pt-1_maskedRefRemMafft.fasta.mldist
+  Screen log file:               Chaguza-pt-1_maskedRefRemMafft.fasta.log
+
+Date and Time: Thu Mar  9 16:23:23 2023

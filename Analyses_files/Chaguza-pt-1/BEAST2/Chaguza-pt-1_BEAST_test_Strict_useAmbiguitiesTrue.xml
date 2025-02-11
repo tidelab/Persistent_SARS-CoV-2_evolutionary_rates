@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" required="" version="2.6">
+
+    <data
+id="Chaguza-pt-1_maskedRefRemMafft"
+spec="Alignment"
+name="alignment">
+                        <sequence id="seq_Chaguza-pt-1|2021-02-08" spec="Sequence" taxon="Chaguza-pt-1|2021-02-08" totalcount="4" value=""/>
+                        <sequence id="seq_Chaguza-pt-1|2021-02-18" spec="Sequence" taxon="Chaguza-pt-1|2021-02-18" totalcount="4" value=""/>
+                        <sequence id="seq_Chaguza-pt-1|2021-02-26" spec="Sequence" taxon="Chaguza-pt-1|2021-02-26" totalcount="4" value=""/>
+                        <sequence id="seq_Chaguza-pt-1|2021-03-05" spec="Sequence" taxon="Chaguza-pt-1|2021-03-05" totalcount="4" value=""/>
+                        <sequence id="seq_Chaguza-pt-1|2021-04-05" spec="Sequence" taxon="Chaguza-pt-1|2021-04-05" totalcount="4" value=""/>
+                        <sequence id="seq_Chaguza-pt-1|2021-04-19" spec="Sequence" taxon="Chaguza-pt-1|2021-04-19" totalcount="4" value=""/>
+                        <sequence id="seq_Chaguza-pt-1|2021-05-03" spec="Sequence" taxon="Chaguza-pt-1|2021-05-03" totalcount="4" value=""/>
+                        <sequence id="seq_Chaguza-pt-1|2021-05-24" spec="Sequence" taxon="Chaguza-pt-1|2021-05-24" totalcount="4" value=""/>
+                        <sequence id="seq_Chaguza-pt-1|2021-06-01" spec="Sequence" taxon="Chaguza-pt-1|2021-06-01" totalcount="4" value=""/>
+                        <sequence id="seq_Chaguza-pt-1|2021-06-14" spec="Sequence" taxon="Chaguza-pt-1|2021-06-14" totalcount="4" value=""/>
+                        <sequence id="seq_Chaguza-pt-1|2021-06-21" spec="Sequence" taxon="Chaguza-pt-1|2021-06-21" totalcount="4" value=""/>
+                        <sequence id="seq_Chaguza-pt-1|2021-06-28" spec="Sequence" taxon="Chaguza-pt-1|2021-06-28" totalcount="4" value=""/>
+                        <sequence id="seq_Chaguza-pt-1|2021-07-12" spec="Sequence" taxon="Chaguza-pt-1|2021-07-12" totalcount="4" value=""/>
+                        <sequence id="seq_Chaguza-pt-1|2021-07-25" spec="Sequence" taxon="Chaguza-pt-1|2021-07-25" totalcount="4" value=""/>
+                        <sequence id="seq_Chaguza-pt-1|2021-08-29" spec="Sequence" taxon="Chaguza-pt-1|2021-08-29" totalcount="4" value=""/>
+                        <sequence id="seq_Chaguza-pt-1|2021-09-08" spec="Sequence" taxon="Chaguza-pt-1|2021-09-08" totalcount="4" value=""/>
+                        <sequence id="seq_Chaguza-pt-1|2021-09-13" spec="Sequence" taxon="Chaguza-pt-1|2021-09-13" totalcount="4" value=""/>
+                        <sequence id="seq_Chaguza-pt-1|2021-09-27" spec="Sequence" taxon="Chaguza-pt-1|2021-09-27" totalcount="4" value=""/>
+                        <sequence id="seq_Chaguza-pt-1|2021-10-04" spec="Sequence" taxon="Chaguza-pt-1|2021-10-04" totalcount="4" value=""/>
+                        <sequence id="seq_Chaguza-pt-1|2021-10-12" spec="Sequence" taxon="Chaguza-pt-1|2021-10-12" totalcount="4" value=""/>
+                        <sequence id="seq_Chaguza-pt-1|2021-10-19" spec="Sequence" taxon="Chaguza-pt-1|2021-10-19" totalcount="4" value=""/>
+                        <sequence id="seq_Chaguza-pt-1|2021-11-03" spec="Sequence" taxon="Chaguza-pt-1|2021-11-03" totalcount="4" value=""/>
+                        <sequence id="seq_Chaguza-pt-1|2021-11-09" spec="Sequence" taxon="Chaguza-pt-1|2021-11-09" totalcount="4" value=""/>
+                        <sequence id="seq_Chaguza-pt-1|2021-11-16" spec="Sequence" taxon="Chaguza-pt-1|2021-11-16" totalcount="4" value=""/>
+                        <sequence id="seq_Chaguza-pt-1|2021-12-07" spec="Sequence" taxon="Chaguza-pt-1|2021-12-07" totalcount="4" value=""/>
+                        <sequence id="seq_Chaguza-pt-1|2021-12-20" spec="Sequence" taxon="Chaguza-pt-1|2021-12-20" totalcount="4" value=""/>
+                        <sequence id="seq_Chaguza-pt-1|2021-12-27" spec="Sequence" taxon="Chaguza-pt-1|2021-12-27" totalcount="4" value=""/>
+                        <sequence id="seq_Chaguza-pt-1|2022-02-10" spec="Sequence" taxon="Chaguza-pt-1|2022-02-10" totalcount="4" value=""/>
+                        <sequence id="seq_Chaguza-pt-1|2022-02-23" spec="Sequence" taxon="Chaguza-pt-1|2022-02-23" totalcount="4" value=""/>
+                        <sequence id="seq_Chaguza-pt-1|2022-03-07" spec="Sequence" taxon="Chaguza-pt-1|2022-03-07" totalcount="4" value=""/>
+                    </data>
+    
+
+<map name="Uniform" >beast.math.distributions.Uniform</map>
+<map name="Exponential" >beast.math.distributions.Exponential</map>
+<map name="LogNormal" >beast.math.distributions.LogNormalDistributionModel</map>
+<map name="Normal" >beast.math.distributions.Normal</map>
+<map name="Beta" >beast.math.distributions.Beta</map>
+<map name="Gamma" >beast.math.distributions.Gamma</map>
+<map name="LaplaceDistribution" >beast.math.distributions.LaplaceDistribution</map>
+<map name="prior" >beast.math.distributions.Prior</map>
+<map name="InverseGamma" >beast.math.distributions.InverseGamma</map>
+<map name="OneOnX" >beast.math.distributions.OneOnX</map>
+
+<run id="mcmc" spec="MCMC" chainLength="10000000">
+    <state id="state" spec="State" storeEvery="5000">
+        <tree id="Tree.t:Chaguza-pt-1_maskedRefRemMafft" spec="beast.evolution.tree.Tree" name="stateNode">
+            <trait id="dateTrait.t:Chaguza-pt-1_maskedRefRemMafft" spec="beast.evolution.tree.TraitSet" dateFormat="yyyy-M-dd" traitname="date-forward" value="Chaguza-pt-1|2021-09-13=2021-09-13,Chaguza-pt-1|2021-09-27=2021-09-27,Chaguza-pt-1|2021-02-08=2021-02-08,Chaguza-pt-1|2021-02-18=2021-02-18,Chaguza-pt-1|2021-02-26=2021-02-26,Chaguza-pt-1|2021-03-05=2021-03-05,Chaguza-pt-1|2021-04-05=2021-04-05,Chaguza-pt-1|2021-05-03=2021-05-03,Chaguza-pt-1|2021-05-24=2021-05-24,Chaguza-pt-1|2021-06-28=2021-06-28,Chaguza-pt-1|2022-02-10=2022-02-10,Chaguza-pt-1|2022-02-23=2022-02-23,Chaguza-pt-1|2022-03-07=2022-03-07,Chaguza-pt-1|2021-04-19=2021-04-19,Chaguza-pt-1|2021-06-01=2021-06-01,Chaguza-pt-1|2021-06-14=2021-06-14,Chaguza-pt-1|2021-06-21=2021-06-21,Chaguza-pt-1|2021-07-12=2021-07-12,Chaguza-pt-1|2021-07-25=2021-07-25,Chaguza-pt-1|2021-08-29=2021-08-29,Chaguza-pt-1|2021-09-08=2021-09-08,Chaguza-pt-1|2021-10-04=2021-10-04,Chaguza-pt-1|2021-10-12=2021-10-12,Chaguza-pt-1|2021-10-19=2021-10-19,Chaguza-pt-1|2021-11-03=2021-11-03,Chaguza-pt-1|2021-11-09=2021-11-09,Chaguza-pt-1|2021-11-16=2021-11-16,Chaguza-pt-1|2021-12-27=2021-12-27,Chaguza-pt-1|2021-12-20=2021-12-20,Chaguza-pt-1|2021-12-07=2021-12-07">
+                <taxa id="TaxonSet.Chaguza-pt-1_maskedRefRemMafft" spec="TaxonSet">
+                    <alignment idref="Chaguza-pt-1_maskedRefRemMafft"/>
+                </taxa>
+            </trait>
+            <taxonset idref="TaxonSet.Chaguza-pt-1_maskedRefRemMafft"/>
+        </tree>
+        <parameter id="clockRate.c:Chaguza-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+        <parameter id="kappa.s:Chaguza-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" lower="0.0" name="stateNode">2.0</parameter>
+        <parameter id="gammaShape.s:Chaguza-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+        <parameter id="bPopSizes.t:Chaguza-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" dimension="5" lower="0.0" name="stateNode">380.0</parameter>
+        <stateNode id="bGroupSizes.t:Chaguza-pt-1_maskedRefRemMafft" spec="parameter.IntegerParameter" dimension="5">1</stateNode>
+        <parameter id="freqParameter.s:Chaguza-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" dimension="4" lower="0.0" name="stateNode" upper="1.0">0.25</parameter>
+    </state>
+    <init id="RandomTree.t:Chaguza-pt-1_maskedRefRemMafft" spec="beast.evolution.tree.RandomTree" estimate="false" initial="@Tree.t:Chaguza-pt-1_maskedRefRemMafft" taxa="@Chaguza-pt-1_maskedRefRemMafft">
+        <populationModel id="ConstantPopulation0.t:Chaguza-pt-1_maskedRefRemMafft" spec="ConstantPopulation">
+            <parameter id="randomPopSize.t:Chaguza-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" name="popSize">1.0</parameter>
+        </populationModel>
+    </init>
+    <distribution id="posterior" spec="util.CompoundDistribution">
+        <distribution id="prior" spec="util.CompoundDistribution">
+            <distribution id="BayesianSkyline.t:Chaguza-pt-1_maskedRefRemMafft" spec="BayesianSkyline" groupSizes="@bGroupSizes.t:Chaguza-pt-1_maskedRefRemMafft" popSizes="@bPopSizes.t:Chaguza-pt-1_maskedRefRemMafft">
+                <treeIntervals id="BSPTreeIntervals.t:Chaguza-pt-1_maskedRefRemMafft" spec="TreeIntervals" tree="@Tree.t:Chaguza-pt-1_maskedRefRemMafft"/>
+            </distribution>
+            <distribution id="MarkovChainedPopSizes.t:Chaguza-pt-1_maskedRefRemMafft" spec="beast.math.distributions.MarkovChainDistribution" jeffreys="true" parameter="@bPopSizes.t:Chaguza-pt-1_maskedRefRemMafft"/>
+            <prior id="ClockPrior.c:Chaguza-pt-1_maskedRefRemMafft" name="distribution" x="@clockRate.c:Chaguza-pt-1_maskedRefRemMafft">
+                <Uniform id="Uniform.0" name="distr"/>
+            </prior>
+            <prior id="FrequenciesPrior.s:Chaguza-pt-1_maskedRefRemMafft" name="distribution" x="@freqParameter.s:Chaguza-pt-1_maskedRefRemMafft">
+                <Uniform id="Uniform.3" name="distr"/>
+            </prior>
+            <prior id="GammaShapePrior.s:Chaguza-pt-1_maskedRefRemMafft" name="distribution" x="@gammaShape.s:Chaguza-pt-1_maskedRefRemMafft">
+                <Exponential id="Exponential.0" name="distr">
+                    <parameter id="RealParameter.0" spec="parameter.RealParameter" estimate="false" name="mean">1.0</parameter>
+                </Exponential>
+            </prior>
+            <prior id="KappaPrior.s:Chaguza-pt-1_maskedRefRemMafft" name="distribution" x="@kappa.s:Chaguza-pt-1_maskedRefRemMafft">
+                <LogNormal id="LogNormalDistributionModel.0" name="distr">
+                    <parameter id="RealParameter.1" spec="parameter.RealParameter" estimate="false" name="M">1.0</parameter>
+                    <parameter id="RealParameter.2" spec="parameter.RealParameter" estimate="false" name="S">1.25</parameter>
+                </LogNormal>
+            </prior>
+        </distribution>
+        <distribution id="likelihood" spec="util.CompoundDistribution" useThreads="true">
+            <distribution id="treeLikelihood.Chaguza-pt-1_maskedRefRemMafft" spec="ThreadedTreeLikelihood" data="@Chaguza-pt-1_maskedRefRemMafft" tree="@Tree.t:Chaguza-pt-1_maskedRefRemMafft" useAmbiguities="true">
+                <siteModel id="SiteModel.s:Chaguza-pt-1_maskedRefRemMafft" spec="SiteModel" gammaCategoryCount="4" shape="@gammaShape.s:Chaguza-pt-1_maskedRefRemMafft">
+                    <parameter id="mutationRate.s:Chaguza-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" estimate="false" name="mutationRate">1.0</parameter>
+                    <parameter id="proportionInvariant.s:Chaguza-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" estimate="false" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
+                    <substModel id="hky.s:Chaguza-pt-1_maskedRefRemMafft" spec="HKY" kappa="@kappa.s:Chaguza-pt-1_maskedRefRemMafft">
+                        <frequencies id="estimatedFreqs.s:Chaguza-pt-1_maskedRefRemMafft" spec="Frequencies" frequencies="@freqParameter.s:Chaguza-pt-1_maskedRefRemMafft"/>
+                    </substModel>
+                </siteModel>
+                <branchRateModel id="StrictClock.c:Chaguza-pt-1_maskedRefRemMafft" spec="beast.evolution.branchratemodel.StrictClockModel" clock.rate="@clockRate.c:Chaguza-pt-1_maskedRefRemMafft"/>
+            </distribution>
+        </distribution>
+    </distribution>
+    <operator id="StrictClockRateScaler.c:Chaguza-pt-1_maskedRefRemMafft" spec="ScaleOperator" parameter="@clockRate.c:Chaguza-pt-1_maskedRefRemMafft" weight="3.0"/>
+    <operator id="strictClockUpDownOperator.c:Chaguza-pt-1_maskedRefRemMafft" spec="UpDownOperator" scaleFactor="0.75" weight="3.0">
+        <up idref="clockRate.c:Chaguza-pt-1_maskedRefRemMafft"/>
+        <down idref="Tree.t:Chaguza-pt-1_maskedRefRemMafft"/>
+    </operator>
+    <operator id="KappaScaler.s:Chaguza-pt-1_maskedRefRemMafft" spec="ScaleOperator" parameter="@kappa.s:Chaguza-pt-1_maskedRefRemMafft" scaleFactor="0.5" weight="0.1"/>
+    <operator id="gammaShapeScaler.s:Chaguza-pt-1_maskedRefRemMafft" spec="ScaleOperator" parameter="@gammaShape.s:Chaguza-pt-1_maskedRefRemMafft" scaleFactor="0.5" weight="0.1"/>
+    <operator id="BayesianSkylineTreeScaler.t:Chaguza-pt-1_maskedRefRemMafft" spec="ScaleOperator" scaleFactor="0.5" tree="@Tree.t:Chaguza-pt-1_maskedRefRemMafft" weight="3.0"/>
+    <operator id="BayesianSkylineTreeRootScaler.t:Chaguza-pt-1_maskedRefRemMafft" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@Tree.t:Chaguza-pt-1_maskedRefRemMafft" weight="3.0"/>
+    <operator id="BayesianSkylineUniformOperator.t:Chaguza-pt-1_maskedRefRemMafft" spec="Uniform" tree="@Tree.t:Chaguza-pt-1_maskedRefRemMafft" weight="30.0"/>
+    <operator id="BayesianSkylineSubtreeSlide.t:Chaguza-pt-1_maskedRefRemMafft" spec="SubtreeSlide" tree="@Tree.t:Chaguza-pt-1_maskedRefRemMafft" weight="15.0"/>
+    <operator id="BayesianSkylineNarrow.t:Chaguza-pt-1_maskedRefRemMafft" spec="Exchange" tree="@Tree.t:Chaguza-pt-1_maskedRefRemMafft" weight="15.0"/>
+    <operator id="BayesianSkylineWide.t:Chaguza-pt-1_maskedRefRemMafft" spec="Exchange" isNarrow="false" tree="@Tree.t:Chaguza-pt-1_maskedRefRemMafft" weight="3.0"/>
+    <operator id="BayesianSkylineWilsonBalding.t:Chaguza-pt-1_maskedRefRemMafft" spec="WilsonBalding" tree="@Tree.t:Chaguza-pt-1_maskedRefRemMafft" weight="3.0"/>
+    <operator id="popSizesScaler.t:Chaguza-pt-1_maskedRefRemMafft" spec="ScaleOperator" parameter="@bPopSizes.t:Chaguza-pt-1_maskedRefRemMafft" weight="15.0"/>
+    <operator id="groupSizesDelta.t:Chaguza-pt-1_maskedRefRemMafft" spec="DeltaExchangeOperator" integer="true" weight="6.0">
+        <intparameter idref="bGroupSizes.t:Chaguza-pt-1_maskedRefRemMafft"/>
+    </operator>
+    <operator id="FrequenciesExchanger.s:Chaguza-pt-1_maskedRefRemMafft" spec="DeltaExchangeOperator" delta="0.01" weight="0.1">
+        <parameter idref="freqParameter.s:Chaguza-pt-1_maskedRefRemMafft"/>
+    </operator>
+    <logger id="tracelog" spec="Logger" fileName="$(filebase)_$(seed).log" logEvery="1000" model="@posterior" sanitiseHeaders="true" sort="smart">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+        <log idref="treeLikelihood.Chaguza-pt-1_maskedRefRemMafft"/>
+        <log id="TreeHeight.t:Chaguza-pt-1_maskedRefRemMafft" spec="beast.evolution.tree.TreeHeightLogger" tree="@Tree.t:Chaguza-pt-1_maskedRefRemMafft"/>
+        <log idref="clockRate.c:Chaguza-pt-1_maskedRefRemMafft"/>
+        <log idref="kappa.s:Chaguza-pt-1_maskedRefRemMafft"/>
+        <log idref="gammaShape.s:Chaguza-pt-1_maskedRefRemMafft"/>
+        <log idref="BayesianSkyline.t:Chaguza-pt-1_maskedRefRemMafft"/>
+        <log idref="bPopSizes.t:Chaguza-pt-1_maskedRefRemMafft"/>
+        <log idref="bGroupSizes.t:Chaguza-pt-1_maskedRefRemMafft"/>
+        <log idref="freqParameter.s:Chaguza-pt-1_maskedRefRemMafft"/>
+    </logger>
+    <logger id="screenlog" spec="Logger" logEvery="1000">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+    </logger>
+    <logger id="treelog.t:Chaguza-pt-1_maskedRefRemMafft" spec="Logger" fileName="$(filebase)_$(seed).trees" logEvery="1000" mode="tree">
+        <log id="TreeWithMetaDataLogger.t:Chaguza-pt-1_maskedRefRemMafft" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree.t:Chaguza-pt-1_maskedRefRemMafft"/>
+    </logger>
+    <operatorschedule id="OperatorSchedule" spec="OperatorSchedule"/>
+</run>
+</beast>
