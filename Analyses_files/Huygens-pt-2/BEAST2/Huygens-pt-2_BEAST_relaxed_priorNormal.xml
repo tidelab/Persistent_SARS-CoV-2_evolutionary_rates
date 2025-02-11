@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" required="" version="2.6">
+
+    <data
+id="Huygens-pt-2_maskedRefRemMafft"
+spec="Alignment"
+name="alignment">
+                        <sequence id="seq_Huygens-pt-2_0|2022-01-06" spec="Sequence" taxon="Huygens-pt-2_0|2022-01-06" totalcount="4" value=""/>
+                        <sequence id="seq_Huygens-pt-2_118|2022-05-04" spec="Sequence" taxon="Huygens-pt-2_118|2022-05-04" totalcount="4" value=""/>
+                        <sequence id="seq_Huygens-pt-2_123|2022-05-09" spec="Sequence" taxon="Huygens-pt-2_123|2022-05-09" totalcount="4" value=""/>
+                        <sequence id="seq_Huygens-pt-2_131|2022-05-17" spec="Sequence" taxon="Huygens-pt-2_131|2022-05-17" totalcount="4" value=""/>
+                        <sequence id="seq_Huygens-pt-2_139|2022-05-25" spec="Sequence" taxon="Huygens-pt-2_139|2022-05-25" totalcount="4" value=""/>
+                        <sequence id="seq_Huygens-pt-2_160|2022-06-15" spec="Sequence" taxon="Huygens-pt-2_160|2022-06-15" totalcount="4" value=""/>
+                        <sequence id="seq_Huygens-pt-2_25|2022-01-31" spec="Sequence" taxon="Huygens-pt-2_25|2022-01-31" totalcount="4" value=""/>
+                        <sequence id="seq_Huygens-pt-2_32|2022-02-07" spec="Sequence" taxon="Huygens-pt-2_32|2022-02-07" totalcount="4" value=""/>
+                        <sequence id="seq_Huygens-pt-2_40|2022-02-15" spec="Sequence" taxon="Huygens-pt-2_40|2022-02-15" totalcount="4" value=""/>
+                        <sequence id="seq_Huygens-pt-2_53|2022-02-28" spec="Sequence" taxon="Huygens-pt-2_53|2022-02-28" totalcount="4" value=""/>
+                        <sequence id="seq_Huygens-pt-2_62|2022-03-09" spec="Sequence" taxon="Huygens-pt-2_62|2022-03-09" totalcount="4" value=""/>
+                        <sequence id="seq_Huygens-pt-2_76|2022-03-23" spec="Sequence" taxon="Huygens-pt-2_76|2022-03-23" totalcount="4" value=""/>
+                        <sequence id="seq_Huygens-pt-2_90|2022-04-06" spec="Sequence" taxon="Huygens-pt-2_90|2022-04-06" totalcount="4" value=""/>
+                    </data>
+    
+
+<map name="Uniform" >beast.math.distributions.Uniform</map>
+<map name="Exponential" >beast.math.distributions.Exponential</map>
+<map name="LogNormal" >beast.math.distributions.LogNormalDistributionModel</map>
+<map name="Normal" >beast.math.distributions.Normal</map>
+<map name="Beta" >beast.math.distributions.Beta</map>
+<map name="Gamma" >beast.math.distributions.Gamma</map>
+<map name="LaplaceDistribution" >beast.math.distributions.LaplaceDistribution</map>
+<map name="prior" >beast.math.distributions.Prior</map>
+<map name="InverseGamma" >beast.math.distributions.InverseGamma</map>
+<map name="OneOnX" >beast.math.distributions.OneOnX</map>
+
+<run id="mcmc" spec="MCMC" chainLength="10000000">
+    <state id="state" spec="State" storeEvery="5000">
+        <tree id="Tree.t:Huygens-pt-2_maskedRefRemMafft" spec="beast.evolution.tree.Tree" name="stateNode">
+            <trait id="dateTrait.t:Huygens-pt-2_maskedRefRemMafft" spec="beast.evolution.tree.TraitSet" dateFormat="yyyy-M-dd" traitname="date" value="Huygens-pt-2_0|2022-01-06=2022-01-06,Huygens-pt-2_118|2022-05-04=2022-05-04,Huygens-pt-2_123|2022-05-09=2022-05-09,Huygens-pt-2_131|2022-05-17=2022-05-17,Huygens-pt-2_139|2022-05-25=2022-05-25,Huygens-pt-2_160|2022-06-15=2022-06-15,Huygens-pt-2_25|2022-01-31=2022-01-31,Huygens-pt-2_32|2022-02-07=2022-02-07,Huygens-pt-2_40|2022-02-15=2022-02-15,Huygens-pt-2_53|2022-02-28=2022-02-28,Huygens-pt-2_62|2022-03-09=2022-03-09,Huygens-pt-2_76|2022-03-23=2022-03-23,Huygens-pt-2_90|2022-04-06=2022-04-06">
+                <taxa id="TaxonSet.Huygens-pt-2_maskedRefRemMafft" spec="TaxonSet">
+                    <alignment idref="Huygens-pt-2_maskedRefRemMafft"/>
+                </taxa>
+            </trait>
+            <taxonset idref="TaxonSet.Huygens-pt-2_maskedRefRemMafft"/>
+        </tree>
+        <parameter id="gammaShape.s:Huygens-pt-2_maskedRefRemMafft" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+        <parameter id="kappa.s:Huygens-pt-2_maskedRefRemMafft" spec="parameter.RealParameter" lower="0.0" name="stateNode">2.0</parameter>
+        <parameter id="ucldMean.c:Huygens-pt-2_maskedRefRemMafft" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+        <parameter id="ucldStdev.c:Huygens-pt-2_maskedRefRemMafft" spec="parameter.RealParameter" lower="0.0" name="stateNode">0.1</parameter>
+        <stateNode id="rateCategories.c:Huygens-pt-2_maskedRefRemMafft" spec="parameter.IntegerParameter" dimension="24">1</stateNode>
+        <parameter id="bPopSizes.t:Huygens-pt-2_maskedRefRemMafft" spec="parameter.RealParameter" dimension="3" lower="0.0" name="stateNode">380.0</parameter>
+        <stateNode id="bGroupSizes.t:Huygens-pt-2_maskedRefRemMafft" spec="parameter.IntegerParameter" dimension="3">1</stateNode>
+        <parameter id="freqParameter.s:Huygens-pt-2_maskedRefRemMafft" spec="parameter.RealParameter" dimension="4" lower="0.0" name="stateNode" upper="1.0">0.25</parameter>
+    </state>
+    <init id="RandomTree.t:Huygens-pt-2_maskedRefRemMafft" spec="beast.evolution.tree.RandomTree" estimate="false" initial="@Tree.t:Huygens-pt-2_maskedRefRemMafft" taxa="@Huygens-pt-2_maskedRefRemMafft">
+        <populationModel id="ConstantPopulation0.t:Huygens-pt-2_maskedRefRemMafft" spec="ConstantPopulation">
+            <parameter id="randomPopSize.t:Huygens-pt-2_maskedRefRemMafft" spec="parameter.RealParameter" name="popSize">1.0</parameter>
+        </populationModel>
+    </init>
+    <distribution id="posterior" spec="util.CompoundDistribution">
+        <distribution id="prior" spec="util.CompoundDistribution">
+            <distribution id="BayesianSkyline.t:Huygens-pt-2_maskedRefRemMafft" spec="BayesianSkyline" groupSizes="@bGroupSizes.t:Huygens-pt-2_maskedRefRemMafft" popSizes="@bPopSizes.t:Huygens-pt-2_maskedRefRemMafft">
+                <treeIntervals id="BSPTreeIntervals.t:Huygens-pt-2_maskedRefRemMafft" spec="TreeIntervals" tree="@Tree.t:Huygens-pt-2_maskedRefRemMafft"/>
+            </distribution>
+            <distribution id="MarkovChainedPopSizes.t:Huygens-pt-2_maskedRefRemMafft" spec="beast.math.distributions.MarkovChainDistribution" jeffreys="true" parameter="@bPopSizes.t:Huygens-pt-2_maskedRefRemMafft"/>
+            <prior id="FrequenciesPrior.s:Huygens-pt-2_maskedRefRemMafft" name="distribution" x="@freqParameter.s:Huygens-pt-2_maskedRefRemMafft">
+                <Uniform id="Uniform.3" name="distr"/>
+            </prior>
+            <prior id="GammaShapePrior.s:Huygens-pt-2_maskedRefRemMafft" name="distribution" x="@gammaShape.s:Huygens-pt-2_maskedRefRemMafft">
+                <Exponential id="Exponential.0" name="distr">
+                    <parameter id="RealParameter.0" spec="parameter.RealParameter" estimate="false" name="mean">1.0</parameter>
+                </Exponential>
+            </prior>
+            <prior id="KappaPrior.s:Huygens-pt-2_maskedRefRemMafft" name="distribution" x="@kappa.s:Huygens-pt-2_maskedRefRemMafft">
+                <LogNormal id="LogNormalDistributionModel.0" name="distr">
+                    <parameter id="RealParameter.1" spec="parameter.RealParameter" estimate="false" name="M">1.0</parameter>
+                    <parameter id="RealParameter.2" spec="parameter.RealParameter" estimate="false" name="S">1.25</parameter>
+                </LogNormal>
+            </prior>
+            <prior id="MeanRatePrior.c:Huygens-pt-2_maskedRefRemMafft" name="distribution" x="@ucldMean.c:Huygens-pt-2_maskedRefRemMafft">
+                <Normal id="Normal.0" name="distr">
+                    <parameter id="RealParameter.6" spec="parameter.RealParameter" estimate="false" name="mean">8.0E-4</parameter>
+                    <parameter id="RealParameter.7" spec="parameter.RealParameter" estimate="false" name="sigma">0.0016</parameter>
+                </Normal>
+            </prior>
+            <prior id="ucldStdevPrior.c:Huygens-pt-2_maskedRefRemMafft" name="distribution" x="@ucldStdev.c:Huygens-pt-2_maskedRefRemMafft">
+                <Gamma id="Gamma.0" name="distr">
+                    <parameter id="RealParameter.4" spec="parameter.RealParameter" estimate="false" name="alpha">0.5396</parameter>
+                    <parameter id="RealParameter.5" spec="parameter.RealParameter" estimate="false" name="beta">0.3819</parameter>
+                </Gamma>
+            </prior>
+        </distribution>
+        <distribution id="likelihood" spec="util.CompoundDistribution" useThreads="true">
+            <distribution id="treeLikelihood.Huygens-pt-2_maskedRefRemMafft" spec="ThreadedTreeLikelihood" data="@Huygens-pt-2_maskedRefRemMafft" tree="@Tree.t:Huygens-pt-2_maskedRefRemMafft">
+                <siteModel id="SiteModel.s:Huygens-pt-2_maskedRefRemMafft" spec="SiteModel" gammaCategoryCount="4" shape="@gammaShape.s:Huygens-pt-2_maskedRefRemMafft">
+                    <parameter id="mutationRate.s:Huygens-pt-2_maskedRefRemMafft" spec="parameter.RealParameter" estimate="false" name="mutationRate">1.0</parameter>
+                    <parameter id="proportionInvariant.s:Huygens-pt-2_maskedRefRemMafft" spec="parameter.RealParameter" estimate="false" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
+                    <substModel id="hky.s:Huygens-pt-2_maskedRefRemMafft" spec="HKY" kappa="@kappa.s:Huygens-pt-2_maskedRefRemMafft">
+                        <frequencies id="estimatedFreqs.s:Huygens-pt-2_maskedRefRemMafft" spec="Frequencies" frequencies="@freqParameter.s:Huygens-pt-2_maskedRefRemMafft"/>
+                    </substModel>
+                </siteModel>
+                <branchRateModel id="RelaxedClock.c:Huygens-pt-2_maskedRefRemMafft" spec="beast.evolution.branchratemodel.UCRelaxedClockModel" clock.rate="@ucldMean.c:Huygens-pt-2_maskedRefRemMafft" rateCategories="@rateCategories.c:Huygens-pt-2_maskedRefRemMafft" tree="@Tree.t:Huygens-pt-2_maskedRefRemMafft">
+                    <LogNormal id="LogNormalDistributionModel.c:Huygens-pt-2_maskedRefRemMafft" S="@ucldStdev.c:Huygens-pt-2_maskedRefRemMafft" meanInRealSpace="true" name="distr">
+                        <parameter id="RealParameter.3" spec="parameter.RealParameter" estimate="false" lower="0.0" name="M" upper="1.0">1.0</parameter>
+                    </LogNormal>
+                </branchRateModel>
+            </distribution>
+        </distribution>
+    </distribution>
+    <operator id="gammaShapeScaler.s:Huygens-pt-2_maskedRefRemMafft" spec="ScaleOperator" parameter="@gammaShape.s:Huygens-pt-2_maskedRefRemMafft" scaleFactor="0.5" weight="0.1"/>
+    <operator id="KappaScaler.s:Huygens-pt-2_maskedRefRemMafft" spec="ScaleOperator" parameter="@kappa.s:Huygens-pt-2_maskedRefRemMafft" scaleFactor="0.5" weight="0.1"/>
+    <operator id="ucldMeanScaler.c:Huygens-pt-2_maskedRefRemMafft" spec="ScaleOperator" parameter="@ucldMean.c:Huygens-pt-2_maskedRefRemMafft" scaleFactor="0.5" weight="1.0"/>
+    <operator id="ucldStdevScaler.c:Huygens-pt-2_maskedRefRemMafft" spec="ScaleOperator" parameter="@ucldStdev.c:Huygens-pt-2_maskedRefRemMafft" scaleFactor="0.5" weight="3.0"/>
+    <operator id="CategoriesRandomWalk.c:Huygens-pt-2_maskedRefRemMafft" spec="IntRandomWalkOperator" parameter="@rateCategories.c:Huygens-pt-2_maskedRefRemMafft" weight="10.0" windowSize="1"/>
+    <operator id="CategoriesSwapOperator.c:Huygens-pt-2_maskedRefRemMafft" spec="SwapOperator" intparameter="@rateCategories.c:Huygens-pt-2_maskedRefRemMafft" weight="10.0"/>
+    <operator id="CategoriesUniform.c:Huygens-pt-2_maskedRefRemMafft" spec="UniformOperator" parameter="@rateCategories.c:Huygens-pt-2_maskedRefRemMafft" weight="10.0"/>
+    <operator id="relaxedUpDownOperator.c:Huygens-pt-2_maskedRefRemMafft" spec="UpDownOperator" scaleFactor="0.75" weight="3.0">
+        <up idref="ucldMean.c:Huygens-pt-2_maskedRefRemMafft"/>
+        <down idref="Tree.t:Huygens-pt-2_maskedRefRemMafft"/>
+    </operator>
+    <operator id="BayesianSkylineTreeScaler.t:Huygens-pt-2_maskedRefRemMafft" spec="ScaleOperator" scaleFactor="0.5" tree="@Tree.t:Huygens-pt-2_maskedRefRemMafft" weight="3.0"/>
+    <operator id="BayesianSkylineTreeRootScaler.t:Huygens-pt-2_maskedRefRemMafft" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@Tree.t:Huygens-pt-2_maskedRefRemMafft" weight="3.0"/>
+    <operator id="BayesianSkylineUniformOperator.t:Huygens-pt-2_maskedRefRemMafft" spec="Uniform" tree="@Tree.t:Huygens-pt-2_maskedRefRemMafft" weight="30.0"/>
+    <operator id="BayesianSkylineSubtreeSlide.t:Huygens-pt-2_maskedRefRemMafft" spec="SubtreeSlide" tree="@Tree.t:Huygens-pt-2_maskedRefRemMafft" weight="15.0"/>
+    <operator id="BayesianSkylineNarrow.t:Huygens-pt-2_maskedRefRemMafft" spec="Exchange" tree="@Tree.t:Huygens-pt-2_maskedRefRemMafft" weight="15.0"/>
+    <operator id="BayesianSkylineWide.t:Huygens-pt-2_maskedRefRemMafft" spec="Exchange" isNarrow="false" tree="@Tree.t:Huygens-pt-2_maskedRefRemMafft" weight="3.0"/>
+    <operator id="BayesianSkylineWilsonBalding.t:Huygens-pt-2_maskedRefRemMafft" spec="WilsonBalding" tree="@Tree.t:Huygens-pt-2_maskedRefRemMafft" weight="3.0"/>
+    <operator id="popSizesScaler.t:Huygens-pt-2_maskedRefRemMafft" spec="ScaleOperator" parameter="@bPopSizes.t:Huygens-pt-2_maskedRefRemMafft" weight="15.0"/>
+    <operator id="groupSizesDelta.t:Huygens-pt-2_maskedRefRemMafft" spec="DeltaExchangeOperator" integer="true" weight="6.0">
+        <intparameter idref="bGroupSizes.t:Huygens-pt-2_maskedRefRemMafft"/>
+    </operator>
+    <operator id="FrequenciesExchanger.s:Huygens-pt-2_maskedRefRemMafft" spec="DeltaExchangeOperator" delta="0.01" weight="0.1">
+        <parameter idref="freqParameter.s:Huygens-pt-2_maskedRefRemMafft"/>
+    </operator>
+    <logger id="tracelog" spec="Logger" fileName="$(filebase)_$(seed).log" logEvery="1000" model="@posterior" sanitiseHeaders="true" sort="smart">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+        <log idref="treeLikelihood.Huygens-pt-2_maskedRefRemMafft"/>
+        <log id="TreeHeight.t:Huygens-pt-2_maskedRefRemMafft" spec="beast.evolution.tree.TreeHeightLogger" tree="@Tree.t:Huygens-pt-2_maskedRefRemMafft"/>
+        <log idref="gammaShape.s:Huygens-pt-2_maskedRefRemMafft"/>
+        <log idref="kappa.s:Huygens-pt-2_maskedRefRemMafft"/>
+        <log idref="ucldMean.c:Huygens-pt-2_maskedRefRemMafft"/>
+        <log idref="ucldStdev.c:Huygens-pt-2_maskedRefRemMafft"/>
+        <log id="rate.c:Huygens-pt-2_maskedRefRemMafft" spec="beast.evolution.branchratemodel.RateStatistic" branchratemodel="@RelaxedClock.c:Huygens-pt-2_maskedRefRemMafft" tree="@Tree.t:Huygens-pt-2_maskedRefRemMafft"/>
+        <log idref="BayesianSkyline.t:Huygens-pt-2_maskedRefRemMafft"/>
+        <log idref="bPopSizes.t:Huygens-pt-2_maskedRefRemMafft"/>
+        <log idref="bGroupSizes.t:Huygens-pt-2_maskedRefRemMafft"/>
+        <log idref="freqParameter.s:Huygens-pt-2_maskedRefRemMafft"/>
+    </logger>
+    <logger id="screenlog" spec="Logger" logEvery="1000">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+    </logger>
+    <logger id="treelog.t:Huygens-pt-2_maskedRefRemMafft" spec="Logger" fileName="$(filebase)_$(seed).trees" logEvery="1000" mode="tree">
+        <log id="TreeWithMetaDataLogger.t:Huygens-pt-2_maskedRefRemMafft" spec="beast.evolution.tree.TreeWithMetaDataLogger" branchratemodel="@RelaxedClock.c:Huygens-pt-2_maskedRefRemMafft" tree="@Tree.t:Huygens-pt-2_maskedRefRemMafft"/>
+    </logger>
+    <operatorschedule id="OperatorSchedule" spec="OperatorSchedule"/>
+</run>
+</beast>

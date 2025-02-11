@@ -1,0 +1,230 @@
+IQ-TREE multicore version 2.1.2 COVID-edition for Mac OS X 64-bit built Oct 22 2020
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    dlmp133362.w-staff.shh.mpg.de (AVX512, FMA3, 16 GB RAM)
+Command: /Users/oeversti/iqtree-2.1.2-MacOSX/bin/iqtree2 -s Huygens-pt-2_maskedRefRemMafft.fasta --prefix Huygens-pt-2_LSD_CollapseDefault -m MFP -B 1000 --date TAXNAME --date-ci 100
+Seed:    174241 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed May  3 13:26:08 2023
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file Huygens-pt-2_maskedRefRemMafft.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 303 sites contain only gaps or ambiguous characters.
+Alignment has 13 sequences with 29903 columns, 84 distinct patterns
+11 parsimony-informative, 6 singleton sites, 29886 constant sites
+                             Gap/Ambiguity  Composition  p-value
+   1  Huygens-pt-2_0|2022-01-06      4.37%    passed     99.97%
+   2  Huygens-pt-2_118|2022-05-04    2.73%    passed     99.87%
+   3  Huygens-pt-2_123|2022-05-09    1.77%    passed     99.86%
+   4  Huygens-pt-2_131|2022-05-17    3.77%    passed     99.95%
+   5  Huygens-pt-2_139|2022-05-25    5.89%    passed     99.11%
+   6  Huygens-pt-2_160|2022-06-15    3.53%    passed     99.88%
+   7  Huygens-pt-2_25|2022-01-31     1.65%    passed     98.33%
+   8  Huygens-pt-2_32|2022-02-07     3.53%    passed     99.99%
+   9  Huygens-pt-2_40|2022-02-15     2.61%    passed     99.80%
+  10  Huygens-pt-2_53|2022-02-28     4.12%    passed    100.00%
+  11  Huygens-pt-2_62|2022-03-09     4.84%    passed     98.77%
+  12  Huygens-pt-2_76|2022-03-23     1.81%    passed     99.29%
+  13  Huygens-pt-2_90|2022-04-06     5.83%    passed     98.91%
+****  TOTAL                          3.57%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.001 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -40369.522
+2. Current log-likelihood: -40366.648
+Optimal log-likelihood: -40366.322
+Rate parameters:  A-C: 0.82133  A-G: 1.24298  A-T: 0.47755  C-G: 2.20475  C-T: 2.55582  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.183  G: 0.196  T: 0.322
+Proportion of invariable sites: 0.500
+Gamma shape alpha: 0.020
+Parameters optimization took 2 rounds (0.004 sec)
+Time for fast ML tree search: 0.014 seconds
+
+NOTE: ModelFinder requires 0 MB RAM!
+ModelFinder will test up to 286 DNA models (sample size: 29903) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         40371.974    31  80805.947    80806.014    81063.425
+  2  GTR+F+I       40355.788    32  80775.577    80775.647    81041.360
+  3  GTR+F+G4      40367.589    32  80799.178    80799.248    81064.961
+  4  GTR+F+I+G4    40365.577    33  80797.153    80797.228    81071.242
+  5  GTR+F+R2      40370.597    33  80807.194    80807.269    81081.282
+  6  GTR+F+R3      40369.252    35  80808.503    80808.587    81099.203
+ 15  SYM+I         41243.415    29  82544.830    82544.888    82785.696
+ 28  TVM+F+I       40356.117    31  80774.235    80774.301    81031.712
+ 41  TVMe+I        41243.614    28  82543.228    82543.282    82775.788
+ 54  TIM3+F+I      40356.024    30  80772.049    80772.111    81021.220
+ 67  TIM3e+I       41243.312    27  82540.624    82540.675    82764.879
+ 80  TIM2+F+I      40357.962    30  80775.923    80775.985    81025.094
+ 93  TIM2e+I       41244.684    27  82543.368    82543.419    82767.622
+106  TIM+F+I       40358.448    30  80776.897    80776.959    81026.068
+119  TIMe+I        41244.845    27  82543.691    82543.741    82767.945
+132  TPM3u+F+I     40356.348    29  80770.697    80770.755    81011.562
+145  TPM3+F+I      40356.291    29  80770.583    80770.641    81011.449
+158  TPM2u+F+I     40358.396    29  80774.792    80774.850    81015.658
+171  TPM2+F+I      40358.396    29  80774.792    80774.850    81015.658
+184  K3Pu+F+I      40358.887    29  80775.773    80775.832    81016.639
+197  K3P+I         41245.289    26  82542.578    82542.625    82758.527
+210  TN+F+I        40358.388    29  80774.776    80774.834    81015.642
+223  TNe+I         41244.824    26  82541.648    82541.695    82757.597
+236  HKY+F+I       40358.835    28  80773.669    80773.724    81006.229
+249  K2P+I         41245.334    25  82540.667    82540.711    82748.310
+262  F81+F+I       40360.992    27  80775.984    80776.035    81000.238
+275  JC+I          41247.310    24  82542.620    82542.660    82741.957
+Akaike Information Criterion:           TPM3+F+I
+Corrected Akaike Information Criterion: TPM3+F+I
+Bayesian Information Criterion:         F81+F+I
+Best-fit model: F81+F+I chosen according to BIC
+
+All model information printed to Huygens-pt-2_LSD_CollapseDefault.model.gz
+CPU time for ModelFinder: 0.067 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.081 seconds (0h:0m:0s)
+Generating 1000 samples for ultrafast bootstrap (seed: 174241)...
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -40360.992
+Optimal log-likelihood: -40360.992
+Rate parameters:  A-C: 1.00000  A-G: 1.00000  A-T: 1.00000  C-G: 1.00000  C-T: 1.00000  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.183  G: 0.196  T: 0.322
+Proportion of invariable sites: 0.998
+Parameters optimization took 1 rounds (0.000 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.003441 sec (of wall-clock time) 0.003010 sec(of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing RapidNJ tree took 0.000061 sec (of wall-clock time) 0.000045 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -40453.483
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.020 second
+Computing log-likelihood of 98 initial trees ... 0.019 seconds
+Current best score: -40360.992
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -40360.990
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -40360.926
+UPDATE BEST LOG-LIKELIHOOD: -40360.926
+Iteration 10 / LogL: -40360.927 / Time: 0h:0m:0s
+UPDATE BEST LOG-LIKELIHOOD: -40360.926
+UPDATE BEST LOG-LIKELIHOOD: -40360.926
+Iteration 20 / LogL: -40360.927 / Time: 0h:0m:0s
+Finish initializing candidate tree set (5)
+Current best tree score: -40360.926 / CPU time: 0.119
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+UPDATE BEST LOG-LIKELIHOOD: -40360.926
+Iteration 30 / LogL: -40361.036 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -40360.926
+Iteration 40 / LogL: -40360.962 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 50 / LogL: -40360.990 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -40372.212
+Iteration 60 / LogL: -40360.943 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 70 / LogL: -40360.937 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 80 / LogL: -40360.964 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 90 / LogL: -40360.940 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 100 / LogL: -40360.971 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -40372.841
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.977
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 110 / LogL: -40360.926 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -40360.926
+Iteration 120 / LogL: -40360.926 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 130 / LogL: -40360.926 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -40360.926
+Iteration 140 / LogL: -40360.926 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -40360.926
+Iteration 150 / LogL: -40360.926 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -40374.409
+Iteration 160 / LogL: -40360.926 / Time: 0h:0m:1s (0h:0m:0s left)
+Iteration 170 / LogL: -40360.927 / Time: 0h:0m:1s (0h:0m:0s left)
+Iteration 180 / LogL: -40360.940 / Time: 0h:0m:1s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -40360.926
+Iteration 190 / LogL: -40360.926 / Time: 0h:0m:1s (0h:0m:0s left)
+Iteration 200 / LogL: -40360.938 / Time: 0h:0m:1s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -40379.232
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.991
+TREE SEARCH COMPLETED AFTER 200 ITERATIONS / Time: 0h:0m:1s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -40360.926
+Optimal log-likelihood: -40360.926
+Rate parameters:  A-C: 1.00000  A-G: 1.00000  A-T: 1.00000  C-G: 1.00000  C-T: 1.00000  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.183  G: 0.196  T: 0.322
+Proportion of invariable sites: 0.998
+Parameters optimization took 1 rounds (0.000 sec)
+BEST SCORE FOUND : -40360.926
+Creating bootstrap support values...
+Split supports printed to NEXUS file Huygens-pt-2_LSD_CollapseDefault.splits.nex
+Total tree length: 0.001
+
+Total number of iterations: 200
+CPU time used for tree search: 1.467 sec (0h:0m:1s)
+Wall-clock time used for tree search: 1.343 sec (0h:0m:1s)
+Total CPU time used: 1.523 sec (0h:0m:1s)
+Total wall-clock time used: 1.406 sec (0h:0m:1s)
+
+Computing bootstrap consensus tree...
+Reading input file Huygens-pt-2_LSD_CollapseDefault.splits.nex...
+13 taxa and 106 splits.
+Consensus tree written to Huygens-pt-2_LSD_CollapseDefault.contree
+Reading input trees file Huygens-pt-2_LSD_CollapseDefault.contree
+Log-likelihood of consensus tree: -40361.307
+
+Analysis results written to: 
+  IQ-TREE report:                Huygens-pt-2_LSD_CollapseDefault.iqtree
+  Maximum-likelihood tree:       Huygens-pt-2_LSD_CollapseDefault.treefile
+  Likelihood distances:          Huygens-pt-2_LSD_CollapseDefault.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          Huygens-pt-2_LSD_CollapseDefault.splits.nex
+  Consensus tree:                Huygens-pt-2_LSD_CollapseDefault.contree
+  Screen log file:               Huygens-pt-2_LSD_CollapseDefault.log
+
+--- Start phylogenetic dating ---
+Extracting date from node names...
+13 dates extracted
+Building time tree by least-square dating (LSD) with command:
+lsd -i Huygens-pt-2_LSD_CollapseDefault.timetree.subst -s 29903 -o Huygens-pt-2_LSD_CollapseDefault.timetree -f 100 -r a -d Huygens-pt-2_LSD_CollapseDefault.timetree.date 
+
+TREE 1
+*PROCESSING:
+Reading the tree ... 
+Collapse 5 (over 10) internal branches having branch length <= 1.67e-05
+ (settable via option -l)
+Parameter to adjust variances was set to 0.000334 (settable via option -b)
+Minimum branch length of time scaled tree (settable via option -u and -U): 0
+Estimating the root position on all branches using fast method ...
+Computing confidence intervals using sequence length 29903 and a lognormal
+ relaxed clock with mean 1, standard deviation 0.2 (settable via option -q)
+*WARNINGS:
+- 50% internal branches were collapsed.
+*RESULTS:
+- Dating results:
+ rate 0.000365686, tMRCA 2021-11-15 , objective function 3.62124e-05
+- Results with confidence intervals:
+ rate 0.000365686 [0.000137158; 0.000636777], tMRCA 2021-11-15 [2021-03-10; 2022-01-03], objective function 3.62124e-05
+
+TOTAL ELAPSED TIME: 0.00368 seconds
+LSD results written to:
+  LSD report:                  Huygens-pt-2_LSD_CollapseDefault.timetree.lsd
+  Time tree in nexus format:   Huygens-pt-2_LSD_CollapseDefault.timetree.nex
+  Time tree in newick format:  Huygens-pt-2_LSD_CollapseDefault.timetree.nwk
+
+--- End phylogenetic dating ---
+Date and Time: Wed May  3 13:26:09 2023

@@ -1,0 +1,33 @@
+[1] "Huygens-pt-2"
+[1] "TreeDater Relaxed clock"
+
+Phylogenetic tree with 13 tips and 12 internal nodes.
+
+Tip labels:
+  Huygens-pt-2_0|2022-01-06, Huygens-pt-2_118|2022-05-04, Huygens-pt-2_123|2022-05-09, Huygens-pt-2_160|2022-06-15, Huygens-pt-2_131|2022-05-17, Huygens-pt-2_40|2022-02-15, ...
+
+Rooted; includes branch lengths.
+
+ Time of common ancestor 
+2021.7050298652 
+
+ Time to common ancestor (before most recent sample) 
+0.747024929317604 
+
+ Weighted mean substitution rate (adjusted by branch lengths) 
+0.000241787266826511 
+
+ Unadjusted mean substitution rate 
+0.000241787267644365 
+
+ Clock model  
+uncorrelated 
+
+ Coefficient of variation of rates 
+4.11718907109142e-09 
+[1] "Estimating confidence intervals for rates and dates by a parametric bootstrap"
+
+ For more detailed output, $trees provides a list of each fit to each simulation 
+
+Time of common ancestor	2.021705e+03	2.018791e+03	2.021961e+03	Mean substitution rate	2.417873e-04	6.785251e-05	8.615905e-04	
+

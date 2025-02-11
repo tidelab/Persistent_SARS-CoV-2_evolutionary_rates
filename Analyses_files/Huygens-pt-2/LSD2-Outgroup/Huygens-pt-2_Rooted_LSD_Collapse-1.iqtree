@@ -1,0 +1,226 @@
+IQ-TREE 2.1.2 COVID-edition built Oct 22 2020
+
+Input file name: Huygens-pt-2_maskedRefMafft.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 338752
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+Since you used least square dating (LSD) please also cite: 
+
+Thu-Hien To, Matthieu Jung, Samantha Lycett, Olivier Gascuel (2016)
+Fast dating using least-squares criteria and algorithms. Syst. Biol. 65:82-97.
+https://doi.org/10.1093/sysbio/syv068
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 14 sequences with 29903 nucleotide sites
+Number of constant sites: 29831 (= 99.7592% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 29831 (= 99.7592% of all sites)
+Number of parsimony informative sites: 12
+Number of distinct site patterns: 105
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: HKY+F+I
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+HKY+F+I          -40871.785   81803.571 -   0.0177   81803.633 -   0.0178   82052.742 +     0.67
+TPM3+F+I         -40868.123   81798.246 +    0.254   81798.313 +    0.254   82055.723 +    0.151
+TPM3u+F+I        -40868.157   81798.314 +    0.245   81798.381 +    0.246   82055.791 +    0.146
+TN+F+I           -40870.596   81803.191 -   0.0214   81803.258 -   0.0214   82060.668 -   0.0127
+K3Pu+F+I         -40870.967   81803.933 -   0.0148   81804.000 -   0.0148   82061.411 -  0.00879
+TPM2u+F+I        -40871.717   81805.434 -  0.00698   81805.500 -  0.00699   82062.911 -  0.00415
+TPM2+F+I         -40871.717   81805.434 -  0.00698   81805.500 -  0.00699   82062.911 -  0.00415
+TIM3+F+I         -40866.971   81797.943 +    0.295   81798.013 +    0.295   82063.725 -  0.00276
+TIM+F+I          -40869.777   81803.553 -   0.0179   81803.624 -   0.0179   82069.336 - 0.000167
+TIM2+F+I         -40870.602   81805.204 -  0.00783   81805.274 -  0.00782   82070.987 - 7.32e-05
+F81+F+I          -40887.052   81832.104 - 1.13e-08   81832.162 - 1.13e-08   82072.970 - 2.72e-05
+TVM+F+I          -40867.730   81801.460 +   0.0509   81801.535 +   0.0507   82075.549 - 7.48e-06
+GTR+F+I          -40866.548   81801.096 +    0.061   81801.176 +   0.0607   82083.490 - 1.41e-07
+GTR+F+G4         -40875.767   81819.535 - 6.05e-06   81819.614 - 6.02e-06   82101.929 -  1.4e-11
+GTR+F            -40881.197   81828.394 - 7.21e-08   81828.469 - 7.19e-08   82102.482 - 1.06e-11
+GTR+F+I+G4       -40873.117   81816.235 - 3.15e-05   81816.319 - 3.13e-05   82106.935 - 1.14e-12
+GTR+F+R2         -40879.652   81829.304 - 4.58e-08   81829.388 - 4.54e-08   82120.004 - 1.66e-15
+GTR+F+R3         -40878.176   81830.352 - 2.71e-08   81830.446 - 2.68e-08   82137.663 - 2.43e-19
+K2P+I            -41756.730   83567.459 -        0   83567.510 -        0   83791.713 -        0
+TNe+I            -41755.620   83567.241 -        0   83567.295 -        0   83799.801 -        0
+K3P+I            -41756.271   83568.543 -        0   83568.597 -        0   83801.103 -        0
+TIM3e+I          -41753.839   83565.677 -        0   83565.736 -        0   83806.543 -        0
+JC+I             -41770.601   83593.203 -        0   83593.250 -        0   83809.151 -        0
+TIMe+I           -41755.161   83568.322 -        0   83568.381 -        0   83809.188 -        0
+TIM2e+I          -41755.799   83569.599 -        0   83569.657 -        0   83810.465 -        0
+TVMe+I           -41754.832   83569.664 -        0   83569.726 -        0   83818.835 -        0
+SYM+I            -41753.558   83569.117 -        0   83569.183 -        0   83826.594 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: HKY+F+I
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 3.9573
+  A-T: 1.0000
+  C-G: 1.0000
+  C-T: 3.9573
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2989
+  pi(C) = 0.1831
+  pi(G) = 0.1957
+  pi(T) = 0.3223
+
+Rate matrix Q:
+
+  A   -0.8951    0.1281    0.5417    0.2254
+  C     0.209    -1.238    0.1369    0.8918
+  G     0.827    0.1281     -1.18    0.2254
+  T     0.209    0.5068    0.1369   -0.8526
+
+Model of rate heterogeneity: Invar
+Proportion of invariable sites: 0.9885
+
+ Category  Relative_rate  Proportion
+  0         0              0.9885
+  1         86.65          0.01154
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -40871.7369 (s.e. 87.3444)
+Unconstrained log-likelihood (without tree): -54132.5098
+Number of free parameters (#branches + #model parameters): 30
+Akaike information criterion (AIC) score: 81803.4738
+Corrected Akaike information criterion (AICc) score: 81803.5361
+Bayesian information criterion (BIC) score: 82052.6453
+
+Total tree length (sum of branch lengths): 0.0029
+Sum of internal branch lengths: 0.0004 (13.3488% of tree length)
+
+WARNING: 6 near-zero internal branches (<0.0000) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'NC_045512.2|2019-12-30' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++-----------------------------------------------------------NC_045512.2|2019-12-30
+|
++**Huygens-pt-2_0|2022-01-06
+|
+|        +**Huygens-pt-2_118|2022-05-04
+|     +--| (82)
+|     |  +**Huygens-pt-2_123|2022-05-09
+|  +--| (94)
+|  |  +--Huygens-pt-2_160|2022-06-15
++--| (80)
+   |                    +--Huygens-pt-2_131|2022-05-17
+   |                 +**| (44)
+   |                 |  +--Huygens-pt-2_139|2022-05-25
+   |              +**| (18)
+   |              |  +**Huygens-pt-2_90|2022-04-06
+   |           +**| (23)
+   |           |  +**Huygens-pt-2_53|2022-02-28
+   |        +**| (29)
+   |        |  +**Huygens-pt-2_40|2022-02-15
+   |     +**| (28)
+   |     |  +**Huygens-pt-2_62|2022-03-09
+   |  +--| (99)
+   |  |  +**Huygens-pt-2_76|2022-03-23
+   +--| (93)
+      |  +**Huygens-pt-2_25|2022-01-31
+      +**| (55)
+         +**Huygens-pt-2_32|2022-02-07
+
+Tree in newick format:
+
+(NC_045512.2|2019-12-30:0.0021612452,Huygens-pt-2_0|2022-01-06:0.0000010000,(((Huygens-pt-2_118|2022-05-04:0.0000010000,Huygens-pt-2_123|2022-05-09:0.0000010000)82:0.0000341135,Huygens-pt-2_160|2022-06-15:0.0000694943)94:0.0001046671,(((((((Huygens-pt-2_131|2022-05-17:0.0001058015,Huygens-pt-2_139|2022-05-25:0.0001074440)44:0.0000321724,Huygens-pt-2_90|2022-04-06:0.0000010000)18:0.0000010167,Huygens-pt-2_53|2022-02-28:0.0000010000)23:0.0000010000,Huygens-pt-2_40|2022-02-15:0.0000010000)29:0.0000010000,Huygens-pt-2_62|2022-03-09:0.0000010000)28:0.0000010000,Huygens-pt-2_76|2022-03-23:0.0000010000)99:0.0001376813,(Huygens-pt-2_25|2022-01-31:0.0000010000,Huygens-pt-2_32|2022-02-07:0.0000010000)55:0.0000010000)93:0.0000689296)80:0.0000359841);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -40872.238136
+Robinson-Foulds distance between ML tree and consensus tree: 8
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++-----------------------------------------------------------NC_045512.2|2019-12-30
+|
++--Huygens-pt-2_0|2022-01-06
+|
+|        +--Huygens-pt-2_118|2022-05-04
+|     +--| (82)
+|     |  +--Huygens-pt-2_123|2022-05-09
+|  +--| (94)
+|  |  +--Huygens-pt-2_160|2022-06-15
++--| (80)
+   |        +--Huygens-pt-2_131|2022-05-17
+   |     +--| (44)
+   |     |  +--Huygens-pt-2_139|2022-05-25
+   |  +--| (99)
+   |  |  |  +--Huygens-pt-2_40|2022-02-15
+   |  |  +--| (45)
+   |  |     |     +--Huygens-pt-2_53|2022-02-28
+   |  |     |  +--| (32)
+   |  |     |  |  +--Huygens-pt-2_90|2022-04-06
+   |  |     +--| (29)
+   |  |        |  +--Huygens-pt-2_62|2022-03-09
+   |  |        +--| (25)
+   |  |           +--Huygens-pt-2_76|2022-03-23
+   +--| (93)
+      |  +--Huygens-pt-2_25|2022-01-31
+      +--| (55)
+         +--Huygens-pt-2_32|2022-02-07
+
+
+Consensus tree in newick format: 
+
+(NC_045512.2|2019-12-30:0.0021649423,Huygens-pt-2_0|2022-01-06:0.0000020138,(((Huygens-pt-2_118|2022-05-04:0.0000020138,Huygens-pt-2_123|2022-05-09:0.0000020138)82:0.0000347318,Huygens-pt-2_160|2022-06-15:0.0000701620)94:0.0001050079,(((Huygens-pt-2_131|2022-05-17:0.0001060597,Huygens-pt-2_139|2022-05-25:0.0001077249)44:0.0000351639,(Huygens-pt-2_40|2022-02-15:0.0000020138,((Huygens-pt-2_53|2022-02-28:0.0000020138,Huygens-pt-2_90|2022-04-06:0.0000020138)32:0.0000020138,(Huygens-pt-2_62|2022-03-09:0.0000020138,Huygens-pt-2_76|2022-03-23:0.0000020138)25:0.0000020138)29:0.0000020138)45:0.0000020295)99:0.0001378782,(Huygens-pt-2_25|2022-01-31:0.0000020138,Huygens-pt-2_32|2022-02-07:0.0000020138)55:0.0000020138)93:0.0000684530)80:0.0000358844);
+
+TIME STAMP
+----------
+
+Date and time: Sun Aug 20 14:08:49 2023
+Total CPU time used: 0.765643 seconds (0h:0m:0s)
+Total wall-clock time used: 0.6020460129 seconds (0h:0m:0s)
+
