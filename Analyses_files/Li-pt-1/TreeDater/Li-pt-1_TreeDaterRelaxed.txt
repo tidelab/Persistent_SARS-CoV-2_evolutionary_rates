@@ -1,0 +1,34 @@
+[1] "Li-pt-1"
+[1] "TreeDater Relaxed clock"
+
+Phylogenetic tree with 11 tips and 10 internal nodes.
+
+Tip labels:
+  Li-pt-1_0|2020-02-12, Li-pt-1_101|2020-05-24, Li-pt-1_97|2020-05-20, Li-pt-1_103|2020-05-26, Li-pt-1_106|2020-05-29, Li-pt-1_140|2020-07-02, ...
+
+Rooted; includes branch lengths.
+
+ Time of common ancestor 
+2020.11125186289 
+
+ Time to common ancestor (before most recent sample) 
+0.388748137108678 
+
+ Weighted mean substitution rate (adjusted by branch lengths) 
+0.0011799159105303 
+
+ Unadjusted mean substitution rate 
+0.0012278755001474 
+
+ Clock model  
+uncorrelated 
+
+ Coefficient of variation of rates 
+0.052479976477862 
+[1] "Estimating confidence intervals for rates and dates by a parametric bootstrap"
+
+ For more detailed output, $trees provides a list of each fit to each simulation 
+
+Time of common ancestor	2.020111e+03	2.020082e+03	2.020111e+03	Mean substitution rate	1.227876e-03	8.921840e-04	1.689874e-03	
+
+

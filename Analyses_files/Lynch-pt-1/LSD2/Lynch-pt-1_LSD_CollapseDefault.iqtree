@@ -1,0 +1,197 @@
+IQ-TREE 2.1.2 COVID-edition built Oct 22 2020
+
+Input file name: Lynch-pt-1_maskedRefRemMafft.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 138357
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+Since you used least square dating (LSD) please also cite: 
+
+Thu-Hien To, Matthieu Jung, Samantha Lycett, Olivier Gascuel (2016)
+Fast dating using least-squares criteria and algorithms. Syst. Biol. 65:82-97.
+https://doi.org/10.1093/sysbio/syv068
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 8 sequences with 29903 nucleotide sites
+Number of constant sites: 29900 (= 99.99% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 29900 (= 99.99% of all sites)
+Number of parsimony informative sites: 2
+Number of distinct site patterns: 39
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: F81+F
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+F81+F            -39909.723   79851.447 +    0.177   79851.465 +    0.178   79984.338 +    0.993
+HKY+F            -39909.582   79853.163 +    0.075   79853.184 +   0.0752   79994.360 -  0.00662
+TPM2+F           -39908.828   79853.656 +   0.0587   79853.679 +   0.0587   80003.159 - 8.13e-05
+TPM2u+F          -39908.834   79853.668 +   0.0583   79853.691 +   0.0583   80003.171 - 8.08e-05
+TPM3+F           -39908.960   79853.920 +   0.0514   79853.943 +   0.0514   80003.423 - 7.13e-05
+TPM3u+F          -39909.021   79854.043 -   0.0483   79854.066 -   0.0484   80003.546 -  6.7e-05
+K3Pu+F           -39909.557   79855.114 -   0.0283   79855.137 -   0.0283   80004.617 - 3.92e-05
+TN+F             -39909.577   79855.154 -   0.0277   79855.177 -   0.0278   80004.657 - 3.84e-05
+TIM2+F           -39906.856   79851.712 +    0.155   79851.738 +    0.155   80009.521 - 3.38e-06
+TIM3+F           -39907.161   79852.321 +    0.114   79852.347 +    0.114   80010.130 - 2.49e-06
+TIM+F            -39907.318   79852.635 +   0.0977   79852.661 +   0.0976   80010.444 - 2.13e-06
+TVM+F            -39907.598   79855.196 -   0.0272   79855.224 -   0.0271   80021.310 -  9.3e-09
+GTR+F            -39906.216   79854.431 -   0.0398   79854.462 -   0.0397   80028.851 - 2.14e-10
+GTR+F+G4         -39906.213   79856.426 -   0.0147   79856.459 -   0.0146   80039.151 - 1.24e-12
+GTR+F+I          -39906.213   79856.426 -   0.0147   79856.460 -   0.0146   80039.151 - 1.24e-12
+GTR+F+R2         -39906.183   79858.366 -  0.00557   79858.403 -  0.00553   80049.397 - 7.41e-15
+GTR+F+I+G4       -39906.213   79858.426 -   0.0054   79858.463 -  0.00537   80049.457 - 7.19e-15
+GTR+F+R3         -39906.182   79862.365 - 0.000754   79862.408 - 0.000746   80070.008 - 2.48e-19
+JC               -40780.656   81587.312 -        0   81587.325 -        0   81695.287 -        0
+K2P              -40780.617   81589.235 -        0   81589.249 -        0   81705.515 -        0
+K3P              -40780.599   81591.198 -        0   81591.214 -        0   81715.784 -        0
+TNe              -40780.614   81591.228 -        0   81591.244 -        0   81715.814 -        0
+TIM2e            -40777.917   81587.833 -        0   81587.852 -        0   81720.725 -        0
+TIM3e            -40778.013   81588.027 -        0   81588.045 -        0   81720.918 -        0
+TIMe             -40778.585   81589.171 -        0   81589.189 -        0   81722.062 -        0
+TVMe             -40778.618   81591.236 -        0   81591.257 -        0   81732.433 -        0
+SYM              -40777.224   81590.447 -        0   81590.470 -        0   81739.950 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 1.0000
+  A-T: 1.0000
+  C-G: 1.0000
+  C-T: 1.0000
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2988
+  pi(C) = 0.1838
+  pi(G) = 0.1963
+  pi(T) = 0.321
+
+Rate matrix Q:
+
+  A   -0.9536    0.2499     0.267    0.4366
+  C    0.4064     -1.11     0.267    0.4366
+  G    0.4064    0.2499    -1.093    0.4366
+  T    0.4064    0.2499     0.267   -0.9234
+
+Model of rate heterogeneity: Uniform
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -39909.7232 (s.e. 54.6068)
+Unconstrained log-likelihood (without tree): -45602.6610
+Number of free parameters (#branches + #model parameters): 16
+Akaike information criterion (AIC) score: 79851.4464
+Corrected Akaike information criterion (AICc) score: 79851.4646
+Bayesian information criterion (BIC) score: 79984.3378
+
+Total tree length (sum of branch lengths): 0.0001
+Sum of internal branch lengths: 0.0001 (62.5643% of tree length)
+
+WARNING: 4 near-zero internal branches (<0.0000) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Lynch-pt-1_0|2020-04-09' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++**Lynch-pt-1_0|2020-04-09
+|
+|  +**Lynch-pt-1_14|2020-04-23
++**| (61)
+|  +**Lynch-pt-1_18|2020-04-27
+|
+|                                        +**Lynch-pt-1_42|2020-05-21
+|                                     +**| (43)
+|                                     |  |  +**Lynch-pt-1_63|2020-06-11
+|                                     |  +**| (58)
+|                                     |     |  +**Lynch-pt-1_71|2020-06-19
+|                                     |     +**| (44)
+|                                     |        +------------------Lynch-pt-1_77|2020-06-25
++-------------------------------------| (100)
+                                      +**Lynch-pt-1_56|2020-06-04
+
+Tree in newick format:
+
+(Lynch-pt-1_0|2020-04-09:0.0000010000,(Lynch-pt-1_14|2020-04-23:0.0000010000,Lynch-pt-1_18|2020-04-27:0.0000010000)61:0.0000010000,((Lynch-pt-1_42|2020-05-21:0.0000010000,(Lynch-pt-1_63|2020-06-11:0.0000010000,(Lynch-pt-1_71|2020-06-19:0.0000010000,Lynch-pt-1_77|2020-06-25:0.0000345279)44:0.0000010000)58:0.0000010000)43:0.0000010000,Lynch-pt-1_56|2020-06-04:0.0000010000)100:0.0000680746);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -39910.048268
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--Lynch-pt-1_0|2020-04-09
+|
+|  +--Lynch-pt-1_14|2020-04-23
++--| (61)
+|  +--Lynch-pt-1_18|2020-04-27
+|
+|                                       +--Lynch-pt-1_42|2020-05-21
+|                                    +--| (43)
+|                                    |  |  +--Lynch-pt-1_63|2020-06-11
+|                                    |  +--| (58)
+|                                    |     |  +--Lynch-pt-1_71|2020-06-19
+|                                    |     +--| (44)
+|                                    |        +------------------Lynch-pt-1_77|2020-06-25
++------------------------------------| (100)
+                                     +--Lynch-pt-1_56|2020-06-04
+
+
+Consensus tree in newick format: 
+
+(Lynch-pt-1_0|2020-04-09:0.0000020138,(Lynch-pt-1_14|2020-04-23:0.0000020138,Lynch-pt-1_18|2020-04-27:0.0000020138)61:0.0000020138,((Lynch-pt-1_42|2020-05-21:0.0000020138,(Lynch-pt-1_63|2020-06-11:0.0000020138,(Lynch-pt-1_71|2020-06-19:0.0000020138,Lynch-pt-1_77|2020-06-25:0.0000345276)44:0.0000020138)58:0.0000020138)43:0.0000020138,Lynch-pt-1_56|2020-06-04:0.0000020138)100:0.0000680742);
+
+TIME STAMP
+----------
+
+Date and time: Wed Oct 18 11:53:26 2023
+Total CPU time used: 4.046214 seconds (0h:0m:4s)
+Total wall-clock time used: 4.033154964 seconds (0h:0m:4s)
+

@@ -1,0 +1,32 @@
+[1] "Lynch-pt-1"
+[1] "TreeDater Relaxed clock"
+
+Phylogenetic tree with 8 tips and 7 internal nodes.
+
+Tip labels:
+  Lynch-pt-1_0|2020-04-09, Lynch-pt-1_14|2020-04-23, Lynch-pt-1_18|2020-04-27, Lynch-pt-1_42|2020-05-21, Lynch-pt-1_63|2020-06-11, Lynch-pt-1_71|2020-06-19, ...
+
+Rooted; includes branch lengths.
+
+ Time of common ancestor 
+2020.26786202186 
+
+ Time to common ancestor (before most recent sample) 
+0.213012295082081 
+
+ Weighted mean substitution rate (adjusted by branch lengths) 
+0.00027091689844956 
+
+ Unadjusted mean substitution rate 
+0.000270916910122511 
+
+ Clock model  
+uncorrelated 
+
+ Coefficient of variation of rates 
+2.48800257193014e-08 
+[1] "Estimating confidence intervals for rates and dates by a parametric bootstrap"
+
+ For more detailed output, $trees provides a list of each fit to each simulation 
+
+Time of common ancestor	2.020268e+03	2.014437e+03	2.020268e+03	Mean substitution rate	2.709169e-04	1.810128e-05	4.054740e-03	

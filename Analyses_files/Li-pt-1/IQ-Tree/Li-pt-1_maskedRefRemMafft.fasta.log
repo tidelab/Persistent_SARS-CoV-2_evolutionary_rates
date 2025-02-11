@@ -1,0 +1,160 @@
+IQ-TREE multicore version 2.1.2 COVID-edition for Mac OS X 64-bit built Oct 22 2020
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    dlmp133362.w-staff.shh.mpg.de (AVX512, FMA3, 16 GB RAM)
+Command: /Users/oeversti/iqtree-2.1.2-MacOSX/bin/iqtree2 -s Li-pt-1_maskedRefRemMafft.fasta -m MFP
+Seed:    718690 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed May  3 15:10:06 2023
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file Li-pt-1_maskedRefRemMafft.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 265 sites contain only gaps or ambiguous characters.
+Alignment has 11 sequences with 29903 columns, 48 distinct patterns
+19 parsimony-informative, 28 singleton sites, 29856 constant sites
+                        Gap/Ambiguity  Composition  p-value
+   1  Li-pt-1_0|2020-02-12      0.89%    passed    100.00%
+   2  Li-pt-1_101|2020-05-24    0.89%    passed    100.00%
+   3  Li-pt-1_102|2020-05-25    0.89%    passed    100.00%
+   4  Li-pt-1_103|2020-05-26    0.89%    passed    100.00%
+   5  Li-pt-1_106|2020-05-29    0.89%    passed    100.00%
+   6  Li-pt-1_108|2020-05-31    0.89%    passed    100.00%
+   7  Li-pt-1_120|2020-06-12    0.89%    passed    100.00%
+   8  Li-pt-1_125|2020-06-17    0.89%    passed    100.00%
+   9  Li-pt-1_140|2020-07-02    0.89%    passed    100.00%
+  10  Li-pt-1_95|2020-05-17     0.89%    passed    100.00%
+  11  Li-pt-1_97|2020-05-20     0.89%    passed    100.00%
+****  TOTAL                     0.89%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: Li-pt-1_106|2020-05-29 is identical to Li-pt-1_103|2020-05-26 but kept for subsequent analysis
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.001 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -40789.605
+Optimal log-likelihood: -40789.396
+Rate parameters:  A-C: 0.60591  A-G: 1.37024  A-T: 0.58824  C-G: 0.49006  C-T: 1.80208  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Proportion of invariable sites: 0.500
+Gamma shape alpha: 0.020
+Parameters optimization took 1 rounds (0.001 sec)
+Time for fast ML tree search: 0.008 seconds
+
+NOTE: ModelFinder requires 0 MB RAM!
+ModelFinder will test up to 286 DNA models (sample size: 29903) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         40807.575    27  81669.149    81669.200    81893.403
+  2  GTR+F+I       40766.653    28  81589.305    81589.360    81821.865
+  3  GTR+F+G4      40794.932    28  81645.865    81645.919    81878.424
+  4  GTR+F+I+G4    40788.812    29  81635.624    81635.682    81876.490
+  5  GTR+F+R2      40803.295    29  81664.591    81664.649    81905.456
+  6  GTR+F+R3      40799.585    31  81661.169    81661.236    81918.646
+ 15  SYM+I         41648.404    25  83346.808    83346.852    83554.451
+ 28  TVM+F+I       40767.012    27  81588.024    81588.075    81812.278
+ 41  TVMe+I        41648.765    24  83345.530    83345.571    83544.868
+ 54  TIM3+F+I      40766.556    26  81585.112    81585.159    81801.061
+ 67  TIM3e+I       41648.414    23  83342.829    83342.866    83533.860
+ 80  TIM2+F+I      40766.507    26  81585.014    81585.061    81800.963
+ 93  TIM2e+I       41649.070    23  83344.140    83344.177    83535.172
+106  TIM+F+I       40766.492    26  81584.985    81585.032    81800.933
+119  TIMe+I        41648.962    23  83343.923    83343.960    83534.955
+132  TPM3u+F+I     40766.979    25  81583.959    81584.002    81791.601
+145  TPM3+F+I      40766.962    25  81583.925    81583.968    81791.567
+158  TPM2u+F+I     40766.958    25  81583.916    81583.960    81791.559
+171  TPM2+F+I      40766.953    25  81583.905    81583.949    81791.548
+184  K3Pu+F+I      40766.930    25  81583.860    81583.903    81791.503
+197  K3P+I         41649.374    22  83342.749    83342.783    83525.475
+210  TN+F+I        40766.546    25  81583.091    81583.135    81790.734
+223  TNe+I         41648.947    22  83341.894    83341.928    83524.620
+236  HKY+F+I       40766.984    24  81581.967    81582.007    81781.304
+249  K2P+I         41649.367    21  83340.733    83340.764    83515.153
+262  F81+F+I       40775.610    23  81597.221    81597.258    81788.252
+275  JC+I          41657.232    20  83354.465    83354.493    83520.579
+Akaike Information Criterion:           HKY+F+I
+Corrected Akaike Information Criterion: HKY+F+I
+Bayesian Information Criterion:         HKY+F+I
+Best-fit model: HKY+F+I chosen according to BIC
+
+All model information printed to Li-pt-1_maskedRefRemMafft.fasta.model.gz
+CPU time for ModelFinder: 0.047 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.063 seconds (0h:0m:0s)
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -40766.984
+Optimal log-likelihood: -40766.983
+Rate parameters:  A-C: 1.00000  A-G: 3.14731  A-T: 1.00000  C-G: 1.00000  C-T: 3.14731  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Proportion of invariable sites: 0.995
+Parameters optimization took 1 rounds (0.000 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.001492 sec (of wall-clock time) 0.001318 sec(of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing RapidNJ tree took 0.000045 sec (of wall-clock time) 0.000038 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -41193.602
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.030 second
+Computing log-likelihood of 96 initial trees ... 0.016 seconds
+Current best score: -40766.983
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -40766.983
+Iteration 10 / LogL: -40766.983 / Time: 0h:0m:0s
+Iteration 20 / LogL: -40766.984 / Time: 0h:0m:0s
+Finish initializing candidate tree set (1)
+Current best tree score: -40766.983 / CPU time: 0.068
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+UPDATE BEST LOG-LIKELIHOOD: -40766.983
+Iteration 30 / LogL: -40766.985 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -40766.983
+Iteration 40 / LogL: -40767.004 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -40766.983
+Iteration 50 / LogL: -40766.985 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 60 / LogL: -40766.988 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 70 / LogL: -40766.983 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -40766.983
+Iteration 80 / LogL: -40767.006 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 90 / LogL: -40766.983 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -40766.983
+Iteration 100 / LogL: -40766.984 / Time: 0h:0m:0s (0h:0m:0s left)
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -40766.983
+Optimal log-likelihood: -40766.983
+Rate parameters:  A-C: 1.00000  A-G: 3.13907  A-T: 1.00000  C-G: 1.00000  C-T: 3.13907  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Proportion of invariable sites: 0.995
+Parameters optimization took 1 rounds (0.000 sec)
+BEST SCORE FOUND : -40766.983
+Total tree length: 0.002
+
+Total number of iterations: 102
+CPU time used for tree search: 0.325 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.176 sec (0h:0m:0s)
+Total CPU time used: 0.334 sec (0h:0m:0s)
+Total wall-clock time used: 0.186 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                Li-pt-1_maskedRefRemMafft.fasta.iqtree
+  Maximum-likelihood tree:       Li-pt-1_maskedRefRemMafft.fasta.treefile
+  Likelihood distances:          Li-pt-1_maskedRefRemMafft.fasta.mldist
+  Screen log file:               Li-pt-1_maskedRefRemMafft.fasta.log
+
+Date and Time: Wed May  3 15:10:07 2023

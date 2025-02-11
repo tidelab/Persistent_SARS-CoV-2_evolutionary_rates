@@ -1,0 +1,157 @@
+IQ-TREE 2.1.2 COVID-edition built Oct 22 2020
+
+Input file name: Lee-pt-11_maskedRefRemMafft.fasta
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 877429
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 11 sequences with 29903 nucleotide sites
+Number of constant sites: 29901 (= 99.9933% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 29901 (= 99.9933% of all sites)
+Number of parsimony informative sites: 0
+Number of distinct site patterns: 113
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: F81+F
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+F81+F            -40228.633   80501.266 +   0.0897   80501.300 +     0.09   80683.992 +    0.956
+HKY+F            -40226.587   80499.173 +    0.256   80499.210 +    0.256   80690.205 -   0.0428
+K3Pu+F           -40226.586   80501.172 +   0.0941   80501.212 +    0.094   80700.509 - 0.000248
+TN+F             -40226.587   80501.173 +    0.094   80501.214 +    0.094   80700.511 - 0.000247
+TPM2+F           -40226.592   80501.183 +   0.0935   80501.224 +   0.0935   80700.520 - 0.000246
+TPM2u+F          -40226.619   80501.239 +    0.091   80501.279 +   0.0909   80700.576 - 0.000239
+TPM3+F           -40226.656   80501.311 +   0.0877   80501.351 +   0.0877   80700.648 - 0.000231
+TPM3u+F          -40226.668   80501.337 +   0.0866   80501.377 +   0.0866   80700.674 - 0.000228
+TIM+F            -40226.679   80503.359 -   0.0315   80503.402 -   0.0315   80711.002 -  1.3e-06
+TIM2+F           -40226.701   80503.402 -   0.0308   80503.446 -   0.0308   80711.045 - 1.28e-06
+TIM3+F           -40226.842   80503.684 -   0.0268   80503.728 -   0.0267   80711.327 - 1.11e-06
+TVM+F            -40226.754   80505.509 -   0.0108   80505.556 -   0.0107   80721.457 -    7e-09
+GTR+F            -40226.823   80507.646 -   0.0037   80507.696 -  0.00368   80731.900 - 3.78e-11
+GTR+F+I          -40226.769   80509.537 -  0.00144   80509.592 -  0.00142   80742.097 - 2.31e-13
+GTR+F+G4         -40226.769   80509.537 -  0.00144   80509.592 -  0.00142   80742.097 - 2.31e-13
+GTR+F+R2         -40226.596   80511.191 - 0.000628   80511.249 - 0.000622   80752.057 - 1.59e-15
+GTR+F+I+G4       -40226.769   80511.537 - 0.000528   80511.596 - 0.000523   80752.403 - 1.33e-15
+GTR+F+R3         -40226.591   80515.182 - 8.54e-05   80515.248 - 8.42e-05   80772.659 - 5.33e-20
+JC               -41112.148   82262.296 -        0   82262.321 -        0   82420.104 -        0
+K2P              -41110.169   82260.337 -        0   82260.365 -        0   82426.451 -        0
+K3P              -41110.157   82262.313 -        0   82262.344 -        0   82436.733 -        0
+TNe              -41110.169   82262.337 -        0   82262.368 -        0   82436.757 -        0
+TIMe             -41110.233   82264.467 -        0   82264.501 -        0   82447.193 -        0
+TIM2e            -41110.242   82264.483 -        0   82264.517 -        0   82447.209 -        0
+TIM3e            -41110.376   82264.753 -        0   82264.787 -        0   82447.479 -        0
+TVMe             -41110.319   82266.639 -        0   82266.676 -        0   82457.670 -        0
+SYM              -41110.354   82268.708 -        0   82268.748 -        0   82468.045 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 1.0000
+  A-T: 1.0000
+  C-G: 1.0000
+  C-T: 1.0000
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.299
+  pi(C) = 0.184
+  pi(G) = 0.1963
+  pi(T) = 0.3207
+
+Rate matrix Q:
+
+  A   -0.9533    0.2502    0.2669    0.4362
+  C    0.4066     -1.11    0.2669    0.4362
+  G    0.4066    0.2502    -1.093    0.4362
+  T    0.4066    0.2502    0.2669   -0.9237
+
+Model of rate heterogeneity: Uniform
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -40228.6314 (s.e. 49.4456)
+Unconstrained log-likelihood (without tree): -55778.3090
+Number of free parameters (#branches + #model parameters): 22
+Akaike information criterion (AIC) score: 80501.2627
+Corrected Akaike information criterion (AICc) score: 80501.2966
+Bayesian information criterion (BIC) score: 80683.9884
+
+Total tree length (sum of branch lengths): 0.0001
+Sum of internal branch lengths: 0.0000 (7.8827% of tree length)
+
+WARNING: 8 near-zero internal branches (<0.0000) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Lee-pt-11|2020-04-22' is drawn at root
+
++**Lee-pt-11|2020-04-22
+|
++**Lee-pt-11|2020-05-01
+|
+|        +**Lee-pt-11|2020-05-27
+|     +**|
+|     |  |  +**Lee-pt-11|2020-06-14
+|     |  +**|
+|     |     |        +-------------------------------------------------Lee-pt-11|2020-05-07
+|     |     |     +**|
+|     |     |     |  +-----------------------------------------------Lee-pt-11|2020-06-25
+|     |     |  +**|
+|     |     |  |  +**Lee-pt-11|2020-05-13
+|     |     +**|
+|     |        +**Lee-pt-11|2020-05-26
+|  +**|
+|  |  |  +**Lee-pt-11|2020-06-16
+|  |  +**|
+|  |     +**Lee-pt-11|2020-06-18
++**|
+   +**Lee-pt-11|2020-06-12
+
+Tree in newick format:
+
+(Lee-pt-11|2020-04-22:0.0000010000,Lee-pt-11|2020-05-01:0.0000010000,(((Lee-pt-11|2020-05-27:0.0000010000,(Lee-pt-11|2020-06-14:0.0000010000,(((Lee-pt-11|2020-05-07:0.0000366224,Lee-pt-11|2020-06-25:0.0000351802):0.0000010000,Lee-pt-11|2020-05-13:0.0000010000):0.0000010000,Lee-pt-11|2020-05-26:0.0000010000):0.0000010000):0.0000010000):0.0000010000,(Lee-pt-11|2020-06-16:0.0000010000,Lee-pt-11|2020-06-18:0.0000010000):0.0000010000):0.0000010000,Lee-pt-11|2020-06-12:0.0000010000):0.0000010000);
+
+TIME STAMP
+----------
+
+Date and time: Fri Mar 31 14:24:56 2023
+Total CPU time used: 0.213492 seconds (0h:0m:0s)
+Total wall-clock time used: 0.120368 seconds (0h:0m:0s)
+
