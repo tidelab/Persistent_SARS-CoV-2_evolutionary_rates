@@ -1,0 +1,177 @@
+IQ-TREE multicore version 2.1.2 COVID-edition for Mac OS X 64-bit built Oct 22 2020
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    dlmp133362.w-staff.shh.mpg.de (AVX512, FMA3, 16 GB RAM)
+Command: /Users/oeversti/iqtree-2.1.2-MacOSX/bin/iqtree2 -s Sonnleitner-pt-1_maskedRefRemMafft.fasta -m MFP
+Seed:    763535 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Apr 14 14:43:58 2023
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file Sonnleitner-pt-1_maskedRefRemMafft.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 289 sites contain only gaps or ambiguous characters.
+Alignment has 10 sequences with 29903 columns, 44 distinct patterns
+4 parsimony-informative, 27 singleton sites, 29872 constant sites
+                             Gap/Ambiguity  Composition  p-value
+   1  Sonnleitner-pt-1|2021-03-12    0.98%    passed    100.00%
+   2  Sonnleitner-pt-1|2021-03-18    0.98%    passed    100.00%
+   3  Sonnleitner-pt-1|2021-03-24    1.00%    passed    100.00%
+   4  Sonnleitner-pt-1|2021-03-31    0.97%    passed    100.00%
+   5  Sonnleitner-pt-1|2021-04-07    1.00%    passed    100.00%
+   6  Sonnleitner-pt-1|2021-04-22    1.03%    passed    100.00%
+   7  Sonnleitner-pt-1|2021-04-28    1.04%    passed    100.00%
+   8  Sonnleitner-pt-1|2021-05-05    1.00%    passed     99.99%
+   9  Sonnleitner-pt-1|2021-01-27    1.08%    passed     99.99%
+  10  Sonnleitner-pt-1|2021-02-16    1.00%    passed    100.00%
+****  TOTAL                          1.01%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.001 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -40511.015
+Optimal log-likelihood: -40510.739
+Rate parameters:  A-C: 0.99392  A-G: 1.23532  A-T: 0.42701  C-G: 0.74316  C-T: 1.72667  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Proportion of invariable sites: 0.500
+Gamma shape alpha: 0.020
+Parameters optimization took 1 rounds (0.001 sec)
+Time for fast ML tree search: 0.008 seconds
+
+NOTE: ModelFinder requires 0 MB RAM!
+ModelFinder will test up to 286 DNA models (sample size: 29903) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         40514.618    25  81079.235    81079.279    81286.878
+  2  GTR+F+I       40505.038    26  81062.076    81062.123    81278.025
+  3  GTR+F+G4      40511.712    26  81075.425    81075.472    81291.373
+  4  GTR+F+I+G4    40510.348    27  81074.695    81074.746    81298.949
+  5  GTR+F+R2      40513.677    27  81081.353    81081.404    81305.608
+  6  GTR+F+R3      40512.892    29  81083.784    81083.842    81324.650
+ 14  SYM           41400.013    22  82844.025    82844.059    83026.751
+ 15  SYM+I         41390.583    23  82827.165    82827.202    83018.196
+ 27  TVM+F         40514.871    24  81077.742    81077.782    81277.079
+ 28  TVM+F+I       40505.387    25  81060.773    81060.817    81268.416
+ 40  TVMe          41400.375    21  82842.749    82842.780    83017.169
+ 41  TVMe+I        41390.979    22  82825.958    82825.992    83008.683
+ 53  TIM3+F        40514.723    23  81075.446    81075.483    81266.477
+ 54  TIM3+F+I      40505.267    24  81058.535    81058.575    81257.872
+ 66  TIM3e         41400.374    20  82840.748    82840.776    83006.862
+ 67  TIM3e+I       41390.969    21  82823.937    82823.968    82998.357
+ 79  TIM2+F        40515.053    23  81076.106    81076.143    81267.137
+ 80  TIM2+F+I      40505.628    24  81059.256    81059.296    81258.593
+ 92  TIM2e         41400.298    20  82840.595    82840.623    83006.709
+ 93  TIM2e+I       41390.911    21  82823.823    82823.854    82998.243
+105  TIM+F         40514.694    23  81075.389    81075.426    81266.420
+106  TIM+F+I       40505.128    24  81058.257    81058.297    81257.594
+118  TIMe          41400.121    20  82840.242    82840.270    83006.357
+119  TIMe+I        41390.707    21  82823.413    82823.444    82997.833
+131  TPM3u+F       40515.152    22  81074.304    81074.338    81257.029
+132  TPM3u+F+I     40505.763    23  81057.526    81057.563    81248.557
+144  TPM3+F        40515.149    22  81074.299    81074.333    81257.025
+145  TPM3+F+I      40505.763    23  81057.526    81057.563    81248.557
+157  TPM2u+F       40515.480    22  81074.961    81074.994    81257.686
+158  TPM2u+F+I     40506.119    23  81058.238    81058.275    81249.269
+170  TPM2+F        40515.480    22  81074.961    81074.994    81257.686
+171  TPM2+F+I      40506.119    23  81058.238    81058.275    81249.269
+183  K3Pu+F        40515.132    22  81074.264    81074.298    81256.990
+184  K3Pu+F+I      40505.686    23  81057.371    81057.408    81248.403
+196  K3P           41400.517    19  82839.035    82839.060    82996.844
+197  K3P+I         41391.181    20  82822.363    82822.391    82988.477
+209  TN+F          40515.063    22  81074.126    81074.160    81256.852
+210  TN+F+I        40505.624    23  81057.249    81057.286    81248.280
+222  TNe           41400.362    19  82838.724    82838.750    82996.533
+223  TNe+I         41390.954    20  82821.907    82821.935    82988.021
+235  HKY+F         40515.481    21  81072.962    81072.993    81247.382
+236  HKY+F+I       40506.122    22  81056.244    81056.278    81238.970
+248  K2P           41400.764    18  82837.527    82837.550    82987.030
+249  K2P+I         41391.413    19  82820.825    82820.851    82978.634
+261  F81+F         40519.040    20  81078.079    81078.107    81244.193
+262  F81+F+I       40509.709    21  81061.417    81061.448    81235.837
+274  JC            41403.883    17  82841.766    82841.787    82982.963
+275  JC+I          41394.556    18  82825.113    82825.135    82974.615
+Akaike Information Criterion:           HKY+F+I
+Corrected Akaike Information Criterion: HKY+F+I
+Bayesian Information Criterion:         F81+F+I
+Best-fit model: F81+F+I chosen according to BIC
+
+All model information printed to Sonnleitner-pt-1_maskedRefRemMafft.fasta.model.gz
+CPU time for ModelFinder: 0.055 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.071 seconds (0h:0m:0s)
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -40509.709
+Optimal log-likelihood: -40509.709
+Rate parameters:  A-C: 1.00000  A-G: 1.00000  A-T: 1.00000  C-G: 1.00000  C-T: 1.00000  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Proportion of invariable sites: 0.996
+Parameters optimization took 1 rounds (0.000 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.002650 sec (of wall-clock time) 0.002088 sec(of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing RapidNJ tree took 0.000054 sec (of wall-clock time) 0.000050 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -40714.847
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.023 second
+Computing log-likelihood of 90 initial trees ... 0.012 seconds
+Current best score: -40509.709
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -40509.709
+Iteration 10 / LogL: -40509.711 / Time: 0h:0m:0s
+Iteration 20 / LogL: -40509.720 / Time: 0h:0m:0s
+Finish initializing candidate tree set (2)
+Current best tree score: -40509.709 / CPU time: 0.051
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+UPDATE BEST LOG-LIKELIHOOD: -40509.709
+UPDATE BEST LOG-LIKELIHOOD: -40509.709
+Iteration 30 / LogL: -40509.722 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -40509.709
+Iteration 40 / LogL: -40509.759 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 50 / LogL: -40509.748 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 60 / LogL: -40509.771 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 70 / LogL: -40509.767 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 80 / LogL: -40509.709 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 90 / LogL: -40509.709 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 100 / LogL: -40509.720 / Time: 0h:0m:0s (0h:0m:0s left)
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -40509.709
+Optimal log-likelihood: -40509.709
+Rate parameters:  A-C: 1.00000  A-G: 1.00000  A-T: 1.00000  C-G: 1.00000  C-T: 1.00000  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Proportion of invariable sites: 0.996
+Parameters optimization took 1 rounds (0.000 sec)
+BEST SCORE FOUND : -40509.709
+Total tree length: 0.001
+
+Total number of iterations: 102
+CPU time used for tree search: 0.237 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.126 sec (0h:0m:0s)
+Total CPU time used: 0.247 sec (0h:0m:0s)
+Total wall-clock time used: 0.138 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                Sonnleitner-pt-1_maskedRefRemMafft.fasta.iqtree
+  Maximum-likelihood tree:       Sonnleitner-pt-1_maskedRefRemMafft.fasta.treefile
+  Likelihood distances:          Sonnleitner-pt-1_maskedRefRemMafft.fasta.mldist
+  Screen log file:               Sonnleitner-pt-1_maskedRefRemMafft.fasta.log
+
+Date and Time: Fri Apr 14 14:43:59 2023

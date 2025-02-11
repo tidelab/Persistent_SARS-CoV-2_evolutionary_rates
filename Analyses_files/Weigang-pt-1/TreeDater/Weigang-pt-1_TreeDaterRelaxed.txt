@@ -1,0 +1,32 @@
+[1] "Weigang-pt-1"
+[1] "TreeDater Relaxed clock"
+
+Phylogenetic tree with 9 tips and 8 internal nodes.
+
+Tip labels:
+  Weigang-pt-1|2020-05-04, Weigang-pt-1|2020-04-06, Weigang-pt-1|2020-06-02, Weigang-pt-1|2020-07-07, Weigang-pt-1|2020-05-18, Weigang-pt-1|2020-08-10, ...
+
+Rooted; includes branch lengths.
+
+ Time of common ancestor 
+2020.01599844729 
+
+ Time to common ancestor (before most recent sample) 
+0.590558929755616 
+
+ Weighted mean substitution rate (adjusted by branch lengths) 
+0.000191440207094218 
+
+ Unadjusted mean substitution rate 
+0.000191440207796846 
+
+ Clock model  
+uncorrelated 
+
+ Coefficient of variation of rates 
+1.37386999337594e-09 
+[1] "Estimating confidence intervals for rates and dates by a parametric bootstrap"
+
+ For more detailed output, $trees provides a list of each fit to each simulation 
+
+Time of common ancestor	2.020016e+03	2.003946e+03	2.020207e+03	Mean substitution rate	1.914402e-04	2.102839e-05	1.742851e-03	

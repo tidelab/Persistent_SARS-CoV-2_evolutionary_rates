@@ -1,0 +1,33 @@
+[1] "Sonnleitner-pt-1"
+[1] "TreeDater Strict clock"
+
+Phylogenetic tree with 10 tips and 9 internal nodes.
+
+Tip labels:
+  Sonnleitner-pt-1|2021-03-12, Sonnleitner-pt-1|2021-03-18, Sonnleitner-pt-1|2021-03-24, Sonnleitner-pt-1|2021-01-27, Sonnleitner-pt-1|2021-02-16, Sonnleitner-pt-1|2021-03-31, ...
+
+Rooted; includes branch lengths.
+
+ Time of common ancestor 
+2021.04079187083 
+
+ Time to common ancestor (before most recent sample) 
+0.298934156562609 
+
+ Weighted mean substitution rate (adjusted by branch lengths) 
+0.0017403077546044 
+
+ Unadjusted mean substitution rate 
+0.0017403077546044 
+
+ Clock model  
+strict 
+
+ Coefficient of variation of rates 
+0 
+[1] "Estimating confidence intervals for rates and dates by a parametric bootstrap"
+
+ For more detailed output, $trees provides a list of each fit to each simulation 
+
+
+Time of common ancestor	2.021041e+03	2.020960e+03	2.021069e+03	Mean substitution rate	1.740308e-03	1.067904e-03	2.836090e-03	
