@@ -1,0 +1,206 @@
+IQ-TREE multicore version 2.1.2 COVID-edition for Mac OS X 64-bit built Oct 22 2020
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    dlmp133362.w-staff.shh.mpg.de (AVX512, FMA3, 16 GB RAM)
+Command: /Users/oeversti/iqtree-2.1.2-MacOSX/bin/iqtree2 -s Cuiffreda-pt-1_maskedRefRemMafft.fasta -m MFP
+Seed:    674231 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Mar 28 14:01:41 2023
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file Cuiffreda-pt-1_maskedRefRemMafft.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 265 sites contain only gaps or ambiguous characters.
+Alignment has 16 sequences with 29903 columns, 647 distinct patterns
+16 parsimony-informative, 21 singleton sites, 29866 constant sites
+                            Gap/Ambiguity  Composition  p-value
+   1  Cuiffreda-pt-1|2020-04-23     5.20%    passed     99.79%
+   2  Cuiffreda-pt-1|2020-04-26     4.37%    passed    100.00%
+   3  Cuiffreda-pt-1|2020-07-31     2.64%    passed     99.57%
+   4  Cuiffreda-pt-1|2020-08-10     6.61%    passed     98.53%
+   5  Cuiffreda-pt-1b|2020-07-10    4.16%    passed     99.97%
+   6  Cuiffreda-pt-1|2020-06-03     5.11%    passed     99.03%
+   7  Cuiffreda-pt-1|2020-06-21     4.03%    passed     99.94%
+   8  Cuiffreda-pt-1|2020-08-28     1.12%    passed     98.96%
+   9  Cuiffreda-pt-1|2020-04-28     4.13%    passed     99.49%
+  10  Cuiffreda-pt-1|2020-06-24     5.64%    passed     99.76%
+  11  Cuiffreda-pt-1|2020-08-26     4.84%    passed     99.97%
+  12  Cuiffreda-pt-1|2020-06-02     1.98%    passed     99.66%
+  13  Cuiffreda-pt-1|2020-05-04     5.92%    passed     99.74%
+  14  Cuiffreda-pt-1a|2020-07-10    0.91%    passed     99.33%
+  15  Cuiffreda-pt-1|2020-04-21     5.37%    passed     99.19%
+  16  Cuiffreda-pt-1|2020-05-02     3.41%    passed     85.66%
+****  TOTAL                         4.09%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.001 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -40609.862
+Optimal log-likelihood: -40609.814
+Rate parameters:  A-C: 1.27363  A-G: 0.78899  A-T: 0.26225  C-G: 0.33248  C-T: 4.12945  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.183  G: 0.196  T: 0.321
+Proportion of invariable sites: 0.499
+Gamma shape alpha: 0.020
+Parameters optimization took 1 rounds (0.011 sec)
+Time for fast ML tree search: 0.071 seconds
+
+NOTE: ModelFinder requires 3 MB RAM!
+ModelFinder will test up to 286 DNA models (sample size: 29903) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         40613.769    37  81301.538    81301.633    81608.850
+  2  GTR+F+I       40607.287    38  81290.573    81290.673    81606.190
+  3  GTR+F+G4      40611.078    38  81298.156    81298.256    81613.773
+  4  GTR+F+I+G4    40609.806    39  81297.612    81297.717    81621.535
+  5  GTR+F+R2      40612.888    39  81303.776    81303.881    81627.699
+  6  GTR+F+R3      40612.137    41  81306.275    81306.390    81646.809
+ 14  SYM           41498.516    34  83065.032    83065.112    83347.426
+ 15  SYM+I         41491.548    35  83053.097    83053.181    83343.797
+ 16  SYM+G4        41495.803    35  83061.606    83061.691    83352.306
+ 27  TVM+F         40620.083    36  81312.165    81312.255    81611.171
+ 28  TVM+F+I       40613.181    37  81300.362    81300.456    81607.673
+ 29  TVM+F+G4      40617.376    37  81308.752    81308.846    81616.063
+ 40  TVMe          41504.697    33  83075.394    83075.469    83349.483
+ 41  TVMe+I        41497.318    34  83062.636    83062.715    83345.030
+ 42  TVMe+G4       41501.971    34  83071.943    83072.022    83354.337
+ 53  TIM3+F        40616.387    35  81302.775    81302.859    81593.475
+ 54  TIM3+F+I      40609.896    36  81291.792    81291.881    81590.798
+ 55  TIM3+F+G4     40613.660    36  81299.320    81299.409    81598.326
+ 66  TIM3e         41500.900    32  83065.801    83065.872    83331.584
+ 67  TIM3e+I       41494.014    33  83054.028    83054.103    83328.116
+ 68  TIM3e+G4      41498.195    33  83062.390    83062.465    83336.478
+ 79  TIM2+F        40616.809    35  81303.618    81303.702    81594.318
+ 80  TIM2+F+I      40610.263    36  81292.526    81292.615    81591.532
+ 81  TIM2+F+G4     40614.117    36  81300.234    81300.323    81599.240
+ 92  TIM2e         41501.056    32  83066.112    83066.183    83331.895
+ 93  TIM2e+I       41494.105    33  83054.209    83054.285    83328.298
+ 94  TIM2e+G4      41498.346    33  83062.692    83062.767    83336.781
+105  TIM+F         40614.300    35  81298.601    81298.685    81589.301
+106  TIM+F+I       40607.691    36  81287.382    81287.471    81586.388
+107  TIM+F+G4      40611.424    36  81294.848    81294.937    81593.854
+118  TIMe          41498.822    32  83061.644    83061.715    83327.427
+119  TIMe+I        41491.849    33  83049.698    83049.773    83323.787
+120  TIMe+G4       41496.107    33  83058.214    83058.290    83332.303
+131  TPM3u+F       40622.612    34  81313.224    81313.304    81595.618
+132  TPM3u+F+I     40615.736    35  81301.472    81301.556    81592.172
+133  TPM3u+F+G4    40619.908    35  81309.817    81309.901    81600.517
+144  TPM3+F        40622.612    34  81313.224    81313.304    81595.618
+145  TPM3+F+I      40615.736    35  81301.472    81301.556    81592.172
+146  TPM3+F+G4     40619.908    35  81309.817    81309.901    81600.517
+157  TPM2u+F       40623.223    34  81314.447    81314.526    81596.841
+158  TPM2u+F+I     40616.209    35  81302.418    81302.502    81593.118
+159  TPM2u+F+G4    40620.499    35  81310.998    81311.083    81601.698
+170  TPM2+F        40623.223    34  81314.447    81314.526    81596.841
+171  TPM2+F+I      40616.209    35  81302.418    81302.502    81593.118
+172  TPM2+F+G4     40620.499    35  81310.998    81311.083    81601.698
+183  K3Pu+F        40620.467    34  81308.934    81309.014    81591.328
+184  K3Pu+F+I      40613.506    35  81297.012    81297.096    81587.712
+185  K3Pu+F+G4     40617.670    35  81305.339    81305.424    81596.039
+196  K3P           41504.940    31  83071.880    83071.946    83329.357
+197  K3P+I         41497.584    32  83059.169    83059.239    83324.951
+198  K3P+G4        41502.192    32  83068.384    83068.454    83334.167
+209  TN+F          40616.911    34  81301.822    81301.902    81584.217
+210  TN+F+I        40610.339    35  81290.678    81290.762    81581.378
+211  TN+F+G4       40614.165    35  81298.330    81298.414    81589.030
+222  TNe           41501.153    31  83064.306    83064.373    83321.784
+223  TNe+I         41494.175    32  83052.350    83052.420    83318.132
+224  TNe+G4        41498.401    32  83060.803    83060.874    83326.586
+235  HKY+F         40623.160    33  81312.320    81312.395    81586.409
+236  HKY+F+I       40616.149    34  81300.297    81300.377    81582.692
+237  HKY+F+G4      40620.440    34  81308.880    81308.960    81591.275
+248  K2P           41507.221    30  83074.442    83074.505    83323.614
+249  K2P+I         41499.862    31  83061.724    83061.791    83319.201
+250  K2P+G4        41504.502    31  83071.003    83071.070    83328.480
+261  F81+F         40631.576    32  81327.152    81327.222    81592.934
+262  F81+F+I       40624.464    33  81314.929    81315.004    81589.017
+263  F81+F+G4      40628.864    33  81323.728    81323.803    81597.817
+274  JC            41514.898    29  83087.796    83087.854    83328.662
+275  JC+I          41507.605    30  83075.209    83075.272    83324.381
+276  JC+G4         41512.181    30  83084.361    83084.423    83333.533
+Akaike Information Criterion:           TIM+F+I
+Corrected Akaike Information Criterion: TIM+F+I
+Bayesian Information Criterion:         TN+F+I
+Best-fit model: TN+F+I chosen according to BIC
+
+All model information printed to Cuiffreda-pt-1_maskedRefRemMafft.fasta.model.gz
+CPU time for ModelFinder: 0.752 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.789 seconds (0h:0m:0s)
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -40610.339
+Optimal log-likelihood: -40610.322
+Rate parameters:  A-C: 1.00000  A-G: 1.14301  A-T: 1.00000  C-G: 1.00000  C-T: 6.95737  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.183  G: 0.196  T: 0.321
+Proportion of invariable sites: 0.985
+Parameters optimization took 1 rounds (0.002 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.001501 sec (of wall-clock time) 0.001255 sec(of CPU time)
+Computing RapidNJ tree took 0.000067 sec (of wall-clock time) 0.000057 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -40625.678
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.039 second
+Computing log-likelihood of 98 initial trees ... 0.073 seconds
+Current best score: -40610.266
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -40610.208
+UPDATE BEST LOG-LIKELIHOOD: -40610.208
+Iteration 10 / LogL: -40610.295 / Time: 0h:0m:0s
+Iteration 20 / LogL: -40610.237 / Time: 0h:0m:0s
+Finish initializing candidate tree set (8)
+Current best tree score: -40610.208 / CPU time: 0.211
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+UPDATE BEST LOG-LIKELIHOOD: -40610.208
+UPDATE BEST LOG-LIKELIHOOD: -40610.208
+Iteration 30 / LogL: -40624.221 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 40 / LogL: -40610.238 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -40610.208
+Iteration 50 / LogL: -40610.237 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -40610.208
+UPDATE BEST LOG-LIKELIHOOD: -40610.208
+Iteration 60 / LogL: -40610.208 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 70 / LogL: -40610.267 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 80 / LogL: -40610.237 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 90 / LogL: -40610.356 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 100 / LogL: -40610.237 / Time: 0h:0m:0s (0h:0m:0s left)
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -40610.208
+Optimal log-likelihood: -40610.200
+Rate parameters:  A-C: 1.00000  A-G: 1.24766  A-T: 1.00000  C-G: 1.00000  C-T: 6.80899  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.183  G: 0.196  T: 0.321
+Proportion of invariable sites: 0.985
+Parameters optimization took 1 rounds (0.002 sec)
+BEST SCORE FOUND : -40610.200
+Total tree length: 0.001
+
+Total number of iterations: 102
+CPU time used for tree search: 0.870 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.779 sec (0h:0m:0s)
+Total CPU time used: 0.888 sec (0h:0m:0s)
+Total wall-clock time used: 0.796 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                Cuiffreda-pt-1_maskedRefRemMafft.fasta.iqtree
+  Maximum-likelihood tree:       Cuiffreda-pt-1_maskedRefRemMafft.fasta.treefile
+  Likelihood distances:          Cuiffreda-pt-1_maskedRefRemMafft.fasta.mldist
+  Screen log file:               Cuiffreda-pt-1_maskedRefRemMafft.fasta.log
+
+Date and Time: Tue Mar 28 14:01:43 2023

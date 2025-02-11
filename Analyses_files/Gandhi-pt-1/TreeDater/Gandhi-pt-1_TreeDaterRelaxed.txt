@@ -1,0 +1,33 @@
+[1] "Gandhi-pt-1"
+[1] "TreeDater Relaxed clock"
+
+Phylogenetic tree with 15 tips and 14 internal nodes.
+
+Tip labels:
+  Gandhi-pt-1|2020-01-01, Gandhi-pt-1|2020-04-22, Gandhi-pt-1|2020-05-08, Gandhi-pt-1|2020-04-29, Gandhi-pt-1|2020-04-30, Gandhi-pt-1|2020-05-02, ...
+
+Rooted; includes branch lengths.
+
+ Time of common ancestor 
+2019.99743169399 
+
+ Time to common ancestor (before most recent sample) 
+0.387814207650308 
+
+ Weighted mean substitution rate (adjusted by branch lengths) 
+0.00162659330561413 
+
+ Unadjusted mean substitution rate 
+0.00174935012819372 
+
+ Clock model  
+uncorrelated 
+
+ Coefficient of variation of rates 
+0.0786806332284405 
+[1] "Estimating confidence intervals for rates and dates by a parametric bootstrap"
+
+ For more detailed output, $trees provides a list of each fit to each simulation 
+
+
+Time of common ancestor	2.019997e+03	2.01997e+03	2.019997e+03	Mean substitution rate	1.749350e-03	1.29148e-03	2.369549e-03	

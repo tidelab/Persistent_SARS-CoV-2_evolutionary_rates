@@ -1,0 +1,230 @@
+IQ-TREE 2.1.2 COVID-edition built Oct 22 2020
+
+Input file name: Gandhi-pt-1_maskedRefRemMafft.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 179817
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+Since you used least square dating (LSD) please also cite: 
+
+Thu-Hien To, Matthieu Jung, Samantha Lycett, Olivier Gascuel (2016)
+Fast dating using least-squares criteria and algorithms. Syst. Biol. 65:82-97.
+https://doi.org/10.1093/sysbio/syv068
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 15 sequences with 29903 nucleotide sites
+Number of constant sites: 29851 (= 99.8261% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 29851 (= 99.8261% of all sites)
+Number of parsimony informative sites: 42
+Number of distinct site patterns: 53
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TPM2+F+I
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+TPM2+F+I         -40538.936   81143.872 +   0.0935   81143.947 +   0.0939   81417.961 +     0.49
+TPM2u+F+I        -40538.939   81143.878 +   0.0932   81143.953 +   0.0936   81417.966 +    0.489
+HKY+F+I          -40547.864   81159.728 - 3.37e-05   81159.798 - 3.39e-05   81425.510 -   0.0112
+K3Pu+F+I         -40543.459   81152.918 -  0.00101   81152.993 -  0.00102   81427.007 -  0.00532
+TIM2+F+I         -40538.925   81145.851 -   0.0348   81145.930 -   0.0348   81428.245 -  0.00287
+TVM+F+I          -40535.229   81140.457 +    0.515   81140.542 +    0.515   81431.157 - 0.000668
+TPM3+F+I         -40546.777   81159.553 - 3.68e-05   81159.629 - 3.69e-05   81433.642 - 0.000193
+TPM3u+F+I        -40546.777   81159.553 - 3.68e-05   81159.629 - 3.69e-05   81433.642 - 0.000193
+TN+F+I           -40547.401   81160.802 - 1.97e-05   81160.877 - 1.98e-05   81434.890 - 0.000103
+TIM+F+I          -40543.376   81154.751 - 0.000406   81154.831 - 0.000407   81437.145 - 3.35e-05
+GTR+F+I          -40534.907   81141.815 +    0.261   81141.904 +    0.261   81440.820 - 5.33e-06
+TIM3+F+I         -40546.430   81160.860 - 1.91e-05   81160.940 - 1.92e-05   81443.255 - 1.58e-06
+F81+F+I          -40566.486   81194.973 - 7.49e-13   81195.039 - 7.55e-13   81452.450 - 1.59e-08
+GTR+F+I+G4       -40568.951   81211.902 - 1.58e-16   81211.996 - 1.57e-16   81519.213 - 5.06e-23
+GTR+F+G4         -40577.937   81227.874 - 5.37e-20   81227.963 - 5.36e-20   81526.879 - 1.09e-24
+GTR+F            -40595.816   81261.632 - 2.51e-27   81261.716 - 2.51e-27   81552.332 - 3.25e-30
+GTR+F+R2         -40589.783   81253.566 - 1.42e-25   81253.660 - 1.41e-25   81560.878 - 4.53e-32
+GTR+F+R3         -40584.451   81246.903 - 3.96e-24   81247.007 - 3.92e-24   81570.826 - 3.14e-34
+K2P+I            -41434.869   82927.738 -        0   82927.797 -        0   83168.604 -        0
+K3P+I            -41431.496   82922.991 -        0   82923.053 -        0   83172.163 -        0
+TIM2e+I          -41428.386   82918.773 -        0   82918.839 -        0   83176.250 -        0
+TVMe+I           -41423.341   82910.683 -        0   82910.754 -        0   83176.466 -        0
+TNe+I            -41434.338   82928.675 -        0   82928.737 -        0   83177.846 -        0
+TIMe+I           -41430.532   82923.063 -        0   82923.130 -        0   83180.540 -        0
+TIM3e+I          -41432.023   82926.047 -        0   82926.113 -        0   83183.524 -        0
+SYM+I            -41422.717   82911.434 -        0   82911.509 -        0   83185.522 -        0
+JC+I             -41453.039   82962.078 -        0   82962.133 -        0   83194.638 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: TPM2+F+I
+
+Rate parameter R:
+
+  A-C: 0.0403
+  A-G: 2.2484
+  A-T: 0.0403
+  C-G: 1.0000
+  C-T: 2.2484
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2989
+  pi(C) = 0.1834
+  pi(G) = 0.1958
+  pi(T) = 0.3219
+
+Rate matrix Q:
+
+  A   -0.6236   0.01001     0.596   0.01758
+  C   0.01632    -1.261    0.2651    0.9798
+  G    0.9099    0.2482    -1.594    0.4358
+  T   0.01632    0.5581    0.2651   -0.8395
+
+Model of rate heterogeneity: Invar
+Proportion of invariable sites: 0.9953
+
+ Category  Relative_rate  Proportion
+  0         0              0.9953
+  1         210.6          0.004748
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -40537.4845 (s.e. 97.5521)
+Unconstrained log-likelihood (without tree): -44075.6133
+Number of free parameters (#branches + #model parameters): 33
+Akaike information criterion (AIC) score: 81140.9690
+Corrected Akaike information criterion (AICc) score: 81141.0441
+Bayesian information criterion (BIC) score: 81415.0575
+
+Total tree length (sum of branch lengths): 0.0023
+Sum of internal branch lengths: 0.0013 (56.7571% of tree length)
+
+WARNING: 1 near-zero internal branches (<0.0000) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Gandhi-pt-1|2020-01-01' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++-----Gandhi-pt-1|2020-01-01
+|
+|                                                         +**Gandhi-pt-1|2020-04-22
+|                                                      +**| (64)
+|                                                      |  +--Gandhi-pt-1|2020-05-08
+|                                                 +----| (76)
+|                                                 |    +--Gandhi-pt-1|2020-04-29
+|                                              +--| (61)
+|                                              |  +----Gandhi-pt-1|2020-04-30
+|                                   +----------| (81)
+|                                   |          +-------Gandhi-pt-1|2020-05-02
+|    +------------------------------| (100)
+|    |                              |           +----Gandhi-pt-1|2020-05-14
+|    |                              +-----------| (95)
+|    |                                          +**Gandhi-pt-1|2020-05-21
++----| (62)
+|    |                                   +**Gandhi-pt-1|2020-04-23
+|    |                        +----------| (97)
+|    |                        |          +**Gandhi-pt-1|2020-04-26
+|    +------------------------| (92)
+|                             |                        +**Gandhi-pt-1|2020-05-03
+|                             |             +----------| (99)
+|                             |             |          +**Gandhi-pt-1|2020-05-11
+|                             |    +--------| (88)
+|                             |    |        +----Gandhi-pt-1|2020-05-07
+|                             +----| (55)
+|                                  +----Gandhi-pt-1|2020-05-04
+|
++---------------Gandhi-pt-1|2020-05-06
+
+Tree in newick format:
+
+(Gandhi-pt-1|2020-01-01:0.0000832914,((((((Gandhi-pt-1|2020-04-22:0.0000010000,Gandhi-pt-1|2020-05-08:0.0000336082)64:0.0000010000,Gandhi-pt-1|2020-04-29:0.0000338026)76:0.0000687557,Gandhi-pt-1|2020-04-30:0.0000682334)61:0.0000388787,Gandhi-pt-1|2020-05-02:0.0000979037)81:0.0001377042,(Gandhi-pt-1|2020-05-14:0.0000685121,Gandhi-pt-1|2020-05-21:0.0000010000)95:0.0001497611)100:0.0003800715,((Gandhi-pt-1|2020-04-23:0.0000010000,Gandhi-pt-1|2020-04-26:0.0000010000)97:0.0001442897,(((Gandhi-pt-1|2020-05-03:0.0000010000,Gandhi-pt-1|2020-05-11:0.0000010000)99:0.0001398364,Gandhi-pt-1|2020-05-07:0.0000681484)88:0.0001097272,Gandhi-pt-1|2020-05-04:0.0000675624)55:0.0000610520)92:0.0003101826)62:0.0000638637,Gandhi-pt-1|2020-05-06:0.0001952722);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -40537.695146
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++-----Gandhi-pt-1|2020-01-01
+|
+|                                                         +--Gandhi-pt-1|2020-04-22
+|                                                      +--| (64)
+|                                                      |  +--Gandhi-pt-1|2020-05-08
+|                                                 +----| (76)
+|                                                 |    +--Gandhi-pt-1|2020-04-29
+|                                              +--| (61)
+|                                              |  +----Gandhi-pt-1|2020-04-30
+|                                   +----------| (81)
+|                                   |          +-------Gandhi-pt-1|2020-05-02
+|    +------------------------------| (100)
+|    |                              |           +----Gandhi-pt-1|2020-05-14
+|    |                              +-----------| (95)
+|    |                                          +--Gandhi-pt-1|2020-05-21
++----| (62)
+|    |                                   +--Gandhi-pt-1|2020-04-23
+|    |                        +----------| (97)
+|    |                        |          +--Gandhi-pt-1|2020-04-26
+|    +------------------------| (92)
+|                             |                        +--Gandhi-pt-1|2020-05-03
+|                             |             +----------| (99)
+|                             |             |          +--Gandhi-pt-1|2020-05-11
+|                             |    +--------| (88)
+|                             |    |        +----Gandhi-pt-1|2020-05-07
+|                             +----| (55)
+|                                  +----Gandhi-pt-1|2020-05-04
+|
++---------------Gandhi-pt-1|2020-05-06
+
+
+Consensus tree in newick format: 
+
+(Gandhi-pt-1|2020-01-01:0.0000836390,((((((Gandhi-pt-1|2020-04-22:0.0000020138,Gandhi-pt-1|2020-05-08:0.0000338918)64:0.0000020138,Gandhi-pt-1|2020-04-29:0.0000340717)76:0.0000694178,Gandhi-pt-1|2020-04-30:0.0000688551)61:0.0000392524,Gandhi-pt-1|2020-05-02:0.0000985891)81:0.0001388443,(Gandhi-pt-1|2020-05-14:0.0000689378,Gandhi-pt-1|2020-05-21:0.0000020138)95:0.0001505721)100:0.0003820846,((Gandhi-pt-1|2020-04-23:0.0000020138,Gandhi-pt-1|2020-04-26:0.0000020138)97:0.0001450311,(((Gandhi-pt-1|2020-05-03:0.0000020138,Gandhi-pt-1|2020-05-11:0.0000020138)99:0.0001401182,Gandhi-pt-1|2020-05-07:0.0000692195)88:0.0001096362,Gandhi-pt-1|2020-05-04:0.0000689829)55:0.0000613190)92:0.0003113258)62:0.0000631839,Gandhi-pt-1|2020-05-06:0.0001966376);
+
+TIME STAMP
+----------
+
+Date and time: Mon May 22 12:00:48 2023
+Total CPU time used: 0.882298 seconds (0h:0m:0s)
+Total wall-clock time used: 0.7328929901 seconds (0h:0m:0s)
+

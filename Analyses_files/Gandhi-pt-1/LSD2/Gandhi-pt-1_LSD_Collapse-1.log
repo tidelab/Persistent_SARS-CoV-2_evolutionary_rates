@@ -1,0 +1,215 @@
+IQ-TREE multicore version 2.1.2 COVID-edition for Mac OS X 64-bit built Oct 22 2020
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    dlmp133362.dlce.shh.mpg.de (AVX512, FMA3, 16 GB RAM)
+Command: /Users/oeversti/iqtree-2.1.2-MacOSX/bin/iqtree2 -s Gandhi-pt-1_maskedRefRemMafft.fasta --prefix Gandhi-pt-1_LSD_Collapse-1 -m MFP -B 1000 --date TAXNAME --date-ci 100 --date-options -l -1 -redo
+Seed:    819907 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon May 22 11:57:50 2023
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file Gandhi-pt-1_maskedRefRemMafft.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 471 sites contain only gaps or ambiguous characters.
+Alignment has 15 sequences with 29903 columns, 53 distinct patterns
+42 parsimony-informative, 10 singleton sites, 29851 constant sites
+                        Gap/Ambiguity  Composition  p-value
+   1  Gandhi-pt-1|2020-01-01    1.58%    passed     99.99%
+   2  Gandhi-pt-1|2020-04-22    1.58%    passed    100.00%
+   3  Gandhi-pt-1|2020-04-23    1.58%    passed     99.99%
+   4  Gandhi-pt-1|2020-04-26    1.58%    passed     99.99%
+   5  Gandhi-pt-1|2020-04-29    1.58%    passed    100.00%
+   6  Gandhi-pt-1|2020-04-30    1.58%    passed    100.00%
+   7  Gandhi-pt-1|2020-05-02    2.05%    passed     99.97%
+   8  Gandhi-pt-1|2020-05-03    1.58%    passed     99.99%
+   9  Gandhi-pt-1|2020-05-04    1.58%    passed    100.00%
+  10  Gandhi-pt-1|2020-05-06    1.58%    passed    100.00%
+  11  Gandhi-pt-1|2020-05-07    1.58%    passed    100.00%
+  12  Gandhi-pt-1|2020-05-08    1.58%    passed    100.00%
+  13  Gandhi-pt-1|2020-05-11    1.58%    passed     99.99%
+  14  Gandhi-pt-1|2020-05-14    1.73%    passed     99.99%
+  15  Gandhi-pt-1|2020-05-21    1.58%    passed    100.00%
+****  TOTAL                     1.62%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: Gandhi-pt-1|2020-04-26 is identical to Gandhi-pt-1|2020-04-23 but kept for subsequent analysis
+NOTE: Gandhi-pt-1|2020-05-11 is identical to Gandhi-pt-1|2020-05-03 but kept for subsequent analysis
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.001 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -40568.997
+Optimal log-likelihood: -40568.982
+Rate parameters:  A-C: 0.14772  A-G: 1.30267  A-T: 0.03752  C-G: 0.37030  C-T: 1.96102  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.183  G: 0.196  T: 0.322
+Proportion of invariable sites: 0.500
+Gamma shape alpha: 0.020
+Parameters optimization took 1 rounds (0.002 sec)
+Time for fast ML tree search: 0.017 seconds
+
+NOTE: ModelFinder requires 0 MB RAM!
+ModelFinder will test up to 286 DNA models (sample size: 29903) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         40595.816    35  81261.633    81261.717    81552.333
+  2  GTR+F+I       40534.904    36  81141.809    81141.898    81440.815
+  3  GTR+F+G4      40577.935    36  81227.870    81227.959    81526.876
+  4  GTR+F+I+G4    40568.945    37  81211.891    81211.985    81519.202
+  5  GTR+F+R2      40589.775    37  81253.551    81253.645    81560.862
+  6  GTR+F+R3      40584.448    39  81246.897    81247.001    81570.819
+ 15  SYM+I         41422.763    33  82911.527    82911.602    83185.615
+ 28  TVM+F+I       40535.237    35  81140.473    81140.558    81431.173
+ 41  TVMe+I        41423.360    32  82910.721    82910.791    83176.503
+ 54  TIM3+F+I      40546.675    34  81161.349    81161.429    81443.743
+ 67  TIM3e+I       41432.012    31  82926.023    82926.090    83183.501
+ 80  TIM2+F+I      40538.942    34  81145.884    81145.964    81428.279
+ 93  TIM2e+I       41428.368    31  82918.736    82918.802    83176.213
+106  TIM+F+I       40543.372    34  81154.744    81154.824    81437.138
+119  TIMe+I        41430.640    31  82923.281    82923.347    83180.758
+132  TPM3u+F+I     40546.778    33  81159.557    81159.632    81433.645
+145  TPM3+F+I      40546.778    33  81159.557    81159.632    81433.645
+158  TPM2u+F+I     40538.935    33  81143.870    81143.945    81417.959
+171  TPM2+F+I      40538.934    33  81143.868    81143.943    81417.957
+184  K3Pu+F+I      40543.461    33  81152.923    81152.998    81427.011
+197  K3P+I         41431.499    30  82922.999    82923.061    83172.170
+210  TN+F+I        40547.402    33  81160.805    81160.880    81434.893
+223  TNe+I         41434.339    30  82928.678    82928.740    83177.849
+236  HKY+F+I       40547.864    32  81159.728    81159.799    81425.511
+249  K2P+I         41434.869    29  82927.738    82927.797    83168.604
+262  F81+F+I       40566.487    31  81194.973    81195.039    81452.450
+275  JC+I          41453.039    28  82962.078    82962.133    83194.638
+Akaike Information Criterion:           TVM+F+I
+Corrected Akaike Information Criterion: TVM+F+I
+Bayesian Information Criterion:         TPM2+F+I
+Best-fit model: TPM2+F+I chosen according to BIC
+
+All model information printed to Gandhi-pt-1_LSD_Collapse-1.model.gz
+CPU time for ModelFinder: 0.101 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.138 seconds (0h:0m:0s)
+Generating 1000 samples for ultrafast bootstrap (seed: 819907)...
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -40538.934
+Optimal log-likelihood: -40538.934
+Rate parameters:  A-C: 0.07355  A-G: 2.35272  A-T: 0.07355  C-G: 1.00000  C-T: 2.35272  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.183  G: 0.196  T: 0.322
+Proportion of invariable sites: 0.995
+Parameters optimization took 1 rounds (0.001 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.002124 sec (of wall-clock time) 0.001500 sec(of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing RapidNJ tree took 0.000074 sec (of wall-clock time) 0.000068 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -41247.009
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.051 second
+Computing log-likelihood of 98 initial trees ... 0.025 seconds
+Current best score: -40537.679
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -40537.485
+UPDATE BEST LOG-LIKELIHOOD: -40537.485
+UPDATE BEST LOG-LIKELIHOOD: -40537.485
+UPDATE BEST LOG-LIKELIHOOD: -40537.485
+UPDATE BEST LOG-LIKELIHOOD: -40537.485
+Iteration 10 / LogL: -40537.486 / Time: 0h:0m:0s
+UPDATE BEST LOG-LIKELIHOOD: -40537.485
+Iteration 20 / LogL: -40537.487 / Time: 0h:0m:0s
+Finish initializing candidate tree set (2)
+Current best tree score: -40537.485 / CPU time: 0.151
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -40537.488 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -40537.485
+UPDATE BEST LOG-LIKELIHOOD: -40537.485
+Iteration 40 / LogL: -40537.486 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -40537.485
+Iteration 50 / LogL: -40537.529 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -40563.509
+Iteration 60 / LogL: -40537.485 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 70 / LogL: -40537.532 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 80 / LogL: -40537.574 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 90 / LogL: -40537.486 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 100 / LogL: -40537.487 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -40565.482
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+UPDATE BEST LOG-LIKELIHOOD: -40537.485
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -40537.485
+Optimal log-likelihood: -40537.484
+Rate parameters:  A-C: 0.03938  A-G: 2.24402  A-T: 0.03938  C-G: 1.00000  C-T: 2.24402  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.183  G: 0.196  T: 0.322
+Proportion of invariable sites: 0.995
+Parameters optimization took 1 rounds (0.000 sec)
+BEST SCORE FOUND : -40537.484
+Creating bootstrap support values...
+Split supports printed to NEXUS file Gandhi-pt-1_LSD_Collapse-1.splits.nex
+Total tree length: 0.002
+
+Total number of iterations: 102
+CPU time used for tree search: 0.854 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.697 sec (0h:0m:0s)
+Total CPU time used: 0.904 sec (0h:0m:0s)
+Total wall-clock time used: 0.751 sec (0h:0m:0s)
+
+Computing bootstrap consensus tree...
+Reading input file Gandhi-pt-1_LSD_Collapse-1.splits.nex...
+15 taxa and 80 splits.
+Consensus tree written to Gandhi-pt-1_LSD_Collapse-1.contree
+Reading input trees file Gandhi-pt-1_LSD_Collapse-1.contree
+Log-likelihood of consensus tree: -40537.695
+
+Analysis results written to: 
+  IQ-TREE report:                Gandhi-pt-1_LSD_Collapse-1.iqtree
+  Maximum-likelihood tree:       Gandhi-pt-1_LSD_Collapse-1.treefile
+  Likelihood distances:          Gandhi-pt-1_LSD_Collapse-1.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          Gandhi-pt-1_LSD_Collapse-1.splits.nex
+  Consensus tree:                Gandhi-pt-1_LSD_Collapse-1.contree
+  Screen log file:               Gandhi-pt-1_LSD_Collapse-1.log
+
+--- Start phylogenetic dating ---
+Extracting date from node names...
+15 dates extracted
+Building time tree by least-square dating (LSD) with command:
+lsd -i Gandhi-pt-1_LSD_Collapse-1.timetree.subst -s 29903 -o Gandhi-pt-1_LSD_Collapse-1.timetree -f 100 -r a -d Gandhi-pt-1_LSD_Collapse-1.timetree.date -l -1 
+
+TREE 1
+*PROCESSING:
+Reading the tree ... 
+Collapse 0 (over 12) internal branches having branch length <= -1
+ (settable via option -l)
+Parameter to adjust variances was set to 0.000334 (settable via option -b)
+Minimum branch length of time scaled tree (settable via option -u and -U): 0
+Estimating the root position on all branches using fast method ...
+Computing confidence intervals using sequence length 29903 and a lognormal
+ relaxed clock with mean 1, standard deviation 0.2 (settable via option -q)
+*RESULTS:
+- Dating results:
+ rate 0.000462287, tMRCA 2019-04-25 , objective function 6.80828e-05
+- Results with confidence intervals:
+ rate 0.000462287 [1e-10; 0.000985309], tMRCA 2019-04-25 [-3137341-10-31; 2019-10-19], objective function 6.80828e-05
+
+TOTAL ELAPSED TIME: 0.00709 seconds
+LSD results written to:
+  LSD report:                  Gandhi-pt-1_LSD_Collapse-1.timetree.lsd
+  Time tree in nexus format:   Gandhi-pt-1_LSD_Collapse-1.timetree.nex
+  Time tree in newick format:  Gandhi-pt-1_LSD_Collapse-1.timetree.nwk
+
+--- End phylogenetic dating ---
+Date and Time: Mon May 22 11:57:51 2023

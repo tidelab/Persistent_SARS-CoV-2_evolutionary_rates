@@ -1,0 +1,170 @@
+IQ-TREE 2.1.2 COVID-edition built Oct 22 2020
+
+Input file name: Gandhi-pt-1_maskedRefRemMafft.fasta
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 140174
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 15 sequences with 29903 nucleotide sites
+Number of constant sites: 29851 (= 99.8261% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 29851 (= 99.8261% of all sites)
+Number of parsimony informative sites: 42
+Number of distinct site patterns: 53
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TPM2+F+I
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+TPM2+F+I         -40538.120   81142.240 +   0.0918   81142.315 +   0.0922   81416.329 +    0.495
+TPM2u+F+I        -40538.141   81142.283 +   0.0898   81142.358 +   0.0902   81416.371 +    0.485
+HKY+F+I          -40547.236   81158.472 - 2.74e-05   81158.542 - 2.76e-05   81424.254 -  0.00942
+K3Pu+F+I         -40542.466   81150.932 -  0.00119   81151.007 -  0.00119   81425.021 -  0.00642
+TIM2+F+I         -40538.141   81144.282 -   0.0331   81144.362 -   0.0331   81426.676 -  0.00281
+TVM+F+I          -40534.435   81138.869 +    0.495   81138.954 +    0.495   81429.569 -  0.00066
+TPM3+F+I         -40546.473   81158.946 - 2.16e-05   81159.022 - 2.17e-05   81433.035 - 0.000117
+TPM3u+F+I        -40546.473   81158.946 - 2.16e-05   81159.022 - 2.17e-05   81433.035 - 0.000117
+TN+F+I           -40546.723   81159.446 - 1.68e-05   81159.521 - 1.69e-05   81433.535 - 9.09e-05
+TIM+F+I          -40542.505   81153.009 - 0.000421   81153.089 - 0.000422   81435.403 - 3.57e-05
+GTR+F+I          -40533.974   81139.948 +    0.289   81140.037 +    0.288   81438.954 - 6.05e-06
+TIM3+F+I         -40545.766   81159.533 - 1.61e-05   81159.613 - 1.62e-05   81441.927 - 1.37e-06
+F81+F+I          -40567.527   81197.054 - 1.15e-13   81197.120 - 1.16e-13   81454.531 - 2.51e-09
+GTR+F+I+G4       -40568.877   81211.754 - 7.38e-17   81211.848 - 7.34e-17   81519.065 - 2.43e-23
+GTR+F+G4         -40578.446   81228.892 -  1.4e-20   81228.981 -  1.4e-20   81527.897 - 2.94e-25
+GTR+F            -40598.106   81266.211 -  1.1e-28   81266.296 -  1.1e-28   81556.911 - 1.47e-31
+GTR+F+R2         -40591.102   81256.204 - 1.64e-26   81256.299 - 1.63e-26   81563.516 - 5.42e-33
+GTR+F+R3         -40585.427   81248.855 - 6.48e-25   81248.959 - 6.41e-25   81572.777 - 5.28e-35
+K2P+I            -41434.780   82927.560 -        0   82927.618 -        0   83168.426 -        0
+K3P+I            -41430.691   82921.383 -        0   82921.445 -        0   83170.554 -        0
+TIM2e+I          -41427.981   82917.962 -        0   82918.028 -        0   83175.439 -        0
+TVMe+I           -41423.167   82910.335 -        0   82910.406 -        0   83176.118 -        0
+TNe+I            -41434.196   82928.392 -        0   82928.454 -        0   83177.564 -        0
+TIMe+I           -41430.847   82923.693 -        0   82923.760 -        0   83181.171 -        0
+TIM3e+I          -41432.345   82926.691 -        0   82926.757 -        0   83184.168 -        0
+SYM+I            -41422.438   82910.876 -        0   82910.951 -        0   83184.965 -        0
+JC+I             -41454.398   82964.796 -        0   82964.851 -        0   83197.356 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: TPM2+F+I
+
+Rate parameter R:
+
+  A-C: 0.0505
+  A-G: 2.7587
+  A-T: 0.0505
+  C-G: 1.0000
+  C-T: 2.7587
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2989
+  pi(C) = 0.1834
+  pi(G) = 0.1958
+  pi(T) = 0.3219
+
+Rate matrix Q:
+
+  A   -0.6564   0.01074    0.6269   0.01885
+  C   0.01751    -1.275    0.2272      1.03
+  G     0.957    0.2128    -1.543    0.3735
+  T   0.01751     0.587    0.2272   -0.8318
+
+Model of rate heterogeneity: Invar
+Proportion of invariable sites: 0.9953
+
+ Category  Relative_rate  Proportion
+  0         0              0.9953
+  1         212.6          0.004703
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -40537.7374 (s.e. 97.7113)
+Unconstrained log-likelihood (without tree): -44075.6133
+Number of free parameters (#branches + #model parameters): 33
+Akaike information criterion (AIC) score: 81141.4748
+Corrected Akaike information criterion (AICc) score: 81141.5499
+Bayesian information criterion (BIC) score: 81415.5633
+
+Total tree length (sum of branch lengths): 0.0023
+Sum of internal branch lengths: 0.0013 (56.7293% of tree length)
+
+WARNING: 1 near-zero internal branches (<0.0000) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Gandhi-pt-1|2020-01-01' is drawn at root
+
++-----Gandhi-pt-1|2020-01-01
+|
+|                                                         +**Gandhi-pt-1|2020-04-22
+|                                                      +**|
+|                                                      |  +--Gandhi-pt-1|2020-05-08
+|                                                 +----|
+|                                                 |    +--Gandhi-pt-1|2020-04-29
+|                                              +--|
+|                                              |  +----Gandhi-pt-1|2020-04-30
+|                                   +----------|
+|                                   |          +-------Gandhi-pt-1|2020-05-02
+|    +------------------------------|
+|    |                              |           +----Gandhi-pt-1|2020-05-14
+|    |                              +-----------|
+|    |                                          +**Gandhi-pt-1|2020-05-21
++----|
+|    |                                   +**Gandhi-pt-1|2020-04-23
+|    |                        +----------|
+|    |                        |          +**Gandhi-pt-1|2020-04-26
+|    +------------------------|
+|                             |                       +**Gandhi-pt-1|2020-05-03
+|                             |            +----------|
+|                             |            |          +**Gandhi-pt-1|2020-05-11
+|                             |    +-------|
+|                             |    |       +----Gandhi-pt-1|2020-05-07
+|                             +----|
+|                                  +----Gandhi-pt-1|2020-05-04
+|
++---------------Gandhi-pt-1|2020-05-06
+
+Tree in newick format:
+
+(Gandhi-pt-1|2020-01-01:0.0000836961,((((((Gandhi-pt-1|2020-04-22:0.0000010000,Gandhi-pt-1|2020-05-08:0.0000336051):0.0000010000,Gandhi-pt-1|2020-04-29:0.0000337847):0.0000690326,Gandhi-pt-1|2020-04-30:0.0000684081):0.0000385923,Gandhi-pt-1|2020-05-02:0.0000981207):0.0001379950,(Gandhi-pt-1|2020-05-14:0.0000683596,Gandhi-pt-1|2020-05-21:0.0000010000):0.0001501560):0.0003832015,((Gandhi-pt-1|2020-04-23:0.0000010000,Gandhi-pt-1|2020-04-26:0.0000010000):0.0001446736,(((Gandhi-pt-1|2020-05-03:0.0000010000,Gandhi-pt-1|2020-05-11:0.0000010000):0.0001397093,Gandhi-pt-1|2020-05-07:0.0000682132):0.0001082171,Gandhi-pt-1|2020-05-04:0.0000676509):0.0000622275):0.0003106721):0.0000605325,Gandhi-pt-1|2020-05-06:0.0001958591);
+
+TIME STAMP
+----------
+
+Date and time: Mon May 22 11:42:22 2023
+Total CPU time used: 0.519445 seconds (0h:0m:0s)
+Total wall-clock time used: 0.370278 seconds (0h:0m:0s)
+

@@ -1,0 +1,32 @@
+[1] "Ciuffreda-pt-1"
+[1] "TreeDater Strict clock"
+
+Phylogenetic tree with 16 tips and 15 internal nodes.
+
+Tip labels:
+  Cuiffreda-pt-1|2020-04-23, Cuiffreda-pt-1|2020-04-26, Cuiffreda-pt-1|2020-07-31, Cuiffreda-pt-1|2020-06-02, Cuiffreda-pt-1a|2020-07-10, Cuiffreda-pt-1|2020-06-21, ...
+
+Rooted; includes branch lengths.
+
+ Time of common ancestor 
+2016.19795199462 
+
+ Time to common ancestor (before most recent sample) 
+4.4577857102995 
+
+ Weighted mean substitution rate (adjusted by branch lengths) 
+5.89133733643159e-05 
+
+ Unadjusted mean substitution rate 
+5.89133733643159e-05 
+
+ Clock model  
+strict 
+
+ Coefficient of variation of rates 
+0 
+[1] "Estimating confidence intervals for rates and dates by a parametric bootstrap"
+
+ For more detailed output, $trees provides a list of each fit to each simulation 
+
+Time of common ancestor	2.016198e+03	2.015626e+03	2.019207e+03	Mean substitution rate	5.891337e-05	3.130360e-05	1.108750e-04
