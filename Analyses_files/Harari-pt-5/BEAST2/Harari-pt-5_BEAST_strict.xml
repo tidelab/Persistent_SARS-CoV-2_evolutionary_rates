@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" required="" version="2.6">
+
+    <data
+id="Harari-pt-5_maskedRefRemMafft"
+spec="Alignment"
+name="alignment">
+                        <sequence id="seq_Harari-pt-5|2020-10-06" spec="Sequence" taxon="Harari-pt-5|2020-10-06" totalcount="4" value=""/>
+                        <sequence id="seq_Harari-pt-5|2020-10-18" spec="Sequence" taxon="Harari-pt-5|2020-10-18" totalcount="4" value=""/>
+                        <sequence id="seq_Harari-pt-5|2020-10-26" spec="Sequence" taxon="Harari-pt-5|2020-10-26" totalcount="4" value=""/>
+                        <sequence id="seq_Harari-pt-5|2020-11-02" spec="Sequence" taxon="Harari-pt-5|2020-11-02" totalcount="4" value=""/>
+                        <sequence id="seq_Harari-pt-5|2020-11-05" spec="Sequence" taxon="Harari-pt-5|2020-11-05" totalcount="4" value=""/>
+                        <sequence id="seq_Harari-pt-5|2020-11-15" spec="Sequence" taxon="Harari-pt-5|2020-11-15" totalcount="4" value=""/>
+                        <sequence id="seq_Harari-pt-5|2020-11-19" spec="Sequence" taxon="Harari-pt-5|2020-11-19" totalcount="4" value=""/>
+                        <sequence id="seq_Harari-pt-5|2020-12-13" spec="Sequence" taxon="Harari-pt-5|2020-12-13" totalcount="4" value=""/>
+                        <sequence id="seq_Harari-pt-5|2020-12-20" spec="Sequence" taxon="Harari-pt-5|2020-12-20" totalcount="4" value=""/>
+                    </data>
+
+
+    
+
+<map name="Uniform" >beast.math.distributions.Uniform</map>
+<map name="Exponential" >beast.math.distributions.Exponential</map>
+<map name="LogNormal" >beast.math.distributions.LogNormalDistributionModel</map>
+<map name="Normal" >beast.math.distributions.Normal</map>
+<map name="Beta" >beast.math.distributions.Beta</map>
+<map name="Gamma" >beast.math.distributions.Gamma</map>
+<map name="LaplaceDistribution" >beast.math.distributions.LaplaceDistribution</map>
+<map name="prior" >beast.math.distributions.Prior</map>
+<map name="InverseGamma" >beast.math.distributions.InverseGamma</map>
+<map name="OneOnX" >beast.math.distributions.OneOnX</map>
+
+<run id="mcmc" spec="MCMC" chainLength="10000000">
+    <state id="state" spec="State" storeEvery="5000">
+        <tree id="Tree.t:Harari-pt-5_maskedRefRemMafft" spec="beast.evolution.tree.Tree" name="stateNode">
+            <trait id="dateTrait.t:Harari-pt-5_maskedRefRemMafft" spec="beast.evolution.tree.TraitSet" dateFormat="yyyy-M-dd" traitname="date" value="Harari-pt-5|2020-10-06=2020-10-06,Harari-pt-5|2020-10-18=2020-10-18,Harari-pt-5|2020-10-26=2020-10-26,Harari-pt-5|2020-11-02=2020-11-02,Harari-pt-5|2020-11-05=2020-11-05,Harari-pt-5|2020-11-15=2020-11-15,Harari-pt-5|2020-11-19=2020-11-19,Harari-pt-5|2020-12-13=2020-12-13,Harari-pt-5|2020-12-20=2020-12-20">
+                <taxa id="TaxonSet.Harari-pt-5_maskedRefRemMafft" spec="TaxonSet">
+                    <alignment idref="Harari-pt-5_maskedRefRemMafft"/>
+                </taxa>
+            </trait>
+            <taxonset idref="TaxonSet.Harari-pt-5_maskedRefRemMafft"/>
+        </tree>
+        <parameter id="clockRate.c:Harari-pt-5_maskedRefRemMafft" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+        <parameter id="gammaShape.s:Harari-pt-5_maskedRefRemMafft" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+        <parameter id="kappa.s:Harari-pt-5_maskedRefRemMafft" spec="parameter.RealParameter" lower="0.0" name="stateNode">2.0</parameter>
+        <parameter id="bPopSizes.t:Harari-pt-5_maskedRefRemMafft" spec="parameter.RealParameter" dimension="3" lower="0.0" name="stateNode">380.0</parameter>
+        <stateNode id="bGroupSizes.t:Harari-pt-5_maskedRefRemMafft" spec="parameter.IntegerParameter" dimension="3">1</stateNode>
+        <parameter id="freqParameter.s:Harari-pt-5_maskedRefRemMafft" spec="parameter.RealParameter" dimension="4" lower="0.0" name="stateNode" upper="1.0">0.25</parameter>
+    </state>
+    <init id="RandomTree.t:Harari-pt-5_maskedRefRemMafft" spec="beast.evolution.tree.RandomTree" estimate="false" initial="@Tree.t:Harari-pt-5_maskedRefRemMafft" taxa="@Harari-pt-5_maskedRefRemMafft">
+        <populationModel id="ConstantPopulation0.t:Harari-pt-5_maskedRefRemMafft" spec="ConstantPopulation">
+            <parameter id="randomPopSize.t:Harari-pt-5_maskedRefRemMafft" spec="parameter.RealParameter" name="popSize">1.0</parameter>
+        </populationModel>
+    </init>
+    <distribution id="posterior" spec="util.CompoundDistribution">
+        <distribution id="prior" spec="util.CompoundDistribution">
+            <distribution id="BayesianSkyline.t:Harari-pt-5_maskedRefRemMafft" spec="BayesianSkyline" groupSizes="@bGroupSizes.t:Harari-pt-5_maskedRefRemMafft" popSizes="@bPopSizes.t:Harari-pt-5_maskedRefRemMafft">
+                <treeIntervals id="BSPTreeIntervals.t:Harari-pt-5_maskedRefRemMafft" spec="TreeIntervals" tree="@Tree.t:Harari-pt-5_maskedRefRemMafft"/>
+            </distribution>
+            <distribution id="MarkovChainedPopSizes.t:Harari-pt-5_maskedRefRemMafft" spec="beast.math.distributions.MarkovChainDistribution" jeffreys="true" parameter="@bPopSizes.t:Harari-pt-5_maskedRefRemMafft"/>
+            <prior id="ClockPrior.c:Harari-pt-5_maskedRefRemMafft" name="distribution" x="@clockRate.c:Harari-pt-5_maskedRefRemMafft">
+                <Uniform id="Uniform.0" name="distr"/>
+            </prior>
+            <prior id="FrequenciesPrior.s:Harari-pt-5_maskedRefRemMafft" name="distribution" x="@freqParameter.s:Harari-pt-5_maskedRefRemMafft">
+                <Uniform id="Uniform.3" name="distr"/>
+            </prior>
+            <prior id="GammaShapePrior.s:Harari-pt-5_maskedRefRemMafft" name="distribution" x="@gammaShape.s:Harari-pt-5_maskedRefRemMafft">
+                <Exponential id="Exponential.0" name="distr">
+                    <parameter id="RealParameter.0" spec="parameter.RealParameter" estimate="false" name="mean">1.0</parameter>
+                </Exponential>
+            </prior>
+            <prior id="KappaPrior.s:Harari-pt-5_maskedRefRemMafft" name="distribution" x="@kappa.s:Harari-pt-5_maskedRefRemMafft">
+                <LogNormal id="LogNormalDistributionModel.0" name="distr">
+                    <parameter id="RealParameter.1" spec="parameter.RealParameter" estimate="false" name="M">1.0</parameter>
+                    <parameter id="RealParameter.2" spec="parameter.RealParameter" estimate="false" name="S">1.25</parameter>
+                </LogNormal>
+            </prior>
+        </distribution>
+        <distribution id="likelihood" spec="util.CompoundDistribution" useThreads="true">
+            <distribution id="treeLikelihood.Harari-pt-5_maskedRefRemMafft" spec="ThreadedTreeLikelihood" data="@Harari-pt-5_maskedRefRemMafft" tree="@Tree.t:Harari-pt-5_maskedRefRemMafft">
+                <siteModel id="SiteModel.s:Harari-pt-5_maskedRefRemMafft" spec="SiteModel" gammaCategoryCount="4" shape="@gammaShape.s:Harari-pt-5_maskedRefRemMafft">
+                    <parameter id="mutationRate.s:Harari-pt-5_maskedRefRemMafft" spec="parameter.RealParameter" estimate="false" name="mutationRate">1.0</parameter>
+                    <parameter id="proportionInvariant.s:Harari-pt-5_maskedRefRemMafft" spec="parameter.RealParameter" estimate="false" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
+                    <substModel id="hky.s:Harari-pt-5_maskedRefRemMafft" spec="HKY" kappa="@kappa.s:Harari-pt-5_maskedRefRemMafft">
+                        <frequencies id="estimatedFreqs.s:Harari-pt-5_maskedRefRemMafft" spec="Frequencies" frequencies="@freqParameter.s:Harari-pt-5_maskedRefRemMafft"/>
+                    </substModel>
+                </siteModel>
+                <branchRateModel id="StrictClock.c:Harari-pt-5_maskedRefRemMafft" spec="beast.evolution.branchratemodel.StrictClockModel" clock.rate="@clockRate.c:Harari-pt-5_maskedRefRemMafft"/>
+            </distribution>
+        </distribution>
+    </distribution>
+    <operator id="StrictClockRateScaler.c:Harari-pt-5_maskedRefRemMafft" spec="ScaleOperator" parameter="@clockRate.c:Harari-pt-5_maskedRefRemMafft" weight="3.0"/>
+    <operator id="strictClockUpDownOperator.c:Harari-pt-5_maskedRefRemMafft" spec="UpDownOperator" scaleFactor="0.75" weight="3.0">
+        <up idref="clockRate.c:Harari-pt-5_maskedRefRemMafft"/>
+        <down idref="Tree.t:Harari-pt-5_maskedRefRemMafft"/>
+    </operator>
+    <operator id="gammaShapeScaler.s:Harari-pt-5_maskedRefRemMafft" spec="ScaleOperator" parameter="@gammaShape.s:Harari-pt-5_maskedRefRemMafft" scaleFactor="0.5" weight="0.1"/>
+    <operator id="KappaScaler.s:Harari-pt-5_maskedRefRemMafft" spec="ScaleOperator" parameter="@kappa.s:Harari-pt-5_maskedRefRemMafft" scaleFactor="0.5" weight="0.1"/>
+    <operator id="BayesianSkylineTreeScaler.t:Harari-pt-5_maskedRefRemMafft" spec="ScaleOperator" scaleFactor="0.5" tree="@Tree.t:Harari-pt-5_maskedRefRemMafft" weight="3.0"/>
+    <operator id="BayesianSkylineTreeRootScaler.t:Harari-pt-5_maskedRefRemMafft" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@Tree.t:Harari-pt-5_maskedRefRemMafft" weight="3.0"/>
+    <operator id="BayesianSkylineUniformOperator.t:Harari-pt-5_maskedRefRemMafft" spec="Uniform" tree="@Tree.t:Harari-pt-5_maskedRefRemMafft" weight="30.0"/>
+    <operator id="BayesianSkylineSubtreeSlide.t:Harari-pt-5_maskedRefRemMafft" spec="SubtreeSlide" tree="@Tree.t:Harari-pt-5_maskedRefRemMafft" weight="15.0"/>
+    <operator id="BayesianSkylineNarrow.t:Harari-pt-5_maskedRefRemMafft" spec="Exchange" tree="@Tree.t:Harari-pt-5_maskedRefRemMafft" weight="15.0"/>
+    <operator id="BayesianSkylineWide.t:Harari-pt-5_maskedRefRemMafft" spec="Exchange" isNarrow="false" tree="@Tree.t:Harari-pt-5_maskedRefRemMafft" weight="3.0"/>
+    <operator id="BayesianSkylineWilsonBalding.t:Harari-pt-5_maskedRefRemMafft" spec="WilsonBalding" tree="@Tree.t:Harari-pt-5_maskedRefRemMafft" weight="3.0"/>
+    <operator id="popSizesScaler.t:Harari-pt-5_maskedRefRemMafft" spec="ScaleOperator" parameter="@bPopSizes.t:Harari-pt-5_maskedRefRemMafft" weight="15.0"/>
+    <operator id="groupSizesDelta.t:Harari-pt-5_maskedRefRemMafft" spec="DeltaExchangeOperator" integer="true" weight="6.0">
+        <intparameter idref="bGroupSizes.t:Harari-pt-5_maskedRefRemMafft"/>
+    </operator>
+    <operator id="FrequenciesExchanger.s:Harari-pt-5_maskedRefRemMafft" spec="DeltaExchangeOperator" delta="0.01" weight="0.1">
+        <parameter idref="freqParameter.s:Harari-pt-5_maskedRefRemMafft"/>
+    </operator>
+    <logger id="tracelog" spec="Logger" fileName="$(filebase)_$(seed).log" logEvery="1000" model="@posterior" sanitiseHeaders="true" sort="smart">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+        <log idref="treeLikelihood.Harari-pt-5_maskedRefRemMafft"/>
+        <log id="TreeHeight.t:Harari-pt-5_maskedRefRemMafft" spec="beast.evolution.tree.TreeHeightLogger" tree="@Tree.t:Harari-pt-5_maskedRefRemMafft"/>
+        <log idref="clockRate.c:Harari-pt-5_maskedRefRemMafft"/>
+        <log idref="gammaShape.s:Harari-pt-5_maskedRefRemMafft"/>
+        <log idref="kappa.s:Harari-pt-5_maskedRefRemMafft"/>
+        <log idref="BayesianSkyline.t:Harari-pt-5_maskedRefRemMafft"/>
+        <log idref="bPopSizes.t:Harari-pt-5_maskedRefRemMafft"/>
+        <log idref="bGroupSizes.t:Harari-pt-5_maskedRefRemMafft"/>
+        <log idref="freqParameter.s:Harari-pt-5_maskedRefRemMafft"/>
+    </logger>
+    <logger id="screenlog" spec="Logger" logEvery="1000">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+    </logger>
+    <logger id="treelog.t:Harari-pt-5_maskedRefRemMafft" spec="Logger" fileName="$(filebase)_$(seed).trees" logEvery="1000" mode="tree">
+        <log id="TreeWithMetaDataLogger.t:Harari-pt-5_maskedRefRemMafft" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree.t:Harari-pt-5_maskedRefRemMafft"/>
+    </logger>
+    <operatorschedule id="OperatorSchedule" spec="OperatorSchedule"/>
+</run>
+</beast>

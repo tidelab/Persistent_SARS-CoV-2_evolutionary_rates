@@ -1,0 +1,33 @@
+[1] "Harari-pt-5"
+[1] "TreeDater Strict clock"
+
+Phylogenetic tree with 9 tips and 8 internal nodes.
+
+Tip labels:
+  Harari-pt-5|2020-10-06, Harari-pt-5|2020-10-18, Harari-pt-5|2020-10-26, Harari-pt-5|2020-11-05, Harari-pt-5|2020-11-15, Harari-pt-5|2020-12-13, ...
+
+Rooted; includes branch lengths.
+
+ Time of common ancestor 
+2020.69255619305 
+
+ Time to common ancestor (before most recent sample) 
+0.274656921699943 
+
+ Weighted mean substitution rate (adjusted by branch lengths) 
+0.00114295957108471 
+
+ Unadjusted mean substitution rate 
+0.00114295957108471 
+
+ Clock model  
+strict 
+
+ Coefficient of variation of rates 
+0 
+[1] "Estimating confidence intervals for rates and dates by a parametric bootstrap"
+
+ For more detailed output, $trees provides a list of each fit to each simulation 
+
+
+Time of common ancestor	2.020693e+03	2.02011e+03	2.020753e+03	Mean substitution rate	1.142960e-03	4.22276e-04	3.093608e-03	

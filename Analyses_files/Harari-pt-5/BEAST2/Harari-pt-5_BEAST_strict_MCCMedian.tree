@@ -1,0 +1,111 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=9;
+	taxlabels
+	'Harari-pt-5|2020-10-06'
+	'Harari-pt-5|2020-10-18'
+	'Harari-pt-5|2020-10-26'
+	'Harari-pt-5|2020-11-02'
+	'Harari-pt-5|2020-11-05'
+	'Harari-pt-5|2020-11-15'
+	'Harari-pt-5|2020-11-19'
+	'Harari-pt-5|2020-12-13'
+	'Harari-pt-5|2020-12-20'
+;
+end;
+
+begin trees;
+	tree TREE1 = [&R] ('Harari-pt-5|2020-10-06'[&height=0.20491803278673615,height_95%_HPD={0.20491803278673612,0.20491803278673618},height_median=0.20491803278673615,height_range={0.20491803278673604,0.20491803278673626},length=0.006204282891013741,length_95%_HPD={2.9766834104549833E-6,0.020671829025570992},length_median=0.003528166079783124,length_range={2.9766834104549833E-6,0.13658570070627324}]:0.009453,(('Harari-pt-5|2020-10-18'[&height=0.1721311475409948,height_95%_HPD={0.17213114754099476,0.17213114754099482},height_median=0.1721311475409948,height_range={0.17213114754099468,0.1721311475409949},length=0.02107798022389335,length_95%_HPD={3.892624908043707E-4,0.04703730332165271},length_median=0.017963352017394046,length_range={1.0037896957346137E-4,0.15958800935431516}]:0.016365,('Harari-pt-5|2020-10-26'[&height=0.1502732240437581,height_95%_HPD={0.15027322404375806,0.15027322404375812},height_median=0.1502732240437581,height_range={0.15027322404375798,0.1502732240437582},length=0.01767314521697274,length_95%_HPD={5.083263193428333E-7,0.05387574657849811},length_median=0.011838220473573274,length_range={5.083263193428333E-7,0.33205725221359}]:0.008486,('Harari-pt-5|2020-11-05'[&height=0.12295081967204169,height_95%_HPD={0.12295081967204166,0.12295081967204172},height_median=0.12295081967204169,height_range={0.12295081967204158,0.1229508196720418},length=0.010301479588673938,length_95%_HPD={1.9912683436318357E-6,0.030104052911571005},length_median=0.007080625679036695,length_range={1.9912683436318357E-6,0.1948008110970706}]:0.00708,('Harari-pt-5|2020-11-15'[&height=0.09562841530055266,height_95%_HPD={0.09562841530055263,0.09562841530055269},height_median=0.09562841530055266,height_range={0.09562841530055255,0.09562841530055277},length=0.003529710757010507,length_95%_HPD={1.673745654989789E-7,0.010911459871170454},length_median=0.0023843708810070557,length_range={1.673745654989789E-7,0.053944428085261675}]:0.003209,('Harari-pt-5|2020-11-19'[&height=0.08469945355182062,height_95%_HPD={0.0846994535518206,0.08469945355182065},height_median=0.08469945355182062,height_range={0.08469945355182051,0.08469945355182074},length=0.007797716314979059,length_95%_HPD={2.1360619145704973E-7,0.022157226079732528},length_median=0.005551859503043016,length_range={2.1360619145704973E-7,0.09425755110500672}]:0.003895,('Harari-pt-5|2020-12-13'[&height=0.019125683060110532,height_95%_HPD={0.019125683060110532,0.019125683060110532},height_median=0.019125683060110532,height_range={0.019125683060110504,0.019125683060110588},length=0.007389754089943249,length_95%_HPD={5.35252191014024E-7,0.0245977090179553},length_median=0.004545380921591097,length_range={5.35252191014024E-7,0.08351297784717923}]:0.004545,'Harari-pt-5|2020-12-20'[&height=0.0,length=0.02651543715005386,length_95%_HPD={0.019126218312301546,0.04372339207806583},length_median=0.02367106398170163,length_range={0.019126218312301546,0.10263866090728976}]:0.023671)[&height=0.02651543715005386,height_95%_HPD={0.019126218312301546,0.04372339207806583},height_median=0.02367106398170163,height_range={0.019126218312301546,0.10263866090728976},length=0.06531525346872347,length_95%_HPD={0.04525002950802805,0.08260688498698288},length_median=0.06603296296444192,length_range={0.004253660940549131,0.10212918448546873},posterior=1.0]:0.064924)[&height=0.08963848865487357,height_95%_HPD={0.08469966715801208,0.09721193173233336},height_median=0.08859458907864437,height_range={0.08469966715801208,0.11941662338940945},length=0.009691616948875147,length_95%_HPD={1.0357747540923334E-4,0.0178507994309568},length_median=0.0097980514371903,length_range={9.747210528876504E-6,0.04461331211406355},posterior=0.7900233307410288]:0.010243)[&height=0.10048294143244713,height_95%_HPD={0.09562858267511816,0.11053467344850243},height_median=0.09883743873392865,height_range={0.09562858267511816,0.17895700465682735},length=0.032774377232596776,length_95%_HPD={0.01505661962122895,0.053059123611132825},length_median=0.030702685577655334,length_range={0.004308787034428829,0.23457052347318938},posterior=1.0]:0.031194)[&height=0.1332317993349925,height_95%_HPD={0.12295281094038532,0.1530356131943877},height_median=0.13003113420872328,height_range={0.12295281094038532,0.31411504116481104},length=0.03848501264172011,length_95%_HPD={0.009959138213641416,0.08043508178079115},length_median=0.03198543634373613,length_range={0.0023605147916731517,0.33505996292630186},posterior=0.9998889012331963]:0.028728)[&height=0.1623096611429865,height_95%_HPD={0.15027373237007743,0.18583360027360946},height_median=0.1587591714936741,height_range={0.15027373237007743,0.32131927226392604},length=0.029047274994249736,length_95%_HPD={1.5012067877073765E-5,0.05651278928631476},length_median=0.02706495612759556,length_range={1.5012067877073765E-5,0.14066692167422776},posterior=0.7634707254749472]:0.029737)[&height=0.19022259973813987,height_95%_HPD={0.1728654634227269,0.21015696160710826},height_median=0.1884965755182355,height_range={0.17223152651056825,0.29068986627301285},length=0.01691244215599363,length_95%_HPD={1.4625535336737494E-5,0.037276810804520416},length_median=0.015626542937687796,length_range={1.4625535336737494E-5,0.09233920612394997},posterior=0.42484168425730473]:0.003266,'Harari-pt-5|2020-11-02'[&height=0.13114754098364756,height_95%_HPD={0.13114754098364753,0.1311475409836476},height_median=0.13114754098364756,height_range={0.13114754098364745,0.13114754098364767},length=0.0820043953209283,length_95%_HPD={0.018880198781192292,0.16986288716359288},length_median=0.07175747352384532,length_range={0.013930817214913627,0.7832775468446225}]:0.060615)[&height=0.1925675175780614,height_95%_HPD={0.17262211244570644,0.21010408357280397},height_median=0.19176301888029973,height_range={0.17234132320076073,0.26569693488004226},length=0.017510005179204056,length_95%_HPD={2.230447077589126E-7,0.03343354631085732},length_median=0.017302787219240362,length_range={2.230447077589126E-7,0.06303814593229465},posterior=0.48950116653705145,!rotate=true]:0.022609)[&height=0.22947238124419664,height_95%_HPD={0.2049212050591644,0.30252247308917396},height_median=0.21437152915526503,height_range={0.2049212050591644,0.91442508782827},length=0.0,posterior=1.0];
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=3.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute=null;
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="posterior";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=14;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=true;
+	set nodeLabels.significantDigits=2;
+	set nodeShapeExternal.colourAttribute=null;
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute=null;
+	set nodeShapeInternal.colourAttribute="posterior";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=9.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=14.0;
+	set nodeShapeInternal.sizeAttribute="posterior";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=14.0;
+	set scaleAxis.isShown=true;
+	set scaleAxis.lineWidth=3.0;
+	set scaleAxis.majorTicks=0.05;
+	set scaleAxis.minorTicks=0.025;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=true;
+	set scaleAxis.showGrid=false;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=false;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.03;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=14;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=false;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
