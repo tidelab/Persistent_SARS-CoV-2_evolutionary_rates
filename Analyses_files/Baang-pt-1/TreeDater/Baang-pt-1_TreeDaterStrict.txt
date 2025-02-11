@@ -1,0 +1,34 @@
+[1] "Baang-pt-1"
+[1] "TreeDater Strict clock"
+
+Phylogenetic tree with 8 tips and 7 internal nodes.
+
+Tip labels:
+  Baang-pt-1|2020-01-01, Baang-pt-1|2020-01-16, Baang-pt-1|2020-01-27, Baang-pt-1|2020-02-01, Baang-pt-1|2020-01-06, Baang-pt-1|2020-01-23, ...
+
+Rooted; includes branch lengths.
+
+ Time of common ancestor 
+2019.99323770492 
+
+ Time to common ancestor (before most recent sample) 
+0.277254098360572 
+
+ Weighted mean substitution rate (adjusted by branch lengths) 
+0.000590034858234484 
+
+ Unadjusted mean substitution rate 
+0.000590034858234484 
+
+ Clock model  
+strict 
+
+ Coefficient of variation of rates 
+0 
+[1] "Estimating confidence intervals for rates and dates by a parametric bootstrap"
+
+ For more detailed output, $trees provides a list of each fit to each simulation 
+
+
+Time of common ancestor	2.019993e+03	2.019400e+03	2.019993e+03	Mean substitution rate	5.900349e-04	1.627163e-04	2.139559e-03	
+
