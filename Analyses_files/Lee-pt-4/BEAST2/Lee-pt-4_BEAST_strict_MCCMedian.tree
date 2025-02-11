@@ -1,0 +1,110 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=8;
+	taxlabels
+	'Lee-pt-4_0|2020-04-01'
+	'Lee-pt-4_148|2020-08-27'
+	'Lee-pt-4_175|2020-09-23'
+	'Lee-pt-4_294|2021-01-20'
+	'Lee-pt-4_327|2021-02-22'
+	'Lee-pt-4_331|2021-02-26'
+	'Lee-pt-4_342|2021-03-09'
+	'Lee-pt-4_37|2020-05-08'
+;
+end;
+
+begin trees;
+	tree TREE1 = [&R] (('Lee-pt-4_0|2020-04-01'[&height=0.9349277640540881,height_95%_HPD={0.9349277640542366,0.934927764054237},height_median=0.9349277640542368,height_range={0.9349277640542333,0.9349277640542439},length=0.03456686436103552,length_95%_HPD={8.277134067036229E-7,0.11846471691203608},length_median=0.017507369194391997,length_range={8.277134067036229E-7,2.821988375917641}]:0.026161,'Lee-pt-4_37|2020-05-08'[&height=0.8338348678793057,height_95%_HPD={0.8338348678794316,0.8338348678794321},height_median=0.8338348678794318,height_range={0.8338348678794283,0.833834867879439},length=0.14064580215259445,length_95%_HPD={0.04142112498313488,0.2494687938015705},length_median=0.12551686095710524,length_range={0.008803334797632623,2.923081272092446}]:0.127254)[&height=0.9828383961269497,height_95%_HPD={0.9349285917676433,1.0926950317928141},height_median=0.961089229434609,height_range={0.9349285917676433,3.756916139971885},length=0.07093766588197435,length_95%_HPD={1.1993747002225774E-5,0.20276292975143195},length_median=0.046868699234859035,length_range={1.1993747002225774E-5,4.917681909850067},posterior=0.5284968336851461]:0.065078,(('Lee-pt-4_148|2020-08-27'[&height=0.5305561793547895,height_95%_HPD={0.5305561793547893,0.5305561793547897},height_median=0.5305561793547895,height_range={0.5305561793547859,0.5305561793547904},length=0.09641578602951853,length_95%_HPD={9.443621699888327E-4,0.2496211277656366},length_median=0.07370350873502518,length_range={7.25031667433651E-4,2.582123657421164}]:0.073704,'Lee-pt-4_175|2020-09-23'[&height=0.4567856875514725,height_95%_HPD={0.4567856875514733,0.45678568755147375},height_median=0.45678568755147353,height_range={0.45678568755147,0.4567856875514744},length=0.17018627783283477,length_95%_HPD={0.0747148539733048,0.32339161956895257},length_median=0.14747400053834114,length_range={0.07449552347074961,2.65589414922448}]:0.147474)[&height=0.626971965384309,height_95%_HPD={0.5315005415247783,0.7801773071204261},height_median=0.6042596880898147,height_range={0.5312812110222234,3.1126798367759534},length=0.32466243692348007,length_95%_HPD={0.11383599599137362,0.5361094127315698},length_median=0.3134423566346386,length_range={0.015257966741205387,5.561918213045999},posterior=1.0]:0.249584,(('Lee-pt-4_294|2021-01-20'[&height=0.13150684931520118,height_95%_HPD={0.13150684931520096,0.1315068493152014},height_median=0.13150684931520118,height_range={0.13150684931519763,0.13150684931520207},length=0.03300845822482596,length_95%_HPD={3.617379393694442E-6,0.12185069030860607},length_median=0.01568783202455848,length_range={3.617379393694442E-6,4.267529466658736}]:0.015688,'Lee-pt-4_327|2021-02-22'[&height=0.041095890411043,height_95%_HPD={0.04109589041104278,0.04109589041104322},height_median=0.041095890411043,height_range={0.04109589041103945,0.04109589041104389},length=0.1234025260654785,length_95%_HPD={0.09041457628355187,0.21409555786264511},length_median=0.10609879092871666,length_range={0.03956753816358172,4.357940425562894}]:0.106099)[&height=0.16458247856535504,height_95%_HPD={0.13151046669459499,0.25345899894769275},height_median=0.14719468133975966,height_range={0.13151046669459499,4.399036315973937},length=0.07326825850273527,length_95%_HPD={5.48522673837093E-4,0.2227442571608209},length_median=0.046713451605830736,length_range={2.219152880459374E-4,2.9363889871833067},posterior=0.9933340739917786]:0.05142,('Lee-pt-4_331|2021-02-26'[&height=0.03013698630138606,height_95%_HPD={0.03013698630138606,0.03013698630138606},height_median=0.03013698630138606,height_range={0.030136986301385837,0.03013698630138628},length=0.08549383031423136,length_95%_HPD={5.849714045301768E-4,0.21480475199454419},length_median=0.06803006500112652,length_range={1.2067649488445298E-4,4.68495631341451}]:0.06803,'Lee-pt-4_342|2021-03-09'[&height=0.0,length=0.11563081661561717,length_95%_HPD={0.030721957705916236,0.24494173829593024},length_median=0.09816705130251258,length_range={0.030257662796270512,4.715093299715896}]:0.098167)[&height=0.11563081661561717,height_95%_HPD={0.030721957705916236,0.24494173829593024},height_median=0.09816705130251258,height_range={0.030257662796270512,4.715093299715896},length=0.12157239007916883,length_95%_HPD={0.014721903542158077,0.25131342535997825},length_median=0.10724628652115831,length_range={0.010176287683952956,2.620332003441348},posterior=1.0]:0.100447)[&height=0.2373702327473714,height_95%_HPD={0.13263000890958732,0.4408548042989855},height_median=0.19861425853515502,height_range={0.13153479463751183,7.335425303157244},length=1.0011568008489886,length_95%_HPD={0.48744246698689864,1.9175529804578315},length_median=0.7736402497402567,length_range={0.4148461781930316,29.306850568170418},posterior=1.0]:0.655229)[&height=0.8480161873871783,height_95%_HPD={0.7142224484195518,0.9685824977114206},height_median=0.8538435129038437,height_range={0.5942873467388645,1.0586788799229963},length=0.09754454811265548,length_95%_HPD={2.1895592819287657E-5,0.20860221687290503},length_median=0.08967174367620923,length_range={2.1895592819287657E-5,0.3368342646840169},posterior=0.5106099322297523]:0.172323)[&height=1.3017901709025526,height_95%_HPD={0.9349329890989009,2.3012861483057425},height_median=1.0261668534296944,height_range={0.9349329890989009,36.64227587132766},length=0.0,posterior=1.0];
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=3.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute=null;
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="posterior";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=14;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=true;
+	set nodeLabels.significantDigits=2;
+	set nodeShapeExternal.colourAttribute=null;
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute=null;
+	set nodeShapeInternal.colourAttribute=null;
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute=null;
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=14.0;
+	set scaleAxis.isShown=true;
+	set scaleAxis.lineWidth=3.0;
+	set scaleAxis.majorTicks=0.25;
+	set scaleAxis.minorTicks=0.05;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=true;
+	set scaleAxis.showGrid=false;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=false;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.2;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=14;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=false;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
