@@ -1,0 +1,32 @@
+[1] "Jensen-pt-2"
+[1] "TreeDater Relaxed clock"
+
+Phylogenetic tree with 8 tips and 7 internal nodes.
+
+Tip labels:
+  Jensen-pt-2|2020-01-01, Jensen-pt-2|2020-01-12, Jensen-pt-2|2020-01-16, Jensen-pt-2|2020-01-20, Jensen-pt-2|2020-01-23, Jensen-pt-2|2020-01-09, ...
+
+Rooted; includes branch lengths.
+
+ Time of common ancestor 
+2018.35081530361 
+
+ Time to common ancestor (before most recent sample) 
+1.70929398600924 
+
+ Weighted mean substitution rate (adjusted by branch lengths) 
+3.51666995960656e-05 
+
+ Unadjusted mean substitution rate 
+3.51666997368611e-05 
+
+ Clock model  
+uncorrelated 
+
+ Coefficient of variation of rates 
+1.49523564878406e-09 
+[1] "Estimating confidence intervals for rates and dates by a parametric bootstrap"
+
+ For more detailed output, $trees provides a list of each fit to each simulation 
+
+Time of common ancestor	2.018351e+03	1.889528e+03	2.019982e+03	Mean substitution rate	3.516670e-05	6.365303e-07	1.942872e-03	

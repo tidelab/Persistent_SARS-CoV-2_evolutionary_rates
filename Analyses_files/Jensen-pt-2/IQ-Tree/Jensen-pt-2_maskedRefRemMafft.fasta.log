@@ -1,0 +1,151 @@
+IQ-TREE multicore version 2.1.2 COVID-edition for Mac OS X 64-bit built Oct 22 2020
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    dlmp133362.dlce.shh.mpg.de (AVX512, FMA3, 16 GB RAM)
+Command: /Users/oeversti/iqtree-2.1.2-MacOSX/bin/iqtree2 -s Jensen-pt-2_maskedRefRemMafft.fasta -m MFP
+Seed:    377671 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon May 22 12:25:19 2023
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file Jensen-pt-2_maskedRefRemMafft.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 265 sites contain only gaps or ambiguous characters.
+Alignment has 8 sequences with 29903 columns, 52 distinct patterns
+1 parsimony-informative, 3 singleton sites, 29899 constant sites
+                        Gap/Ambiguity  Composition  p-value
+   1  Jensen-pt-2|2020-01-01   12.05%    passed     84.35%
+   2  Jensen-pt-2|2020-01-12    2.79%    passed     99.15%
+   3  Jensen-pt-2|2020-01-16    1.82%    passed     98.90%
+   4  Jensen-pt-2|2020-01-20    3.45%    passed     99.12%
+   5  Jensen-pt-2|2020-01-21   23.39%    passed     96.50%
+   6  Jensen-pt-2|2020-01-23    5.27%    passed     99.98%
+   7  Jensen-pt-2|2020-01-07    8.41%    passed     99.24%
+   8  Jensen-pt-2|2020-01-09    7.32%    passed     99.98%
+****  TOTAL                     8.06%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.001 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -40242.067
+Optimal log-likelihood: -40241.602
+Rate parameters:  A-C: 0.00010  A-G: 2.59226  A-T: 0.00010  C-G: 0.23064  C-T: 2.59805  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.197  T: 0.321
+Proportion of invariable sites: 0.500
+Gamma shape alpha: 998.449
+Parameters optimization took 1 rounds (0.001 sec)
+Time for fast ML tree search: 0.007 seconds
+
+NOTE: ModelFinder requires 0 MB RAM!
+ModelFinder will test up to 286 DNA models (sample size: 29903) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         40241.448    21  80524.897    80524.928    80699.317
+  2  GTR+F+I       40241.425    22  80526.850    80526.884    80709.576
+  3  GTR+F+G4      40241.425    22  80526.850    80526.884    80709.576
+  4  GTR+F+I+G4    40241.425    23  80528.850    80528.887    80719.882
+  5  GTR+F+R2      40241.405    23  80528.810    80528.847    80719.841
+  6  GTR+F+R3      40241.404    25  80532.809    80532.852    80740.451
+ 14  SYM           41129.085    18  82294.171    82294.194    82443.674
+ 27  TVM+F         40241.403    20  80522.806    80522.834    80688.920
+ 40  TVMe          41129.030    17  82292.061    82292.081    82433.258
+ 53  TIM3+F        40241.547    19  80521.094    80521.120    80678.903
+ 66  TIM3e         41129.113    16  82290.227    82290.245    82423.118
+ 79  TIM2+F        40241.023    19  80520.045    80520.071    80677.854
+ 92  TIM2e         41128.717    16  82289.433    82289.451    82422.325
+105  TIM+F         40241.060    19  80520.121    80520.146    80677.929
+118  TIMe          41128.727    16  82289.455    82289.473    82422.346
+131  TPM3u+F       40241.075    18  80518.149    80518.172    80667.652
+144  TPM3+F        40241.061    18  80518.123    80518.145    80667.625
+157  TPM2u+F       40241.023    18  80518.046    80518.069    80667.549
+170  TPM2+F        40240.994    18  80517.988    80518.011    80667.491
+183  K3Pu+F        40240.988    18  80517.977    80518.000    80667.480
+196  K3P           41128.644    15  82287.287    82287.304    82411.873
+209  TN+F          40240.989    18  80517.978    80518.001    80667.481
+222  TNe           41128.656    15  82287.312    82287.328    82411.898
+235  HKY+F         40240.989    17  80515.978    80515.999    80657.175
+248  K2P           41128.656    14  82285.312    82285.326    82401.592
+261  F81+F         40245.317    16  80522.635    80522.653    80655.526
+274  JC            41132.836    13  82291.672    82291.684    82399.646
+Akaike Information Criterion:           HKY+F
+Corrected Akaike Information Criterion: HKY+F
+Bayesian Information Criterion:         F81+F
+Best-fit model: F81+F chosen according to BIC
+
+All model information printed to Jensen-pt-2_maskedRefRemMafft.fasta.model.gz
+CPU time for ModelFinder: 0.027 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.042 seconds (0h:0m:0s)
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -40245.317
+Optimal log-likelihood: -40245.317
+Rate parameters:  A-C: 1.00000  A-G: 1.00000  A-T: 1.00000  C-G: 1.00000  C-T: 1.00000  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.197  T: 0.321
+Parameters optimization took 1 rounds (0.000 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.000555 sec (of wall-clock time) 0.000393 sec(of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing RapidNJ tree took 0.000028 sec (of wall-clock time) 0.000022 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -40245.650
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.010 second
+Computing log-likelihood of 94 initial trees ... 0.010 seconds
+Current best score: -40245.311
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -40245.310
+BETTER TREE FOUND at iteration 3: -40245.310
+Iteration 10 / LogL: -40245.317 / Time: 0h:0m:0s
+Iteration 20 / LogL: -40245.311 / Time: 0h:0m:0s
+Finish initializing candidate tree set (6)
+Current best tree score: -40245.310 / CPU time: 0.029
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+UPDATE BEST LOG-LIKELIHOOD: -40245.310
+Iteration 30 / LogL: -40245.317 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 40 / LogL: -40245.310 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 50 / LogL: -40245.311 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 60 / LogL: -40245.310 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 70 / LogL: -40245.310 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 80 / LogL: -40245.317 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 90 / LogL: -40245.310 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 100 / LogL: -40245.310 / Time: 0h:0m:0s (0h:0m:0s left)
+TREE SEARCH COMPLETED AFTER 104 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -40245.310
+Optimal log-likelihood: -40245.310
+Rate parameters:  A-C: 1.00000  A-G: 1.00000  A-T: 1.00000  C-G: 1.00000  C-T: 1.00000  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.197  T: 0.321
+Parameters optimization took 1 rounds (0.000 sec)
+BEST SCORE FOUND : -40245.310
+Total tree length: 0.000
+
+Total number of iterations: 104
+CPU time used for tree search: 0.127 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.069 sec (0h:0m:0s)
+Total CPU time used: 0.134 sec (0h:0m:0s)
+Total wall-clock time used: 0.076 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                Jensen-pt-2_maskedRefRemMafft.fasta.iqtree
+  Maximum-likelihood tree:       Jensen-pt-2_maskedRefRemMafft.fasta.treefile
+  Likelihood distances:          Jensen-pt-2_maskedRefRemMafft.fasta.mldist
+  Screen log file:               Jensen-pt-2_maskedRefRemMafft.fasta.log
+
+Date and Time: Mon May 22 12:25:19 2023

@@ -1,0 +1,32 @@
+[1] "Kemp-pt-1"
+[1] "TreeDater Relaxed clock"
+
+Phylogenetic tree with 16 tips and 15 internal nodes.
+
+Tip labels:
+  Kemp-pt-1|2020-01-01, Kemp-pt-1|2020-04-10, Kemp-pt-1|2020-04-07, Kemp-pt-1|2020-04-08, Kemp-pt-1|2020-04-09, Kemp-pt-1|2020-03-22, ...
+
+Rooted; includes branch lengths.
+
+ Time of common ancestor 
+2019.58670654166 
+
+ Time to common ancestor (before most recent sample) 
+0.686517502060724 
+
+ Weighted mean substitution rate (adjusted by branch lengths) 
+0.000482389522171677 
+
+ Unadjusted mean substitution rate 
+0.000482389522473507 
+
+ Clock model  
+uncorrelated 
+
+ Coefficient of variation of rates 
+9.3760345104361e-10 
+[1] "Estimating confidence intervals for rates and dates by a parametric bootstrap"
+
+ For more detailed output, $trees provides a list of each fit to each simulation 
+
+Time of common ancestor	2.019587e+03	2.017731e+03	2.019894e+03	Mean substitution rate	4.823895e-04	1.892907e-04	1.229324e-03	

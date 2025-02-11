@@ -1,0 +1,253 @@
+IQ-TREE 2.1.2 COVID-edition built Oct 22 2020
+
+Input file name: Kemp-pt-1_maskedRefRemMafft.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 294178
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+Since you used least square dating (LSD) please also cite: 
+
+Thu-Hien To, Matthieu Jung, Samantha Lycett, Olivier Gascuel (2016)
+Fast dating using least-squares criteria and algorithms. Syst. Biol. 65:82-97.
+https://doi.org/10.1093/sysbio/syv068
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 16 sequences with 29903 nucleotide sites
+Number of constant sites: 29869 (= 99.8863% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 29869 (= 99.8863% of all sites)
+Number of parsimony informative sites: 25
+Number of distinct site patterns: 37
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: HKY+F+I
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+HKY+F+I          -40572.287   81208.574 -   0.0262   81208.644 -   0.0263   81474.357 +    0.738
+HKY+F            -40579.773   81221.545 - 3.99e-05   81221.612 - 4.02e-05   81479.023 +   0.0716
+K3Pu+F+I         -40569.501   81205.003 +    0.156   81205.078 +    0.157   81479.091 +   0.0692
+TPM2+F+I         -40570.014   81206.028 +   0.0936   81206.103 +   0.0938   81480.116 -   0.0415
+TPM2u+F+I        -40570.184   81206.367 +    0.079   81206.442 +   0.0791   81480.456 -    0.035
+TN+F+I           -40570.647   81207.294 -   0.0497   81207.369 -   0.0498   81481.383 -    0.022
+K3Pu+F           -40577.235   81218.470 - 0.000186   81218.540 - 0.000187   81484.253 -  0.00524
+TPM2+F           -40577.561   81219.122 - 0.000134   81219.192 - 0.000135   81484.904 -  0.00378
+TPM2u+F          -40577.678   81219.356 - 0.000119   81219.427 -  0.00012   81485.139 -  0.00336
+TPM3+F+I         -40572.730   81211.461 -  0.00618   81211.536 -   0.0062   81485.549 -  0.00274
+TPM3u+F+I        -40572.772   81211.543 -  0.00593   81211.618 -  0.00595   81485.632 -  0.00263
+TN+F             -40578.044   81220.089 - 8.28e-05   81220.159 - 8.31e-05   81485.872 -  0.00233
+TIM2+F+I         -40568.311   81204.622 +    0.189   81204.702 +    0.189   81487.016 -  0.00132
+TPM3+F           -40580.250   81224.501 - 9.11e-06   81224.572 - 9.15e-06   81490.284 - 0.000257
+TPM3u+F          -40580.294   81224.587 - 8.73e-06   81224.658 - 8.77e-06   81490.370 - 0.000246
+TIM2+F           -40575.714   81217.428 - 0.000313   81217.503 - 0.000314   81491.517 - 0.000139
+TIM+F+I          -40570.563   81209.127 -   0.0199   81209.206 -   0.0199   81491.521 - 0.000138
+TIM3+F+I         -40570.708   81209.417 -   0.0172   81209.497 -   0.0172   81491.811 -  0.00012
+TVM+F+I          -40566.677   81203.354 +    0.356   81203.439 +    0.355   81494.054 -  3.9e-05
+F81+F+I          -40588.000   81238.000 - 1.07e-08   81238.067 - 1.07e-08   81495.477 - 1.91e-05
+TIM3+F           -40577.775   81221.551 - 3.98e-05   81221.626 - 3.99e-05   81495.639 - 1.77e-05
+TIM+F            -40577.949   81221.899 - 3.35e-05   81221.974 - 3.36e-05   81495.987 - 1.48e-05
+F81+F            -40595.617   81251.234 - 1.43e-11   81251.297 - 1.44e-11   81500.406 - 1.63e-06
+TVM+F            -40575.924   81219.848 - 9.33e-05   81219.928 - 9.33e-05   81502.243 -  6.5e-07
+GTR+F+I          -40575.785   81223.569 - 1.45e-05   81223.658 - 1.45e-05   81522.575 -  2.5e-11
+GTR+F            -40583.853   81237.706 - 1.24e-08   81237.790 - 1.23e-08   81528.406 - 1.35e-12
+GTR+F+G4         -40581.057   81234.113 - 7.45e-08   81234.203 - 7.42e-08   81533.119 - 1.28e-13
+GTR+F+I+G4       -40579.717   81233.434 - 1.05e-07   81233.529 - 1.04e-07   81540.746 - 2.83e-15
+GTR+F+R2         -40583.015   81240.029 - 3.87e-09   81240.123 - 3.84e-09   81547.341 - 1.05e-16
+GTR+F+R3         -40582.267   81242.533 - 1.11e-09   81242.638 - 1.09e-09   81566.456 -  7.4e-21
+K2P+I            -41456.871   82971.742 -        0   82971.800 -        0   83212.607 -        0
+K2P              -41464.531   82985.062 -        0   82985.116 -        0   83217.622 -        0
+K3P+I            -41454.419   82968.838 -        0   82968.900 -        0   83218.009 -        0
+TNe+I            -41455.366   82970.731 -        0   82970.794 -        0   83219.903 -        0
+K3P              -41462.047   82982.094 -        0   82982.152 -        0   83222.959 -        0
+TNe              -41462.882   82983.763 -        0   82983.821 -        0   83224.629 -        0
+TIM2e+I          -41453.300   82968.600 -        0   82968.666 -        0   83226.077 -        0
+TIM3e+I          -41455.004   82972.007 -        0   82972.074 -        0   83229.484 -        0
+TIMe+I           -41455.601   82973.202 -        0   82973.268 -        0   83230.679 -        0
+TIM2e            -41460.794   82981.587 -        0   82981.650 -        0   83230.759 -        0
+JC+I             -41471.747   82999.493 -        0   82999.547 -        0   83232.053 -        0
+TVMe+I           -41451.921   82967.842 -        0   82967.912 -        0   83233.625 -        0
+TIM3e            -41462.580   82985.161 -        0   82985.223 -        0   83234.332 -        0
+TIMe             -41463.180   82986.360 -        0   82986.422 -        0   83235.532 -        0
+JC               -41479.456   83012.912 -        0   83012.962 -        0   83237.166 -        0
+TVMe             -41459.425   82980.850 -        0   82980.917 -        0   83238.327 -        0
+SYM+I            -41461.365   82988.731 -        0   82988.806 -        0   83262.819 -        0
+SYM              -41469.659   83003.319 -        0   83003.389 -        0   83269.101 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: HKY+F+I
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 6.9057
+  A-T: 1.0000
+  C-G: 1.0000
+  C-T: 6.9057
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2989
+  pi(C) = 0.1838
+  pi(G) = 0.196
+  pi(T) = 0.3214
+
+Rate matrix Q:
+
+  A   -0.8748   0.08649    0.6371    0.1512
+  C    0.1407    -1.277   0.09226     1.044
+  G    0.9714   0.08649    -1.209    0.1512
+  T    0.1407    0.5973   0.09226   -0.8302
+
+Model of rate heterogeneity: Invar
+Proportion of invariable sites: 0.9906
+
+ Category  Relative_rate  Proportion
+  0         0              0.9906
+  1         106.9          0.009352
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -40570.8449 (s.e. 75.6194)
+Unconstrained log-likelihood (without tree): -42513.3370
+Number of free parameters (#branches + #model parameters): 32
+Akaike information criterion (AIC) score: 81205.6899
+Corrected Akaike information criterion (AICc) score: 81205.7606
+Bayesian information criterion (BIC) score: 81471.4727
+
+Total tree length (sum of branch lengths): 0.0013
+Sum of internal branch lengths: 0.0008 (66.7014% of tree length)
+
+WARNING: 5 near-zero internal branches (<0.0000) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Kemp-pt-1|2020-01-01' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++**Kemp-pt-1|2020-01-01
+|
+|                       +**Kemp-pt-1|2020-04-10
+|                    +--| (93)
+|                    |  +**Kemp-pt-1|2020-04-07
+|                 +**| (78)
+|                 |  +--Kemp-pt-1|2020-04-08
+|              +--| (68)
+|              |  +--Kemp-pt-1|2020-04-09
+|     +--------| (93)
+|     |        +--Kemp-pt-1|2020-03-22
+|  +**| (33)
+|  |  |     +**Kemp-pt-1|2020-02-06
+|  |  |  +**| (70)
+|  |  |  |  +**Kemp-pt-1|2020-02-14
+|  |  +--| (60)
+|  |     +--Kemp-pt-1|2020-02-19
++**| (67)
+|  |     +**Kemp-pt-1|2020-03-06
+|  |  +--| (81)
+|  |  |  |        +**Kemp-pt-1|2020-03-26
+|  |  |  +--------| (99)
+|  |  |           +-----------Kemp-pt-1|2020-03-29
+|  +**| (29)
+|     |                                                 +--------Kemp-pt-1|2020-04-02
+|     +-------------------------------------------------| (100)
+|                                                       +**Kemp-pt-1|2020-04-04
+|
++**Kemp-pt-1|2020-02-10
+
+Tree in newick format:
+
+(Kemp-pt-1|2020-01-01:0.0000010000,((((((Kemp-pt-1|2020-04-10:0.0000010000,Kemp-pt-1|2020-04-07:0.0000010000)93:0.0000338342,Kemp-pt-1|2020-04-08:0.0000340921)78:0.0000010000,Kemp-pt-1|2020-04-09:0.0000335252)68:0.0000339198,Kemp-pt-1|2020-03-22:0.0000338146)93:0.0001022239,((Kemp-pt-1|2020-02-06:0.0000010000,Kemp-pt-1|2020-02-14:0.0000010000)70:0.0000010000,Kemp-pt-1|2020-02-19:0.0000334422)60:0.0000334422)33:0.0000010000,((Kemp-pt-1|2020-03-06:0.0000010000,(Kemp-pt-1|2020-03-26:0.0000010000,Kemp-pt-1|2020-03-29:0.0001358534)99:0.0001013991)81:0.0000334422,(Kemp-pt-1|2020-04-02:0.0001026230,Kemp-pt-1|2020-04-04:0.0000010000)100:0.0005272463)29:0.0000010000)67:0.0000010000,Kemp-pt-1|2020-02-10:0.0000010000);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -40571.261387
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++**Kemp-pt-1|2020-01-01
+|
+|                          +--Kemp-pt-1|2020-04-10
+|                       +--| (93)
+|                       |  +--Kemp-pt-1|2020-04-07
+|                    +--| (78)
+|                    |  +--Kemp-pt-1|2020-04-08
+|                 +--| (68)
+|                 |  +--Kemp-pt-1|2020-04-09
+|        +--------| (93)
+|        |        +--Kemp-pt-1|2020-03-22
+|     +--| (33)
+|     |  |     +--Kemp-pt-1|2020-02-06
+|     |  |  +--| (70)
+|     |  |  |  +--Kemp-pt-1|2020-02-14
+|     |  +--| (60)
+|     |     +--Kemp-pt-1|2020-02-19
+|  +--| (67)
+|  |  |     +--Kemp-pt-1|2020-03-06
+|  |  |  +--| (81)
+|  |  |  |  |        +--Kemp-pt-1|2020-03-26
+|  |  |  |  +--------| (99)
+|  |  |  |           +-----------Kemp-pt-1|2020-03-29
+|  |  +--| (29)
+|  |     |                                                +--------Kemp-pt-1|2020-04-02
+|  |     +------------------------------------------------| (100)
+|  |                                                      +--Kemp-pt-1|2020-04-04
++--|
+|  +--Kemp-pt-1|2020-02-10
+|
++**Kemp-pt-1|2020-02-23
+
+
+Consensus tree in newick format: 
+
+(Kemp-pt-1|2020-01-01:0.0000000000,(((((((Kemp-pt-1|2020-04-10:0.0000020138,Kemp-pt-1|2020-04-07:0.0000020138)93:0.0000337293,Kemp-pt-1|2020-04-08:0.0000337801)78:0.0000020138,Kemp-pt-1|2020-04-09:0.0000334422)68:0.0000340236,Kemp-pt-1|2020-03-22:0.0000349088)93:0.0001022123,((Kemp-pt-1|2020-02-06:0.0000020138,Kemp-pt-1|2020-02-14:0.0000020138)70:0.0000022628,Kemp-pt-1|2020-02-19:0.0000335805)60:0.0000345632)33:0.0000020138,((Kemp-pt-1|2020-03-06:0.0000020138,(Kemp-pt-1|2020-03-26:0.0000020138,Kemp-pt-1|2020-03-29:0.0001359108)99:0.0001016429)81:0.0000334422,(Kemp-pt-1|2020-04-02:0.0001031117,Kemp-pt-1|2020-04-04:0.0000020138)100:0.0005288769)29:0.0000020138)67:0.0000020138,Kemp-pt-1|2020-02-10:0.0000020138):0.0000020138,Kemp-pt-1|2020-02-23:0.0000000000);
+
+TIME STAMP
+----------
+
+Date and time: Mon May 22 12:17:34 2023
+Total CPU time used: 0.850126 seconds (0h:0m:0s)
+Total wall-clock time used: 0.7180640697 seconds (0h:0m:0s)
+

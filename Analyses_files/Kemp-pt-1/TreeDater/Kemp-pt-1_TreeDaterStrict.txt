@@ -1,0 +1,33 @@
+[1] "Kemp-pt-1"
+[1] "TreeDater Strict clock"
+
+Phylogenetic tree with 16 tips and 15 internal nodes.
+
+Tip labels:
+  Kemp-pt-1|2020-01-01, Kemp-pt-1|2020-04-10, Kemp-pt-1|2020-04-07, Kemp-pt-1|2020-04-08, Kemp-pt-1|2020-04-09, Kemp-pt-1|2020-03-22, ...
+
+Rooted; includes branch lengths.
+
+ Time of common ancestor 
+2019.590971631 
+
+ Time to common ancestor (before most recent sample) 
+0.682252412718299 
+
+ Weighted mean substitution rate (adjusted by branch lengths) 
+0.00048437786625354 
+
+ Unadjusted mean substitution rate 
+0.00048437786625354 
+
+ Clock model  
+strict 
+
+ Coefficient of variation of rates 
+0 
+[1] "Estimating confidence intervals for rates and dates by a parametric bootstrap"
+
+ For more detailed output, $trees provides a list of each fit to each simulation 
+
+
+Time of common ancestor	2.019591e+03	2.016018e+03	2.019856e+03	Mean substitution rate	4.843779e-04	1.538387e-04	1.525117e-03	

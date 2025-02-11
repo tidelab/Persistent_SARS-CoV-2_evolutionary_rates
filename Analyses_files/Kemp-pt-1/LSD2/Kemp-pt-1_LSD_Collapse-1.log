@@ -1,0 +1,237 @@
+IQ-TREE multicore version 2.1.2 COVID-edition for Mac OS X 64-bit built Oct 22 2020
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    dlmp133362.dlce.shh.mpg.de (AVX512, FMA3, 16 GB RAM)
+Command: /Users/oeversti/iqtree-2.1.2-MacOSX/bin/iqtree2 -s Kemp-pt-1_maskedRefRemMafft.fasta --prefix Kemp-pt-1_LSD_Collapse-1 -m MFP -B 1000 --date TAXNAME --date-ci 100 --date-options -l -1 -redo
+Seed:    294178 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon May 22 12:17:33 2023
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file Kemp-pt-1_maskedRefRemMafft.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 265 sites contain only gaps or ambiguous characters.
+Alignment has 16 sequences with 29903 columns, 37 distinct patterns
+25 parsimony-informative, 9 singleton sites, 29869 constant sites
+                      Gap/Ambiguity  Composition  p-value
+   1  Kemp-pt-1|2020-01-01    0.89%    passed    100.00%
+   2  Kemp-pt-1|2020-04-10    0.91%    passed    100.00%
+   3  Kemp-pt-1|2020-02-06    0.89%    passed    100.00%
+   4  Kemp-pt-1|2020-02-10    0.89%    passed    100.00%
+   5  Kemp-pt-1|2020-02-14    0.89%    passed    100.00%
+   6  Kemp-pt-1|2020-02-19    0.89%    passed    100.00%
+   7  Kemp-pt-1|2020-02-23    0.89%    passed    100.00%
+   8  Kemp-pt-1|2020-03-06    0.89%    passed    100.00%
+   9  Kemp-pt-1|2020-03-22    0.91%    passed    100.00%
+  10  Kemp-pt-1|2020-03-26    0.89%    passed    100.00%
+  11  Kemp-pt-1|2020-03-29    1.08%    passed     99.95%
+  12  Kemp-pt-1|2020-04-02    0.89%    passed    100.00%
+  13  Kemp-pt-1|2020-04-04    0.89%    passed    100.00%
+  14  Kemp-pt-1|2020-04-07    0.91%    passed    100.00%
+  15  Kemp-pt-1|2020-04-08    0.91%    passed    100.00%
+  16  Kemp-pt-1|2020-04-09    0.91%    passed    100.00%
+****  TOTAL                   0.90%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: Kemp-pt-1|2020-02-10 is identical to Kemp-pt-1|2020-01-01 but kept for subsequent analysis
+NOTE: Kemp-pt-1|2020-04-07 is identical to Kemp-pt-1|2020-04-10 but kept for subsequent analysis
+NOTE: Kemp-pt-1|2020-02-14 is identical to Kemp-pt-1|2020-02-06 but kept for subsequent analysis
+NOTE: 1 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: Kemp-pt-1|2020-02-23 (identical to Kemp-pt-1|2020-01-01) is ignored but added at the end
+Alignment was printed to Kemp-pt-1_LSD_Collapse-1.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to Kemp-pt-1_LSD_Collapse-1.uniqueseq.phy
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.001 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -40579.805
+Optimal log-likelihood: -40579.789
+Rate parameters:  A-C: 3.71655  A-G: 29.68403  A-T: 0.00010  C-G: 9.34229  C-T: 65.68350  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Proportion of invariable sites: 0.500
+Gamma shape alpha: 0.020
+Parameters optimization took 1 rounds (0.002 sec)
+Time for fast ML tree search: 0.011 seconds
+
+NOTE: ModelFinder requires 0 MB RAM!
+ModelFinder will test up to 286 DNA models (sample size: 29903) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         40583.853    35  81237.706    81237.790    81528.406
+  2  GTR+F+I       40575.785    36  81223.569    81223.658    81522.575
+  3  GTR+F+G4      40581.057    36  81234.113    81234.203    81533.119
+  4  GTR+F+I+G4    40579.717    37  81233.434    81233.529    81540.746
+  5  GTR+F+R2      40583.015    37  81240.029    81240.123    81547.341
+  6  GTR+F+R3      40582.267    39  81242.533    81242.638    81566.456
+ 14  SYM           41469.659    32  83003.319    83003.389    83269.101
+ 15  SYM+I         41461.365    33  82988.731    82988.806    83262.819
+ 27  TVM+F         40575.924    34  81219.848    81219.928    81502.243
+ 28  TVM+F+I       40566.677    35  81203.354    81203.439    81494.054
+ 40  TVMe          41459.425    31  82980.850    82980.917    83238.327
+ 41  TVMe+I        41451.921    32  82967.842    82967.912    83233.625
+ 53  TIM3+F        40577.775    33  81221.551    81221.626    81495.639
+ 54  TIM3+F+I      40570.708    34  81209.417    81209.497    81491.811
+ 66  TIM3e         41462.580    30  82985.161    82985.223    83234.332
+ 67  TIM3e+I       41455.004    31  82972.007    82972.074    83229.484
+ 79  TIM2+F        40575.714    33  81217.428    81217.503    81491.517
+ 80  TIM2+F+I      40568.311    34  81204.622    81204.702    81487.016
+ 92  TIM2e         41460.794    30  82981.587    82981.650    83230.759
+ 93  TIM2e+I       41453.300    31  82968.600    82968.666    83226.077
+105  TIM+F         40577.949    33  81221.899    81221.974    81495.987
+106  TIM+F+I       40570.563    34  81209.127    81209.206    81491.521
+118  TIMe          41463.180    30  82986.360    82986.422    83235.531
+119  TIMe+I        41455.601    31  82973.202    82973.268    83230.679
+131  TPM3u+F       40580.294    32  81224.587    81224.658    81490.370
+132  TPM3u+F+I     40572.772    33  81211.543    81211.618    81485.632
+144  TPM3+F        40580.250    32  81224.501    81224.572    81490.284
+145  TPM3+F+I      40572.730    33  81211.461    81211.536    81485.549
+157  TPM2u+F       40577.678    32  81219.356    81219.427    81485.139
+158  TPM2u+F+I     40570.184    33  81206.367    81206.442    81480.456
+170  TPM2+F        40577.561    32  81219.122    81219.192    81484.904
+171  TPM2+F+I      40570.014    33  81206.028    81206.103    81480.116
+183  K3Pu+F        40577.235    32  81218.470    81218.540    81484.253
+184  K3Pu+F+I      40569.501    33  81205.003    81205.078    81479.091
+196  K3P           41462.047    29  82982.094    82982.152    83222.959
+197  K3P+I         41454.419    30  82968.838    82968.900    83218.009
+209  TN+F          40578.044    32  81220.089    81220.159    81485.872
+210  TN+F+I        40570.647    33  81207.294    81207.369    81481.383
+222  TNe           41462.882    29  82983.763    82983.821    83224.629
+223  TNe+I         41455.366    30  82970.731    82970.794    83219.903
+235  HKY+F         40579.773    31  81221.545    81221.612    81479.023
+236  HKY+F+I       40572.287    32  81208.574    81208.644    81474.357
+248  K2P           41464.531    28  82985.062    82985.116    83217.622
+249  K2P+I         41456.871    29  82971.742    82971.800    83212.607
+261  F81+F         40595.617    30  81251.234    81251.297    81500.406
+262  F81+F+I       40588.000    31  81238.000    81238.067    81495.477
+274  JC            41479.456    27  83012.912    83012.962    83237.166
+275  JC+I          41471.747    28  82999.493    82999.547    83232.053
+Akaike Information Criterion:           TVM+F+I
+Corrected Akaike Information Criterion: TVM+F+I
+Bayesian Information Criterion:         HKY+F+I
+Best-fit model: HKY+F+I chosen according to BIC
+
+All model information printed to Kemp-pt-1_LSD_Collapse-1.model.gz
+CPU time for ModelFinder: 0.088 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.109 seconds (0h:0m:0s)
+Generating 1000 samples for ultrafast bootstrap (seed: 294178)...
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -40572.287
+Optimal log-likelihood: -40572.269
+Rate parameters:  A-C: 1.00000  A-G: 6.69105  A-T: 1.00000  C-G: 1.00000  C-T: 6.69105  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Proportion of invariable sites: 0.991
+Parameters optimization took 1 rounds (0.000 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.002849 sec (of wall-clock time) 0.002047 sec(of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing RapidNJ tree took 0.000066 sec (of wall-clock time) 0.000038 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -40648.846
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.025 second
+Computing log-likelihood of 98 initial trees ... 0.019 seconds
+Current best score: -40570.867
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -40570.854
+UPDATE BEST LOG-LIKELIHOOD: -40570.854
+Iteration 10 / LogL: -40570.854 / Time: 0h:0m:0s
+Iteration 20 / LogL: -40570.854 / Time: 0h:0m:0s
+Finish initializing candidate tree set (7)
+Current best tree score: -40570.854 / CPU time: 0.095
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -40570.923 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 40 / LogL: -40570.919 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -40570.854
+Iteration 50 / LogL: -40627.210 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -40588.124
+UPDATE BEST LOG-LIKELIHOOD: -40570.854
+Iteration 60 / LogL: -40571.018 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 70 / LogL: -40571.001 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 80 / LogL: -40571.027 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 90 / LogL: -40570.909 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 100 / LogL: -40570.947 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -40590.091
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.993
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -40570.854
+Optimal log-likelihood: -40570.845
+Rate parameters:  A-C: 1.00000  A-G: 6.90567  A-T: 1.00000  C-G: 1.00000  C-T: 6.90567  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Proportion of invariable sites: 0.991
+Parameters optimization took 1 rounds (0.000 sec)
+BEST SCORE FOUND : -40570.845
+Creating bootstrap support values...
+Split supports printed to NEXUS file Kemp-pt-1_LSD_Collapse-1.splits.nex
+Total tree length: 0.001
+
+Total number of iterations: 102
+CPU time used for tree search: 0.802 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.655 sec (0h:0m:0s)
+Total CPU time used: 0.850 sec (0h:0m:0s)
+Total wall-clock time used: 0.708 sec (0h:0m:0s)
+
+Computing bootstrap consensus tree...
+Reading input file Kemp-pt-1_LSD_Collapse-1.splits.nex...
+15 taxa and 145 splits.
+Consensus tree written to Kemp-pt-1_LSD_Collapse-1.contree
+Reading input trees file Kemp-pt-1_LSD_Collapse-1.contree
+Log-likelihood of consensus tree: -40571.261
+
+Analysis results written to: 
+  IQ-TREE report:                Kemp-pt-1_LSD_Collapse-1.iqtree
+  Maximum-likelihood tree:       Kemp-pt-1_LSD_Collapse-1.treefile
+  Likelihood distances:          Kemp-pt-1_LSD_Collapse-1.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          Kemp-pt-1_LSD_Collapse-1.splits.nex
+  Consensus tree:                Kemp-pt-1_LSD_Collapse-1.contree
+  Screen log file:               Kemp-pt-1_LSD_Collapse-1.log
+
+--- Start phylogenetic dating ---
+Extracting date from node names...
+16 dates extracted
+Building time tree by least-square dating (LSD) with command:
+lsd -i Kemp-pt-1_LSD_Collapse-1.timetree.subst -s 29903 -o Kemp-pt-1_LSD_Collapse-1.timetree -f 100 -r a -d Kemp-pt-1_LSD_Collapse-1.timetree.date -l -1 
+
+TREE 1
+*PROCESSING:
+Reading the tree ... 
+Collapse 0 (over 13) internal branches having branch length <= -1
+ (settable via option -l)
+Parameter to adjust variances was set to 0.000334 (settable via option -b)
+Minimum branch length of time scaled tree (settable via option -u and -U): 0
+Estimating the root position on all branches using fast method ...
+Computing confidence intervals using sequence length 29903 and a lognormal
+ relaxed clock with mean 1, standard deviation 0.2 (settable via option -q)
+*RESULTS:
+- Dating results:
+ rate 0.000300237, tMRCA 2019-02-16 , objective function 7.21113e-05
+- Results with confidence intervals:
+ rate 0.000300237 [1e-10; 0.000524916], tMRCA 2019-02-16 [-3457366-12-27; 2019-07-29], objective function 7.21113e-05
+
+TOTAL ELAPSED TIME: 0.00703 seconds
+LSD results written to:
+  LSD report:                  Kemp-pt-1_LSD_Collapse-1.timetree.lsd
+  Time tree in nexus format:   Kemp-pt-1_LSD_Collapse-1.timetree.nex
+  Time tree in newick format:  Kemp-pt-1_LSD_Collapse-1.timetree.nwk
+
+--- End phylogenetic dating ---
+Date and Time: Mon May 22 12:17:34 2023
