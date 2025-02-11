@@ -1,0 +1,33 @@
+[1] "Halfmann-pt-1"
+[1] "TreeDater Strict clock"
+
+Phylogenetic tree with 12 tips and 11 internal nodes.
+
+Tip labels:
+  Halfmann-pt-1_0|2020-12-27, Halfmann-pt-1_11|2021-01-07, Halfmann-pt-1_18|2021-01-14, Halfmann-pt-1_85|2021-03-22, Halfmann-pt-1_184|2021-06-29, Halfmann-pt-1_220|2021-08-04, ...
+
+Rooted; includes branch lengths.
+
+ Time of common ancestor 
+2019.71758771909 
+
+ Time to common ancestor (before most recent sample) 
+2.29063145899454 
+
+ Weighted mean substitution rate (adjusted by branch lengths) 
+0.000279028840918607 
+
+ Unadjusted mean substitution rate 
+0.000279028840918607 
+
+ Clock model  
+strict 
+
+ Coefficient of variation of rates 
+0 
+[1] "Estimating confidence intervals for rates and dates by a parametric bootstrap"
+
+ For more detailed output, $trees provides a list of each fit to each simulation 
+
+Time of common ancestor	2.019718e+03	2.014630e+03	2.020355e+03	Mean substitution rate	2.790288e-04	1.016482e-04	7.659466e-04	
+

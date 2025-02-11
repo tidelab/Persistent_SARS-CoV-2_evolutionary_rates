@@ -1,0 +1,114 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=12;
+	taxlabels
+	'Halfmann-pt-1_0|2020-12-27'
+	'Halfmann-pt-1_11|2021-01-07'
+	'Halfmann-pt-1_184|2021-06-29'
+	'Halfmann-pt-1_18|2021-01-14'
+	'Halfmann-pt-1_220|2021-08-04'
+	'Halfmann-pt-1_275|2021-09-28'
+	'Halfmann-pt-1_302|2021-10-25'
+	'Halfmann-pt-1_304|2021-10-27'
+	'Halfmann-pt-1_369|2021-12-31'
+	'Halfmann-pt-1_373|2022-01-04'
+	'Halfmann-pt-1_46|2021-02-11'
+	'Halfmann-pt-1_85|2021-03-22'
+;
+end;
+
+begin trees;
+	tree TREE1 = [&R] ('Halfmann-pt-1_0|2020-12-27'[&height=1.021880380267793,height_95%_HPD={1.0218803802681575,1.021880380268158},height_median=1.0218803802681578,height_range={1.0218803802681575,1.021880380268158},length=0.010276823431333052,length_95%_HPD={6.398023775222583E-7,0.03489035237740201},length_median=0.005910660386726052,length_range={6.398023775222583E-7,0.15907748388789233}]:0.009931,(('Halfmann-pt-1_11|2021-01-07'[&height=0.9917808219179278,height_95%_HPD={0.9917808219179276,0.991780821917928},height_median=0.9917808219179278,height_range={0.9917808219179276,0.991780821917928},length=0.01666616094863338,length_95%_HPD={1.0023420466964694E-6,0.046807285609762106},length_median=0.011842064213156478,length_range={1.0023420466964694E-6,0.16629381926946651}]:0.008587,'Halfmann-pt-1_46|2021-02-11'[&height=0.8958904109587531,height_95%_HPD={0.8958904109590546,0.8958904109590551},height_median=0.8958904109590549,height_range={0.8958904109590546,0.8958904109590551},length=0.1098638580280728,length_95%_HPD={0.0798774569107179,0.1457197624910893},length_median=0.10615023762480713,length_range={1.3563178721520686E-4,0.23237771369239657}]:0.104478)[&height=1.003694180003384,height_95%_HPD={0.9917818242599745,1.025502424462753},height_median=1.0003682627820334,height_range={0.9917818242599745,1.0869237342305718},length=0.019842016621081444,length_95%_HPD={2.0934244688852743E-6,0.05051017907725819},length_median=0.016723017529505335,length_range={2.0934244688852743E-6,0.168936549673663},posterior=0.4130881617687906]:0.008318,(((('Halfmann-pt-1_184|2021-06-29'[&height=0.5178082191780922,height_95%_HPD={0.5178082191782776,0.517808219178278},height_median=0.5178082191782778,height_range={0.5178082191782776,0.517808219178278},length=0.029935162612037797,length_95%_HPD={5.1427594554009914E-6,0.07723775466604454},length_median=0.024179450716863893,length_range={5.1427594554009914E-6,0.2290360950474789}]:0.024179,'Halfmann-pt-1_220|2021-08-04'[&height=0.4191780821919648,height_95%_HPD={0.41917808219181985,0.4191780821918203},height_median=0.41917808219182007,height_range={0.41917808219181985,0.4191780821918203},length=0.12856529959849575,length_95%_HPD={0.09863527974591313,0.17586789165250227},length_median=0.12280958770332162,length_range={0.09863527974591313,0.32766623203393663}]:0.12281)[&height=0.54774338179031,height_95%_HPD={0.5178133619377332,0.5950459738443223},height_median=0.5419876698951417,height_range={0.5178133619377332,0.7468443142257569},length=0.28661030199611637,length_95%_HPD={0.21248497041950376,0.3641747418766478},length_median=0.2833669338354331,length_range={0.13619346323764048,0.5084905213422873},posterior=1.0]:0.282276,'Halfmann-pt-1_85|2021-03-22'[&height=0.7890410958903228,height_95%_HPD={0.7890410958905247,0.7890410958905252},height_median=0.789041095890525,height_range={0.7890410958905247,0.7890410958905252},length=0.054034658353997046,length_95%_HPD={6.173136006704105E-6,0.13949597928085056},length_median=0.043810835907276635,length_range={6.173136006704105E-6,0.29181043054926503}]:0.035223)[&height=0.8313529192099484,height_95%_HPD={0.7890472690265317,0.8946411955948288},height_median=0.824264153187247,height_range={0.7890472690265317,0.9943412057125117},length=0.06877686988519237,length_95%_HPD={0.010191465750156281,0.13658070493354113},length_median=0.06513269061820504,length_range={1.621897527567251E-4,0.19783650292670452},posterior=0.8113438142325426,!rotate=true]:0.074494,('Halfmann-pt-1_275|2021-09-28'[&height=0.26849315068507223,height_95%_HPD={0.2684931506851169,0.26849315068511737},height_median=0.26849315068511714,height_range={0.2684931506851169,0.26849315068511737},length=0.026160267500937855,length_95%_HPD={4.504376996061765E-6,0.07702484036787494},length_median=0.01852484487379269,length_range={4.504376996061765E-6,0.25384245791944304}]:0.018525,('Halfmann-pt-1_302|2021-10-25'[&height=0.19452054794528975,height_95%_HPD={0.19452054794533047,0.1945205479453309},height_median=0.1945205479453307,height_range={0.19452054794533047,0.1945205479453309},length=0.011663228914160403,length_95%_HPD={5.771766820039659E-8,0.03618998399366857},length_median=0.007685137634418471,length_range={5.771766820039659E-8,0.13491504963592948}]:0.014782,('Halfmann-pt-1_304|2021-10-27'[&height=0.18904109589057688,height_95%_HPD={0.18904109589061568,0.18904109589061602},height_median=0.1890410958906159,height_range={0.18904109589061568,0.18904109589061613},length=0.013415579167321702,length_95%_HPD={1.933989865920971E-6,0.038773824729164685},length_median=0.009667778658883575,length_range={1.933989865920971E-6,0.113863694231777}]:0.005503,('Halfmann-pt-1_369|2021-12-31'[&height=0.010958904109656942,length=0.01795914162890393,length_95%_HPD={2.7870150476339006E-7,0.056837274005466565},length_median=0.011580079191157777,length_range={2.7870150476339006E-7,0.18138285740053783}]:0.01158,'Halfmann-pt-1_373|2022-01-04'[&height=0.0,length=0.028918045738560928,length_95%_HPD={0.010959182811161705,0.0677961781151235},length_median=0.02253898330081472,length_range={0.010959182811161705,0.19234176151019478}]:0.022539)[&height=0.028918045738560928,height_95%_HPD={0.010959182811161705,0.0677961781151235},height_median=0.02253898330081472,height_range={0.010959182811161705,0.19234176151019478},length=0.1741547211420028,length_95%_HPD={0.12726074653214736,0.221048625679791},length_median=0.1769825048917466,length_range={0.020002158479605292,0.2724106595801705},posterior=1.0]:0.172005)[&height=0.19679083222498045,height_95%_HPD={0.18904302988048205,0.21208935260455908},height_median=0.1945441619500577,height_range={0.18904302988048205,0.2866107221541281},length=0.013878595698702308,length_95%_HPD={1.059209753462298E-6,0.03806263471099791},length_median=0.010361034758028798,length_range={1.059209753462298E-6,0.11669095586421463},posterior=0.4908616187989556]:0.014758)[&height=0.2129706049816525,height_95%_HPD={0.19452182770170467,0.24227790899837598},height_median=0.2093024868217278,height_range={0.19452182770170467,0.3294355975812602},length=0.08168281320440249,length_95%_HPD={0.036163656949674494,0.14184829920047626},length_median=0.0770810574649512,length_range={0.0062305773097582895,0.3170527173575497},posterior=1.0]:0.077716)[&height=0.2946534181860562,height_95%_HPD={0.2684976550621134,0.3455179910529921},height_median=0.28701799555890983,height_range={0.2684976550621134,0.5223356086045602},length=0.5954458037522166,length_95%_HPD={0.497303711338106,0.6922207880056188},length_median=0.5981754993511165,length_range={0.36782560957446286,0.8074150727798268},posterior=1.0]:0.61174)[&height=0.8988069432603418,height_95%_HPD={0.8239347325848476,0.97195717433413},height_median=0.8987577884717444,height_range={0.7904568815566158,1.0666456658440073},length=0.08524492658978435,length_95%_HPD={0.010034883510575243,0.15569296537771649},length_median=0.08446701121531086,length_range={1.5559626131012028E-4,0.22273584238685729},posterior=0.9976112438197878]:0.082069,'Halfmann-pt-1_18|2021-01-14'[&height=0.9726027397263906,height_95%_HPD={0.9726027397261985,0.9726027397261989},height_median=0.9726027397261987,height_range={0.9726027397261985,0.9726027397261989},length=0.011942683360508948,length_95%_HPD={2.1013807049996558E-7,0.03527815140564017},length_median=0.008289184651769754,length_range={2.1013807049996558E-7,0.128010431767404}]:0.008224)[&height=0.9842974013362144,height_95%_HPD={0.9726029498642692,1.0068281429482822},height_median=0.9808269586128335,height_range={0.9726029498642692,1.0992124256387326},length=0.029357378847762107,length_95%_HPD={2.4478349979695224E-4,0.06767158666393824},length_median=0.024659073795000874,length_range={2.1425741923541963E-5,0.2771472385803293},posterior=0.9874451419365591,!rotate=true]:0.027859)[&height=1.0102955650329266,height_95%_HPD={0.9917818446009954,1.0338448971178287},height_median=1.0086863399495913,height_range={0.9917818446009954,1.1089682045231637},length=0.0224277621034742,length_95%_HPD={6.547175135374061E-7,0.04616293599529553},length_median=0.021986245686376638,length_range={6.547175135374061E-7,0.14461723879551824},posterior=0.6589078384534193]:0.023125)[&height=1.0378134950193918,height_95%_HPD={1.021881020070535,1.0740254893531034},height_median=1.031811554811175,height_range={1.021881020070535,1.2971105095373758},length=0.0,posterior=1.0];
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=3.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute=null;
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="posterior";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=14;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=true;
+	set nodeLabels.significantDigits=2;
+	set nodeShapeExternal.colourAttribute=null;
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute=null;
+	set nodeShapeInternal.colourAttribute=null;
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute=null;
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=14.0;
+	set scaleAxis.isShown=true;
+	set scaleAxis.lineWidth=3.0;
+	set scaleAxis.majorTicks=0.25;
+	set scaleAxis.minorTicks=0.05;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=true;
+	set scaleAxis.showGrid=false;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=false;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.2;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=14;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=false;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+

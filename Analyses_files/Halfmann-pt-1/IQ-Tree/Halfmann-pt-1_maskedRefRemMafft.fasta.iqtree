@@ -1,0 +1,164 @@
+IQ-TREE 2.1.2 COVID-edition built Oct 22 2020
+
+Input file name: Halfmann-pt-1_maskedRefRemMafft.fasta
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 332222
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 12 sequences with 29903 nucleotide sites
+Number of constant sites: 29862 (= 99.8629% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 29862 (= 99.8629% of all sites)
+Number of parsimony informative sites: 32
+Number of distinct site patterns: 78
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: HKY+F+I
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+HKY+F+I          -40611.512   81275.025 -   0.0483   81275.072 -   0.0485   81490.973 +    0.797
+F81+F+I          -40619.380   81288.761 - 5.03e-05   81288.805 - 5.05e-05   81496.404 +   0.0527
+K3Pu+F+I         -40609.130   81272.260 +    0.192   81272.311 +    0.193   81496.514 -   0.0499
+TPM2+F+I         -40609.276   81272.552 +    0.166   81272.603 +    0.167   81496.807 -   0.0431
+TPM2u+F+I        -40609.291   81272.583 +    0.164   81272.633 +    0.164   81496.837 -   0.0425
+TN+F+I           -40611.111   81276.222 -   0.0265   81276.273 -   0.0266   81500.476 -  0.00688
+TPM3+F+I         -40611.629   81277.259 -   0.0158   81277.309 -   0.0158   81501.513 -   0.0041
+TPM3u+F+I        -40611.841   81277.682 -   0.0128   81277.733 -   0.0128   81501.937 -  0.00332
+TIM+F+I          -40609.495   81274.990 -   0.0492   81275.044 -   0.0491   81507.550 -   0.0002
+TIM2+F+I         -40609.502   81275.005 -   0.0488   81275.059 -   0.0488   81507.565 - 0.000199
+TIM3+F+I         -40611.122   81278.244 -  0.00966   81278.298 -  0.00965   81510.804 - 3.94e-05
+TVM+F+I          -40607.241   81272.483 +    0.172   81272.541 +    0.172   81513.349 -  1.1e-05
+GTR+F+I          -40606.846   81273.692 +    0.094   81273.754 +   0.0936   81522.863 - 9.47e-08
+GTR+F            -40618.478   81294.957 - 2.27e-06   81295.015 - 2.26e-06   81535.823 - 1.45e-10
+GTR+F+G4         -40614.374   81288.747 - 5.06e-05   81288.809 - 5.04e-05   81537.919 -  5.1e-11
+GTR+F+I+G4       -40612.385   81286.771 - 0.000136   81286.837 - 0.000135   81544.248 - 2.15e-12
+GTR+F+R2         -40617.305   81296.609 - 9.93e-07   81296.676 - 9.86e-07   81554.087 - 1.57e-14
+GTR+F+R3         -40616.184   81298.367 - 4.12e-07   81298.442 - 4.08e-07   81572.456 - 1.61e-18
+K2P+I            -41498.276   83042.553 -        0   83042.590 -        0   83233.584 -        0
+JC+I             -41505.461   83054.922 -        0   83054.956 -        0   83237.647 -        0
+K3P+I            -41496.025   83040.049 -        0   83040.090 -        0   83239.387 -        0
+TNe+I            -41497.882   83043.764 -        0   83043.804 -        0   83243.101 -        0
+TIMe+I           -41496.625   83043.249 -        0   83043.293 -        0   83250.892 -        0
+TIM2e+I          -41496.846   83043.693 -        0   83043.736 -        0   83251.336 -        0
+TIM3e+I          -41497.626   83045.251 -        0   83045.295 -        0   83252.894 -        0
+TVMe+I           -41494.880   83041.760 -        0   83041.807 -        0   83257.709 -        0
+SYM+I            -41494.414   83042.827 -        0   83042.878 -        0   83267.081 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: HKY+F+I
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 3.4619
+  A-T: 1.0000
+  C-G: 1.0000
+  C-T: 3.4619
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2989
+  pi(C) = 0.1839
+  pi(G) = 0.196
+  pi(T) = 0.3212
+
+Rate matrix Q:
+
+  A   -0.9004    0.1399    0.5162    0.2444
+  C    0.2274    -1.222    0.1491     0.846
+  G    0.7871    0.1399    -1.171    0.2444
+  T    0.2274    0.4843    0.1491   -0.8607
+
+Model of rate heterogeneity: Invar
+Proportion of invariable sites: 0.9915
+
+ Category  Relative_rate  Proportion
+  0         0              0.9915
+  1         118.1          0.00847
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -40611.4527 (s.e. 77.7248)
+Unconstrained log-likelihood (without tree): -61881.3433
+Number of free parameters (#branches + #model parameters): 26
+Akaike information criterion (AIC) score: 81274.9053
+Corrected Akaike information criterion (AICc) score: 81274.9523
+Bayesian information criterion (BIC) score: 81490.8539
+
+Total tree length (sum of branch lengths): 0.0016
+Sum of internal branch lengths: 0.0012 (74.9089% of tree length)
+
+WARNING: 3 near-zero internal branches (<0.0000) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Halfmann-pt-1_0|2020-12-27' is drawn at root
+
++**Halfmann-pt-1_0|2020-12-27
+|
++**Halfmann-pt-1_11|2021-01-07
+|
+|     +**Halfmann-pt-1_18|2021-01-14
+|  +--|
+|  |  |     +**Halfmann-pt-1_85|2021-03-22
+|  |  |  +--|
+|  |  |  |  |                                +**Halfmann-pt-1_184|2021-06-29
+|  |  |  |  +--------------------------------|
+|  |  |  |                                   +------------------Halfmann-pt-1_220|2021-08-04
+|  |  +**|
+|  |     |                    +**Halfmann-pt-1_275|2021-09-28
+|  |     +--------------------|
+|  |                          |     +**Halfmann-pt-1_302|2021-10-25
+|  |                          |  +**|
+|  |                          |  |  +**Halfmann-pt-1_304|2021-10-27
+|  |                          +--|
+|  |                             |  +**Halfmann-pt-1_369|2021-12-31
+|  |                             +--|
+|  |                                +**Halfmann-pt-1_373|2022-01-04
++**|
+   +**Halfmann-pt-1_46|2021-02-11
+
+Tree in newick format:
+
+(Halfmann-pt-1_0|2020-12-27:0.0000010000,Halfmann-pt-1_11|2021-01-07:0.0000010000,((Halfmann-pt-1_18|2021-01-14:0.0000010000,((Halfmann-pt-1_85|2021-03-22:0.0000020138,(Halfmann-pt-1_184|2021-06-29:0.0000010000,Halfmann-pt-1_220|2021-08-04:0.0003552301):0.0006067672):0.0000692706,(Halfmann-pt-1_275|2021-09-28:0.0000010000,((Halfmann-pt-1_302|2021-10-25:0.0000010000,Halfmann-pt-1_304|2021-10-27:0.0000010000):0.0000010000,(Halfmann-pt-1_369|2021-12-31:0.0000010000,Halfmann-pt-1_373|2022-01-04:0.0000010000):0.0000334422):0.0000672850):0.0003878511):0.0000331286):0.0000339241,Halfmann-pt-1_46|2021-02-11:0.0000010000):0.0000010000);
+
+TIME STAMP
+----------
+
+Date and time: Wed May  3 12:36:01 2023
+Total CPU time used: 0.438179 seconds (0h:0m:0s)
+Total wall-clock time used: 0.277906 seconds (0h:0m:0s)
+

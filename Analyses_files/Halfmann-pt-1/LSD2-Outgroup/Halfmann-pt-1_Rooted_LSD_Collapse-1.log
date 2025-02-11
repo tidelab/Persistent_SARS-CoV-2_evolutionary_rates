@@ -1,0 +1,220 @@
+IQ-TREE multicore version 2.1.2 COVID-edition for Mac OS X 64-bit built Oct 22 2020
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    dlmp133362.dlce.shh.mpg.de (AVX512, FMA3, 16 GB RAM)
+Command: /Users/oeversti/iqtree-2.1.2-MacOSX/bin/iqtree2 -s Halfmann-pt-1_maskedRefMafft.fasta --prefix Halfmann-pt-1_Rooted_LSD_Collapse-1 -m MFP -B 1000 -o NC_045512.2|2019-12-30 --date TAXNAME --date-ci 100 --date-options -l -1 -redo
+Seed:    446799 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Aug 20 14:00:03 2023
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file Halfmann-pt-1_maskedRefMafft.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 265 sites contain only gaps or ambiguous characters.
+Alignment has 13 sequences with 29903 columns, 91 distinct patterns
+32 parsimony-informative, 34 singleton sites, 29837 constant sites
+                              Gap/Ambiguity  Composition  p-value
+   1  NC_045512.2|2019-12-30          0.89%    passed    100.00%
+   2  Halfmann-pt-1_0|2020-12-27      1.86%    passed     99.99%
+   3  Halfmann-pt-1_11|2021-01-07     1.85%    passed     99.99%
+   4  Halfmann-pt-1_18|2021-01-14     1.85%    passed     99.99%
+   5  Halfmann-pt-1_46|2021-02-11     5.65%    passed     99.45%
+   6  Halfmann-pt-1_85|2021-03-22     2.82%    passed     99.69%
+   7  Halfmann-pt-1_184|2021-06-29    5.57%    passed     99.73%
+   8  Halfmann-pt-1_220|2021-08-04   11.37%    passed     98.07%
+   9  Halfmann-pt-1_275|2021-09-28    1.04%    passed     99.87%
+  10  Halfmann-pt-1_302|2021-10-25    1.04%    passed     99.86%
+  11  Halfmann-pt-1_304|2021-10-27    1.04%    passed     99.87%
+  12  Halfmann-pt-1_369|2021-12-31    1.04%    passed     99.86%
+  13  Halfmann-pt-1_373|2022-01-04    1.05%    passed     99.85%
+****  TOTAL                           2.85%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.000 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -40860.104
+Optimal log-likelihood: -40860.072
+Rate parameters:  A-C: 0.37419  A-G: 1.33462  A-T: 0.08111  C-G: 0.34915  C-T: 2.04902  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Proportion of invariable sites: 0.499
+Gamma shape alpha: 0.020
+Parameters optimization took 1 rounds (0.002 sec)
+Time for fast ML tree search: 0.013 seconds
+
+NOTE: ModelFinder requires 0 MB RAM!
+ModelFinder will test up to 286 DNA models (sample size: 29903) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         40870.068    31  81802.136    81802.203    82059.613
+  2  GTR+F+I       40852.955    32  81769.911    81769.981    82035.694
+  3  GTR+F+G4      40863.299    32  81790.597    81790.668    82056.380
+  4  GTR+F+I+G4    40860.069    33  81786.137    81786.212    82060.226
+  5  GTR+F+R2      40867.995    33  81801.990    81802.065    82076.079
+  6  GTR+F+R3      40866.117    35  81802.233    81802.318    82092.933
+ 15  SYM+I         41739.910    29  83537.819    83537.878    83778.685
+ 28  TVM+F+I       40853.997    31  81769.994    81770.060    82027.471
+ 41  TVMe+I        41740.954    28  83537.909    83537.963    83770.469
+ 54  TIM3+F+I      40860.923    30  81781.845    81781.908    82031.017
+ 67  TIM3e+I       41746.138    27  83546.276    83546.327    83770.531
+ 80  TIM2+F+I      40856.456    30  81772.913    81772.975    82022.084
+ 93  TIM2e+I       41743.601    27  83541.202    83541.253    83765.457
+106  TIM+F+I       40856.335    30  81772.670    81772.732    82021.841
+119  TIMe+I        41742.885    27  83539.769    83539.820    83764.024
+132  TPM3u+F+I     40862.316    29  81782.631    81782.689    82023.497
+145  TPM3+F+I      40862.316    29  81782.631    81782.689    82023.497
+158  TPM2u+F+I     40857.666    29  81773.332    81773.390    82014.198
+171  TPM2+F+I      40857.618    29  81773.236    81773.294    82014.101
+184  K3Pu+F+I      40857.142    29  81772.284    81772.342    82013.149
+197  K3P+I         41743.593    26  83539.186    83539.233    83755.135
+210  TN+F+I        40860.942    29  81779.884    81779.943    82020.750
+223  TNe+I         41746.607    26  83545.214    83545.261    83761.162
+236  HKY+F+I       40862.001    28  81780.002    81780.056    82012.562
+249  K2P+I         41747.596    25  83545.192    83545.236    83752.835
+262  F81+F+I       40879.282    27  81812.564    81812.614    82036.818
+275  JC+I          41763.499    24  83574.997    83575.037    83774.334
+Akaike Information Criterion:           GTR+F+I
+Corrected Akaike Information Criterion: GTR+F+I
+Bayesian Information Criterion:         HKY+F+I
+Best-fit model: HKY+F+I chosen according to BIC
+
+All model information printed to Halfmann-pt-1_Rooted_LSD_Collapse-1.model.gz
+CPU time for ModelFinder: 0.066 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.069 seconds (0h:0m:0s)
+Generating 1000 samples for ultrafast bootstrap (seed: 446799)...
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -40862.001
+Optimal log-likelihood: -40862.000
+Rate parameters:  A-C: 1.00000  A-G: 4.29286  A-T: 1.00000  C-G: 1.00000  C-T: 4.29286  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Proportion of invariable sites: 0.987
+Parameters optimization took 1 rounds (0.000 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.000477 sec (of wall-clock time) 0.000426 sec(of CPU time)
+Computing RapidNJ tree took 0.000038 sec (of wall-clock time) 0.000033 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -41161.467
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.024 second
+Computing log-likelihood of 98 initial trees ... 0.016 seconds
+Current best score: -40856.678
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -40856.582
+Iteration 10 / LogL: -40856.681 / Time: 0h:0m:0s
+Iteration 20 / LogL: -40862.094 / Time: 0h:0m:0s
+Finish initializing candidate tree set (2)
+Current best tree score: -40856.582 / CPU time: 0.088
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+UPDATE BEST LOG-LIKELIHOOD: -40856.582
+UPDATE BEST LOG-LIKELIHOOD: -40856.581
+Iteration 30 / LogL: -40912.181 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 40 / LogL: -40856.830 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 50 / LogL: -40859.198 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -40878.898
+Iteration 60 / LogL: -40859.275 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 70 / LogL: -40856.667 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -40856.581
+Iteration 80 / LogL: -40856.614 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 90 / LogL: -40860.199 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 100 / LogL: -40856.715 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -40878.876
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.971
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 110 / LogL: -40860.286 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 120 / LogL: -40856.639 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 130 / LogL: -40860.342 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 140 / LogL: -40860.246 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 150 / LogL: -40860.249 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -40881.627
+Iteration 160 / LogL: -40856.581 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 170 / LogL: -40856.581 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 180 / LogL: -40856.761 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -40856.581
+Iteration 190 / LogL: -40856.582 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 200 / LogL: -40856.654 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -40881.627
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.996
+TREE SEARCH COMPLETED AFTER 200 ITERATIONS / Time: 0h:0m:1s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -40856.581
+Optimal log-likelihood: -40856.581
+Rate parameters:  A-C: 1.00000  A-G: 4.17684  A-T: 1.00000  C-G: 1.00000  C-T: 4.17684  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Proportion of invariable sites: 0.985
+Parameters optimization took 1 rounds (0.001 sec)
+BEST SCORE FOUND : -40856.581
+Creating bootstrap support values...
+Split supports printed to NEXUS file Halfmann-pt-1_Rooted_LSD_Collapse-1.splits.nex
+Total tree length: 0.002
+
+Total number of iterations: 200
+CPU time used for tree search: 1.162 sec (0h:0m:1s)
+Wall-clock time used for tree search: 0.987 sec (0h:0m:0s)
+Total CPU time used: 1.196 sec (0h:0m:1s)
+Total wall-clock time used: 1.023 sec (0h:0m:1s)
+
+Computing bootstrap consensus tree...
+Reading input file Halfmann-pt-1_Rooted_LSD_Collapse-1.splits.nex...
+13 taxa and 85 splits.
+Consensus tree written to Halfmann-pt-1_Rooted_LSD_Collapse-1.contree
+Reading input trees file Halfmann-pt-1_Rooted_LSD_Collapse-1.contree
+Log-likelihood of consensus tree: -40856.962
+
+Analysis results written to: 
+  IQ-TREE report:                Halfmann-pt-1_Rooted_LSD_Collapse-1.iqtree
+  Maximum-likelihood tree:       Halfmann-pt-1_Rooted_LSD_Collapse-1.treefile
+  Likelihood distances:          Halfmann-pt-1_Rooted_LSD_Collapse-1.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          Halfmann-pt-1_Rooted_LSD_Collapse-1.splits.nex
+  Consensus tree:                Halfmann-pt-1_Rooted_LSD_Collapse-1.contree
+  Screen log file:               Halfmann-pt-1_Rooted_LSD_Collapse-1.log
+
+--- Start phylogenetic dating ---
+Extracting date from node names...
+13 dates extracted
+Building time tree by least-square dating (LSD) with command:
+lsd -i Halfmann-pt-1_Rooted_LSD_Collapse-1.timetree.subst -s 29903 -o Halfmann-pt-1_Rooted_LSD_Collapse-1.timetree -f 100 -g Halfmann-pt-1_Rooted_LSD_Collapse-1.timetree.outgroup -d Halfmann-pt-1_Rooted_LSD_Collapse-1.timetree.date -l -1 
+Reroot the tree(s) using given outgroups ...
+
+TREE 1
+*PROCESSING:
+Reading the tree ... 
+Collapse 0 (over 11) internal branches having branch length <= -1
+ (settable via option -l)
+Parameter to adjust variances was set to 0.000334 (settable via option -b)
+Minimum branch length of time scaled tree (settable via option -u and -U): 0
+Estimating the root position on the branch defined by given outgroups ...
+Computing confidence intervals using sequence length 29903 and a lognormal
+ relaxed clock with mean 1, standard deviation 0.2 (settable via option -q)
+*RESULTS:
+- Dating results:
+ rate 0.000649455, tMRCA 2019-10-19 , objective function 0.000311342
+- Results with confidence intervals:
+ rate 0.000649455 [0.000460063; 0.000936017], tMRCA 2019-10-19 [2019-06-10; 2019-12-22], objective function 0.000311342
+
+TOTAL ELAPSED TIME: 0.00248 seconds
+LSD results written to:
+  LSD report:                  Halfmann-pt-1_Rooted_LSD_Collapse-1.timetree.lsd
+  Time tree in nexus format:   Halfmann-pt-1_Rooted_LSD_Collapse-1.timetree.nex
+  Time tree in newick format:  Halfmann-pt-1_Rooted_LSD_Collapse-1.timetree.nwk
+
+--- End phylogenetic dating ---
+Date and Time: Sun Aug 20 14:00:04 2023

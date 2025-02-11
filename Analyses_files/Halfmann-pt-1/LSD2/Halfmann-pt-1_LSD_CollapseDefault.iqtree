@@ -1,0 +1,218 @@
+IQ-TREE 2.1.2 COVID-edition built Oct 22 2020
+
+Input file name: Halfmann-pt-1_maskedRefRemMafft.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 80720
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+Since you used least square dating (LSD) please also cite: 
+
+Thu-Hien To, Matthieu Jung, Samantha Lycett, Olivier Gascuel (2016)
+Fast dating using least-squares criteria and algorithms. Syst. Biol. 65:82-97.
+https://doi.org/10.1093/sysbio/syv068
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 12 sequences with 29903 nucleotide sites
+Number of constant sites: 29862 (= 99.8629% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 29862 (= 99.8629% of all sites)
+Number of parsimony informative sites: 32
+Number of distinct site patterns: 78
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: HKY+F+I
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+HKY+F+I          -40611.519   81275.038 +   0.0587   81275.085 +   0.0589   81490.987 +     0.83
+F81+F+I          -40619.381   81288.762 - 6.15e-05   81288.805 - 6.18e-05   81496.404 +   0.0553
+K3Pu+F+I         -40609.108   81272.215 +    0.241   81272.266 +    0.241   81496.470 +   0.0535
+TPM2+F+I         -40609.839   81273.677 +    0.116   81273.728 +    0.116   81497.932 -   0.0258
+TPM2u+F+I        -40610.094   81274.188 +   0.0899   81274.238 +     0.09   81498.442 -     0.02
+TN+F+I           -40611.132   81276.264 -   0.0318   81276.315 -   0.0319   81500.518 -  0.00707
+TPM3+F+I         -40611.569   81277.137 -   0.0206   81277.188 -   0.0206   81501.392 -  0.00457
+TPM3u+F+I        -40611.743   81277.486 -   0.0173   81277.536 -   0.0173   81501.740 -  0.00384
+TIM2+F+I         -40609.618   81275.236 +   0.0532   81275.290 +   0.0532   81507.796 - 0.000186
+TIM+F+I          -40610.041   81276.082 -   0.0349   81276.137 -   0.0348   81508.642 - 0.000122
+TIM3+F+I         -40611.094   81278.187 -   0.0122   81278.242 -   0.0122   81510.747 - 4.25e-05
+TVM+F+I          -40607.247   81272.495 +     0.21   81272.553 +    0.209   81513.360 - 1.15e-05
+GTR+F+I          -40606.851   81273.702 +    0.115   81273.764 +    0.114   81522.873 - 9.88e-08
+GTR+F            -40618.488   81294.976 - 2.75e-06   81295.035 - 2.74e-06   81535.842 - 1.51e-10
+GTR+F+G4         -40614.368   81288.737 - 6.23e-05   81288.799 -  6.2e-05   81537.908 - 5.37e-11
+GTR+F+I+G4       -40612.377   81286.755 - 0.000168   81286.821 - 0.000167   81544.232 - 2.27e-12
+GTR+F+R2         -40617.295   81296.591 - 1.23e-06   81296.657 - 1.22e-06   81554.068 - 1.66e-14
+GTR+F+R3         -40616.178   81298.356 - 5.08e-07   81298.431 - 5.02e-07   81572.445 -  1.7e-18
+K2P+I            -41498.278   83042.556 -        0   83042.593 -        0   83233.587 -        0
+JC+I             -41505.461   83054.922 -        0   83054.956 -        0   83237.648 -        0
+K3P+I            -41496.384   83040.767 -        0   83040.808 -        0   83240.105 -        0
+TNe+I            -41497.908   83043.817 -        0   83043.857 -        0   83243.154 -        0
+TIMe+I           -41496.599   83043.198 -        0   83043.242 -        0   83250.841 -        0
+TIM2e+I          -41496.955   83043.909 -        0   83043.953 -        0   83251.552 -        0
+TIM3e+I          -41497.634   83045.268 -        0   83045.311 -        0   83252.910 -        0
+TVMe+I           -41494.853   83041.706 -        0   83041.753 -        0   83257.655 -        0
+SYM+I            -41494.360   83042.721 -        0   83042.771 -        0   83266.975 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: HKY+F+I
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 3.4620
+  A-T: 1.0000
+  C-G: 1.0000
+  C-T: 3.4620
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2989
+  pi(C) = 0.1839
+  pi(G) = 0.196
+  pi(T) = 0.3212
+
+Rate matrix Q:
+
+  A   -0.9004    0.1399    0.5162    0.2444
+  C    0.2274    -1.222    0.1491     0.846
+  G    0.7871    0.1399    -1.171    0.2444
+  T    0.2274    0.4843    0.1491   -0.8607
+
+Model of rate heterogeneity: Invar
+Proportion of invariable sites: 0.9915
+
+ Category  Relative_rate  Proportion
+  0         0              0.9915
+  1         117.4          0.008521
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -40611.4527 (s.e. 77.7224)
+Unconstrained log-likelihood (without tree): -61881.3433
+Number of free parameters (#branches + #model parameters): 26
+Akaike information criterion (AIC) score: 81274.9054
+Corrected Akaike information criterion (AICc) score: 81274.9524
+Bayesian information criterion (BIC) score: 81490.8540
+
+Total tree length (sum of branch lengths): 0.0016
+Sum of internal branch lengths: 0.0012 (74.9004% of tree length)
+
+WARNING: 3 near-zero internal branches (<0.0000) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Halfmann-pt-1_0|2020-12-27' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++**Halfmann-pt-1_0|2020-12-27
+|
++**Halfmann-pt-1_11|2021-01-07
+|
+|     +**Halfmann-pt-1_18|2021-01-14
+|  +--| (78)
+|  |  |     +**Halfmann-pt-1_85|2021-03-22
+|  |  |  +--| (81)
+|  |  |  |  |                                +**Halfmann-pt-1_184|2021-06-29
+|  |  |  |  +--------------------------------| (100)
+|  |  |  |                                   +------------------Halfmann-pt-1_220|2021-08-04
+|  |  +**| (70)
+|  |     |                    +**Halfmann-pt-1_275|2021-09-28
+|  |     +--------------------| (100)
+|  |                          |     +**Halfmann-pt-1_302|2021-10-25
+|  |                          |  +**| (51)
+|  |                          |  |  +**Halfmann-pt-1_304|2021-10-27
+|  |                          +--| (88)
+|  |                             |  +**Halfmann-pt-1_369|2021-12-31
+|  |                             +--| (78)
+|  |                                +**Halfmann-pt-1_373|2022-01-04
++**| (62)
+   +**Halfmann-pt-1_46|2021-02-11
+
+Tree in newick format:
+
+(Halfmann-pt-1_0|2020-12-27:0.0000010000,Halfmann-pt-1_11|2021-01-07:0.0000010000,((Halfmann-pt-1_18|2021-01-14:0.0000010000,((Halfmann-pt-1_85|2021-03-22:0.0000020138,(Halfmann-pt-1_184|2021-06-29:0.0000010000,Halfmann-pt-1_220|2021-08-04:0.0003552188)100:0.0006066427)81:0.0000692388,(Halfmann-pt-1_275|2021-09-28:0.0000010000,((Halfmann-pt-1_302|2021-10-25:0.0000010000,Halfmann-pt-1_304|2021-10-27:0.0000010000)51:0.0000010000,(Halfmann-pt-1_369|2021-12-31:0.0000010000,Halfmann-pt-1_373|2022-01-04:0.0000010000)78:0.0000336123)88:0.0000675630)100:0.0003876060)70:0.0000331351)78:0.0000339677,Halfmann-pt-1_46|2021-02-11:0.0000010000)62:0.0000010000);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -40611.808114
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--Halfmann-pt-1_0|2020-12-27
+|
++--Halfmann-pt-1_11|2021-01-07
+|
+|     +--Halfmann-pt-1_18|2021-01-14
+|  +--| (78)
+|  |  |     +--Halfmann-pt-1_85|2021-03-22
+|  |  |  +--| (81)
+|  |  |  |  |                                +--Halfmann-pt-1_184|2021-06-29
+|  |  |  |  +--------------------------------| (100)
+|  |  |  |                                   +------------------Halfmann-pt-1_220|2021-08-04
+|  |  +--| (70)
+|  |     |                    +--Halfmann-pt-1_275|2021-09-28
+|  |     +--------------------| (100)
+|  |                          |     +--Halfmann-pt-1_302|2021-10-25
+|  |                          |  +--| (51)
+|  |                          |  |  +--Halfmann-pt-1_304|2021-10-27
+|  |                          +--| (88)
+|  |                             |  +--Halfmann-pt-1_369|2021-12-31
+|  |                             +--| (78)
+|  |                                +--Halfmann-pt-1_373|2022-01-04
++--| (62)
+   +--Halfmann-pt-1_46|2021-02-11
+
+
+Consensus tree in newick format: 
+
+(Halfmann-pt-1_0|2020-12-27:0.0000020138,Halfmann-pt-1_11|2021-01-07:0.0000020138,((Halfmann-pt-1_18|2021-01-14:0.0000020138,((Halfmann-pt-1_85|2021-03-22:0.0000020295,(Halfmann-pt-1_184|2021-06-29:0.0000020138,Halfmann-pt-1_220|2021-08-04:0.0003556230)100:0.0006071514)81:0.0000693606,(Halfmann-pt-1_275|2021-09-28:0.0000020138,((Halfmann-pt-1_302|2021-10-25:0.0000020138,Halfmann-pt-1_304|2021-10-27:0.0000020138)51:0.0000020138,(Halfmann-pt-1_369|2021-12-31:0.0000020138,Halfmann-pt-1_373|2022-01-04:0.0000020138)78:0.0000335910)88:0.0000675606)100:0.0003885555)70:0.0000332789)78:0.0000344763,Halfmann-pt-1_46|2021-02-11:0.0000020138)62:0.0000020138);
+
+TIME STAMP
+----------
+
+Date and time: Wed May  3 12:49:05 2023
+Total CPU time used: 1.358311 seconds (0h:0m:1s)
+Total wall-clock time used: 1.240633965 seconds (0h:0m:1s)
+
