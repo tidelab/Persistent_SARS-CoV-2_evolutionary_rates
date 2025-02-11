@@ -1,0 +1,203 @@
+IQ-TREE multicore version 2.1.2 COVID-edition for Mac OS X 64-bit built Oct 22 2020
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    dlmp133362.w-staff.shh.mpg.de (AVX512, FMA3, 16 GB RAM)
+Command: /Users/oeversti/iqtree-2.1.2-MacOSX/bin/iqtree2 -s Rockett-pt-4_maskedRefRemMafft.fasta -m MFP
+Seed:    875211 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed May  3 18:27:54 2023
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file Rockett-pt-4_maskedRefRemMafft.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 631 sites contain only gaps or ambiguous characters.
+Alignment has 8 sequences with 29903 columns, 22 distinct patterns
+1 parsimony-informative, 4 singleton sites, 29898 constant sites
+                            Gap/Ambiguity  Composition  p-value
+   1  Rockett-pt-4_9|2021-09-07     2.11%    passed     99.99%
+   2  Rockett-pt-4_14|2021-09-12    2.11%    passed    100.00%
+   3  Rockett-pt-4_18|2021-09-16    2.11%    passed     99.99%
+   4  Rockett-pt-4_25|2021-09-23    2.11%    passed     99.99%
+   5  Rockett-pt-4_30|2021-09-28    2.11%    passed     99.99%
+   6  Rockett-pt-4_39|2021-10-07    7.88%    passed     97.63%
+   7  Rockett-pt-4_40|2021-10-08    5.68%    passed     99.96%
+   8  Rockett-pt-4_0|2021-08-28     2.11%    passed     99.99%
+****  TOTAL                         3.28%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: Rockett-pt-4_18|2021-09-16 is identical to Rockett-pt-4_9|2021-09-07 but kept for subsequent analysis
+NOTE: 2 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: Rockett-pt-4_25|2021-09-23 (identical to Rockett-pt-4_9|2021-09-07) is ignored but added at the end
+NOTE: Rockett-pt-4_0|2021-08-28 (identical to Rockett-pt-4_9|2021-09-07) is ignored but added at the end
+Alignment was printed to Rockett-pt-4_maskedRefRemMafft.fasta.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to Rockett-pt-4_maskedRefRemMafft.fasta.uniqueseq.phy
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.002 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -39751.915
+Optimal log-likelihood: -39751.670
+Rate parameters:  A-C: 1.22567  A-G: 4.19352  A-T: 1.40027  C-G: 0.00010  C-T: 0.00010  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.183  G: 0.195  T: 0.323
+Proportion of invariable sites: 0.500
+Gamma shape alpha: 0.020
+Parameters optimization took 1 rounds (0.000 sec)
+Time for fast ML tree search: 0.006 seconds
+
+NOTE: ModelFinder requires 0 MB RAM!
+ModelFinder will test up to 286 DNA models (sample size: 29903) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         39753.495    17  79540.990    79541.011    79682.187
+  2  GTR+F+I       39747.084    18  79530.169    79530.191    79679.671
+  3  GTR+F+G4      39752.031    18  79540.061    79540.084    79689.564
+  4  GTR+F+I+G4    39751.358    19  79540.715    79540.741    79698.524
+  5  GTR+F+R2      39753.037    19  79544.075    79544.100    79701.883
+  6  GTR+F+R3      39752.654    21  79547.308    79547.339    79721.728
+ 14  SYM           40645.876    14  81319.751    81319.765    81436.031
+ 15  SYM+I         40639.541    15  81309.082    81309.098    81433.668
+ 16  SYM+G4        40644.491    15  81318.982    81318.998    81443.568
+ 27  TVM+F         39756.177    16  79544.353    79544.371    79677.245
+ 28  TVM+F+I       39749.059    17  79532.118    79532.139    79673.315
+ 29  TVM+F+G4      39754.659    17  79543.319    79543.339    79684.516
+ 40  TVMe          40648.538    13  81323.077    81323.089    81431.051
+ 41  TVMe+I        40641.590    14  81311.181    81311.195    81427.461
+ 42  TVMe+G4       40647.153    14  81322.305    81322.320    81438.585
+ 53  TIM3+F        39753.823    15  79537.645    79537.661    79662.231
+ 54  TIM3+F+I      39747.418    16  79526.836    79526.854    79659.727
+ 55  TIM3+F+G4     39752.407    16  79536.815    79536.833    79669.706
+ 66  TIM3e         40646.380    12  81316.760    81316.771    81416.429
+ 67  TIM3e+I       40639.990    13  81305.980    81305.993    81413.955
+ 68  TIM3e+G4      40644.991    13  81315.983    81315.995    81423.957
+ 79  TIM2+F        39753.727    15  79537.453    79537.469    79662.039
+ 80  TIM2+F+I      39747.403    16  79526.807    79526.825    79659.698
+ 81  TIM2+F+G4     39752.325    16  79536.649    79536.668    79669.541
+ 92  TIM2e         40646.212    12  81316.425    81316.435    81416.093
+ 93  TIM2e+I       40639.880    13  81305.760    81305.773    81413.735
+ 94  TIM2e+G4      40644.803    13  81315.606    81315.618    81423.580
+105  TIM+F         39753.827    15  79537.654    79537.670    79662.240
+106  TIM+F+I       39747.363    16  79526.726    79526.744    79659.617
+107  TIM+F+G4      39752.424    16  79536.848    79536.866    79669.740
+118  TIMe          40646.411    12  81316.823    81316.833    81416.491
+119  TIMe+I        40639.976    13  81305.952    81305.965    81413.927
+120  TIMe+G4       40645.021    13  81316.041    81316.053    81424.016
+131  TPM3u+F       39756.526    14  79541.052    79541.066    79657.332
+132  TPM3u+F+I     39749.457    15  79528.914    79528.930    79653.500
+133  TPM3u+F+G4    39755.105    15  79540.210    79540.226    79664.795
+144  TPM3+F        39756.495    14  79540.991    79541.005    79657.271
+145  TPM3+F+I      39749.440    15  79528.880    79528.896    79653.466
+146  TPM3+F+G4     39755.098    15  79540.196    79540.212    79664.782
+157  TPM2u+F       39756.361    14  79540.721    79540.735    79657.001
+158  TPM2u+F+I     39749.468    15  79528.935    79528.951    79653.521
+159  TPM2u+F+G4    39754.975    15  79539.950    79539.966    79664.536
+170  TPM2+F        39756.361    14  79540.721    79540.735    79657.001
+171  TPM2+F+I      39749.468    15  79528.935    79528.951    79653.521
+172  TPM2+F+G4     39754.975    15  79539.950    79539.966    79664.536
+183  K3Pu+F        39756.536    14  79541.072    79541.086    79657.352
+184  K3Pu+F+I      39749.404    15  79528.808    79528.824    79653.394
+185  K3Pu+F+G4     39755.148    15  79540.295    79540.311    79664.881
+196  K3P           40649.156    11  81320.312    81320.321    81411.675
+197  K3P+I         40642.040    12  81308.081    81308.091    81407.750
+198  K3P+G4        40647.771    12  81319.541    81319.551    81419.210
+209  TN+F          39753.766    14  79535.531    79535.545    79651.811
+210  TN+F+I        39747.358    15  79524.716    79524.732    79649.302
+211  TN+F+G4       39752.376    15  79534.752    79534.768    79659.338
+222  TNe           40646.344    11  81314.688    81314.697    81406.051
+223  TNe+I         40639.941    12  81303.882    81303.893    81403.551
+224  TNe+G4        40644.959    12  81313.917    81313.928    81413.586
+235  HKY+F         39756.545    13  79539.090    79539.102    79647.064
+236  HKY+F+I       39749.500    14  79526.999    79527.013    79643.279
+237  HKY+F+G4      39755.149    14  79538.298    79538.312    79654.578
+248  K2P           40649.152    10  81318.304    81318.311    81401.361
+249  K2P+I         40642.098    11  81306.196    81306.205    81397.559
+250  K2P+G4        40647.766    11  81317.532    81317.541    81408.895
+261  F81+F         39758.044    12  79540.088    79540.099    79639.757
+262  F81+F+I       39750.991    13  79527.982    79527.994    79635.956
+263  F81+F+G4      39756.658    13  79539.317    79539.329    79647.291
+274  JC            40650.537    9   81319.075    81319.081    81393.826
+275  JC+I          40643.468    10  81306.936    81306.944    81389.994
+276  JC+G4         40649.152    10  81318.303    81318.311    81401.361
+Akaike Information Criterion:           TN+F+I
+Corrected Akaike Information Criterion: TN+F+I
+Bayesian Information Criterion:         F81+F+I
+Best-fit model: F81+F+I chosen according to BIC
+
+All model information printed to Rockett-pt-4_maskedRefRemMafft.fasta.model.gz
+CPU time for ModelFinder: 0.052 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.072 seconds (0h:0m:0s)
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -39750.991
+Optimal log-likelihood: -39750.991
+Rate parameters:  A-C: 1.00000  A-G: 1.00000  A-T: 1.00000  C-G: 1.00000  C-T: 1.00000  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.183  G: 0.195  T: 0.323
+Proportion of invariable sites: 1.000
+Parameters optimization took 1 rounds (0.000 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.000856 sec (of wall-clock time) 0.000623 sec(of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing RapidNJ tree took 0.000023 sec (of wall-clock time) 0.000017 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -39764.906
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.012 second
+Computing log-likelihood of 31 initial trees ... 0.002 seconds
+Current best score: -39750.931
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -39750.914
+UPDATE BEST LOG-LIKELIHOOD: -39750.914
+WARNING: NNI search needs unusual large number of steps (6) to converge!
+Iteration 10 / LogL: -39750.915 / Time: 0h:0m:0s
+WARNING: NNI search needs unusual large number of steps (6) to converge!
+Iteration 20 / LogL: -39750.932 / Time: 0h:0m:0s
+Finish initializing candidate tree set (1)
+Current best tree score: -39750.914 / CPU time: 0.025
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -39750.914 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 40 / LogL: -39750.914 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 50 / LogL: -39750.917 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 60 / LogL: -39750.914 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 70 / LogL: -39750.914 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 80 / LogL: -39750.917 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 90 / LogL: -39750.914 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 100 / LogL: -39750.917 / Time: 0h:0m:0s (0h:0m:0s left)
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -39750.914
+Optimal log-likelihood: -39750.914
+Rate parameters:  A-C: 1.00000  A-G: 1.00000  A-T: 1.00000  C-G: 1.00000  C-T: 1.00000  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.183  G: 0.195  T: 0.323
+Proportion of invariable sites: 1.000
+Parameters optimization took 1 rounds (0.000 sec)
+BEST SCORE FOUND : -39750.914
+Total tree length: 0.000
+
+Total number of iterations: 102
+CPU time used for tree search: 0.104 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.057 sec (0h:0m:0s)
+Total CPU time used: 0.112 sec (0h:0m:0s)
+Total wall-clock time used: 0.066 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                Rockett-pt-4_maskedRefRemMafft.fasta.iqtree
+  Maximum-likelihood tree:       Rockett-pt-4_maskedRefRemMafft.fasta.treefile
+  Likelihood distances:          Rockett-pt-4_maskedRefRemMafft.fasta.mldist
+  Screen log file:               Rockett-pt-4_maskedRefRemMafft.fasta.log
+
+Date and Time: Wed May  3 18:27:55 2023

@@ -1,0 +1,33 @@
+[1] "Rockett-pt-2"
+[1] "TreeDater Relaxed clock"
+
+Phylogenetic tree with 8 tips and 7 internal nodes.
+
+Tip labels:
+  Rockett-pt-2_11|2021-10-18, Rockett-pt-2_0|2021-10-07, Rockett-pt-2_4|2021-10-11, Rockett-pt-2_20|2021-10-27, Rockett-pt-2_26|2021-11-02, Rockett-pt-2_31|2021-11-07, ...
+
+Rooted; includes branch lengths.
+
+ Time of common ancestor 
+2021.72323053816 
+
+ Time to common ancestor (before most recent sample) 
+0.126084530336811 
+
+ Weighted mean substitution rate (adjusted by branch lengths) 
+0.000944466845234917 
+
+ Unadjusted mean substitution rate 
+0.000944466847225022 
+
+ Clock model  
+uncorrelated 
+
+ Coefficient of variation of rates 
+1.04555236107027e-09 
+[1] "Estimating confidence intervals for rates and dates by a parametric bootstrap"
+
+ For more detailed output, $trees provides a list of each fit to each simulation 
+
+
+Time of common ancestor	2.021723e+03	2.018231e+03	2.021761e+03	Mean substitution rate	9.444668e-04	1.158677e-04	7.698589e-03	

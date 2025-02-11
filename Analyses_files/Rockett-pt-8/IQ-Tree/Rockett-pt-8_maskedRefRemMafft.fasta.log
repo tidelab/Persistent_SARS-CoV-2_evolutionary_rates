@@ -1,0 +1,165 @@
+IQ-TREE multicore version 2.1.2 COVID-edition for Mac OS X 64-bit built Oct 22 2020
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    dlmp133362.w-staff.shh.mpg.de (AVX512, FMA3, 16 GB RAM)
+Command: /Users/oeversti/iqtree-2.1.2-MacOSX/bin/iqtree2 -s Rockett-pt-8_maskedRefRemMafft.fasta -m MFP
+Seed:    759310 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri May  5 09:37:26 2023
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file Rockett-pt-8_maskedRefRemMafft.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 631 sites contain only gaps or ambiguous characters.
+Alignment has 12 sequences with 29903 columns, 46 distinct patterns
+5 parsimony-informative, 2 singleton sites, 29896 constant sites
+                            Gap/Ambiguity  Composition  p-value
+   1  Rockett-pt-8_0|2021-08-30     2.11%    passed     99.99%
+   2  Rockett-pt-8_3|2021-09-02     2.11%    passed     99.99%
+   3  Rockett-pt-8_14|2021-09-13    2.12%    passed     99.99%
+   4  Rockett-pt-8_19|2021-09-18    6.60%    passed     99.38%
+   5  Rockett-pt-8_24|2021-09-23    2.11%    passed     99.99%
+   6  Rockett-pt-8_30|2021-09-29    3.56%    passed     99.98%
+   7  Rockett-pt-8_33|2021-10-02    3.45%    passed     99.98%
+   8  Rockett-pt-8_34|2021-10-03    2.18%    passed     99.99%
+   9  Rockett-pt-8_5|2021-09-04     2.11%    passed     99.99%
+  10  Rockett-pt-8_11|2021-09-10    2.11%    passed     99.99%
+  11  Rockett-pt-8_17|2021-09-16    2.11%    passed     99.99%
+  12  Rockett-pt-8_31|2021-09-30    3.72%    passed     99.99%
+****  TOTAL                         2.86%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: Rockett-pt-8_3|2021-09-02 is identical to Rockett-pt-8_0|2021-08-30 but kept for subsequent analysis
+NOTE: 3 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: Rockett-pt-8_5|2021-09-04 (identical to Rockett-pt-8_0|2021-08-30) is ignored but added at the end
+NOTE: Rockett-pt-8_11|2021-09-10 (identical to Rockett-pt-8_0|2021-08-30) is ignored but added at the end
+NOTE: Rockett-pt-8_17|2021-09-16 (identical to Rockett-pt-8_0|2021-08-30) is ignored but added at the end
+Alignment was printed to Rockett-pt-8_maskedRefRemMafft.fasta.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to Rockett-pt-8_maskedRefRemMafft.fasta.uniqueseq.phy
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.001 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -39763.556
+Optimal log-likelihood: -39763.556
+Rate parameters:  A-C: 0.00010  A-G: 3.93358  A-T: 0.00010  C-G: 0.00010  C-T: 1.95832  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.183  G: 0.196  T: 0.322
+Proportion of invariable sites: 0.500
+Gamma shape alpha: 998.448
+Parameters optimization took 1 rounds (0.001 sec)
+Time for fast ML tree search: 0.007 seconds
+
+NOTE: ModelFinder requires 0 MB RAM!
+ModelFinder will test up to 286 DNA models (sample size: 29903) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         39763.555    23  79573.110    79573.147    79764.141
+  2  GTR+F+I       39763.555    24  79575.110    79575.150    79774.447
+  3  GTR+F+G4      39763.555    24  79575.110    79575.150    79774.447
+  4  GTR+F+I+G4    39763.556    25  79577.111    79577.155    79784.754
+  5  GTR+F+R2      39763.543    25  79577.086    79577.130    79784.729
+  6  GTR+F+R3      39763.543    27  79581.086    79581.137    79805.340
+ 14  SYM           40655.998    20  81351.997    81352.025    81518.111
+ 27  TVM+F         39763.901    22  79571.801    79571.835    79754.527
+ 40  TVMe          40656.359    19  81350.718    81350.743    81508.526
+ 53  TIM3+F        39764.816    21  79571.631    79571.662    79746.051
+ 66  TIM3e         40657.055    18  81350.109    81350.132    81499.612
+ 79  TIM2+F        39764.514    21  79571.029    79571.060    79745.449
+ 92  TIM2e         40657.022    18  81350.045    81350.067    81499.547
+105  TIM+F         39765.233    21  79572.466    79572.497    79746.886
+118  TIMe          40657.709    18  81351.418    81351.441    81500.921
+131  TPM3u+F       39765.375    20  79570.750    79570.778    79736.864
+144  TPM3+F        39765.330    20  79570.661    79570.689    79736.775
+157  TPM2u+F       39765.452    20  79570.903    79570.931    79737.018
+170  TPM2+F        39765.452    20  79570.903    79570.931    79737.018
+183  K3Pu+F        39765.470    20  79570.941    79570.969    79737.055
+196  K3P           40657.949    17  81349.898    81349.918    81491.095
+209  TN+F          39765.529    20  79571.057    79571.085    79737.171
+222  TNe           40657.995    17  81349.989    81350.010    81491.186
+235  HKY+F         39765.531    19  79569.061    79569.087    79726.870
+248  K2P           40657.996    16  81347.993    81348.011    81480.884
+261  F81+F         39769.632    18  79575.265    79575.287    79724.767
+274  JC            40661.834    15  81353.668    81353.684    81478.254
+Akaike Information Criterion:           HKY+F
+Corrected Akaike Information Criterion: HKY+F
+Bayesian Information Criterion:         F81+F
+Best-fit model: F81+F chosen according to BIC
+
+All model information printed to Rockett-pt-8_maskedRefRemMafft.fasta.model.gz
+CPU time for ModelFinder: 0.031 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.049 seconds (0h:0m:0s)
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -39769.632
+Optimal log-likelihood: -39769.632
+Rate parameters:  A-C: 1.00000  A-G: 1.00000  A-T: 1.00000  C-G: 1.00000  C-T: 1.00000  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.183  G: 0.196  T: 0.322
+Parameters optimization took 1 rounds (0.000 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.000862 sec (of wall-clock time) 0.000683 sec(of CPU time)
+Computing RapidNJ tree took 0.000028 sec (of wall-clock time) 0.000022 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -39825.088
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.021 second
+Computing log-likelihood of 90 initial trees ... 0.011 seconds
+Current best score: -39769.632
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -39769.632
+Iteration 10 / LogL: -39769.632 / Time: 0h:0m:0s
+Iteration 20 / LogL: -39769.632 / Time: 0h:0m:0s
+Finish initializing candidate tree set (7)
+Current best tree score: -39769.632 / CPU time: 0.039
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -39769.632 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -39769.632
+UPDATE BEST LOG-LIKELIHOOD: -39769.632
+UPDATE BEST LOG-LIKELIHOOD: -39769.632
+Iteration 40 / LogL: -39769.762 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -39769.632
+UPDATE BEST LOG-LIKELIHOOD: -39769.632
+Iteration 50 / LogL: -39769.632 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 60 / LogL: -39769.785 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 70 / LogL: -39769.805 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 80 / LogL: -39769.632 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 90 / LogL: -39769.632 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 100 / LogL: -39769.711 / Time: 0h:0m:0s (0h:0m:0s left)
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -39769.632
+Optimal log-likelihood: -39769.632
+Rate parameters:  A-C: 1.00000  A-G: 1.00000  A-T: 1.00000  C-G: 1.00000  C-T: 1.00000  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.183  G: 0.196  T: 0.322
+Parameters optimization took 1 rounds (0.000 sec)
+BEST SCORE FOUND : -39769.632
+Total tree length: 0.000
+
+Total number of iterations: 102
+CPU time used for tree search: 0.201 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.107 sec (0h:0m:0s)
+Total CPU time used: 0.208 sec (0h:0m:0s)
+Total wall-clock time used: 0.116 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                Rockett-pt-8_maskedRefRemMafft.fasta.iqtree
+  Maximum-likelihood tree:       Rockett-pt-8_maskedRefRemMafft.fasta.treefile
+  Likelihood distances:          Rockett-pt-8_maskedRefRemMafft.fasta.mldist
+  Screen log file:               Rockett-pt-8_maskedRefRemMafft.fasta.log
+
+Date and Time: Fri May  5 09:37:26 2023

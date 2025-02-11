@@ -1,0 +1,47 @@
+
+LEAST-SQUARE METHODS TO ESTIMATE RATES AND DATES - v.1.9.7 
+
+
+Input files:
+  i                                               Input tree file : Rockett-pt-8_LSD_CollapseDefault.timetree.subst
+  d                                               Input date file : Rockett-pt-8_LSD_CollapseDefault.timetree.date
+  p                                                Partition file : No
+  g                                               Given outgroups : No
+Output file:
+  o                                                  Output file  : Rockett-pt-8_LSD_CollapseDefault.timetree
+Parameters:
+  a                                                     Root date : No
+  z                                                     Tips date : No
+  c                                              With constraints : Yes
+  t                                      Lower bound for the rate : 1e-10
+  v                                                With variances : Yes, use variances based on input branch lengths
+  b                              Adjusted parameter for variances : To estimate
+  r                                             Estimate the root : Use fast method to search on all branches
+  w                                       Given substitution rate : No
+  n                                             Multiple data set : No
+  f                                  Compute confidence intervals : Yes, sampling 100 times
+  q                  Standard deviation of lognormal relaxed clock: 0.2 (for computing confidence intervals)
+  s                                               Sequence length : 29903
+  e                                          Exclude outlier tips : No
+  u                Min internal branch length of time scaled tree : 0
+  U                Min external branch length of time scaled tree : 0
+  l                        Collapsed internal branch length limit : 1.67207e-05
+  D                                            Output date format : Based on input date format
+  E  Estimate rates for external and internal branches separately : No
+
+  h to print Help 
+  y to accept or type a letter to change an option (x = Exit) 
+Tree 1 
+Parameter to adjust variances was set to 0.000334415 (settable via option -b)
+Minimum branch length of time scaled tree (settable via option -u and -U): 0
+*WARNINGS:
+- 66.6667% internal branches were collapsed.
+*RESULTS:
+- Dating results:
+ rate 0.000260744, tMRCA 2021-06-25 , objective function 1.50702e-05
+- Results with confidence intervals:
+ rate 0.000260744 [1e-10; 0.000637179], tMRCA 2021-06-25 [-1009673-08-15; 2021-08-27], objective function 1.50702e-05
+
+*********************************************************
+
+TOTAL ELAPSED TIME: 0.002869 seconds
