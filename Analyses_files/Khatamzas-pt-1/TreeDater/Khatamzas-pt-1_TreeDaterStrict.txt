@@ -1,0 +1,33 @@
+[1] "Khatamzas-pt-1"
+[1] "TreeDater Strict clock"
+
+Phylogenetic tree with 21 tips and 20 internal nodes.
+
+Tip labels:
+  Khatamzas-pt-1_0|2020-05-11, Khatamzas-pt-1_112|2020-08-31, Khatamzas-pt-1_129|2020-09-17, Khatamzas-pt-1_147|2020-10-05, Khatamzas-pt-1_149|2020-10-07, Khatamzas-pt-1_136|2020-09-24, ...
+
+Rooted; includes branch lengths.
+
+ Time of common ancestor 
+2020.28347093314 
+
+ Time to common ancestor (before most recent sample) 
+0.481556389262096 
+
+ Weighted mean substitution rate (adjusted by branch lengths) 
+0.00111080259536041 
+
+ Unadjusted mean substitution rate 
+0.00111080259536041 
+
+ Clock model  
+strict 
+
+ Coefficient of variation of rates 
+0 
+[1] "Estimating confidence intervals for rates and dates by a parametric bootstrap"
+
+ For more detailed output, $trees provides a list of each fit to each simulation 
+
+Time of common ancestor	2.020283e+03	2.020120e+03	2.020347e+03	Mean substitution rate	1.110803e-03	6.877102e-04	1.794189e-03	
+

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" required="" version="2.6">
+
+    <data
+id="Khatamzas-pt-1_maskedRefRemMafft"
+spec="Alignment"
+name="alignment">
+                        <sequence id="seq_Khatamzas-pt-1_0|2020-05-11" spec="Sequence" taxon="Khatamzas-pt-1_0|2020-05-11" totalcount="4" value=""/>
+                        <sequence id="seq_Khatamzas-pt-1_112|2020-08-31" spec="Sequence" taxon="Khatamzas-pt-1_112|2020-08-31" totalcount="4" value=""/>
+                        <sequence id="seq_Khatamzas-pt-1_122|2020-09-10" spec="Sequence" taxon="Khatamzas-pt-1_122|2020-09-10" totalcount="4" value=""/>
+                        <sequence id="seq_Khatamzas-pt-1_129|2020-09-17" spec="Sequence" taxon="Khatamzas-pt-1_129|2020-09-17" totalcount="4" value=""/>
+                        <sequence id="seq_Khatamzas-pt-1_136|2020-09-24" spec="Sequence" taxon="Khatamzas-pt-1_136|2020-09-24" totalcount="4" value=""/>
+                        <sequence id="seq_Khatamzas-pt-1_147|2020-10-05" spec="Sequence" taxon="Khatamzas-pt-1_147|2020-10-05" totalcount="4" value=""/>
+                        <sequence id="seq_Khatamzas-pt-1_149|2020-10-07" spec="Sequence" taxon="Khatamzas-pt-1_149|2020-10-07" totalcount="4" value=""/>
+                        <sequence id="seq_Khatamzas-pt-1_15|2020-05-26" spec="Sequence" taxon="Khatamzas-pt-1_15|2020-05-26" totalcount="4" value=""/>
+                        <sequence id="seq_Khatamzas-pt-1_22|2020-06-02" spec="Sequence" taxon="Khatamzas-pt-1_22|2020-06-02" totalcount="4" value=""/>
+                        <sequence id="seq_Khatamzas-pt-1_28|2020-06-08" spec="Sequence" taxon="Khatamzas-pt-1_28|2020-06-08" totalcount="4" value=""/>
+                        <sequence id="seq_Khatamzas-pt-1_36|2020-06-16" spec="Sequence" taxon="Khatamzas-pt-1_36|2020-06-16" totalcount="4" value=""/>
+                        <sequence id="seq_Khatamzas-pt-1_45|2020-06-23" spec="Sequence" taxon="Khatamzas-pt-1_45|2020-06-23" totalcount="4" value=""/>
+                        <sequence id="seq_Khatamzas-pt-1_49|2020-06-29" spec="Sequence" taxon="Khatamzas-pt-1_49|2020-06-29" totalcount="4" value=""/>
+                        <sequence id="seq_Khatamzas-pt-1_56|2020-07-06" spec="Sequence" taxon="Khatamzas-pt-1_56|2020-07-06" totalcount="4" value=""/>
+                        <sequence id="seq_Khatamzas-pt-1_57|2020-07-07" spec="Sequence" taxon="Khatamzas-pt-1_57|2020-07-07" totalcount="4" value=""/>
+                        <sequence id="seq_Khatamzas-pt-1_59|2020-07-09" spec="Sequence" taxon="Khatamzas-pt-1_59|2020-07-09" totalcount="4" value=""/>
+                        <sequence id="seq_Khatamzas-pt-1_63|2020-07-13" spec="Sequence" taxon="Khatamzas-pt-1_63|2020-07-13" totalcount="4" value=""/>
+                        <sequence id="seq_Khatamzas-pt-1_66|2020-07-16" spec="Sequence" taxon="Khatamzas-pt-1_66|2020-07-16" totalcount="4" value=""/>
+                        <sequence id="seq_Khatamzas-pt-1_73|2020-07-23" spec="Sequence" taxon="Khatamzas-pt-1_73|2020-07-23" totalcount="4" value=""/>
+                        <sequence id="seq_Khatamzas-pt-1_78|2020-07-28" spec="Sequence" taxon="Khatamzas-pt-1_78|2020-07-28" totalcount="4" value=""/>
+                        <sequence id="seq_Khatamzas-pt-1_92|2020-08-11" spec="Sequence" taxon="Khatamzas-pt-1_92|2020-08-11" totalcount="4" value=""/>
+                    </data>
+
+
+    
+
+<map name="Uniform" >beast.math.distributions.Uniform</map>
+<map name="Exponential" >beast.math.distributions.Exponential</map>
+<map name="LogNormal" >beast.math.distributions.LogNormalDistributionModel</map>
+<map name="Normal" >beast.math.distributions.Normal</map>
+<map name="Beta" >beast.math.distributions.Beta</map>
+<map name="Gamma" >beast.math.distributions.Gamma</map>
+<map name="LaplaceDistribution" >beast.math.distributions.LaplaceDistribution</map>
+<map name="prior" >beast.math.distributions.Prior</map>
+<map name="InverseGamma" >beast.math.distributions.InverseGamma</map>
+<map name="OneOnX" >beast.math.distributions.OneOnX</map>
+
+<run id="mcmc" spec="MCMC" chainLength="10000000">
+    <state id="state" spec="State" storeEvery="5000">
+        <tree id="Tree.t:Khatamzas-pt-1_maskedRefRemMafft" spec="beast.evolution.tree.Tree" name="stateNode">
+            <trait id="dateTrait.t:Khatamzas-pt-1_maskedRefRemMafft" spec="beast.evolution.tree.TraitSet" dateFormat="yyyy-M-dd" traitname="date" value="Khatamzas-pt-1_0|2020-05-11=2020-05-11,Khatamzas-pt-1_112|2020-08-31=2020-08-31,Khatamzas-pt-1_122|2020-09-10=2020-09-10,Khatamzas-pt-1_129|2020-09-17=2020-09-17,Khatamzas-pt-1_136|2020-09-24=2020-09-24,Khatamzas-pt-1_147|2020-10-05=2020-10-05,Khatamzas-pt-1_149|2020-10-07=2020-10-07,Khatamzas-pt-1_15|2020-05-26=2020-05-26,Khatamzas-pt-1_22|2020-06-02=2020-06-02,Khatamzas-pt-1_28|2020-06-08=2020-06-08,Khatamzas-pt-1_36|2020-06-16=2020-06-16,Khatamzas-pt-1_45|2020-06-23=2020-06-23,Khatamzas-pt-1_49|2020-06-29=2020-06-29,Khatamzas-pt-1_56|2020-07-06=2020-07-06,Khatamzas-pt-1_57|2020-07-07=2020-07-07,Khatamzas-pt-1_59|2020-07-09=2020-07-09,Khatamzas-pt-1_63|2020-07-13=2020-07-13,Khatamzas-pt-1_66|2020-07-16=2020-07-16,Khatamzas-pt-1_73|2020-07-23=2020-07-23,Khatamzas-pt-1_78|2020-07-28=2020-07-28,Khatamzas-pt-1_92|2020-08-11=2020-08-11">
+                <taxa id="TaxonSet.Khatamzas-pt-1_maskedRefRemMafft" spec="TaxonSet">
+                    <alignment idref="Khatamzas-pt-1_maskedRefRemMafft"/>
+                </taxa>
+            </trait>
+            <taxonset idref="TaxonSet.Khatamzas-pt-1_maskedRefRemMafft"/>
+        </tree>
+        <parameter id="clockRate.c:Khatamzas-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+        <parameter id="gammaShape.s:Khatamzas-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+        <parameter id="kappa.s:Khatamzas-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" lower="0.0" name="stateNode">2.0</parameter>
+        <parameter id="bPopSizes.t:Khatamzas-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" dimension="5" lower="0.0" name="stateNode">380.0</parameter>
+        <stateNode id="bGroupSizes.t:Khatamzas-pt-1_maskedRefRemMafft" spec="parameter.IntegerParameter" dimension="5">1</stateNode>
+        <parameter id="freqParameter.s:Khatamzas-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" dimension="4" lower="0.0" name="stateNode" upper="1.0">0.25</parameter>
+    </state>
+    <init id="RandomTree.t:Khatamzas-pt-1_maskedRefRemMafft" spec="beast.evolution.tree.RandomTree" estimate="false" initial="@Tree.t:Khatamzas-pt-1_maskedRefRemMafft" taxa="@Khatamzas-pt-1_maskedRefRemMafft">
+        <populationModel id="ConstantPopulation0.t:Khatamzas-pt-1_maskedRefRemMafft" spec="ConstantPopulation">
+            <parameter id="randomPopSize.t:Khatamzas-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" name="popSize">1.0</parameter>
+        </populationModel>
+    </init>
+    <distribution id="posterior" spec="util.CompoundDistribution">
+        <distribution id="prior" spec="util.CompoundDistribution">
+            <distribution id="BayesianSkyline.t:Khatamzas-pt-1_maskedRefRemMafft" spec="BayesianSkyline" groupSizes="@bGroupSizes.t:Khatamzas-pt-1_maskedRefRemMafft" popSizes="@bPopSizes.t:Khatamzas-pt-1_maskedRefRemMafft">
+                <treeIntervals id="BSPTreeIntervals.t:Khatamzas-pt-1_maskedRefRemMafft" spec="TreeIntervals" tree="@Tree.t:Khatamzas-pt-1_maskedRefRemMafft"/>
+            </distribution>
+            <distribution id="MarkovChainedPopSizes.t:Khatamzas-pt-1_maskedRefRemMafft" spec="beast.math.distributions.MarkovChainDistribution" jeffreys="true" parameter="@bPopSizes.t:Khatamzas-pt-1_maskedRefRemMafft"/>
+            <prior id="ClockPrior.c:Khatamzas-pt-1_maskedRefRemMafft" name="distribution" x="@clockRate.c:Khatamzas-pt-1_maskedRefRemMafft">
+                <Uniform id="Uniform.0" name="distr"/>
+            </prior>
+            <prior id="FrequenciesPrior.s:Khatamzas-pt-1_maskedRefRemMafft" name="distribution" x="@freqParameter.s:Khatamzas-pt-1_maskedRefRemMafft">
+                <Uniform id="Uniform.3" name="distr"/>
+            </prior>
+            <prior id="GammaShapePrior.s:Khatamzas-pt-1_maskedRefRemMafft" name="distribution" x="@gammaShape.s:Khatamzas-pt-1_maskedRefRemMafft">
+                <Exponential id="Exponential.0" name="distr">
+                    <parameter id="RealParameter.0" spec="parameter.RealParameter" estimate="false" name="mean">1.0</parameter>
+                </Exponential>
+            </prior>
+            <prior id="KappaPrior.s:Khatamzas-pt-1_maskedRefRemMafft" name="distribution" x="@kappa.s:Khatamzas-pt-1_maskedRefRemMafft">
+                <LogNormal id="LogNormalDistributionModel.0" name="distr">
+                    <parameter id="RealParameter.1" spec="parameter.RealParameter" estimate="false" name="M">1.0</parameter>
+                    <parameter id="RealParameter.2" spec="parameter.RealParameter" estimate="false" name="S">1.25</parameter>
+                </LogNormal>
+            </prior>
+        </distribution>
+        <distribution id="likelihood" spec="util.CompoundDistribution" useThreads="true">
+            <distribution id="treeLikelihood.Khatamzas-pt-1_maskedRefRemMafft" spec="ThreadedTreeLikelihood" data="@Khatamzas-pt-1_maskedRefRemMafft" tree="@Tree.t:Khatamzas-pt-1_maskedRefRemMafft" useAmbiguities="true">
+                <siteModel id="SiteModel.s:Khatamzas-pt-1_maskedRefRemMafft" spec="SiteModel" gammaCategoryCount="4" shape="@gammaShape.s:Khatamzas-pt-1_maskedRefRemMafft">
+                    <parameter id="mutationRate.s:Khatamzas-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" estimate="false" name="mutationRate">1.0</parameter>
+                    <parameter id="proportionInvariant.s:Khatamzas-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" estimate="false" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
+                    <substModel id="hky.s:Khatamzas-pt-1_maskedRefRemMafft" spec="HKY" kappa="@kappa.s:Khatamzas-pt-1_maskedRefRemMafft">
+                        <frequencies id="estimatedFreqs.s:Khatamzas-pt-1_maskedRefRemMafft" spec="Frequencies" frequencies="@freqParameter.s:Khatamzas-pt-1_maskedRefRemMafft"/>
+                    </substModel>
+                </siteModel>
+                <branchRateModel id="StrictClock.c:Khatamzas-pt-1_maskedRefRemMafft" spec="beast.evolution.branchratemodel.StrictClockModel" clock.rate="@clockRate.c:Khatamzas-pt-1_maskedRefRemMafft"/>
+            </distribution>
+        </distribution>
+    </distribution>
+    <operator id="StrictClockRateScaler.c:Khatamzas-pt-1_maskedRefRemMafft" spec="ScaleOperator" parameter="@clockRate.c:Khatamzas-pt-1_maskedRefRemMafft" weight="3.0"/>
+    <operator id="strictClockUpDownOperator.c:Khatamzas-pt-1_maskedRefRemMafft" spec="UpDownOperator" scaleFactor="0.75" weight="3.0">
+        <up idref="clockRate.c:Khatamzas-pt-1_maskedRefRemMafft"/>
+        <down idref="Tree.t:Khatamzas-pt-1_maskedRefRemMafft"/>
+    </operator>
+    <operator id="gammaShapeScaler.s:Khatamzas-pt-1_maskedRefRemMafft" spec="ScaleOperator" parameter="@gammaShape.s:Khatamzas-pt-1_maskedRefRemMafft" scaleFactor="0.5" weight="0.1"/>
+    <operator id="KappaScaler.s:Khatamzas-pt-1_maskedRefRemMafft" spec="ScaleOperator" parameter="@kappa.s:Khatamzas-pt-1_maskedRefRemMafft" scaleFactor="0.5" weight="0.1"/>
+    <operator id="BayesianSkylineTreeScaler.t:Khatamzas-pt-1_maskedRefRemMafft" spec="ScaleOperator" scaleFactor="0.5" tree="@Tree.t:Khatamzas-pt-1_maskedRefRemMafft" weight="3.0"/>
+    <operator id="BayesianSkylineTreeRootScaler.t:Khatamzas-pt-1_maskedRefRemMafft" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@Tree.t:Khatamzas-pt-1_maskedRefRemMafft" weight="3.0"/>
+    <operator id="BayesianSkylineUniformOperator.t:Khatamzas-pt-1_maskedRefRemMafft" spec="Uniform" tree="@Tree.t:Khatamzas-pt-1_maskedRefRemMafft" weight="30.0"/>
+    <operator id="BayesianSkylineSubtreeSlide.t:Khatamzas-pt-1_maskedRefRemMafft" spec="SubtreeSlide" tree="@Tree.t:Khatamzas-pt-1_maskedRefRemMafft" weight="15.0"/>
+    <operator id="BayesianSkylineNarrow.t:Khatamzas-pt-1_maskedRefRemMafft" spec="Exchange" tree="@Tree.t:Khatamzas-pt-1_maskedRefRemMafft" weight="15.0"/>
+    <operator id="BayesianSkylineWide.t:Khatamzas-pt-1_maskedRefRemMafft" spec="Exchange" isNarrow="false" tree="@Tree.t:Khatamzas-pt-1_maskedRefRemMafft" weight="3.0"/>
+    <operator id="BayesianSkylineWilsonBalding.t:Khatamzas-pt-1_maskedRefRemMafft" spec="WilsonBalding" tree="@Tree.t:Khatamzas-pt-1_maskedRefRemMafft" weight="3.0"/>
+    <operator id="popSizesScaler.t:Khatamzas-pt-1_maskedRefRemMafft" spec="ScaleOperator" parameter="@bPopSizes.t:Khatamzas-pt-1_maskedRefRemMafft" weight="15.0"/>
+    <operator id="groupSizesDelta.t:Khatamzas-pt-1_maskedRefRemMafft" spec="DeltaExchangeOperator" integer="true" weight="6.0">
+        <intparameter idref="bGroupSizes.t:Khatamzas-pt-1_maskedRefRemMafft"/>
+    </operator>
+    <operator id="FrequenciesExchanger.s:Khatamzas-pt-1_maskedRefRemMafft" spec="DeltaExchangeOperator" delta="0.01" weight="0.1">
+        <parameter idref="freqParameter.s:Khatamzas-pt-1_maskedRefRemMafft"/>
+    </operator>
+    <logger id="tracelog" spec="Logger" fileName="$(filebase)_$(seed).log" logEvery="1000" model="@posterior" sanitiseHeaders="true" sort="smart">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+        <log idref="treeLikelihood.Khatamzas-pt-1_maskedRefRemMafft"/>
+        <log id="TreeHeight.t:Khatamzas-pt-1_maskedRefRemMafft" spec="beast.evolution.tree.TreeHeightLogger" tree="@Tree.t:Khatamzas-pt-1_maskedRefRemMafft"/>
+        <log idref="clockRate.c:Khatamzas-pt-1_maskedRefRemMafft"/>
+        <log idref="gammaShape.s:Khatamzas-pt-1_maskedRefRemMafft"/>
+        <log idref="kappa.s:Khatamzas-pt-1_maskedRefRemMafft"/>
+        <log idref="BayesianSkyline.t:Khatamzas-pt-1_maskedRefRemMafft"/>
+        <log idref="bPopSizes.t:Khatamzas-pt-1_maskedRefRemMafft"/>
+        <log idref="bGroupSizes.t:Khatamzas-pt-1_maskedRefRemMafft"/>
+        <log idref="freqParameter.s:Khatamzas-pt-1_maskedRefRemMafft"/>
+    </logger>
+    <logger id="screenlog" spec="Logger" logEvery="1000">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+    </logger>
+    <logger id="treelog.t:Khatamzas-pt-1_maskedRefRemMafft" spec="Logger" fileName="$(filebase)_$(seed).trees" logEvery="1000" mode="tree">
+        <log id="TreeWithMetaDataLogger.t:Khatamzas-pt-1_maskedRefRemMafft" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree.t:Khatamzas-pt-1_maskedRefRemMafft"/>
+    </logger>
+    <operatorschedule id="OperatorSchedule" spec="OperatorSchedule"/>
+</run>
+</beast>

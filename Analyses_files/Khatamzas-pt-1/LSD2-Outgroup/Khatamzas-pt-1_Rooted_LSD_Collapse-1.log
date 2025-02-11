@@ -1,0 +1,218 @@
+IQ-TREE multicore version 2.1.2 COVID-edition for Mac OS X 64-bit built Oct 22 2020
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    dlmp133362.dlce.shh.mpg.de (AVX512, FMA3, 16 GB RAM)
+Command: /Users/oeversti/iqtree-2.1.2-MacOSX/bin/iqtree2 -s Khatamzas-pt-1_maskedRefMafft.fasta --prefix Khatamzas-pt-1_Rooted_LSD_Collapse-1 -m MFP -B 1000 -o NC_045512.2|2019-12-30 --date TAXNAME --date-ci 100 --date-options -l -1 -redo
+Seed:    263579 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Aug 20 14:16:19 2023
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file Khatamzas-pt-1_maskedRefMafft.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 265 sites contain only gaps or ambiguous characters.
+Alignment has 22 sequences with 29903 columns, 185 distinct patterns
+18 parsimony-informative, 25 singleton sites, 29860 constant sites
+                               Gap/Ambiguity  Composition  p-value
+   1  NC_045512.2|2019-12-30           0.89%    passed     99.94%
+   2  Khatamzas-pt-1_0|2020-05-11      1.36%    passed     99.91%
+   3  Khatamzas-pt-1_112|2020-08-31    1.86%    passed     99.99%
+   4  Khatamzas-pt-1_122|2020-09-10    3.89%    passed     99.53%
+   5  Khatamzas-pt-1_129|2020-09-17    2.32%    passed     99.56%
+   6  Khatamzas-pt-1_136|2020-09-24    2.65%    passed     99.87%
+   7  Khatamzas-pt-1_147|2020-10-05    2.14%    passed     99.05%
+   8  Khatamzas-pt-1_149|2020-10-07    0.91%    passed     99.99%
+   9  Khatamzas-pt-1_15|2020-05-26     0.89%    passed    100.00%
+  10  Khatamzas-pt-1_22|2020-06-02     0.89%    passed    100.00%
+  11  Khatamzas-pt-1_28|2020-06-08     0.89%    passed     99.99%
+  12  Khatamzas-pt-1_36|2020-06-16     0.89%    passed     99.99%
+  13  Khatamzas-pt-1_45|2020-06-23     0.89%    passed    100.00%
+  14  Khatamzas-pt-1_49|2020-06-29     0.89%    passed     99.99%
+  15  Khatamzas-pt-1_56|2020-07-06     1.97%    passed     99.96%
+  16  Khatamzas-pt-1_57|2020-07-07     0.90%    passed    100.00%
+  17  Khatamzas-pt-1_59|2020-07-09     1.86%    passed     99.95%
+  18  Khatamzas-pt-1_63|2020-07-13     2.43%    passed     99.90%
+  19  Khatamzas-pt-1_66|2020-07-16     1.84%    passed     99.93%
+  20  Khatamzas-pt-1_73|2020-07-23     2.66%    passed     99.86%
+  21  Khatamzas-pt-1_78|2020-07-28     0.94%    passed     99.98%
+  22  Khatamzas-pt-1_92|2020-08-11     0.91%    passed     99.99%
+****  TOTAL                            1.58%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.000 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -40699.858
+Optimal log-likelihood: -40699.854
+Rate parameters:  A-C: 0.35739  A-G: 1.83142  A-T: 0.30327  C-G: 0.27047  C-T: 3.96143  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Proportion of invariable sites: 0.499
+Gamma shape alpha: 0.020
+Parameters optimization took 1 rounds (0.005 sec)
+Time for fast ML tree search: 0.037 seconds
+
+NOTE: ModelFinder requires 2 MB RAM!
+ModelFinder will test up to 286 DNA models (sample size: 29903) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         40707.955    49  81513.909    81514.074    81920.889
+  2  GTR+F+I       40692.747    50  81485.494    81485.665    81900.780
+  3  GTR+F+G4      40702.502    50  81505.004    81505.174    81920.289
+  4  GTR+F+I+G4    40699.859    51  81501.717    81501.895    81925.309
+  5  GTR+F+R2      40706.399    51  81514.797    81514.975    81938.389
+  6  GTR+F+R3      40704.959    53  81515.917    81516.109    81956.120
+ 15  SYM+I         41577.094    47  83248.188    83248.339    83638.557
+ 28  TVM+F+I       40694.734    49  81487.467    81487.631    81894.447
+ 41  TVMe+I        41579.147    46  83250.295    83250.439    83632.357
+ 54  TIM3+F+I      40694.227    48  81484.454    81484.612    81883.128
+ 67  TIM3e+I       41578.057    45  83246.114    83246.253    83619.871
+ 80  TIM2+F+I      40694.093    48  81484.187    81484.344    81882.861
+ 93  TIM2e+I       41578.893    45  83247.786    83247.924    83621.543
+106  TIM+F+I       40694.438    48  81484.876    81485.034    81883.550
+119  TIMe+I        41579.152    45  83248.305    83248.443    83622.062
+132  TPM3u+F+I     40696.588    47  81487.175    81487.327    81877.544
+145  TPM3+F+I      40696.549    47  81487.099    81487.250    81877.468
+158  TPM2u+F+I     40696.957    47  81487.913    81488.064    81878.282
+171  TPM2+F+I      40696.957    47  81487.913    81488.064    81878.282
+184  K3Pu+F+I      40696.932    47  81487.864    81488.015    81878.232
+197  K3P+I         41581.571    44  83251.143    83251.275    83616.594
+210  TN+F+I        40694.770    47  81483.541    81483.692    81873.909
+223  TNe+I         41579.304    44  83246.608    83246.740    83612.059
+236  HKY+F+I       40696.694    46  81485.389    81485.534    81867.452
+249  K2P+I         41581.197    43  83248.394    83248.520    83605.539
+262  F81+F+I       40714.301    45  81518.602    81518.741    81892.359
+275  JC+I          41597.701    42  83279.401    83279.522    83628.241
+Akaike Information Criterion:           TN+F+I
+Corrected Akaike Information Criterion: TN+F+I
+Bayesian Information Criterion:         HKY+F+I
+Best-fit model: HKY+F+I chosen according to BIC
+
+All model information printed to Khatamzas-pt-1_Rooted_LSD_Collapse-1.model.gz
+CPU time for ModelFinder: 0.131 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.135 seconds (0h:0m:0s)
+Generating 1000 samples for ultrafast bootstrap (seed: 263579)...
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -40696.694
+Optimal log-likelihood: -40696.663
+Rate parameters:  A-C: 1.00000  A-G: 7.10137  A-T: 1.00000  C-G: 1.00000  C-T: 7.10137  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Proportion of invariable sites: 0.992
+Parameters optimization took 1 rounds (0.001 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.002148 sec (of wall-clock time) 0.002079 sec(of CPU time)
+Computing RapidNJ tree took 0.000070 sec (of wall-clock time) 0.000066 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -40720.509
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.031 second
+Computing log-likelihood of 98 initial trees ... 0.031 seconds
+Current best score: -40696.663
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -40696.639
+BETTER TREE FOUND at iteration 3: -40696.638
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -40696.608
+UPDATE BEST LOG-LIKELIHOOD: -40696.608
+Iteration 10 / LogL: -40696.668 / Time: 0h:0m:0s
+UPDATE BEST LOG-LIKELIHOOD: -40696.608
+UPDATE BEST LOG-LIKELIHOOD: -40696.608
+Iteration 20 / LogL: -40696.675 / Time: 0h:0m:0s
+Finish initializing candidate tree set (11)
+Current best tree score: -40696.608 / CPU time: 0.242
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -40696.674 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 40 / LogL: -40696.615 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 50 / LogL: -40696.638 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -40714.329
+Iteration 60 / LogL: -40696.651 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 70 / LogL: -40696.662 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 80 / LogL: -40696.624 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 90 / LogL: -40696.629 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 100 / LogL: -40696.718 / Time: 0h:0m:1s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -40717.913
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.991
+TREE SEARCH COMPLETED AFTER 104 ITERATIONS / Time: 0h:0m:1s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -40696.608
+2. Current log-likelihood: -40696.597
+Optimal log-likelihood: -40696.590
+Rate parameters:  A-C: 1.00000  A-G: 6.62226  A-T: 1.00000  C-G: 1.00000  C-T: 6.62226  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Proportion of invariable sites: 0.992
+Parameters optimization took 2 rounds (0.002 sec)
+BEST SCORE FOUND : -40696.590
+Creating bootstrap support values...
+Split supports printed to NEXUS file Khatamzas-pt-1_Rooted_LSD_Collapse-1.splits.nex
+Total tree length: 0.002
+
+Total number of iterations: 104
+CPU time used for tree search: 1.309 sec (0h:0m:1s)
+Wall-clock time used for tree search: 1.137 sec (0h:0m:1s)
+Total CPU time used: 1.367 sec (0h:0m:1s)
+Total wall-clock time used: 1.199 sec (0h:0m:1s)
+
+Computing bootstrap consensus tree...
+Reading input file Khatamzas-pt-1_Rooted_LSD_Collapse-1.splits.nex...
+22 taxa and 241 splits.
+Consensus tree written to Khatamzas-pt-1_Rooted_LSD_Collapse-1.contree
+Reading input trees file Khatamzas-pt-1_Rooted_LSD_Collapse-1.contree
+Log-likelihood of consensus tree: -40697.075
+
+Analysis results written to: 
+  IQ-TREE report:                Khatamzas-pt-1_Rooted_LSD_Collapse-1.iqtree
+  Maximum-likelihood tree:       Khatamzas-pt-1_Rooted_LSD_Collapse-1.treefile
+  Likelihood distances:          Khatamzas-pt-1_Rooted_LSD_Collapse-1.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          Khatamzas-pt-1_Rooted_LSD_Collapse-1.splits.nex
+  Consensus tree:                Khatamzas-pt-1_Rooted_LSD_Collapse-1.contree
+  Screen log file:               Khatamzas-pt-1_Rooted_LSD_Collapse-1.log
+
+--- Start phylogenetic dating ---
+Extracting date from node names...
+22 dates extracted
+Building time tree by least-square dating (LSD) with command:
+lsd -i Khatamzas-pt-1_Rooted_LSD_Collapse-1.timetree.subst -s 29903 -o Khatamzas-pt-1_Rooted_LSD_Collapse-1.timetree -f 100 -g Khatamzas-pt-1_Rooted_LSD_Collapse-1.timetree.outgroup -d Khatamzas-pt-1_Rooted_LSD_Collapse-1.timetree.date -l -1 
+Reroot the tree(s) using given outgroups ...
+
+TREE 1
+*PROCESSING:
+Reading the tree ... 
+Collapse 0 (over 20) internal branches having branch length <= -1
+ (settable via option -l)
+Parameter to adjust variances was set to 0.000334 (settable via option -b)
+Minimum branch length of time scaled tree (settable via option -u and -U): 0
+Estimating the root position on the branch defined by given outgroups ...
+Computing confidence intervals using sequence length 29903 and a lognormal
+ relaxed clock with mean 1, standard deviation 0.2 (settable via option -q)
+*RESULTS:
+- Dating results:
+ rate 0.000971531, tMRCA 2019-12-30 , objective function 0.000128197
+- Results with confidence intervals:
+ rate 0.000971531 [0.000540841; 0.00157684], tMRCA 2019-12-30 [2019-12-18; 2019-12-30], objective function 0.000128197
+
+TOTAL ELAPSED TIME: 0.00831 seconds
+LSD results written to:
+  LSD report:                  Khatamzas-pt-1_Rooted_LSD_Collapse-1.timetree.lsd
+  Time tree in nexus format:   Khatamzas-pt-1_Rooted_LSD_Collapse-1.timetree.nex
+  Time tree in newick format:  Khatamzas-pt-1_Rooted_LSD_Collapse-1.timetree.nwk
+
+--- End phylogenetic dating ---
+Date and Time: Sun Aug 20 14:16:20 2023

@@ -1,0 +1,258 @@
+IQ-TREE 2.1.2 COVID-edition built Oct 22 2020
+
+Input file name: Khatamzas-pt-1_maskedRefMafft.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 263579
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+Since you used least square dating (LSD) please also cite: 
+
+Thu-Hien To, Matthieu Jung, Samantha Lycett, Olivier Gascuel (2016)
+Fast dating using least-squares criteria and algorithms. Syst. Biol. 65:82-97.
+https://doi.org/10.1093/sysbio/syv068
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 22 sequences with 29903 nucleotide sites
+Number of constant sites: 29860 (= 99.8562% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 29860 (= 99.8562% of all sites)
+Number of parsimony informative sites: 18
+Number of distinct site patterns: 185
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: HKY+F+I
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+HKY+F+I          -40696.694   81485.389 +   0.0891   81485.534 +   0.0896   81867.452 +    0.937
+TN+F+I           -40694.770   81483.541 +    0.224   81483.692 +    0.225   81873.909 -   0.0371
+TPM3+F+I         -40696.549   81487.099 -   0.0379   81487.250 -    0.038   81877.468 -  0.00626
+TPM3u+F+I        -40696.588   81487.175 -   0.0365   81487.327 -   0.0365   81877.544 -  0.00603
+K3Pu+F+I         -40696.932   81487.864 -   0.0258   81488.015 -   0.0259   81878.232 -  0.00427
+TPM2u+F+I        -40696.957   81487.913 -   0.0252   81488.064 -   0.0253   81878.282 -  0.00417
+TPM2+F+I         -40696.957   81487.913 -   0.0252   81488.064 -   0.0253   81878.282 -  0.00417
+TIM2+F+I         -40694.093   81484.187 +    0.163   81484.344 +    0.162   81882.861 - 0.000422
+TIM3+F+I         -40694.227   81484.454 +    0.142   81484.612 +    0.142   81883.128 - 0.000369
+TIM+F+I          -40694.438   81484.876 +    0.115   81485.034 +    0.115   81883.550 - 0.000299
+F81+F+I          -40714.301   81518.602 - 5.47e-09   81518.741 - 5.51e-09   81892.359 - 3.66e-06
+TVM+F+I          -40694.734   81487.467 -   0.0315   81487.631 -   0.0314   81894.447 - 1.29e-06
+GTR+F+I          -40692.747   81485.494 +   0.0845   81485.665 +   0.0839   81900.780 - 5.43e-08
+GTR+F+G4         -40702.502   81505.004 -  4.9e-06   81505.174 - 4.87e-06   81920.289 - 3.15e-12
+GTR+F            -40707.955   81513.909 - 5.71e-08   81514.074 - 5.69e-08   81920.889 - 2.33e-12
+GTR+F+I+G4       -40699.859   81501.717 - 2.54e-05   81501.895 - 2.51e-05   81925.309 - 2.56e-13
+GTR+F+R2         -40706.399   81514.797 - 3.66e-08   81514.975 - 3.62e-08   81938.389 -  3.7e-16
+GTR+F+R3         -40704.959   81515.917 - 2.09e-08   81516.109 - 2.05e-08   81956.120 - 5.22e-20
+K2P+I            -41581.197   83248.394 -        0   83248.520 -        0   83605.539 -        0
+TNe+I            -41579.304   83246.608 -        0   83246.740 -        0   83612.059 -        0
+K3P+I            -41581.571   83251.143 -        0   83251.275 -        0   83616.594 -        0
+TIM3e+I          -41578.057   83246.114 -        0   83246.253 -        0   83619.871 -        0
+TIM2e+I          -41578.893   83247.785 -        0   83247.924 -        0   83621.543 -        0
+TIMe+I           -41579.152   83248.305 -        0   83248.443 -        0   83622.062 -        0
+JC+I             -41597.701   83279.401 -        0   83279.522 -        0   83628.241 -        0
+TVMe+I           -41579.147   83250.295 -        0   83250.439 -        0   83632.357 -        0
+SYM+I            -41577.094   83248.188 -        0   83248.339 -        0   83638.557 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: HKY+F+I
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 6.6223
+  A-T: 1.0000
+  C-G: 1.0000
+  C-T: 6.6223
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2989
+  pi(C) = 0.1837
+  pi(G) = 0.196
+  pi(T) = 0.3214
+
+Rate matrix Q:
+
+  A   -0.8761   0.08928    0.6306    0.1562
+  C    0.1453    -1.275   0.09523     1.034
+  G    0.9619   0.08928    -1.207    0.1562
+  T    0.1453    0.5912   0.09523   -0.8317
+
+Model of rate heterogeneity: Invar
+Proportion of invariable sites: 0.9917
+
+ Category  Relative_rate  Proportion
+  0         0              0.9917
+  1         120.4          0.008303
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -40696.5898 (s.e. 84.5553)
+Unconstrained log-likelihood (without tree): -51286.2388
+Number of free parameters (#branches + #model parameters): 46
+Akaike information criterion (AIC) score: 81485.1796
+Corrected Akaike information criterion (AICc) score: 81485.3245
+Bayesian information criterion (BIC) score: 81867.2425
+
+Total tree length (sum of branch lengths): 0.0016
+Sum of internal branch lengths: 0.0006 (34.7710% of tree length)
+
+WARNING: 10 near-zero internal branches (<0.0000) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'NC_045512.2|2019-12-30' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++---------------------------NC_045512.2|2019-12-30
+|
+|  +**Khatamzas-pt-1_0|2020-05-11
++**| (72)
+|  |                                                     +**Khatamzas-pt-1_112|2020-08-31
+|  |                                                  +**| (69)
+|  |                                                  |  |      +--Khatamzas-pt-1_129|2020-09-17
+|  |                                                  |  |  +---| (67)
+|  |                                                  |  |  |   |                +**Khatamzas-pt-1_147|2020-10-05
+|  |                                                  |  |  |   +----------------| (93)
+|  |                                                  |  |  |                    +**Khatamzas-pt-1_149|2020-10-07
+|  |                                                  |  +**| (75)
+|  |                                                  |     +**Khatamzas-pt-1_136|2020-09-24
+|  |                                            +-----| (89)
+|  |                                            |     +**Khatamzas-pt-1_122|2020-09-10
+|  |                                         +**| (58)
+|  |                                         |  +**Khatamzas-pt-1_73|2020-07-23
+|  |                                      +**| (55)
+|  |                                      |  +**Khatamzas-pt-1_66|2020-07-16
+|  |                                   +**| (60)
+|  |                                   |  |        +**Khatamzas-pt-1_78|2020-07-28
+|  |                                   |  +--------| (90)
+|  |                                   |           +-----Khatamzas-pt-1_92|2020-08-11
+|  |                                +**| (51)
+|  |                                |  +**Khatamzas-pt-1_63|2020-07-13
+|  |                       +--------| (46)
+|  |                       |        |  +--Khatamzas-pt-1_57|2020-07-07
+|  |                       |        +**| (63)
+|  |                       |           +**Khatamzas-pt-1_59|2020-07-09
+|  |                    +**| (20)
+|  |                    |  +--Khatamzas-pt-1_49|2020-06-29
+|  |                 +**| (25)
+|  |                 |  +--------Khatamzas-pt-1_45|2020-06-23
+|  |         +-------| (90)
+|  |         |       +**Khatamzas-pt-1_56|2020-07-06
+|  |     +---| (87)
+|  |     |   +--Khatamzas-pt-1_36|2020-06-16
+|  |  +--| (82)
+|  |  |  +**Khatamzas-pt-1_28|2020-06-08
+|  +--| (83)
+|     +--------------Khatamzas-pt-1_15|2020-05-26
+|
++-----Khatamzas-pt-1_22|2020-06-02
+
+Tree in newick format:
+
+(NC_045512.2|2019-12-30:0.0003111678,(Khatamzas-pt-1_0|2020-05-11:0.0000010000,(((((((((((((Khatamzas-pt-1_112|2020-08-31:0.0000010000,((Khatamzas-pt-1_129|2020-09-17:0.0000334422,(Khatamzas-pt-1_147|2020-10-05:0.0000010000,Khatamzas-pt-1_149|2020-10-07:0.0000010000)93:0.0001918062)67:0.0000476108,Khatamzas-pt-1_136|2020-09-24:0.0000010000)75:0.0000010000)69:0.0000010000,Khatamzas-pt-1_122|2020-09-10:0.0000010000)89:0.0000667472,Khatamzas-pt-1_73|2020-07-23:0.0000010000)58:0.0000010000,Khatamzas-pt-1_66|2020-07-16:0.0000010000)55:0.0000010000,(Khatamzas-pt-1_78|2020-07-28:0.0000010000,Khatamzas-pt-1_92|2020-08-11:0.0000679266)90:0.0001027433)60:0.0000020138,Khatamzas-pt-1_63|2020-07-13:0.0000010000)51:0.0000322153,(Khatamzas-pt-1_57|2020-07-07:0.0000334422,Khatamzas-pt-1_59|2020-07-09:0.0000010000)63:0.0000010000)46:0.0001022015,Khatamzas-pt-1_49|2020-06-29:0.0000334422)20:0.0000010000,Khatamzas-pt-1_45|2020-06-23:0.0001025893)25:0.0000020138,Khatamzas-pt-1_56|2020-07-06:0.0000010000)90:0.0000892482,Khatamzas-pt-1_36|2020-06-16:0.0000334422)87:0.0000450070,Khatamzas-pt-1_28|2020-06-08:0.0000010000)82:0.0000334422,Khatamzas-pt-1_15|2020-05-26:0.0001722103)83:0.0000344574)72:0.0000010000,Khatamzas-pt-1_22|2020-06-02:0.0000668860);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -40697.074939
+Robinson-Foulds distance between ML tree and consensus tree: 4
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++---------------------------NC_045512.2|2019-12-30
+|
+|  +--Khatamzas-pt-1_0|2020-05-11
++--| (72)
+|  |                                                    +--Khatamzas-pt-1_112|2020-08-31
+|  |                                                 +--| (69)
+|  |                                                 |  |     +--Khatamzas-pt-1_129|2020-09-17
+|  |                                                 |  |  +--| (67)
+|  |                                                 |  |  |  |                +--Khatamzas-pt-1_147|2020-10-05
+|  |                                                 |  |  |  +----------------| (93)
+|  |                                                 |  |  |                   +--Khatamzas-pt-1_149|2020-10-07
+|  |                                                 |  +--| (75)
+|  |                                                 |     +--Khatamzas-pt-1_136|2020-09-24
+|  |                                            +----| (89)
+|  |                                            |    +--Khatamzas-pt-1_122|2020-09-10
+|  |                                         +--| (58)
+|  |                                         |  +--Khatamzas-pt-1_73|2020-07-23
+|  |                                      +--| (55)
+|  |                                      |  +--Khatamzas-pt-1_66|2020-07-16
+|  |                                   +**| (60)
+|  |                                   |  |        +--Khatamzas-pt-1_78|2020-07-28
+|  |                                   |  +--------| (90)
+|  |                                   |           +-----Khatamzas-pt-1_92|2020-08-11
+|  |                                +--| (51)
+|  |                                |  +--Khatamzas-pt-1_63|2020-07-13
+|  |                             +**| (46)
+|  |                             |  |  +--Khatamzas-pt-1_57|2020-07-07
+|  |                             |  +**| (63)
+|  |                             |     +--Khatamzas-pt-1_59|2020-07-09
+|  |                    +--------| (52)
+|  |                    |        +--Khatamzas-pt-1_56|2020-07-06
+|  |                 +--| (44)
+|  |                 |  +--Khatamzas-pt-1_49|2020-06-29
+|  |         +-------| (90)
+|  |         |       +--------Khatamzas-pt-1_45|2020-06-23
+|  |     +---| (87)
+|  |     |   +--Khatamzas-pt-1_36|2020-06-16
+|  |  +--| (82)
+|  |  |  +--Khatamzas-pt-1_28|2020-06-08
+|  +--| (83)
+|     +--------------Khatamzas-pt-1_15|2020-05-26
+|
++-----Khatamzas-pt-1_22|2020-06-02
+
+
+Consensus tree in newick format: 
+
+(NC_045512.2|2019-12-30:0.0003110802,(Khatamzas-pt-1_0|2020-05-11:0.0000020138,(((((((((((((Khatamzas-pt-1_112|2020-08-31:0.0000020138,((Khatamzas-pt-1_129|2020-09-17:0.0000359010,(Khatamzas-pt-1_147|2020-10-05:0.0000020138,Khatamzas-pt-1_149|2020-10-07:0.0000020373)93:0.0001912857)67:0.0000053265,Khatamzas-pt-1_136|2020-09-24:0.0000020138)75:0.0000419270)69:0.0000020138,Khatamzas-pt-1_122|2020-09-10:0.0000020138)89:0.0000653791,Khatamzas-pt-1_73|2020-07-23:0.0000020138)58:0.0000020138,Khatamzas-pt-1_66|2020-07-16:0.0000020138)55:0.0000020138,(Khatamzas-pt-1_78|2020-07-28:0.0000020138,Khatamzas-pt-1_92|2020-08-11:0.0000682744)90:0.0001033307)60:0.0000014910,Khatamzas-pt-1_63|2020-07-13:0.0000020138)51:0.0000334422,(Khatamzas-pt-1_57|2020-07-07:0.0000334422,Khatamzas-pt-1_59|2020-07-09:0.0000020138)63:0.0000012251)46:0.0000011295,Khatamzas-pt-1_56|2020-07-06:0.0000020138)52:0.0001017132,Khatamzas-pt-1_49|2020-06-29:0.0000344993)44:0.0000020138,Khatamzas-pt-1_45|2020-06-23:0.0001036967)90:0.0000911722,Khatamzas-pt-1_36|2020-06-16:0.0000345388)87:0.0000454472,Khatamzas-pt-1_28|2020-06-08:0.0000020138)82:0.0000334422,Khatamzas-pt-1_15|2020-05-26:0.0001737734)83:0.0000347448)72:0.0000020138,Khatamzas-pt-1_22|2020-06-02:0.0000678954);
+
+TIME STAMP
+----------
+
+Date and time: Sun Aug 20 14:16:20 2023
+Total CPU time used: 1.36748 seconds (0h:0m:1s)
+Total wall-clock time used: 1.207113028 seconds (0h:0m:1s)
+

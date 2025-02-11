@@ -1,0 +1,167 @@
+IQ-TREE multicore version 2.1.2 COVID-edition for Mac OS X 64-bit built Oct 22 2020
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    dlmp133362.w-staff.shh.mpg.de (AVX512, FMA3, 16 GB RAM)
+Command: /Users/oeversti/iqtree-2.1.2-MacOSX/bin/iqtree2 -s Khatamzas-pt-1_maskedRefRemMafft.fasta -m MFP
+Seed:    175531 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed May  3 13:42:23 2023
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file Khatamzas-pt-1_maskedRefRemMafft.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 265 sites contain only gaps or ambiguous characters.
+Alignment has 21 sequences with 29903 columns, 180 distinct patterns
+18 parsimony-informative, 16 singleton sites, 29869 constant sites
+                               Gap/Ambiguity  Composition  p-value
+   1  Khatamzas-pt-1_0|2020-05-11      1.36%    passed     99.92%
+   2  Khatamzas-pt-1_112|2020-08-31    1.86%    passed     99.99%
+   3  Khatamzas-pt-1_122|2020-09-10    3.89%    passed     99.56%
+   4  Khatamzas-pt-1_129|2020-09-17    2.32%    passed     99.59%
+   5  Khatamzas-pt-1_136|2020-09-24    2.65%    passed     99.89%
+   6  Khatamzas-pt-1_147|2020-10-05    2.14%    passed     99.10%
+   7  Khatamzas-pt-1_149|2020-10-07    0.91%    passed     99.99%
+   8  Khatamzas-pt-1_15|2020-05-26     0.89%    passed    100.00%
+   9  Khatamzas-pt-1_22|2020-06-02     0.89%    passed    100.00%
+  10  Khatamzas-pt-1_28|2020-06-08     0.89%    passed     99.98%
+  11  Khatamzas-pt-1_36|2020-06-16     0.89%    passed     99.99%
+  12  Khatamzas-pt-1_45|2020-06-23     0.89%    passed    100.00%
+  13  Khatamzas-pt-1_49|2020-06-29     0.89%    passed     99.99%
+  14  Khatamzas-pt-1_56|2020-07-06     1.97%    passed     99.95%
+  15  Khatamzas-pt-1_57|2020-07-07     0.90%    passed    100.00%
+  16  Khatamzas-pt-1_59|2020-07-09     1.86%    passed     99.94%
+  17  Khatamzas-pt-1_63|2020-07-13     2.43%    passed     99.89%
+  18  Khatamzas-pt-1_66|2020-07-16     1.84%    passed     99.92%
+  19  Khatamzas-pt-1_73|2020-07-23     2.66%    passed     99.84%
+  20  Khatamzas-pt-1_78|2020-07-28     0.94%    passed     99.98%
+  21  Khatamzas-pt-1_92|2020-08-11     0.91%    passed     99.99%
+****  TOTAL                            1.62%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.001 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -40609.644
+Optimal log-likelihood: -40609.369
+Rate parameters:  A-C: 0.31410  A-G: 1.37156  A-T: 0.25865  C-G: 0.00010  C-T: 3.23561  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Proportion of invariable sites: 0.500
+Gamma shape alpha: 0.020
+Parameters optimization took 1 rounds (0.007 sec)
+Time for fast ML tree search: 0.040 seconds
+
+NOTE: ModelFinder requires 1 MB RAM!
+ModelFinder will test up to 286 DNA models (sample size: 29903) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         40617.483    47  81328.967    81329.118    81719.335
+  2  GTR+F+I       40600.632    48  81297.263    81297.421    81695.937
+  3  GTR+F+G4      40611.965    48  81319.929    81320.087    81718.603
+  4  GTR+F+I+G4    40609.287    49  81316.573    81316.737    81723.553
+  5  GTR+F+R2      40615.889    49  81329.779    81329.943    81736.759
+  6  GTR+F+R3      40614.395    51  81330.790    81330.968    81754.381
+ 15  SYM+I         41485.910    45  83061.821    83061.959    83435.578
+ 28  TVM+F+I       40602.670    47  81299.340    81299.492    81689.709
+ 41  TVMe+I        41488.080    44  83064.159    83064.292    83429.611
+ 54  TIM3+F+I      40602.533    46  81297.065    81297.210    81679.128
+ 67  TIM3e+I       41487.495    43  83060.990    83061.117    83418.136
+ 80  TIM2+F+I      40603.086    46  81298.172    81298.317    81680.235
+ 93  TIM2e+I       41489.027    43  83064.055    83064.181    83421.200
+106  TIM+F+I       40602.566    46  81297.132    81297.277    81679.195
+119  TIMe+I        41488.663    43  83063.326    83063.453    83420.472
+132  TPM3u+F+I     40604.528    45  81299.056    81299.195    81672.813
+145  TPM3+F+I      40604.518    45  81299.037    81299.176    81672.794
+158  TPM2u+F+I     40605.119    45  81300.237    81300.376    81673.994
+171  TPM2+F+I      40605.119    45  81300.237    81300.376    81673.994
+184  K3Pu+F+I      40604.551    45  81299.102    81299.240    81672.859
+197  K3P+I         41490.677    42  83065.354    83065.475    83414.194
+210  TN+F+I        40603.179    45  81296.357    81296.496    81670.115
+223  TNe+I         41488.994    42  83061.987    83062.108    83410.827
+236  HKY+F+I       40605.263    44  81298.527    81298.659    81663.978
+249  K2P+I         41491.161    41  83064.321    83064.437    83404.855
+262  F81+F+I       40618.936    43  81323.872    81323.999    81681.018
+275  JC+I          41504.111    40  83088.221    83088.331    83420.450
+Akaike Information Criterion:           TN+F+I
+Corrected Akaike Information Criterion: TN+F+I
+Bayesian Information Criterion:         HKY+F+I
+Best-fit model: HKY+F+I chosen according to BIC
+
+All model information printed to Khatamzas-pt-1_maskedRefRemMafft.fasta.model.gz
+CPU time for ModelFinder: 0.151 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.175 seconds (0h:0m:0s)
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -40605.263
+Optimal log-likelihood: -40605.258
+Rate parameters:  A-C: 1.00000  A-G: 5.76099  A-T: 1.00000  C-G: 1.00000  C-T: 5.76099  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Proportion of invariable sites: 0.994
+Parameters optimization took 1 rounds (0.001 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.003998 sec (of wall-clock time) 0.003377 sec(of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing RapidNJ tree took 0.000108 sec (of wall-clock time) 0.000104 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -40628.453
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.039 second
+Computing log-likelihood of 98 initial trees ... 0.044 seconds
+Current best score: -40605.258
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -40605.256
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -40605.167
+Iteration 10 / LogL: -40605.211 / Time: 0h:0m:0s
+Iteration 20 / LogL: -40605.238 / Time: 0h:0m:0s
+Finish initializing candidate tree set (14)
+Current best tree score: -40605.167 / CPU time: 0.161
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -40605.312 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 40 / LogL: -40605.253 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 50 / LogL: -40605.315 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 60 / LogL: -40605.347 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 70 / LogL: -40605.237 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 80 / LogL: -40605.295 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -40605.167
+Iteration 90 / LogL: -40605.328 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 100 / LogL: -40605.329 / Time: 0h:0m:0s (0h:0m:0s left)
+TREE SEARCH COMPLETED AFTER 103 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -40605.167
+Optimal log-likelihood: -40605.166
+Rate parameters:  A-C: 1.00000  A-G: 5.87752  A-T: 1.00000  C-G: 1.00000  C-T: 5.87752  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Proportion of invariable sites: 0.995
+Parameters optimization took 1 rounds (0.001 sec)
+BEST SCORE FOUND : -40605.166
+Total tree length: 0.001
+
+Total number of iterations: 103
+CPU time used for tree search: 0.780 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.673 sec (0h:0m:0s)
+Total CPU time used: 0.795 sec (0h:0m:0s)
+Total wall-clock time used: 0.689 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                Khatamzas-pt-1_maskedRefRemMafft.fasta.iqtree
+  Maximum-likelihood tree:       Khatamzas-pt-1_maskedRefRemMafft.fasta.treefile
+  Likelihood distances:          Khatamzas-pt-1_maskedRefRemMafft.fasta.mldist
+  Screen log file:               Khatamzas-pt-1_maskedRefRemMafft.fasta.log
+
+Date and Time: Wed May  3 13:42:24 2023

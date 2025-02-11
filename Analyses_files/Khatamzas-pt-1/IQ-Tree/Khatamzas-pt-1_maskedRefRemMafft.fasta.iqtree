@@ -1,0 +1,182 @@
+IQ-TREE 2.1.2 COVID-edition built Oct 22 2020
+
+Input file name: Khatamzas-pt-1_maskedRefRemMafft.fasta
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 175531
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 21 sequences with 29903 nucleotide sites
+Number of constant sites: 29869 (= 99.8863% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 29869 (= 99.8863% of all sites)
+Number of parsimony informative sites: 18
+Number of distinct site patterns: 180
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: HKY+F+I
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+HKY+F+I          -40605.263   81298.527 +    0.067   81298.659 +   0.0674   81663.978 +    0.911
+TN+F+I           -40603.179   81296.357 +    0.198   81296.496 +    0.199   81670.115 -   0.0424
+TPM3+F+I         -40604.518   81299.037 +   0.0519   81299.176 +    0.052   81672.794 -   0.0111
+TPM3u+F+I        -40604.528   81299.056 +   0.0514   81299.195 +   0.0515   81672.813 -    0.011
+K3Pu+F+I         -40604.551   81299.102 +   0.0503   81299.240 +   0.0504   81672.859 -   0.0107
+TPM2u+F+I        -40605.119   81300.237 -   0.0285   81300.376 -   0.0285   81673.994 -  0.00609
+TPM2+F+I         -40605.119   81300.237 -   0.0285   81300.376 -   0.0285   81673.994 -  0.00609
+TIM3+F+I         -40602.533   81297.065 +    0.139   81297.210 +    0.139   81679.128 - 0.000468
+TIM+F+I          -40602.566   81297.132 +    0.135   81297.277 +    0.134   81679.195 - 0.000452
+TIM2+F+I         -40603.086   81298.172 +     0.08   81298.317 +   0.0799   81680.235 - 0.000269
+F81+F+I          -40618.936   81323.872 -  2.1e-07   81323.999 - 2.12e-07   81681.018 - 0.000182
+TVM+F+I          -40602.670   81299.340 -   0.0446   81299.492 -   0.0444   81689.709 - 2.36e-06
+GTR+F+I          -40600.632   81297.263 +    0.126   81297.421 +    0.125   81695.937 - 1.05e-07
+GTR+F+G4         -40611.965   81319.929 - 1.51e-06   81320.087 -  1.5e-06   81718.603 - 1.25e-12
+GTR+F            -40617.483   81328.967 - 1.64e-08   81329.118 - 1.64e-08   81719.335 - 8.69e-13
+GTR+F+I+G4       -40609.287   81316.573 - 8.08e-06   81316.737 - 7.99e-06   81723.553 - 1.05e-13
+GTR+F+R2         -40615.889   81329.779 -  1.1e-08   81329.943 - 1.08e-08   81736.759 - 1.43e-16
+GTR+F+R3         -40614.395   81330.790 - 6.61e-09   81330.968 -  6.5e-09   81754.381 - 2.13e-20
+K2P+I            -41491.161   83064.321 -        0   83064.437 -        0   83404.855 -        0
+TNe+I            -41488.994   83061.988 -        0   83062.108 -        0   83410.827 -        0
+K3P+I            -41490.677   83065.354 -        0   83065.475 -        0   83414.194 -        0
+TIM3e+I          -41487.495   83060.990 -        0   83061.117 -        0   83418.136 -        0
+JC+I             -41504.111   83088.221 -        0   83088.331 -        0   83420.450 -        0
+TIMe+I           -41488.663   83063.326 -        0   83063.453 -        0   83420.472 -        0
+TIM2e+I          -41489.027   83064.055 -        0   83064.181 -        0   83421.200 -        0
+TVMe+I           -41488.080   83064.159 -        0   83064.292 -        0   83429.611 -        0
+SYM+I            -41485.910   83061.821 -        0   83061.959 -        0   83435.578 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: HKY+F+I
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 5.8775
+  A-T: 1.0000
+  C-G: 1.0000
+  C-T: 5.8775
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2989
+  pi(C) = 0.1837
+  pi(G) = 0.196
+  pi(T) = 0.3214
+
+Rate matrix Q:
+
+  A   -0.8801   0.09758    0.6118    0.1707
+  C    0.1588    -1.266    0.1041     1.003
+  G    0.9332   0.09758    -1.202    0.1707
+  T    0.1588    0.5735    0.1041   -0.8364
+
+Model of rate heterogeneity: Invar
+Proportion of invariable sites: 0.9945
+
+ Category  Relative_rate  Proportion
+  0         0              0.9945
+  1         183.4          0.005452
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -40605.1662 (s.e. 79.8780)
+Unconstrained log-likelihood (without tree): -51211.9956
+Number of free parameters (#branches + #model parameters): 44
+Akaike information criterion (AIC) score: 81298.3324
+Corrected Akaike information criterion (AICc) score: 81298.4650
+Bayesian information criterion (BIC) score: 81663.7838
+
+Total tree length (sum of branch lengths): 0.0013
+Sum of internal branch lengths: 0.0006 (42.8759% of tree length)
+
+WARNING: 10 near-zero internal branches (<0.0000) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Khatamzas-pt-1_0|2020-05-11' is drawn at root
+
++**Khatamzas-pt-1_0|2020-05-11
+|
+|                                                  +**Khatamzas-pt-1_112|2020-08-31
+|                                               +**|
+|                                               |  |      +--Khatamzas-pt-1_129|2020-09-17
+|                                               |  |  +---|
+|                                               |  |  |   |                +**Khatamzas-pt-1_147|2020-10-05
+|                                               |  |  |   +----------------|
+|                                               |  |  |                    +**Khatamzas-pt-1_149|2020-10-07
+|                                               |  +**|
+|                                               |     +**Khatamzas-pt-1_136|2020-09-24
+|                                         +-----|
+|                                         |     +**Khatamzas-pt-1_122|2020-09-10
+|                                      +**|
+|                                      |  +**Khatamzas-pt-1_73|2020-07-23
+|                                   +**|
+|                                   |  +**Khatamzas-pt-1_66|2020-07-16
+|                                +**|
+|                                |  |        +**Khatamzas-pt-1_78|2020-07-28
+|                                |  +--------|
+|                                |           +-----Khatamzas-pt-1_92|2020-08-11
+|                             +**|
+|                             |  +**Khatamzas-pt-1_63|2020-07-13
+|                    +--------|
+|                    |        |  +**Khatamzas-pt-1_56|2020-07-06
+|                    |        +**|
+|                    |           |  +**Khatamzas-pt-1_57|2020-07-07
+|                    |           +**|
+|                    |              +**Khatamzas-pt-1_59|2020-07-09
+|                 +**|
+|                 |  +--Khatamzas-pt-1_49|2020-06-29
+|         +-------|
+|         |       +--------Khatamzas-pt-1_45|2020-06-23
+|     +---|
+|     |   +--Khatamzas-pt-1_36|2020-06-16
+|  +**|
+|  |  +**Khatamzas-pt-1_28|2020-06-08
++--|
+|  +--------------Khatamzas-pt-1_15|2020-05-26
+|
++-----Khatamzas-pt-1_22|2020-06-02
+
+Tree in newick format:
+
+(Khatamzas-pt-1_0|2020-05-11:0.0000010000,((((((((((((Khatamzas-pt-1_112|2020-08-31:0.0000010000,((Khatamzas-pt-1_129|2020-09-17:0.0000334913,(Khatamzas-pt-1_147|2020-10-05:0.0000010000,Khatamzas-pt-1_149|2020-10-07:0.0000010000):0.0001922190):0.0000478584,Khatamzas-pt-1_136|2020-09-24:0.0000010000):0.0000010000):0.0000010000,Khatamzas-pt-1_122|2020-09-10:0.0000010000):0.0000676225,Khatamzas-pt-1_73|2020-07-23:0.0000010000):0.0000010000,Khatamzas-pt-1_66|2020-07-16:0.0000010000):0.0000010000,(Khatamzas-pt-1_78|2020-07-28:0.0000010000,Khatamzas-pt-1_92|2020-08-11:0.0000681455):0.0001029845):0.0000020138,Khatamzas-pt-1_63|2020-07-13:0.0000010000):0.0000319339,(Khatamzas-pt-1_56|2020-07-06:0.0000010000,(Khatamzas-pt-1_57|2020-07-07:0.0000010000,Khatamzas-pt-1_59|2020-07-09:0.0000010000):0.0000010000):0.0000317933):0.0001024298,Khatamzas-pt-1_49|2020-06-29:0.0000334422):0.0000010000,Khatamzas-pt-1_45|2020-06-23:0.0001020805):0.0000911321,Khatamzas-pt-1_36|2020-06-16:0.0000334422):0.0000445738,Khatamzas-pt-1_28|2020-06-08:0.0000010000):0.0000326776,Khatamzas-pt-1_15|2020-05-26:0.0001734802):0.0000346885,Khatamzas-pt-1_22|2020-06-02:0.0000668860);
+
+TIME STAMP
+----------
+
+Date and time: Wed May  3 13:42:24 2023
+Total CPU time used: 0.795259 seconds (0h:0m:0s)
+Total wall-clock time used: 0.691478 seconds (0h:0m:0s)
+
