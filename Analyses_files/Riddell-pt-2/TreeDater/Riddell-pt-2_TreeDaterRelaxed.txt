@@ -1,0 +1,33 @@
+[1] "Riddell-pt-2"
+[1] "TreeDater Relaxed clock"
+
+Phylogenetic tree with 9 tips and 8 internal nodes.
+
+Tip labels:
+  Riddell-pt-2|2021-02-11, Riddell-pt-2|2021-02-22, Riddell-pt-2|2021-03-01, Riddell-pt-2|2021-03-08, Riddell-pt-2|2021-04-03, Riddell-pt-2|2021-05-19, ...
+
+Rooted; includes branch lengths.
+
+ Time of common ancestor 
+2020.74121220404 
+
+ Time to common ancestor (before most recent sample) 
+0.675226152125106 
+
+ Weighted mean substitution rate (adjusted by branch lengths) 
+8.72670554048404e-05 
+
+ Unadjusted mean substitution rate 
+8.72670554191178e-05 
+
+ Clock model  
+uncorrelated 
+
+ Coefficient of variation of rates 
+9.84942069438762e-11 
+[1] "Estimating confidence intervals for rates and dates by a parametric bootstrap"
+
+ For more detailed output, $trees provides a list of each fit to each simulation 
+
+
+Time of common ancestor	2.020741e+03	1.953293e+03	2.021095e+03	Mean substitution rate	8.726706e-05	5.258029e-06	1.448364e-03	

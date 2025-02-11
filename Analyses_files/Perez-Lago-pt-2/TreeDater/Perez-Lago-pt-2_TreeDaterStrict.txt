@@ -1,0 +1,35 @@
+[1] "Perez-Lago-pt-2"
+[1] "TreeDater Strict clock"
+
+Phylogenetic tree with 10 tips and 9 internal nodes.
+
+Tip labels:
+  Perez-Lago-pt-2_0|2020-04-16, Perez-Lago-pt-2_117|2020-08-11, Perez-Lago-pt-2_88|2020-07-13, Perez-Lago-pt-2_95|2020-07-20, Perez-Lago-pt-2_81|2020-07-06, Perez-Lago-pt-2_11|2020-04-27, ...
+
+Rooted; includes branch lengths.
+
+ Time of common ancestor 
+2019.85048973454 
+
+ Time to common ancestor (before most recent sample) 
+0.758799882948097 
+
+ Weighted mean substitution rate (adjusted by branch lengths) 
+0.000351664436248379 
+
+ Unadjusted mean substitution rate 
+0.000351664436248379 
+
+ Clock model  
+strict 
+
+ Coefficient of variation of rates 
+0 
+[1] "Estimating confidence intervals for rates and dates by a parametric bootstrap"
+
+ For more detailed output, $trees provides a list of each fit to each simulation 
+
+
+Time of common ancestor	2.019850e+03	2.018021e+03	2.020196e+03	Mean substitution rate	3.516644e-04	1.291977e-04	9.571990e-04	
+
+

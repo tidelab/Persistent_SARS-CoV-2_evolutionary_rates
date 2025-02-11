@@ -1,0 +1,151 @@
+IQ-TREE multicore version 2.1.2 COVID-edition for Mac OS X 64-bit built Oct 22 2020
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    dlmp133362.w-staff.shh.mpg.de (AVX512, FMA3, 16 GB RAM)
+Command: /Users/oeversti/iqtree-2.1.2-MacOSX/bin/iqtree2 -s Riddell-pt-2_maskedRefRemMafft.fasta -m MFP
+Seed:    779239 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Mar 31 14:42:14 2023
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file Riddell-pt-2_maskedRefRemMafft.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 283 sites contain only gaps or ambiguous characters.
+Alignment has 9 sequences with 29903 columns, 50 distinct patterns
+0 parsimony-informative, 5 singleton sites, 29898 constant sites
+                         Gap/Ambiguity  Composition  p-value
+   1  Riddell-pt-2|2021-02-11    0.95%    passed    100.00%
+   2  Riddell-pt-2|2021-02-22    0.99%    passed    100.00%
+   3  Riddell-pt-2|2021-03-01    0.95%    passed    100.00%
+   4  Riddell-pt-2|2021-03-08    0.95%    passed    100.00%
+   5  Riddell-pt-2|2021-03-16    0.96%    passed    100.00%
+   6  Riddell-pt-2|2021-04-03    0.97%    passed    100.00%
+   7  Riddell-pt-2|2021-04-29    0.98%    passed    100.00%
+   8  Riddell-pt-2|2021-05-19    2.53%    passed     99.98%
+   9  Riddell-pt-2|2021-06-02    1.81%    passed     99.94%
+****  TOTAL                      1.23%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: Riddell-pt-2|2021-03-08 is identical to Riddell-pt-2|2021-03-01 but kept for subsequent analysis
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.001 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -40229.475
+Optimal log-likelihood: -40229.220
+Rate parameters:  A-C: 1.37956  A-G: 1.31874  A-T: 0.00010  C-G: 0.07151  C-T: 3.41406  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Proportion of invariable sites: 0.500
+Gamma shape alpha: 998.448
+Parameters optimization took 1 rounds (0.001 sec)
+Time for fast ML tree search: 0.008 seconds
+
+NOTE: ModelFinder requires 0 MB RAM!
+ModelFinder will test up to 286 DNA models (sample size: 29903) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         40229.152    23  80504.303    80504.340    80695.335
+  2  GTR+F+I       40229.122    24  80506.243    80506.284    80705.581
+  3  GTR+F+G4      40229.122    24  80506.243    80506.284    80705.581
+  4  GTR+F+I+G4    40229.122    25  80508.245    80508.288    80715.887
+  5  GTR+F+R2      40229.097    25  80508.194    80508.237    80715.837
+  6  GTR+F+R3      40229.096    27  80512.193    80512.244    80736.447
+ 14  SYM           41116.137    20  82272.275    82272.303    82438.389
+ 27  TVM+F         40229.599    22  80503.197    80503.231    80685.923
+ 40  TVMe          41116.560    19  82271.121    82271.146    82428.929
+ 53  TIM3+F        40230.221    21  80502.441    80502.472    80676.861
+ 66  TIM3e         41117.114    18  82270.229    82270.251    82419.731
+ 79  TIM2+F        40230.382    21  80502.764    80502.795    80677.184
+ 92  TIM2e         41117.278    18  82270.555    82270.578    82420.058
+105  TIM+F         40229.350    21  80500.699    80500.730    80675.119
+118  TIMe          41116.302    18  82268.605    82268.628    82418.108
+131  TPM3u+F       40230.073    20  80500.147    80500.175    80666.261
+144  TPM3+F        40230.043    20  80500.086    80500.114    80666.200
+157  TPM2u+F       40230.457    20  80500.914    80500.942    80667.028
+170  TPM2+F        40230.457    20  80500.914    80500.942    80667.028
+183  K3Pu+F        40229.676    20  80499.352    80499.381    80665.467
+196  K3P           41116.670    17  82267.341    82267.361    82408.538
+209  TN+F          40230.399    20  80500.799    80500.827    80666.913
+222  TNe           41117.349    17  82268.698    82268.719    82409.895
+235  HKY+F         40230.415    19  80498.831    80498.856    80656.639
+248  K2P           41117.364    16  82266.729    82266.747    82399.620
+261  F81+F         40232.834    18  80501.669    80501.692    80651.172
+274  JC            41119.627    15  82269.253    82269.269    82393.839
+Akaike Information Criterion:           HKY+F
+Corrected Akaike Information Criterion: HKY+F
+Bayesian Information Criterion:         F81+F
+Best-fit model: F81+F chosen according to BIC
+
+All model information printed to Riddell-pt-2_maskedRefRemMafft.fasta.model.gz
+CPU time for ModelFinder: 0.029 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.045 seconds (0h:0m:0s)
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -40232.834
+Optimal log-likelihood: -40232.834
+Rate parameters:  A-C: 1.00000  A-G: 1.00000  A-T: 1.00000  C-G: 1.00000  C-T: 1.00000  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Parameters optimization took 1 rounds (0.000 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.000937 sec (of wall-clock time) 0.000647 sec(of CPU time)
+Computing RapidNJ tree took 0.000028 sec (of wall-clock time) 0.000023 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -40233.245
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.010 second
+Computing log-likelihood of 98 initial trees ... 0.012 seconds
+Current best score: -40232.834
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -40232.834
+BETTER TREE FOUND at iteration 3: -40232.834
+Iteration 10 / LogL: -40232.834 / Time: 0h:0m:0s
+Iteration 20 / LogL: -40232.858 / Time: 0h:0m:0s
+Finish initializing candidate tree set (20)
+Current best tree score: -40232.834 / CPU time: 0.030
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -40232.834 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 40 / LogL: -40232.834 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 50 / LogL: -40232.834 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 60 / LogL: -40232.834 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 70 / LogL: -40232.834 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 80 / LogL: -40232.849 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 90 / LogL: -40232.834 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 100 / LogL: -40232.834 / Time: 0h:0m:0s (0h:0m:0s left)
+TREE SEARCH COMPLETED AFTER 104 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -40232.834
+Optimal log-likelihood: -40232.834
+Rate parameters:  A-C: 1.00000  A-G: 1.00000  A-T: 1.00000  C-G: 1.00000  C-T: 1.00000  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Parameters optimization took 1 rounds (0.000 sec)
+BEST SCORE FOUND : -40232.834
+Total tree length: 0.000
+
+Total number of iterations: 104
+CPU time used for tree search: 0.137 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.071 sec (0h:0m:0s)
+Total CPU time used: 0.144 sec (0h:0m:0s)
+Total wall-clock time used: 0.079 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                Riddell-pt-2_maskedRefRemMafft.fasta.iqtree
+  Maximum-likelihood tree:       Riddell-pt-2_maskedRefRemMafft.fasta.treefile
+  Likelihood distances:          Riddell-pt-2_maskedRefRemMafft.fasta.mldist
+  Screen log file:               Riddell-pt-2_maskedRefRemMafft.fasta.log
+
+Date and Time: Fri Mar 31 14:42:14 2023

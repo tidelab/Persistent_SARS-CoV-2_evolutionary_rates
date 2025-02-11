@@ -1,0 +1,201 @@
+IQ-TREE 2.1.2 COVID-edition built Oct 22 2020
+
+Input file name: Riddell-pt-2_maskedRefRemMafft.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 312161
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+Since you used least square dating (LSD) please also cite: 
+
+Thu-Hien To, Matthieu Jung, Samantha Lycett, Olivier Gascuel (2016)
+Fast dating using least-squares criteria and algorithms. Syst. Biol. 65:82-97.
+https://doi.org/10.1093/sysbio/syv068
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 9 sequences with 29903 nucleotide sites
+Number of constant sites: 29898 (= 99.9833% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 29898 (= 99.9833% of all sites)
+Number of parsimony informative sites: 0
+Number of distinct site patterns: 50
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: F81+F
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+F81+F            -40232.849   80501.698 -   0.0476   80501.721 -   0.0477   80651.201 +    0.936
+HKY+F            -40230.430   80498.860 +    0.197   80498.885 +    0.197   80656.669 +   0.0608
+K3Pu+F           -40229.691   80499.382 +    0.151   80499.410 +    0.151   80665.496 - 0.000737
+TPM3+F           -40230.058   80500.115 +    0.105   80500.143 +    0.105   80666.229 - 0.000511
+TPM3u+F          -40230.088   80500.176 +    0.102   80500.204 +    0.102   80666.290 - 0.000495
+TN+F             -40230.414   80500.828 +   0.0735   80500.856 +   0.0735   80666.942 - 0.000357
+TPM2+F           -40230.472   80500.943 +   0.0694   80500.971 +   0.0694   80667.057 - 0.000337
+TPM2u+F          -40230.472   80500.943 +   0.0694   80500.971 +   0.0694   80667.057 - 0.000337
+TIM+F            -40229.364   80500.729 +   0.0772   80500.759 +   0.0771   80675.149 - 5.91e-06
+TIM3+F           -40230.235   80502.470 -   0.0323   80502.501 -   0.0323   80676.890 - 2.47e-06
+TIM2+F           -40230.397   80502.793 -   0.0275   80502.824 -   0.0275   80677.213 -  2.1e-06
+TVM+F            -40229.613   80503.226 -   0.0222   80503.260 -   0.0221   80685.952 - 2.66e-08
+GTR+F            -40229.166   80504.332 -   0.0127   80504.369 -   0.0127   80695.364 - 2.41e-10
+GTR+F+I          -40229.136   80506.273 -  0.00483   80506.313 -   0.0048   80705.610 - 1.43e-12
+GTR+F+G4         -40229.136   80506.273 -  0.00483   80506.313 -   0.0048   80705.610 - 1.43e-12
+GTR+F+R2         -40229.111   80508.221 -  0.00182   80508.265 -  0.00181   80715.864 - 8.51e-15
+GTR+F+I+G4       -40229.137   80508.274 -  0.00178   80508.317 -  0.00176   80715.917 - 8.29e-15
+GTR+F+R3         -40229.110   80512.220 - 0.000247   80512.271 - 0.000244   80736.474 - 2.85e-19
+JC               -41119.641   82269.282 -        0   82269.298 -        0   82393.868 -        0
+K2P              -41117.379   82266.758 -        0   82266.776 -        0   82399.649 -        0
+K3P              -41116.685   82267.370 -        0   82267.390 -        0   82408.567 -        0
+TNe              -41117.364   82268.727 -        0   82268.748 -        0   82409.924 -        0
+TIMe             -41116.317   82268.634 -        0   82268.657 -        0   82418.137 -        0
+TIM3e            -41117.129   82270.258 -        0   82270.281 -        0   82419.761 -        0
+TIM2e            -41117.292   82270.585 -        0   82270.607 -        0   82420.087 -        0
+TVMe             -41116.575   82271.150 -        0   82271.175 -        0   82428.958 -        0
+SYM              -41116.152   82272.304 -        0   82272.332 -        0   82438.418 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 1.0000
+  A-T: 1.0000
+  C-G: 1.0000
+  C-T: 1.0000
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2991
+  pi(C) = 0.1836
+  pi(G) = 0.1959
+  pi(T) = 0.3215
+
+Rate matrix Q:
+
+  A   -0.9535    0.2497    0.2664    0.4373
+  C    0.4068    -1.111    0.2664    0.4373
+  G    0.4068    0.2497    -1.094    0.4373
+  T    0.4068    0.2497    0.2664    -0.923
+
+Model of rate heterogeneity: Uniform
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -40232.8343 (s.e. 52.8660)
+Unconstrained log-likelihood (without tree): -44958.0061
+Number of free parameters (#branches + #model parameters): 18
+Akaike information criterion (AIC) score: 80501.6686
+Corrected Akaike information criterion (AICc) score: 80501.6915
+Bayesian information criterion (BIC) score: 80651.1715
+
+Total tree length (sum of branch lengths): 0.0002
+Sum of internal branch lengths: 0.0000 (2.7183% of tree length)
+
+WARNING: 6 near-zero internal branches (<0.0000) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Riddell-pt-2|2021-02-11' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++**Riddell-pt-2|2021-02-11
+|
++**Riddell-pt-2|2021-02-22
+|
+|        +**Riddell-pt-2|2021-03-01
+|     +**| (54)
+|     |  +**Riddell-pt-2|2021-03-08
+|  +**| (23)
+|  |  |     +**Riddell-pt-2|2021-04-03
+|  |  |  +**| (68)
+|  |  |  |  +--------------------------------------------------------Riddell-pt-2|2021-05-19
+|  |  +**| (29)
+|  |     |  +**Riddell-pt-2|2021-04-29
+|  |     +**| (71)
+|  |        +-------------------------------------Riddell-pt-2|2021-06-02
++**| (56)
+   +**Riddell-pt-2|2021-03-16
+
+Tree in newick format:
+
+(Riddell-pt-2|2021-02-11:0.0000010000,Riddell-pt-2|2021-02-22:0.0000010000,(((Riddell-pt-2|2021-03-01:0.0000010000,Riddell-pt-2|2021-03-08:0.0000010000)54:0.0000010000,((Riddell-pt-2|2021-04-03:0.0000010000,Riddell-pt-2|2021-05-19:0.0001028576)68:0.0000010000,(Riddell-pt-2|2021-04-29:0.0000010000,Riddell-pt-2|2021-06-02:0.0000680811)71:0.0000010000)29:0.0000010000)23:0.0000010000,Riddell-pt-2|2021-03-16:0.0000010000)56:0.0000010000);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -40233.200228
+Robinson-Foulds distance between ML tree and consensus tree: 4
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--Riddell-pt-2|2021-02-11
+|
++--Riddell-pt-2|2021-02-22
+|
+|        +--Riddell-pt-2|2021-03-01
+|     +--| (54)
+|     |  +--Riddell-pt-2|2021-03-08
+|  +--| (24)
+|  |  |  +--Riddell-pt-2|2021-03-16
+|  |  +--| (33)
+|  |     |  +--Riddell-pt-2|2021-04-03
+|  |     +--| (68)
+|  |        +------------------------------------------------------Riddell-pt-2|2021-05-19
++--| (56)
+   |  +--Riddell-pt-2|2021-04-29
+   +--| (71)
+      +-----------------------------------Riddell-pt-2|2021-06-02
+
+
+Consensus tree in newick format: 
+
+(Riddell-pt-2|2021-02-11:0.0000020138,Riddell-pt-2|2021-02-22:0.0000020138,(((Riddell-pt-2|2021-03-01:0.0000020138,Riddell-pt-2|2021-03-08:0.0000020138)54:0.0000020138,(Riddell-pt-2|2021-03-16:0.0000020138,(Riddell-pt-2|2021-04-03:0.0000020138,Riddell-pt-2|2021-05-19:0.0001015145)68:0.0000020138)33:0.0000020138)24:0.0000020138,(Riddell-pt-2|2021-04-29:0.0000020138,Riddell-pt-2|2021-06-02:0.0000668860)71:0.0000020138)56:0.0000020138);
+
+TIME STAMP
+----------
+
+Date and time: Tue May  2 17:40:24 2023
+Total CPU time used: 5.132431 seconds (0h:0m:5s)
+Total wall-clock time used: 5.143018007 seconds (0h:0m:5s)
+

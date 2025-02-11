@@ -1,0 +1,197 @@
+IQ-TREE multicore version 2.1.2 COVID-edition for Mac OS X 64-bit built Oct 22 2020
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    dlmp133362.w-staff.shh.mpg.de (AVX512, FMA3, 16 GB RAM)
+Command: /Users/oeversti/iqtree-2.1.2-MacOSX/bin/iqtree2 -s Perez-Lago-pt-1_maskedRefRemMafft.fasta --prefix Perez-Lago-pt-1_LSD_Collapse-1 -m MFP -B 1000 --date TAXNAME --date-ci 100 --date-options -l -1 -redo
+Seed:    747820 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed May  3 16:45:27 2023
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file Perez-Lago-pt-1_maskedRefRemMafft.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 265 sites contain only gaps or ambiguous characters.
+Alignment has 9 sequences with 29903 columns, 80 distinct patterns
+10 parsimony-informative, 4 singleton sites, 29889 constant sites
+                                Gap/Ambiguity  Composition  p-value
+   1  Perez-Lago-pt-1_0|2020-05-28      1.51%    passed     99.97%
+   2  Perez-Lago-pt-1_101|2020-09-06    3.50%    passed     99.96%
+   3  Perez-Lago-pt-1_123|2020-09-28    1.86%    passed     99.99%
+   4  Perez-Lago-pt-1_20|2020-06-17     0.90%    passed     99.96%
+   5  Perez-Lago-pt-1_33|2020-06-30     4.06%    passed     99.89%
+   6  Perez-Lago-pt-1_48|2020-07-15     1.82%    passed    100.00%
+   7  Perez-Lago-pt-1_60|2020-07-27     2.04%    passed    100.00%
+   8  Perez-Lago-pt-1_70|2020-08-06     2.90%    passed     99.97%
+   9  Perez-Lago-pt-1_79|2020-08-15     2.82%    passed     99.99%
+****  TOTAL                             2.38%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.002 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -40355.398
+2. Current log-likelihood: -40354.227
+Optimal log-likelihood: -40354.036
+Rate parameters:  A-C: 0.00010  A-G: 4.42119  A-T: 0.00010  C-G: 3.63880  C-T: 17.94940  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Proportion of invariable sites: 0.500
+Gamma shape alpha: 998.432
+Parameters optimization took 2 rounds (0.003 sec)
+Time for fast ML tree search: 0.015 seconds
+
+NOTE: ModelFinder requires 0 MB RAM!
+ModelFinder will test up to 286 DNA models (sample size: 29903) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         40353.258    23  80752.516    80752.553    80943.547
+  2  GTR+F+I       40353.171    24  80754.341    80754.381    80953.678
+  3  GTR+F+G4      40353.171    24  80754.341    80754.381    80953.678
+  4  GTR+F+I+G4    40353.171    25  80756.343    80756.386    80963.986
+  5  GTR+F+R2      40353.167    25  80756.334    80756.378    80963.977
+  6  GTR+F+R3      40353.167    27  80760.334    80760.385    80984.589
+ 14  SYM           41234.870    20  82509.741    82509.769    82675.855
+ 27  TVM+F         40351.081    22  80746.162    80746.196    80928.888
+ 40  TVMe          41232.633    19  82503.266    82503.291    82661.074
+ 53  TIM3+F        40354.169    21  80750.338    80750.369    80924.758
+ 66  TIM3e         41234.962    18  82505.923    82505.946    82655.426
+ 79  TIM2+F        40348.582    21  80739.164    80739.195    80913.584
+ 92  TIM2e         41230.266    18  82496.532    82496.555    82646.035
+105  TIM+F         40353.725    21  80749.451    80749.482    80923.871
+118  TIMe          41234.796    18  82505.592    82505.615    82655.095
+131  TPM3u+F       40356.641    20  80753.282    80753.310    80919.396
+144  TPM3+F        40356.641    20  80753.282    80753.310    80919.396
+157  TPM2u+F       40351.095    20  80742.189    80742.217    80908.304
+170  TPM2+F        40351.095    20  80742.189    80742.217    80908.304
+183  K3Pu+F        40356.240    20  80752.480    80752.508    80918.594
+196  K3P           41237.267    17  82508.535    82508.555    82649.732
+209  TN+F          40354.191    20  80748.383    80748.411    80914.497
+222  TNe           41235.123    17  82504.245    82504.266    82645.443
+235  HKY+F         40356.648    19  80751.297    80751.322    80909.105
+248  K2P           41237.556    16  82507.113    82507.131    82640.004
+261  F81+F         40358.513    18  80753.026    80753.049    80902.529
+274  JC            41239.210    15  82508.421    82508.437    82633.006
+Akaike Information Criterion:           TIM2+F
+Corrected Akaike Information Criterion: TIM2+F
+Bayesian Information Criterion:         F81+F
+Best-fit model: F81+F chosen according to BIC
+
+All model information printed to Perez-Lago-pt-1_LSD_Collapse-1.model.gz
+CPU time for ModelFinder: 0.062 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.089 seconds (0h:0m:0s)
+Generating 1000 samples for ultrafast bootstrap (seed: 747820)...
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -40358.513
+Optimal log-likelihood: -40358.513
+Rate parameters:  A-C: 1.00000  A-G: 1.00000  A-T: 1.00000  C-G: 1.00000  C-T: 1.00000  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Parameters optimization took 1 rounds (0.000 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.001668 sec (of wall-clock time) 0.000992 sec(of CPU time)
+Computing RapidNJ tree took 0.000038 sec (of wall-clock time) 0.000033 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -40370.270
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.024 second
+Computing log-likelihood of 92 initial trees ... 0.012 seconds
+Current best score: -40358.513
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -40358.513
+Iteration 10 / LogL: -40358.518 / Time: 0h:0m:0s
+Iteration 20 / LogL: -40358.518 / Time: 0h:0m:0s
+Finish initializing candidate tree set (2)
+Current best tree score: -40358.513 / CPU time: 0.074
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -40358.603 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 40 / LogL: -40358.513 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 50 / LogL: -40358.616 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -40388.177
+Iteration 60 / LogL: -40358.575 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 70 / LogL: -40358.603 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 80 / LogL: -40358.612 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 90 / LogL: -40358.612 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -40358.513
+Iteration 100 / LogL: -40358.549 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -40388.177
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.992
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -40358.513
+Optimal log-likelihood: -40358.513
+Rate parameters:  A-C: 1.00000  A-G: 1.00000  A-T: 1.00000  C-G: 1.00000  C-T: 1.00000  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Parameters optimization took 1 rounds (0.000 sec)
+BEST SCORE FOUND : -40358.513
+Creating bootstrap support values...
+Split supports printed to NEXUS file Perez-Lago-pt-1_LSD_Collapse-1.splits.nex
+Total tree length: 0.000
+
+Total number of iterations: 102
+CPU time used for tree search: 0.633 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.511 sec (0h:0m:0s)
+Total CPU time used: 0.674 sec (0h:0m:0s)
+Total wall-clock time used: 0.557 sec (0h:0m:0s)
+
+Computing bootstrap consensus tree...
+Reading input file Perez-Lago-pt-1_LSD_Collapse-1.splits.nex...
+9 taxa and 52 splits.
+Consensus tree written to Perez-Lago-pt-1_LSD_Collapse-1.contree
+Reading input trees file Perez-Lago-pt-1_LSD_Collapse-1.contree
+Log-likelihood of consensus tree: -40358.760
+
+Analysis results written to: 
+  IQ-TREE report:                Perez-Lago-pt-1_LSD_Collapse-1.iqtree
+  Maximum-likelihood tree:       Perez-Lago-pt-1_LSD_Collapse-1.treefile
+  Likelihood distances:          Perez-Lago-pt-1_LSD_Collapse-1.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          Perez-Lago-pt-1_LSD_Collapse-1.splits.nex
+  Consensus tree:                Perez-Lago-pt-1_LSD_Collapse-1.contree
+  Screen log file:               Perez-Lago-pt-1_LSD_Collapse-1.log
+
+--- Start phylogenetic dating ---
+Extracting date from node names...
+9 dates extracted
+Building time tree by least-square dating (LSD) with command:
+lsd -i Perez-Lago-pt-1_LSD_Collapse-1.timetree.subst -s 29903 -o Perez-Lago-pt-1_LSD_Collapse-1.timetree -f 100 -r a -d Perez-Lago-pt-1_LSD_Collapse-1.timetree.date -l -1 
+
+TREE 1
+*PROCESSING:
+Reading the tree ... 
+Collapse 0 (over 6) internal branches having branch length <= -1
+ (settable via option -l)
+Parameter to adjust variances was set to 0.000334 (settable via option -b)
+Minimum branch length of time scaled tree (settable via option -u and -U): 0
+Estimating the root position on all branches using fast method ...
+Computing confidence intervals using sequence length 29903 and a lognormal
+ relaxed clock with mean 1, standard deviation 0.2 (settable via option -q)
+*RESULTS:
+- Dating results:
+ rate 7.82867e-05, tMRCA 2019-02-24 , objective function 7.80946e-05
+- Results with confidence intervals:
+ rate 7.82867e-05 [1e-10; 0.000315694], tMRCA 2019-02-24 [-1831791-04-25; 2020-03-23], objective function 7.80946e-05
+
+TOTAL ELAPSED TIME: 0.00264 seconds
+LSD results written to:
+  LSD report:                  Perez-Lago-pt-1_LSD_Collapse-1.timetree.lsd
+  Time tree in nexus format:   Perez-Lago-pt-1_LSD_Collapse-1.timetree.nex
+  Time tree in newick format:  Perez-Lago-pt-1_LSD_Collapse-1.timetree.nwk
+
+--- End phylogenetic dating ---
+Date and Time: Wed May  3 16:45:28 2023
