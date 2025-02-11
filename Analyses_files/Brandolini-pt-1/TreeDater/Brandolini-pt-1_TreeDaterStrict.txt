@@ -1,0 +1,33 @@
+[1] "Brandolini-pt-1"
+[1] "TreeDater Strict clock"
+
+Phylogenetic tree with 8 tips and 7 internal nodes.
+
+Tip labels:
+  Brandolini-pt-1_0|2022-04-14, Brandolini-pt-1_2|2022-04-16, Brandolini-pt-1_33|2022-05-17, Brandolini-pt-1_57|2022-06-10, Brandolini-pt-1_68|2022-06-21, Brandolini-pt-1_86|2022-07-09, ...
+
+Rooted; includes branch lengths.
+
+ Time of common ancestor 
+2022.27589041096 
+
+ Time to common ancestor (before most recent sample) 
+0.241917808218886 
+
+ Weighted mean substitution rate (adjusted by branch lengths) 
+0.000932019750397294 
+
+ Unadjusted mean substitution rate 
+0.000932019750397294 
+
+ Clock model  
+strict 
+
+ Coefficient of variation of rates 
+0 
+[1] "Estimating confidence intervals for rates and dates by a parametric bootstrap"
+
+ For more detailed output, $trees provides a list of each fit to each simulation 
+
+
+Time of common ancestor	2.022276e+03	2.022215e+03	2.022276e+03	Mean substitution rate	9.320198e-04	5.394598e-04	1.610242e-03	

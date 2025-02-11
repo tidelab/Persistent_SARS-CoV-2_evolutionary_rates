@@ -1,0 +1,36 @@
+[1] "Caccuri-pt-1"
+[1] "TreeDater Strict clock"
+
+Phylogenetic tree with 12 tips and 11 internal nodes.
+
+Tip labels:
+  Caccuri-pt-1|2020-08-05, Caccuri-pt-1|2020-04-02, Caccuri-pt-1|2020-04-22, Caccuri-pt-1|2020-04-09, Caccuri-pt-1|2020-04-28, Caccuri-pt-1|2020-05-20, ...
+
+Rooted; includes branch lengths.
+
+ Time of common ancestor 
+2020.1346818773 
+
+ Time to common ancestor (before most recent sample) 
+0.72324161996471 
+
+ Weighted mean substitution rate (adjusted by branch lengths) 
+0.000352682528395709 
+
+ Unadjusted mean substitution rate 
+0.000352682528395709 
+
+ Clock model  
+strict 
+
+ Coefficient of variation of rates 
+0 
+[1] "Estimating confidence intervals for rates and dates by a parametric bootstrap"
+
+ For more detailed output, $trees provides a list of each fit to each simulation 
+
+
+Time of common ancestor	2.020135e+03	2.019328e+03	2.020236e+03	Mean substitution rate	3.526825e-04	1.161678e-04	1.070735e-03	
+
+
+

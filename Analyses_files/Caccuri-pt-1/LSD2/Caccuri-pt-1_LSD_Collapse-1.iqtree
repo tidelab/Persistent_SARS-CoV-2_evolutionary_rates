@@ -1,0 +1,209 @@
+IQ-TREE 2.1.2 COVID-edition built Oct 22 2020
+
+Input file name: Caccuri-pt-1_maskedRefRemMafft.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 942850
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+Since you used least square dating (LSD) please also cite: 
+
+Thu-Hien To, Matthieu Jung, Samantha Lycett, Olivier Gascuel (2016)
+Fast dating using least-squares criteria and algorithms. Syst. Biol. 65:82-97.
+https://doi.org/10.1093/sysbio/syv068
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 12 sequences with 29903 nucleotide sites
+Number of constant sites: 29889 (= 99.9532% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 29889 (= 99.9532% of all sites)
+Number of parsimony informative sites: 8
+Number of distinct site patterns: 23
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: F81+F
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+F81+F            -40360.831   80761.663 -  0.00228   80761.691 -  0.00229   80927.777 +    0.862
+HKY+F            -40357.779   80757.558 -   0.0177   80757.589 -   0.0178   80931.978 +    0.105
+K3Pu+F           -40354.018   80752.035 +    0.281   80752.069 +    0.281   80934.761 -   0.0262
+TN+F             -40356.365   80756.730 -   0.0268   80756.764 -   0.0269   80939.456 -  0.00251
+TPM3+F           -40357.300   80758.601 -   0.0105   80758.635 -   0.0105   80941.326 - 0.000985
+TPM3u+F          -40357.322   80758.644 -   0.0103   80758.678 -   0.0103   80941.369 - 0.000964
+TIM+F            -40352.566   80751.132 +    0.441   80751.169 +    0.441   80942.164 - 0.000648
+TPM2+F           -40357.815   80759.631 -  0.00629   80759.665 -   0.0063   80942.357 - 0.000588
+TPM2u+F          -40357.815   80759.631 -  0.00629   80759.665 -   0.0063   80942.357 - 0.000588
+TIM3+F           -40356.023   80758.046 -   0.0139   80758.082 -   0.0139   80949.077 - 2.04e-05
+TIM2+F           -40356.399   80758.799 -  0.00954   80758.836 -  0.00954   80949.830 -  1.4e-05
+TVM+F            -40353.907   80755.815 -   0.0424   80755.855 -   0.0423   80955.152 -  9.8e-07
+GTR+F            -40352.477   80754.954 +   0.0652   80754.998 +    0.065   80962.597 - 2.37e-08
+GTR+F+I          -40352.469   80756.938 -   0.0242   80756.985 -   0.0241   80972.887 - 1.38e-10
+GTR+F+G4         -40352.469   80756.938 -   0.0242   80756.985 -   0.0241   80972.887 - 1.38e-10
+GTR+F+R2         -40352.463   80758.926 -  0.00895   80758.977 -  0.00889   80983.180 - 8.03e-13
+GTR+F+I+G4       -40352.473   80758.945 -  0.00886   80758.996 -   0.0088   80983.199 - 7.96e-13
+GTR+F+R3         -40352.463   80762.927 -  0.00121   80762.985 -   0.0012   81003.793 - 2.68e-17
+JC               -41243.992   82521.984 -        0   82522.004 -        0   82663.181 -        0
+K2P              -41241.202   82518.403 -        0   82518.426 -        0   82667.906 -        0
+K3P              -41237.738   82513.475 -        0   82513.501 -        0   82671.284 -        0
+TNe              -41239.807   82517.614 -        0   82517.640 -        0   82675.423 -        0
+TIMe             -41236.318   82512.636 -        0   82512.664 -        0   82678.750 -        0
+TIM3e            -41239.718   82519.436 -        0   82519.464 -        0   82685.550 -        0
+TIM2e            -41239.820   82519.641 -        0   82519.669 -        0   82685.755 -        0
+TVMe             -41237.673   82517.346 -        0   82517.377 -        0   82691.766 -        0
+SYM              -41236.283   82516.566 -        0   82516.600 -        0   82699.292 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 1.0000
+  A-T: 1.0000
+  C-G: 1.0000
+  C-T: 1.0000
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2989
+  pi(C) = 0.1838
+  pi(G) = 0.1959
+  pi(T) = 0.3213
+
+Rate matrix Q:
+
+  A   -0.9535      0.25    0.2665     0.437
+  C    0.4066     -1.11    0.2665     0.437
+  G    0.4066      0.25    -1.094     0.437
+  T    0.4066      0.25    0.2665   -0.9231
+
+Model of rate heterogeneity: Uniform
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -40360.8312 (s.e. 60.6696)
+Unconstrained log-likelihood (without tree): -42276.2728
+Number of free parameters (#branches + #model parameters): 20
+Akaike information criterion (AIC) score: 80761.6624
+Corrected Akaike information criterion (AICc) score: 80761.6905
+Bayesian information criterion (BIC) score: 80927.7767
+
+Total tree length (sum of branch lengths): 0.0005
+Sum of internal branch lengths: 0.0001 (28.2374% of tree length)
+
+WARNING: 4 near-zero internal branches (<0.0000) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Caccuri-pt-1|2020-08-05' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++**Caccuri-pt-1|2020-08-05
+|
+|                                                                  +**Caccuri-pt-1|2020-04-02
+|                                                               +**| (62)
+|                                                               |  +**Caccuri-pt-1|2020-04-22
+|                              +--------------------------------| (100)
+|                              |                                +**Caccuri-pt-1|2020-04-09
+|     +------------------------| (96)
+|     |                        |  +**Caccuri-pt-1|2020-04-28
+|     |                        +**| (69)
+|     |                           +**Caccuri-pt-1|2020-05-06
+|  +**| (50)
+|  |  +-----------------------------------------Caccuri-pt-1|2020-11-10
++**| (48)
+|  |       +**Caccuri-pt-1|2020-08-26
+|  +-------| (70)
+|          +-------Caccuri-pt-1|2020-09-07
+|
++**Caccuri-pt-1|2020-07-27
+
+Tree in newick format:
+
+(Caccuri-pt-1|2020-08-05:0.0000010000,(((((Caccuri-pt-1|2020-04-02:0.0000010000,Caccuri-pt-1|2020-04-22:0.0000010000)62:0.0000010000,Caccuri-pt-1|2020-04-09:0.0000010000)100:0.0001349792,(Caccuri-pt-1|2020-04-28:0.0000010000,Caccuri-pt-1|2020-05-06:0.0000010000)69:0.0000010000)96:0.0001011545,Caccuri-pt-1|2020-11-10:0.0001687266)50:0.0000010000,(Caccuri-pt-1|2020-08-26:0.0000010000,Caccuri-pt-1|2020-09-07:0.0000334422)70:0.0000334422)48:0.0000010000,Caccuri-pt-1|2020-07-27:0.0000010000);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -40361.191876
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--Caccuri-pt-1|2020-08-05
+|
+|                                                                 +--Caccuri-pt-1|2020-04-02
+|                                                              +--| (62)
+|                                                              |  +--Caccuri-pt-1|2020-04-22
+|                             +--------------------------------| (100)
+|                             |                                +--Caccuri-pt-1|2020-04-09
+|     +-----------------------| (96)
+|     |                       |        +**Caccuri-pt-1|2020-04-28
+|     |                       |     +**|
+|     |                       |     |  +**Caccuri-pt-1|2020-05-13
+|     |                       |  +--|
+|     |                       |  |  +**Caccuri-pt-1|2020-05-20
+|     |                       +--| (69)
+|     |                          +--Caccuri-pt-1|2020-05-06
+|  +--| (50)
+|  |  +----------------------------------------Caccuri-pt-1|2020-11-10
++--| (48)
+|  |       +--Caccuri-pt-1|2020-08-26
+|  +-------| (70)
+|          +-------Caccuri-pt-1|2020-09-07
+|
++--Caccuri-pt-1|2020-07-27
+
+
+Consensus tree in newick format: 
+
+(Caccuri-pt-1|2020-08-05:0.0000020138,(((((Caccuri-pt-1|2020-04-02:0.0000020138,Caccuri-pt-1|2020-04-22:0.0000020138)62:0.0000020138,Caccuri-pt-1|2020-04-09:0.0000020138)100:0.0001349764,(((Caccuri-pt-1|2020-04-28:0.0000000000,Caccuri-pt-1|2020-05-13:0.0000000000):0.0000000000,Caccuri-pt-1|2020-05-20:0.0000000000):0.0000020138,Caccuri-pt-1|2020-05-06:0.0000020138)69:0.0000020138)96:0.0001003312,Caccuri-pt-1|2020-11-10:0.0001687274)50:0.0000020138,(Caccuri-pt-1|2020-08-26:0.0000020138,Caccuri-pt-1|2020-09-07:0.0000334422)70:0.0000334422)48:0.0000020138,Caccuri-pt-1|2020-07-27:0.0000020138);
+
+TIME STAMP
+----------
+
+Date and time: Mon Jun 19 09:52:12 2023
+Total CPU time used: 2.477496 seconds (0h:0m:2s)
+Total wall-clock time used: 2.4212749 seconds (0h:0m:2s)
+

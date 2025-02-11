@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" required="" version="2.6">
+
+    <data
+id="Brandolini-pt-1_maskedRefRemMafft"
+spec="Alignment"
+name="alignment">
+                        <sequence id="seq_Brandolini-pt-1_0|2022-04-14" spec="Sequence" taxon="Brandolini-pt-1_0|2022-04-14" totalcount="4" value=""/>
+                        <sequence id="seq_Brandolini-pt-1_20|2022-05-04" spec="Sequence" taxon="Brandolini-pt-1_20|2022-05-04" totalcount="4" value=""/>
+                        <sequence id="seq_Brandolini-pt-1_2|2022-04-16" spec="Sequence" taxon="Brandolini-pt-1_2|2022-04-16" totalcount="4" value=""/>
+                        <sequence id="seq_Brandolini-pt-1_33|2022-05-17" spec="Sequence" taxon="Brandolini-pt-1_33|2022-05-17" totalcount="4" value=""/>
+                        <sequence id="seq_Brandolini-pt-1_44|2022-05-28" spec="Sequence" taxon="Brandolini-pt-1_44|2022-05-28" totalcount="4" value=""/>
+                        <sequence id="seq_Brandolini-pt-1_57|2022-06-10" spec="Sequence" taxon="Brandolini-pt-1_57|2022-06-10" totalcount="4" value=""/>
+                        <sequence id="seq_Brandolini-pt-1_68|2022-06-21" spec="Sequence" taxon="Brandolini-pt-1_68|2022-06-21" totalcount="4" value=""/>
+                        <sequence id="seq_Brandolini-pt-1_86|2022-07-09" spec="Sequence" taxon="Brandolini-pt-1_86|2022-07-09" totalcount="4" value=""/>
+                    </data>
+
+
+    
+
+<map name="Uniform" >beast.math.distributions.Uniform</map>
+<map name="Exponential" >beast.math.distributions.Exponential</map>
+<map name="LogNormal" >beast.math.distributions.LogNormalDistributionModel</map>
+<map name="Normal" >beast.math.distributions.Normal</map>
+<map name="Beta" >beast.math.distributions.Beta</map>
+<map name="Gamma" >beast.math.distributions.Gamma</map>
+<map name="LaplaceDistribution" >beast.math.distributions.LaplaceDistribution</map>
+<map name="prior" >beast.math.distributions.Prior</map>
+<map name="InverseGamma" >beast.math.distributions.InverseGamma</map>
+<map name="OneOnX" >beast.math.distributions.OneOnX</map>
+
+<run id="mcmc" spec="MCMC" chainLength="10000000">
+    <state id="state" spec="State" storeEvery="5000">
+        <tree id="Tree.t:Brandolini-pt-1_maskedRefRemMafft" spec="beast.evolution.tree.Tree" name="stateNode">
+            <trait id="dateTrait.t:Brandolini-pt-1_maskedRefRemMafft" spec="beast.evolution.tree.TraitSet" dateFormat="yyyy-M-dd" traitname="date" value="Brandolini-pt-1_0|2022-04-14=2022-04-14,Brandolini-pt-1_2|2022-04-16=2022-04-16,Brandolini-pt-1_20|2022-05-04=2022-05-04,Brandolini-pt-1_33|2022-05-17=2022-05-17,Brandolini-pt-1_44|2022-05-28=2022-05-28,Brandolini-pt-1_57|2022-06-10=2022-06-10,Brandolini-pt-1_68|2022-06-21=2022-06-21,Brandolini-pt-1_86|2022-07-09=2022-07-09">
+                <taxa id="TaxonSet.Brandolini-pt-1_maskedRefRemMafft" spec="TaxonSet">
+                    <alignment idref="Brandolini-pt-1_maskedRefRemMafft"/>
+                </taxa>
+            </trait>
+            <taxonset idref="TaxonSet.Brandolini-pt-1_maskedRefRemMafft"/>
+        </tree>
+        <parameter id="clockRate.c:Brandolini-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+        <parameter id="gammaShape.s:Brandolini-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+        <parameter id="kappa.s:Brandolini-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" lower="0.0" name="stateNode">2.0</parameter>
+        <parameter id="bPopSizes.t:Brandolini-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" dimension="3" lower="0.0" name="stateNode">380.0</parameter>
+        <stateNode id="bGroupSizes.t:Brandolini-pt-1_maskedRefRemMafft" spec="parameter.IntegerParameter" dimension="3">1</stateNode>
+        <parameter id="freqParameter.s:Brandolini-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" dimension="4" lower="0.0" name="stateNode" upper="1.0">0.25</parameter>
+    </state>
+    <init id="RandomTree.t:Brandolini-pt-1_maskedRefRemMafft" spec="beast.evolution.tree.RandomTree" estimate="false" initial="@Tree.t:Brandolini-pt-1_maskedRefRemMafft" taxa="@Brandolini-pt-1_maskedRefRemMafft">
+        <populationModel id="ConstantPopulation0.t:Brandolini-pt-1_maskedRefRemMafft" spec="ConstantPopulation">
+            <parameter id="randomPopSize.t:Brandolini-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" name="popSize">1.0</parameter>
+        </populationModel>
+    </init>
+    <distribution id="posterior" spec="util.CompoundDistribution">
+        <distribution id="prior" spec="util.CompoundDistribution">
+            <distribution id="BayesianSkyline.t:Brandolini-pt-1_maskedRefRemMafft" spec="BayesianSkyline" groupSizes="@bGroupSizes.t:Brandolini-pt-1_maskedRefRemMafft" popSizes="@bPopSizes.t:Brandolini-pt-1_maskedRefRemMafft">
+                <treeIntervals id="BSPTreeIntervals.t:Brandolini-pt-1_maskedRefRemMafft" spec="TreeIntervals" tree="@Tree.t:Brandolini-pt-1_maskedRefRemMafft"/>
+            </distribution>
+            <distribution id="MarkovChainedPopSizes.t:Brandolini-pt-1_maskedRefRemMafft" spec="beast.math.distributions.MarkovChainDistribution" jeffreys="true" parameter="@bPopSizes.t:Brandolini-pt-1_maskedRefRemMafft"/>
+            <prior id="ClockPrior.c:Brandolini-pt-1_maskedRefRemMafft" name="distribution" x="@clockRate.c:Brandolini-pt-1_maskedRefRemMafft">
+                <Uniform id="Uniform.0" name="distr"/>
+            </prior>
+            <prior id="FrequenciesPrior.s:Brandolini-pt-1_maskedRefRemMafft" name="distribution" x="@freqParameter.s:Brandolini-pt-1_maskedRefRemMafft">
+                <Uniform id="Uniform.3" name="distr"/>
+            </prior>
+            <prior id="GammaShapePrior.s:Brandolini-pt-1_maskedRefRemMafft" name="distribution" x="@gammaShape.s:Brandolini-pt-1_maskedRefRemMafft">
+                <Exponential id="Exponential.0" name="distr">
+                    <parameter id="RealParameter.0" spec="parameter.RealParameter" estimate="false" name="mean">1.0</parameter>
+                </Exponential>
+            </prior>
+            <prior id="KappaPrior.s:Brandolini-pt-1_maskedRefRemMafft" name="distribution" x="@kappa.s:Brandolini-pt-1_maskedRefRemMafft">
+                <LogNormal id="LogNormalDistributionModel.0" name="distr">
+                    <parameter id="RealParameter.1" spec="parameter.RealParameter" estimate="false" name="M">1.0</parameter>
+                    <parameter id="RealParameter.2" spec="parameter.RealParameter" estimate="false" name="S">1.25</parameter>
+                </LogNormal>
+            </prior>
+        </distribution>
+        <distribution id="likelihood" spec="util.CompoundDistribution" useThreads="true">
+            <distribution id="treeLikelihood.Brandolini-pt-1_maskedRefRemMafft" spec="ThreadedTreeLikelihood" data="@Brandolini-pt-1_maskedRefRemMafft" tree="@Tree.t:Brandolini-pt-1_maskedRefRemMafft">
+                <siteModel id="SiteModel.s:Brandolini-pt-1_maskedRefRemMafft" spec="SiteModel" gammaCategoryCount="4" shape="@gammaShape.s:Brandolini-pt-1_maskedRefRemMafft">
+                    <parameter id="mutationRate.s:Brandolini-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" estimate="false" name="mutationRate">1.0</parameter>
+                    <parameter id="proportionInvariant.s:Brandolini-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" estimate="false" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
+                    <substModel id="hky.s:Brandolini-pt-1_maskedRefRemMafft" spec="HKY" kappa="@kappa.s:Brandolini-pt-1_maskedRefRemMafft">
+                        <frequencies id="estimatedFreqs.s:Brandolini-pt-1_maskedRefRemMafft" spec="Frequencies" frequencies="@freqParameter.s:Brandolini-pt-1_maskedRefRemMafft"/>
+                    </substModel>
+                </siteModel>
+                <branchRateModel id="StrictClock.c:Brandolini-pt-1_maskedRefRemMafft" spec="beast.evolution.branchratemodel.StrictClockModel" clock.rate="@clockRate.c:Brandolini-pt-1_maskedRefRemMafft"/>
+            </distribution>
+        </distribution>
+    </distribution>
+    <operator id="StrictClockRateScaler.c:Brandolini-pt-1_maskedRefRemMafft" spec="ScaleOperator" parameter="@clockRate.c:Brandolini-pt-1_maskedRefRemMafft" weight="3.0"/>
+    <operator id="strictClockUpDownOperator.c:Brandolini-pt-1_maskedRefRemMafft" spec="UpDownOperator" scaleFactor="0.75" weight="3.0">
+        <up idref="clockRate.c:Brandolini-pt-1_maskedRefRemMafft"/>
+        <down idref="Tree.t:Brandolini-pt-1_maskedRefRemMafft"/>
+    </operator>
+    <operator id="gammaShapeScaler.s:Brandolini-pt-1_maskedRefRemMafft" spec="ScaleOperator" parameter="@gammaShape.s:Brandolini-pt-1_maskedRefRemMafft" scaleFactor="0.5" weight="0.1"/>
+    <operator id="KappaScaler.s:Brandolini-pt-1_maskedRefRemMafft" spec="ScaleOperator" parameter="@kappa.s:Brandolini-pt-1_maskedRefRemMafft" scaleFactor="0.5" weight="0.1"/>
+    <operator id="BayesianSkylineTreeScaler.t:Brandolini-pt-1_maskedRefRemMafft" spec="ScaleOperator" scaleFactor="0.5" tree="@Tree.t:Brandolini-pt-1_maskedRefRemMafft" weight="3.0"/>
+    <operator id="BayesianSkylineTreeRootScaler.t:Brandolini-pt-1_maskedRefRemMafft" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@Tree.t:Brandolini-pt-1_maskedRefRemMafft" weight="3.0"/>
+    <operator id="BayesianSkylineUniformOperator.t:Brandolini-pt-1_maskedRefRemMafft" spec="Uniform" tree="@Tree.t:Brandolini-pt-1_maskedRefRemMafft" weight="30.0"/>
+    <operator id="BayesianSkylineSubtreeSlide.t:Brandolini-pt-1_maskedRefRemMafft" spec="SubtreeSlide" tree="@Tree.t:Brandolini-pt-1_maskedRefRemMafft" weight="15.0"/>
+    <operator id="BayesianSkylineNarrow.t:Brandolini-pt-1_maskedRefRemMafft" spec="Exchange" tree="@Tree.t:Brandolini-pt-1_maskedRefRemMafft" weight="15.0"/>
+    <operator id="BayesianSkylineWide.t:Brandolini-pt-1_maskedRefRemMafft" spec="Exchange" isNarrow="false" tree="@Tree.t:Brandolini-pt-1_maskedRefRemMafft" weight="3.0"/>
+    <operator id="BayesianSkylineWilsonBalding.t:Brandolini-pt-1_maskedRefRemMafft" spec="WilsonBalding" tree="@Tree.t:Brandolini-pt-1_maskedRefRemMafft" weight="3.0"/>
+    <operator id="popSizesScaler.t:Brandolini-pt-1_maskedRefRemMafft" spec="ScaleOperator" parameter="@bPopSizes.t:Brandolini-pt-1_maskedRefRemMafft" weight="15.0"/>
+    <operator id="groupSizesDelta.t:Brandolini-pt-1_maskedRefRemMafft" spec="DeltaExchangeOperator" integer="true" weight="6.0">
+        <intparameter idref="bGroupSizes.t:Brandolini-pt-1_maskedRefRemMafft"/>
+    </operator>
+    <operator id="FrequenciesExchanger.s:Brandolini-pt-1_maskedRefRemMafft" spec="DeltaExchangeOperator" delta="0.01" weight="0.1">
+        <parameter idref="freqParameter.s:Brandolini-pt-1_maskedRefRemMafft"/>
+    </operator>
+    <logger id="tracelog" spec="Logger" fileName="$(filebase)_$(seed).log" logEvery="1000" model="@posterior" sanitiseHeaders="true" sort="smart">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+        <log idref="treeLikelihood.Brandolini-pt-1_maskedRefRemMafft"/>
+        <log id="TreeHeight.t:Brandolini-pt-1_maskedRefRemMafft" spec="beast.evolution.tree.TreeHeightLogger" tree="@Tree.t:Brandolini-pt-1_maskedRefRemMafft"/>
+        <log idref="clockRate.c:Brandolini-pt-1_maskedRefRemMafft"/>
+        <log idref="gammaShape.s:Brandolini-pt-1_maskedRefRemMafft"/>
+        <log idref="kappa.s:Brandolini-pt-1_maskedRefRemMafft"/>
+        <log idref="BayesianSkyline.t:Brandolini-pt-1_maskedRefRemMafft"/>
+        <log idref="bPopSizes.t:Brandolini-pt-1_maskedRefRemMafft"/>
+        <log idref="bGroupSizes.t:Brandolini-pt-1_maskedRefRemMafft"/>
+        <log idref="freqParameter.s:Brandolini-pt-1_maskedRefRemMafft"/>
+    </logger>
+    <logger id="screenlog" spec="Logger" logEvery="1000">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+    </logger>
+    <logger id="treelog.t:Brandolini-pt-1_maskedRefRemMafft" spec="Logger" fileName="$(filebase)_$(seed).trees" logEvery="1000" mode="tree">
+        <log id="TreeWithMetaDataLogger.t:Brandolini-pt-1_maskedRefRemMafft" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree.t:Brandolini-pt-1_maskedRefRemMafft"/>
+    </logger>
+    <operatorschedule id="OperatorSchedule" spec="OperatorSchedule"/>
+</run>
+</beast>

@@ -1,0 +1,110 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=8;
+	taxlabels
+	'Brandolini-pt-1_0|2022-04-14'
+	'Brandolini-pt-1_20|2022-05-04'
+	'Brandolini-pt-1_2|2022-04-16'
+	'Brandolini-pt-1_33|2022-05-17'
+	'Brandolini-pt-1_44|2022-05-28'
+	'Brandolini-pt-1_57|2022-06-10'
+	'Brandolini-pt-1_68|2022-06-21'
+	'Brandolini-pt-1_86|2022-07-09'
+;
+end;
+
+begin trees;
+	tree TREE1 = [&R] (('Brandolini-pt-1_0|2022-04-14'[&height=0.23561643835615312,height_95%_HPD={0.23561643835614626,0.23561643835614632},height_median=0.23561643835614632,height_range={0.2356164383561461,0.23561643835614676},length=0.019431133882786226,length_95%_HPD={7.598630930583106E-7,0.06130765308837782},length_median=0.010071387789620467,length_range={7.598630930583106E-7,3.9278886745239276}]:0.007641,('Brandolini-pt-1_20|2022-05-04'[&height=0.18082191780808898,height_95%_HPD={0.18082191780808893,0.18082191780808898},height_median=0.18082191780808898,height_range={0.18082191780808876,0.18082191780808943},length=0.016651065422730593,length_95%_HPD={4.984391130391508E-7,0.04773780691916102},length_median=0.011032672944244926,length_range={4.984391130391508E-7,1.3262595681214826}]:0.011028,'Brandolini-pt-1_44|2022-05-28'[&height=0.11506849315060208,height_95%_HPD={0.11506849315060202,0.11506849315060208},height_median=0.11506849315060208,height_range={0.11506849315060186,0.11506849315060252},length=0.08239999268662447,length_95%_HPD={0.06575392309659994,0.11349123157664792},length_median=0.07678609760173183,length_range={0.06575392309659994,1.3920129927789695}]:0.076782)[&height=0.19743930481830146,height_95%_HPD={0.18082241624720202,0.22843067239551818},height_median=0.1918500117360028,height_range={0.18082241624720202,1.5070814859295716},length=0.05781308395791493,length_95%_HPD={0.006242700126075418,0.10953753147907919},length_median=0.053585818607915975,length_range={5.276484817906268E-4,2.6564236269505024},posterior=0.999666703699589]:0.051408)[&height=0.2509806475028532,height_95%_HPD={0.23561719821923938,0.2842366250435953},height_median=0.24325785024231913,height_range={0.23561719821923938,4.163505112880074},length=0.027809810812748834,length_95%_HPD={8.406864899779265E-7,0.0822634333311334},length_median=0.01714400438737304,length_range={8.406864899779265E-7,2.2260099655851597},posterior=0.5692700811020998]:0.025977,(('Brandolini-pt-1_2|2022-04-16'[&height=0.23013698630143367,height_95%_HPD={0.23013698630143148,0.23013698630143153},height_median=0.23013698630143153,height_range={0.2301369863014311,0.2301369863014351},length=0.012940755672826921,length_95%_HPD={6.734641520844686E-7,0.04300457306821581},length_median=0.0069122097985080955,length_range={6.734641520844686E-7,0.8232043414833417}]:0.007255,'Brandolini-pt-1_33|2022-05-17'[&height=0.14520547945198814,height_95%_HPD={0.14520547945198808,0.14520547945198814},height_median=0.14520547945198814,height_range={0.1452054794519877,0.1452054794519917},length=0.07630438028921506,length_95%_HPD={5.321585637912962E-5,0.12386858236418935},length_median=0.08694141838058839,length_range={1.6013537593451144E-6,0.908135848332785}]:0.092187)[&height=0.24330871837745943,height_95%_HPD={0.23013791293489658,0.27242738917723347},height_median=0.23739202703015047,height_range={0.23013791293489658,1.0533413277847732},length=0.03758788925241939,length_95%_HPD={4.688179129985759E-5,0.10821998692940696},length_median=0.02315792387831661,length_range={2.605653406739794E-5,5.851213049705777},posterior=0.4765026108210199]:-3.18E-4,(('Brandolini-pt-1_57|2022-06-10'[&height=0.07945205479450124,height_95%_HPD={0.07945205479450121,0.07945205479450126},height_median=0.07945205479450124,height_range={0.07945205479450079,0.07945205479450168},length=0.01839936419269121,length_95%_HPD={9.457205503160537E-7,0.05624132068330184},length_median=0.010733419701777658,length_range={9.457205503160537E-7,1.3116768842703919}]:0.010041,'Brandolini-pt-1_68|2022-06-21'[&height=0.04931506849311518,height_95%_HPD={0.04931506849311515,0.049315068493115205},height_median=0.04931506849311518,height_range={0.04931506849311473,0.04931506849311562},length=0.04363667382293014,length_95%_HPD={4.728144042529525E-4,0.08694517983025604},length_median=0.038082462733271955,length_range={9.805048209243772E-6,1.1417127151881408}]:0.040178)[&height=0.09780124238707134,height_95%_HPD={0.07945300051505155,0.1369884550949432},height_median=0.08949316949808664,height_range={0.07945300051505155,0.5896242358436155},length=0.05009358442387334,length_95%_HPD={3.484459893149383E-6,0.13720918563361773},length_median=0.021579814327705157,length_range={3.484459893149383E-6,17.757168127866144},posterior=0.45950449950005556]:0.013304,'Brandolini-pt-1_86|2022-07-09'[&height=0.0,length=0.11537506932320203,length_95%_HPD={0.04932487354132442,0.1944560786236021},length_median=0.09546325922304605,length_range={0.04932487354132442,27.249146452458707}]:0.102797)[&height=0.11980229451653554,height_95%_HPD={0.07945750379679697,0.1962807551141355},height_median=0.10279709276398932,height_range={0.07945750379679697,3.006940485090228},length=0.13767581770970375,length_95%_HPD={0.037268661290827676,0.2742115987326109},length_median=0.12328223726301715,length_range={0.00833593133302668,2.7532075454713496},posterior=0.9987779135651594]:0.134276)[&height=0.2426509568364655,height_95%_HPD={0.23013765976558362,0.27240284746766025},height_median=0.2370735856943103,height_range={0.23013765976558362,0.47098060485484333},length=0.022680470016002128,length_95%_HPD={7.2156766769415626E-6,0.06374873290320496},length_median=0.016465160768902642,length_range={7.2156766769415626E-6,0.20238613172746553},posterior=0.5307188090212198]:0.032161)[&height=0.30636426452296467,height_95%_HPD={0.2358053628029844,0.45184585996532656},height_median=0.2692348565990581,height_range={0.2358053628029844,27.249146452458707},length=0.0,posterior=1.0];
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=3.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute=null;
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="posterior";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=14;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=true;
+	set nodeLabels.significantDigits=2;
+	set nodeShapeExternal.colourAttribute=null;
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute=null;
+	set nodeShapeInternal.colourAttribute=null;
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute=null;
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=122;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=14.0;
+	set scaleAxis.isShown=true;
+	set scaleAxis.lineWidth=3.0;
+	set scaleAxis.majorTicks=0.05;
+	set scaleAxis.minorTicks=0.025;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=true;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=false;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.03;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=14;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=false;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
