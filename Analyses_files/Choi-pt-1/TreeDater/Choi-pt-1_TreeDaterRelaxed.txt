@@ -1,0 +1,32 @@
+[1] "Choi-pt-1"
+[1] "TreeDater Relaxed clock"
+
+Phylogenetic tree with 9 tips and 8 internal nodes.
+
+Tip labels:
+  Choi-pt-1|2020-04-28, Choi-pt-1|2020-05-05, Choi-pt-1|2020-06-24, Choi-pt-1|2020-06-30, Choi-pt-1|2020-08-16, Choi-pt-1|2020-08-18, ...
+
+Rooted; includes branch lengths.
+
+ Time of common ancestor 
+2020.2176337985 
+
+ Time to common ancestor (before most recent sample) 
+0.470890791666989 
+
+ Weighted mean substitution rate (adjusted by branch lengths) 
+0.000946994758083641 
+
+ Unadjusted mean substitution rate 
+0.000946994758371747 
+
+ Clock model  
+uncorrelated 
+
+ Coefficient of variation of rates 
+2.28428467367733e-10 
+[1] "Estimating confidence intervals for rates and dates by a parametric bootstrap"
+
+ For more detailed output, $trees provides a list of each fit to each simulation 
+
+Time of common ancestor	2.020218e+03	2.019849e+03	2.020302e+03	Mean substitution rate	9.469948e-04	4.304691e-04	2.083306e-03	

@@ -1,0 +1,30 @@
+[1] "Choi-pt-1"
+[1] "TreeDater Strict clock"
+
+Phylogenetic tree with 9 tips and 8 internal nodes.
+
+Tip labels:
+  Choi-pt-1|2020-04-28, Choi-pt-1|2020-05-05, Choi-pt-1|2020-06-24, Choi-pt-1|2020-06-30, Choi-pt-1|2020-08-16, Choi-pt-1|2020-08-18, ...
+
+Rooted; includes branch lengths.
+
+ Time of common ancestor 
+2020.21320544462 
+
+ Time to common ancestor (before most recent sample) 
+0.475319145540425 
+
+ Weighted mean substitution rate (adjusted by branch lengths) 
+0.000927126368032565 
+
+ Unadjusted mean substitution rate 
+0.000927126368032565 
+
+ Clock model  
+strict 
+
+ Coefficient of variation of rates 
+0 
+[1] "Estimating confidence intervals for rates and dates by a parametric bootstrap"
+
+ For more detailed output, $trees provides a list of each fit to each simulation 

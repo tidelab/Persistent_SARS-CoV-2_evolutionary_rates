@@ -1,0 +1,251 @@
+IQ-TREE multicore version 2.1.2 COVID-edition for Mac OS X 64-bit built Oct 22 2020
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    dlmp133362.dlce.shh.mpg.de (AVX512, FMA3, 16 GB RAM)
+Command: /Users/oeversti/iqtree-2.1.2-MacOSX/bin/iqtree2 -s Choi-pt-1_maskedRefMafft.fasta --prefix Choi-pt-1_Rooted_LSD_Collapse-1 -m MFP -B 1000 -o NC_045512.2|2019-12-30 --date TAXNAME --date-ci 100 --date-options -l -1 -redo
+Seed:    633530 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Aug 20 13:50:32 2023
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file Choi-pt-1_maskedRefMafft.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 265 sites contain only gaps or ambiguous characters.
+Alignment has 10 sequences with 29903 columns, 41 distinct patterns
+19 parsimony-informative, 21 singleton sites, 29863 constant sites
+                        Gap/Ambiguity  Composition  p-value
+   1  NC_045512.2|2019-12-30    0.89%    passed     99.97%
+   2  Choi-pt-1|2020-04-28      0.89%    passed    100.00%
+   3  Choi-pt-1|2020-05-05      0.89%    passed    100.00%
+   4  Choi-pt-1|2020-06-24      0.91%    passed    100.00%
+   5  Choi-pt-1|2020-06-30      0.91%    passed    100.00%
+   6  Choi-pt-1|2020-08-16      0.92%    passed    100.00%
+   7  Choi-pt-1|2020-08-18      0.92%    passed    100.00%
+   8  Choi-pt-1|2020-08-31      0.91%    passed    100.00%
+   9  Choi-pt-1|2020-09-03      0.98%    passed     99.99%
+  10  Choi-pt-1|2020-09-09      0.92%    passed    100.00%
+****  TOTAL                     0.91%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: Choi-pt-1|2020-05-05 is identical to Choi-pt-1|2020-04-28 but kept for subsequent analysis
+NOTE: Choi-pt-1|2020-06-30 is identical to Choi-pt-1|2020-06-24 but kept for subsequent analysis
+NOTE: Choi-pt-1|2020-08-18 is identical to Choi-pt-1|2020-08-16 but kept for subsequent analysis
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.000 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -40625.205
+Optimal log-likelihood: -40625.160
+Rate parameters:  A-C: 0.54598  A-G: 0.76488  A-T: 0.28514  C-G: 0.20826  C-T: 2.51924  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Proportion of invariable sites: 0.499
+Gamma shape alpha: 0.020
+Parameters optimization took 1 rounds (0.001 sec)
+Time for fast ML tree search: 0.004 seconds
+
+NOTE: ModelFinder requires 0 MB RAM!
+ModelFinder will test up to 286 DNA models (sample size: 29903) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         40626.987    25  81303.975    81304.018    81511.618
+  2  GTR+F+I       40624.071    26  81300.143    81300.190    81516.092
+  3  GTR+F+G4      40625.306    26  81302.611    81302.658    81518.560
+  4  GTR+F+I+G4    40624.874    27  81303.747    81303.798    81528.002
+  5  GTR+F+R2      40626.234    27  81306.468    81306.519    81530.723
+  6  GTR+F+R3      40626.026    29  81310.051    81310.109    81550.917
+ 14  SYM           41509.734    22  83063.468    83063.502    83246.194
+ 15  SYM+I         41507.191    23  83060.382    83060.419    83251.413
+ 16  SYM+G4        41508.396    23  83062.791    83062.828    83253.823
+ 27  TVM+F         40631.018    24  81310.035    81310.075    81509.372
+ 28  TVM+F+I       40628.178    25  81306.357    81306.400    81514.000
+ 29  TVM+F+G4      40629.675    25  81309.350    81309.393    81516.992
+ 40  TVMe          41514.031    21  83070.063    83070.093    83244.483
+ 41  TVMe+I        41511.196    22  83066.391    83066.425    83249.117
+ 42  TVMe+G4       41512.710    22  83069.420    83069.454    83252.146
+ 53  TIM3+F        40627.417    23  81300.835    81300.872    81491.866
+ 54  TIM3+F+I      40624.742    24  81297.485    81297.525    81496.822
+ 55  TIM3+F+G4     40626.102    24  81300.204    81300.245    81499.542
+ 66  TIM3e         41510.443    20  83060.886    83060.914    83227.000
+ 67  TIM3e+I       41507.744    21  83057.488    83057.519    83231.908
+ 68  TIM3e+G4      41509.114    21  83060.227    83060.258    83234.647
+ 79  TIM2+F        40627.354    23  81300.708    81300.744    81491.739
+ 80  TIM2+F+I      40624.671    24  81297.342    81297.382    81496.679
+ 81  TIM2+F+G4     40626.031    24  81300.063    81300.103    81499.400
+ 92  TIM2e         41510.394    20  83060.789    83060.817    83226.903
+ 93  TIM2e+I       41507.717    21  83057.433    83057.464    83231.853
+ 94  TIM2e+G4      41509.080    21  83060.160    83060.191    83234.580
+105  TIM+F         40626.575    23  81299.151    81299.188    81490.182
+106  TIM+F+I       40623.817    24  81295.634    81295.674    81494.971
+107  TIM+F+G4      40625.190    24  81298.380    81298.420    81497.717
+118  TIMe          41509.793    20  83059.587    83059.615    83225.701
+119  TIMe+I        41507.106    21  83056.211    83056.242    83230.631
+120  TIMe+G4       41508.482    21  83058.964    83058.995    83233.384
+131  TPM3u+F       40632.354    22  81308.708    81308.742    81491.434
+132  TPM3u+F+I     40629.546    23  81305.091    81305.128    81496.123
+133  TPM3u+F+G4    40631.034    23  81308.068    81308.105    81499.100
+144  TPM3+F        40632.354    22  81308.708    81308.742    81491.434
+145  TPM3+F+I      40629.546    23  81305.091    81305.128    81496.123
+146  TPM3+F+G4     40631.034    23  81308.068    81308.105    81499.100
+157  TPM2u+F       40632.512    22  81309.023    81309.057    81491.749
+158  TPM2u+F+I     40629.664    23  81305.328    81305.365    81496.360
+159  TPM2u+F+G4    40631.155    23  81308.310    81308.347    81499.342
+170  TPM2+F        40632.512    22  81309.023    81309.057    81491.749
+171  TPM2+F+I      40629.664    23  81305.328    81305.365    81496.360
+172  TPM2+F+G4     40631.155    23  81308.310    81308.347    81499.342
+183  K3Pu+F        40631.281    22  81306.562    81306.596    81489.287
+184  K3Pu+F+I      40628.392    23  81302.784    81302.821    81493.816
+185  K3Pu+F+G4     40629.894    23  81305.787    81305.824    81496.819
+196  K3P           41514.426    19  83066.852    83066.878    83224.661
+197  K3P+I         41511.562    20  83063.124    83063.152    83229.239
+198  K3P+G4        41513.065    20  83066.129    83066.157    83232.243
+209  TN+F          40627.434    22  81298.869    81298.903    81481.595
+210  TN+F+I        40624.759    23  81295.518    81295.555    81486.549
+211  TN+F+G4       40626.120    23  81298.239    81298.276    81489.271
+222  TNe           41510.429    19  83058.858    83058.883    83216.666
+223  TNe+I         41507.741    20  83055.482    83055.510    83221.596
+224  TNe+G4        41509.108    20  83058.215    83058.243    83224.329
+235  HKY+F         40632.224    21  81306.448    81306.479    81480.868
+236  HKY+F+I       40629.420    22  81302.839    81302.873    81485.565
+237  HKY+F+G4      40630.902    22  81305.804    81305.838    81488.530
+248  K2P           41515.097    18  83066.193    83066.216    83215.696
+249  K2P+I         41512.274    19  83062.549    83062.574    83220.357
+250  K2P+G4        41513.769    19  83065.537    83065.562    83223.346
+261  F81+F         40643.528    20  81327.055    81327.083    81493.169
+262  F81+F+I       40640.704    21  81323.408    81323.439    81497.828
+263  F81+F+G4      40642.207    21  81326.414    81326.444    81500.834
+274  JC            41525.506    17  83085.012    83085.033    83226.210
+275  JC+I          41522.678    18  83081.355    83081.378    83230.858
+276  JC+G4         41524.185    18  83084.370    83084.393    83233.873
+Akaike Information Criterion:           TN+F+I
+Corrected Akaike Information Criterion: TN+F+I
+Bayesian Information Criterion:         HKY+F
+Best-fit model: HKY+F chosen according to BIC
+
+All model information printed to Choi-pt-1_Rooted_LSD_Collapse-1.model.gz
+CPU time for ModelFinder: 0.081 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.085 seconds (0h:0m:0s)
+Generating 1000 samples for ultrafast bootstrap (seed: 633530)...
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -40632.224
+Optimal log-likelihood: -40632.222
+Rate parameters:  A-C: 1.00000  A-G: 4.64984  A-T: 1.00000  C-G: 1.00000  C-T: 4.64984  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Parameters optimization took 1 rounds (0.000 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.000444 sec (of wall-clock time) 0.000320 sec(of CPU time)
+Computing RapidNJ tree took 0.000041 sec (of wall-clock time) 0.000037 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -40632.378
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.015 second
+Computing log-likelihood of 91 initial trees ... 0.008 seconds
+Current best score: -40632.222
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -40632.222
+Iteration 10 / LogL: -40634.793 / Time: 0h:0m:0s
+Iteration 20 / LogL: -40638.655 / Time: 0h:0m:0s
+Finish initializing candidate tree set (1)
+Current best tree score: -40632.222 / CPU time: 0.046
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+UPDATE BEST LOG-LIKELIHOOD: -40632.221
+UPDATE BEST LOG-LIKELIHOOD: -40632.221
+UPDATE BEST LOG-LIKELIHOOD: -40632.221
+Iteration 30 / LogL: -40632.222 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -40632.221
+UPDATE BEST LOG-LIKELIHOOD: -40632.221
+UPDATE BEST LOG-LIKELIHOOD: -40632.221
+Iteration 40 / LogL: -40632.260 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 50 / LogL: -40632.258 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -40687.894
+UPDATE BEST LOG-LIKELIHOOD: -40632.221
+UPDATE BEST LOG-LIKELIHOOD: -40632.221
+Iteration 60 / LogL: -40632.221 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 70 / LogL: -40632.221 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 80 / LogL: -40632.257 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -40632.221
+Iteration 90 / LogL: -40632.221 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 100 / LogL: -40632.253 / Time: 0h:0m:0s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -40687.894
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.999
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -40632.221
+Optimal log-likelihood: -40632.221
+Rate parameters:  A-C: 1.00000  A-G: 4.60201  A-T: 1.00000  C-G: 1.00000  C-T: 4.60201  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Parameters optimization took 1 rounds (0.000 sec)
+BEST SCORE FOUND : -40632.221
+Creating bootstrap support values...
+Split supports printed to NEXUS file Choi-pt-1_Rooted_LSD_Collapse-1.splits.nex
+Total tree length: 0.001
+
+Total number of iterations: 102
+CPU time used for tree search: 0.497 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.326 sec (0h:0m:0s)
+Total CPU time used: 0.518 sec (0h:0m:0s)
+Total wall-clock time used: 0.350 sec (0h:0m:0s)
+
+Computing bootstrap consensus tree...
+Reading input file Choi-pt-1_Rooted_LSD_Collapse-1.splits.nex...
+10 taxa and 41 splits.
+Consensus tree written to Choi-pt-1_Rooted_LSD_Collapse-1.contree
+Reading input trees file Choi-pt-1_Rooted_LSD_Collapse-1.contree
+Log-likelihood of consensus tree: -40632.459
+
+Analysis results written to: 
+  IQ-TREE report:                Choi-pt-1_Rooted_LSD_Collapse-1.iqtree
+  Maximum-likelihood tree:       Choi-pt-1_Rooted_LSD_Collapse-1.treefile
+  Likelihood distances:          Choi-pt-1_Rooted_LSD_Collapse-1.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          Choi-pt-1_Rooted_LSD_Collapse-1.splits.nex
+  Consensus tree:                Choi-pt-1_Rooted_LSD_Collapse-1.contree
+  Screen log file:               Choi-pt-1_Rooted_LSD_Collapse-1.log
+
+--- Start phylogenetic dating ---
+Extracting date from node names...
+10 dates extracted
+Building time tree by least-square dating (LSD) with command:
+lsd -i Choi-pt-1_Rooted_LSD_Collapse-1.timetree.subst -s 29903 -o Choi-pt-1_Rooted_LSD_Collapse-1.timetree -f 100 -g Choi-pt-1_Rooted_LSD_Collapse-1.timetree.outgroup -d Choi-pt-1_Rooted_LSD_Collapse-1.timetree.date -l -1 
+Reroot the tree(s) using given outgroups ...
+
+TREE 1
+*PROCESSING:
+Reading the tree ... 
+Collapse 0 (over 8) internal branches having branch length <= -1
+ (settable via option -l)
+Parameter to adjust variances was set to 0.000334 (settable via option -b)
+Minimum branch length of time scaled tree (settable via option -u and -U): 0
+Estimating the root position on the branch defined by given outgroups ...
+Computing confidence intervals using sequence length 29903 and a lognormal
+ relaxed clock with mean 1, standard deviation 0.2 (settable via option -q)
+*RESULTS:
+- Dating results:
+ rate 0.00125519, tMRCA 2019-12-30 , objective function 3.98143e-05
+- Results with confidence intervals:
+ rate 0.00125519 [0.000803059; 0.00168667], tMRCA 2019-12-30 [2019-12-15; 2019-12-30], objective function 3.98143e-05
+
+TOTAL ELAPSED TIME: 0.00227 seconds
+LSD results written to:
+  LSD report:                  Choi-pt-1_Rooted_LSD_Collapse-1.timetree.lsd
+  Time tree in nexus format:   Choi-pt-1_Rooted_LSD_Collapse-1.timetree.nex
+  Time tree in newick format:  Choi-pt-1_Rooted_LSD_Collapse-1.timetree.nwk
+
+--- End phylogenetic dating ---
+Date and Time: Sun Aug 20 13:50:33 2023

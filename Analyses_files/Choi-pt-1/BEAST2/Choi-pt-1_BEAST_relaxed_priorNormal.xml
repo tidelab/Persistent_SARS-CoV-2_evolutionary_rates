@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" required="" version="2.6">
+
+    <data
+id="Choi-pt-1_maskedRefRemMafft"
+spec="Alignment"
+name="alignment">
+                        <sequence id="seq_Choi-pt-1|2020-04-28" spec="Sequence" taxon="Choi-pt-1|2020-04-28" totalcount="4" value=""/>
+                        <sequence id="seq_Choi-pt-1|2020-05-05" spec="Sequence" taxon="Choi-pt-1|2020-05-05" totalcount="4" value=""/>
+                        <sequence id="seq_Choi-pt-1|2020-06-24" spec="Sequence" taxon="Choi-pt-1|2020-06-24" totalcount="4" value=""/>
+                        <sequence id="seq_Choi-pt-1|2020-06-30" spec="Sequence" taxon="Choi-pt-1|2020-06-30" totalcount="4" value=""/>
+                        <sequence id="seq_Choi-pt-1|2020-08-16" spec="Sequence" taxon="Choi-pt-1|2020-08-16" totalcount="4" value=""/>
+                        <sequence id="seq_Choi-pt-1|2020-08-18" spec="Sequence" taxon="Choi-pt-1|2020-08-18" totalcount="4" value=""/>
+                        <sequence id="seq_Choi-pt-1|2020-08-31" spec="Sequence" taxon="Choi-pt-1|2020-08-31" totalcount="4" value=""/>
+                        <sequence id="seq_Choi-pt-1|2020-09-03" spec="Sequence" taxon="Choi-pt-1|2020-09-03" totalcount="4" value=""/>
+                        <sequence id="seq_Choi-pt-1|2020-09-09" spec="Sequence" taxon="Choi-pt-1|2020-09-09" totalcount="4" value=""/>
+                    </data>
+
+
+    
+
+<map name="Uniform" >beast.math.distributions.Uniform</map>
+<map name="Exponential" >beast.math.distributions.Exponential</map>
+<map name="LogNormal" >beast.math.distributions.LogNormalDistributionModel</map>
+<map name="Normal" >beast.math.distributions.Normal</map>
+<map name="Beta" >beast.math.distributions.Beta</map>
+<map name="Gamma" >beast.math.distributions.Gamma</map>
+<map name="LaplaceDistribution" >beast.math.distributions.LaplaceDistribution</map>
+<map name="prior" >beast.math.distributions.Prior</map>
+<map name="InverseGamma" >beast.math.distributions.InverseGamma</map>
+<map name="OneOnX" >beast.math.distributions.OneOnX</map>
+
+<run id="mcmc" spec="MCMC" chainLength="10000000">
+    <state id="state" spec="State" storeEvery="5000">
+        <tree id="Tree.t:Choi-pt-1_maskedRefRemMafft" spec="beast.evolution.tree.Tree" name="stateNode">
+            <trait id="dateTrait.t:Choi-pt-1_maskedRefRemMafft" spec="beast.evolution.tree.TraitSet" dateFormat="yyyy-M-dd" traitname="date" value="Choi-pt-1|2020-04-28=2020-04-28,Choi-pt-1|2020-05-05=2020-05-05,Choi-pt-1|2020-06-24=2020-06-24,Choi-pt-1|2020-06-30=2020-06-30,Choi-pt-1|2020-08-16=2020-08-16,Choi-pt-1|2020-08-18=2020-08-18,Choi-pt-1|2020-08-31=2020-08-31,Choi-pt-1|2020-09-03=2020-09-03,Choi-pt-1|2020-09-09=2020-09-09">
+                <taxa id="TaxonSet.Choi-pt-1_maskedRefRemMafft" spec="TaxonSet">
+                    <alignment idref="Choi-pt-1_maskedRefRemMafft"/>
+                </taxa>
+            </trait>
+            <taxonset idref="TaxonSet.Choi-pt-1_maskedRefRemMafft"/>
+        </tree>
+        <parameter id="gammaShape.s:Choi-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+        <parameter id="kappa.s:Choi-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" lower="0.0" name="stateNode">2.0</parameter>
+        <parameter id="ucldMean.c:Choi-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+        <parameter id="ucldStdev.c:Choi-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" lower="0.0" name="stateNode">0.1</parameter>
+        <stateNode id="rateCategories.c:Choi-pt-1_maskedRefRemMafft" spec="parameter.IntegerParameter" dimension="16">1</stateNode>
+        <parameter id="bPopSizes.t:Choi-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" dimension="3" lower="0.0" name="stateNode">380.0</parameter>
+        <stateNode id="bGroupSizes.t:Choi-pt-1_maskedRefRemMafft" spec="parameter.IntegerParameter" dimension="3">1</stateNode>
+        <parameter id="freqParameter.s:Choi-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" dimension="4" lower="0.0" name="stateNode" upper="1.0">0.25</parameter>
+    </state>
+    <init id="RandomTree.t:Choi-pt-1_maskedRefRemMafft" spec="beast.evolution.tree.RandomTree" estimate="false" initial="@Tree.t:Choi-pt-1_maskedRefRemMafft" taxa="@Choi-pt-1_maskedRefRemMafft">
+        <populationModel id="ConstantPopulation0.t:Choi-pt-1_maskedRefRemMafft" spec="ConstantPopulation">
+            <parameter id="randomPopSize.t:Choi-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" name="popSize">1.0</parameter>
+        </populationModel>
+    </init>
+    <distribution id="posterior" spec="util.CompoundDistribution">
+        <distribution id="prior" spec="util.CompoundDistribution">
+            <distribution id="BayesianSkyline.t:Choi-pt-1_maskedRefRemMafft" spec="BayesianSkyline" groupSizes="@bGroupSizes.t:Choi-pt-1_maskedRefRemMafft" popSizes="@bPopSizes.t:Choi-pt-1_maskedRefRemMafft">
+                <treeIntervals id="BSPTreeIntervals.t:Choi-pt-1_maskedRefRemMafft" spec="TreeIntervals" tree="@Tree.t:Choi-pt-1_maskedRefRemMafft"/>
+            </distribution>
+            <distribution id="MarkovChainedPopSizes.t:Choi-pt-1_maskedRefRemMafft" spec="beast.math.distributions.MarkovChainDistribution" jeffreys="true" parameter="@bPopSizes.t:Choi-pt-1_maskedRefRemMafft"/>
+            <prior id="FrequenciesPrior.s:Choi-pt-1_maskedRefRemMafft" name="distribution" x="@freqParameter.s:Choi-pt-1_maskedRefRemMafft">
+                <Uniform id="Uniform.3" name="distr"/>
+            </prior>
+            <prior id="GammaShapePrior.s:Choi-pt-1_maskedRefRemMafft" name="distribution" x="@gammaShape.s:Choi-pt-1_maskedRefRemMafft">
+                <Exponential id="Exponential.0" name="distr">
+                    <parameter id="RealParameter.0" spec="parameter.RealParameter" estimate="false" name="mean">1.0</parameter>
+                </Exponential>
+            </prior>
+            <prior id="KappaPrior.s:Choi-pt-1_maskedRefRemMafft" name="distribution" x="@kappa.s:Choi-pt-1_maskedRefRemMafft">
+                <LogNormal id="LogNormalDistributionModel.0" name="distr">
+                    <parameter id="RealParameter.1" spec="parameter.RealParameter" estimate="false" name="M">1.0</parameter>
+                    <parameter id="RealParameter.2" spec="parameter.RealParameter" estimate="false" name="S">1.25</parameter>
+                </LogNormal>
+            </prior>
+            <prior id="MeanRatePrior.c:Choi-pt-1_maskedRefRemMafft" name="distribution" x="@ucldMean.c:Choi-pt-1_maskedRefRemMafft">
+                <Normal id="Normal.0" name="distr">
+                    <parameter id="RealParameter.6" spec="parameter.RealParameter" estimate="false" name="mean">8.0E-4</parameter>
+                    <parameter id="RealParameter.7" spec="parameter.RealParameter" estimate="false" name="sigma">0.0016</parameter>
+                </Normal>
+            </prior>
+            <prior id="ucldStdevPrior.c:Choi-pt-1_maskedRefRemMafft" name="distribution" x="@ucldStdev.c:Choi-pt-1_maskedRefRemMafft">
+                <Gamma id="Gamma.0" name="distr">
+                    <parameter id="RealParameter.4" spec="parameter.RealParameter" estimate="false" name="alpha">0.5396</parameter>
+                    <parameter id="RealParameter.5" spec="parameter.RealParameter" estimate="false" name="beta">0.3819</parameter>
+                </Gamma>
+            </prior>
+        </distribution>
+        <distribution id="likelihood" spec="util.CompoundDistribution" useThreads="true">
+            <distribution id="treeLikelihood.Choi-pt-1_maskedRefRemMafft" spec="ThreadedTreeLikelihood" data="@Choi-pt-1_maskedRefRemMafft" tree="@Tree.t:Choi-pt-1_maskedRefRemMafft">
+                <siteModel id="SiteModel.s:Choi-pt-1_maskedRefRemMafft" spec="SiteModel" gammaCategoryCount="4" shape="@gammaShape.s:Choi-pt-1_maskedRefRemMafft">
+                    <parameter id="mutationRate.s:Choi-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" estimate="false" name="mutationRate">1.0</parameter>
+                    <parameter id="proportionInvariant.s:Choi-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" estimate="false" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
+                    <substModel id="hky.s:Choi-pt-1_maskedRefRemMafft" spec="HKY" kappa="@kappa.s:Choi-pt-1_maskedRefRemMafft">
+                        <frequencies id="estimatedFreqs.s:Choi-pt-1_maskedRefRemMafft" spec="Frequencies" frequencies="@freqParameter.s:Choi-pt-1_maskedRefRemMafft"/>
+                    </substModel>
+                </siteModel>
+                <branchRateModel id="RelaxedClock.c:Choi-pt-1_maskedRefRemMafft" spec="beast.evolution.branchratemodel.UCRelaxedClockModel" clock.rate="@ucldMean.c:Choi-pt-1_maskedRefRemMafft" rateCategories="@rateCategories.c:Choi-pt-1_maskedRefRemMafft" tree="@Tree.t:Choi-pt-1_maskedRefRemMafft">
+                    <LogNormal id="LogNormalDistributionModel.c:Choi-pt-1_maskedRefRemMafft" S="@ucldStdev.c:Choi-pt-1_maskedRefRemMafft" meanInRealSpace="true" name="distr">
+                        <parameter id="RealParameter.3" spec="parameter.RealParameter" estimate="false" lower="0.0" name="M" upper="1.0">1.0</parameter>
+                    </LogNormal>
+                </branchRateModel>
+            </distribution>
+        </distribution>
+    </distribution>
+    <operator id="gammaShapeScaler.s:Choi-pt-1_maskedRefRemMafft" spec="ScaleOperator" parameter="@gammaShape.s:Choi-pt-1_maskedRefRemMafft" scaleFactor="0.5" weight="0.1"/>
+    <operator id="KappaScaler.s:Choi-pt-1_maskedRefRemMafft" spec="ScaleOperator" parameter="@kappa.s:Choi-pt-1_maskedRefRemMafft" scaleFactor="0.5" weight="0.1"/>
+    <operator id="ucldMeanScaler.c:Choi-pt-1_maskedRefRemMafft" spec="ScaleOperator" parameter="@ucldMean.c:Choi-pt-1_maskedRefRemMafft" scaleFactor="0.5" weight="1.0"/>
+    <operator id="ucldStdevScaler.c:Choi-pt-1_maskedRefRemMafft" spec="ScaleOperator" parameter="@ucldStdev.c:Choi-pt-1_maskedRefRemMafft" scaleFactor="0.5" weight="3.0"/>
+    <operator id="CategoriesRandomWalk.c:Choi-pt-1_maskedRefRemMafft" spec="IntRandomWalkOperator" parameter="@rateCategories.c:Choi-pt-1_maskedRefRemMafft" weight="10.0" windowSize="1"/>
+    <operator id="CategoriesSwapOperator.c:Choi-pt-1_maskedRefRemMafft" spec="SwapOperator" intparameter="@rateCategories.c:Choi-pt-1_maskedRefRemMafft" weight="10.0"/>
+    <operator id="CategoriesUniform.c:Choi-pt-1_maskedRefRemMafft" spec="UniformOperator" parameter="@rateCategories.c:Choi-pt-1_maskedRefRemMafft" weight="10.0"/>
+    <operator id="relaxedUpDownOperator.c:Choi-pt-1_maskedRefRemMafft" spec="UpDownOperator" scaleFactor="0.75" weight="3.0">
+        <up idref="ucldMean.c:Choi-pt-1_maskedRefRemMafft"/>
+        <down idref="Tree.t:Choi-pt-1_maskedRefRemMafft"/>
+    </operator>
+    <operator id="BayesianSkylineTreeScaler.t:Choi-pt-1_maskedRefRemMafft" spec="ScaleOperator" scaleFactor="0.5" tree="@Tree.t:Choi-pt-1_maskedRefRemMafft" weight="3.0"/>
+    <operator id="BayesianSkylineTreeRootScaler.t:Choi-pt-1_maskedRefRemMafft" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@Tree.t:Choi-pt-1_maskedRefRemMafft" weight="3.0"/>
+    <operator id="BayesianSkylineUniformOperator.t:Choi-pt-1_maskedRefRemMafft" spec="Uniform" tree="@Tree.t:Choi-pt-1_maskedRefRemMafft" weight="30.0"/>
+    <operator id="BayesianSkylineSubtreeSlide.t:Choi-pt-1_maskedRefRemMafft" spec="SubtreeSlide" tree="@Tree.t:Choi-pt-1_maskedRefRemMafft" weight="15.0"/>
+    <operator id="BayesianSkylineNarrow.t:Choi-pt-1_maskedRefRemMafft" spec="Exchange" tree="@Tree.t:Choi-pt-1_maskedRefRemMafft" weight="15.0"/>
+    <operator id="BayesianSkylineWide.t:Choi-pt-1_maskedRefRemMafft" spec="Exchange" isNarrow="false" tree="@Tree.t:Choi-pt-1_maskedRefRemMafft" weight="3.0"/>
+    <operator id="BayesianSkylineWilsonBalding.t:Choi-pt-1_maskedRefRemMafft" spec="WilsonBalding" tree="@Tree.t:Choi-pt-1_maskedRefRemMafft" weight="3.0"/>
+    <operator id="popSizesScaler.t:Choi-pt-1_maskedRefRemMafft" spec="ScaleOperator" parameter="@bPopSizes.t:Choi-pt-1_maskedRefRemMafft" weight="15.0"/>
+    <operator id="groupSizesDelta.t:Choi-pt-1_maskedRefRemMafft" spec="DeltaExchangeOperator" integer="true" weight="6.0">
+        <intparameter idref="bGroupSizes.t:Choi-pt-1_maskedRefRemMafft"/>
+    </operator>
+    <operator id="FrequenciesExchanger.s:Choi-pt-1_maskedRefRemMafft" spec="DeltaExchangeOperator" delta="0.01" weight="0.1">
+        <parameter idref="freqParameter.s:Choi-pt-1_maskedRefRemMafft"/>
+    </operator>
+    <logger id="tracelog" spec="Logger" fileName="$(filebase)_$(seed).log" logEvery="1000" model="@posterior" sanitiseHeaders="true" sort="smart">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+        <log idref="treeLikelihood.Choi-pt-1_maskedRefRemMafft"/>
+        <log id="TreeHeight.t:Choi-pt-1_maskedRefRemMafft" spec="beast.evolution.tree.TreeHeightLogger" tree="@Tree.t:Choi-pt-1_maskedRefRemMafft"/>
+        <log idref="gammaShape.s:Choi-pt-1_maskedRefRemMafft"/>
+        <log idref="kappa.s:Choi-pt-1_maskedRefRemMafft"/>
+        <log idref="ucldMean.c:Choi-pt-1_maskedRefRemMafft"/>
+        <log idref="ucldStdev.c:Choi-pt-1_maskedRefRemMafft"/>
+        <log id="rate.c:Choi-pt-1_maskedRefRemMafft" spec="beast.evolution.branchratemodel.RateStatistic" branchratemodel="@RelaxedClock.c:Choi-pt-1_maskedRefRemMafft" tree="@Tree.t:Choi-pt-1_maskedRefRemMafft"/>
+        <log idref="BayesianSkyline.t:Choi-pt-1_maskedRefRemMafft"/>
+        <log idref="bPopSizes.t:Choi-pt-1_maskedRefRemMafft"/>
+        <log idref="bGroupSizes.t:Choi-pt-1_maskedRefRemMafft"/>
+        <log idref="freqParameter.s:Choi-pt-1_maskedRefRemMafft"/>
+    </logger>
+    <logger id="screenlog" spec="Logger" logEvery="1000">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+    </logger>
+    <logger id="treelog.t:Choi-pt-1_maskedRefRemMafft" spec="Logger" fileName="$(filebase)_$(seed).trees" logEvery="1000" mode="tree">
+        <log id="TreeWithMetaDataLogger.t:Choi-pt-1_maskedRefRemMafft" spec="beast.evolution.tree.TreeWithMetaDataLogger" branchratemodel="@RelaxedClock.c:Choi-pt-1_maskedRefRemMafft" tree="@Tree.t:Choi-pt-1_maskedRefRemMafft"/>
+    </logger>
+    <operatorschedule id="OperatorSchedule" spec="OperatorSchedule"/>
+</run>
+</beast>

@@ -1,0 +1,111 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=9;
+	taxlabels
+	'Choi-pt-1|2020-04-28'
+	'Choi-pt-1|2020-05-05'
+	'Choi-pt-1|2020-06-24'
+	'Choi-pt-1|2020-06-30'
+	'Choi-pt-1|2020-08-16'
+	'Choi-pt-1|2020-08-18'
+	'Choi-pt-1|2020-08-31'
+	'Choi-pt-1|2020-09-03'
+	'Choi-pt-1|2020-09-09'
+;
+end;
+
+begin trees;
+	tree TREE1 = [&R] (('Choi-pt-1|2020-04-28'[&height=0.36612021857928845,height_95%_HPD={0.3661202185792262,0.36612021857922633},height_median=0.3661202185792263,height_range={0.36612021857922616,0.3661202185792265},length=0.008346771221626251,length_95%_HPD={3.6869757485957777E-7,0.027777590793015394},length_median=0.004936496456624306,length_range={3.6869757485957777E-7,0.15767892920774962}]:0.005811,'Choi-pt-1|2020-05-05'[&height=0.34699453551911574,height_95%_HPD={0.3469945355191157,0.3469945355191158},height_median=0.34699453551911574,height_range={0.34699453551911563,0.34699453551911597},length=0.022754811362514345,length_95%_HPD={6.784436872853128E-7,0.04627186262951083},length_median=0.02221076958109025,length_range={6.784436872853128E-7,0.17680461226786015}]:0.024937)[&height=0.3755516640578186,height_95%_HPD={0.3661207450352813,0.39635753090699466},height_median=0.37193161900404464,height_range={0.3661207450352813,0.5237991477869759},length=0.08151603631711364,length_95%_HPD={4.784239436284032E-7,0.23294308049174833},length_median=0.05945432736478268,length_range={4.784239436284032E-7,0.8322506244861676},posterior=0.6211532051994223]:0.023474,(('Choi-pt-1|2020-06-24'[&height=0.21038251366121585,height_95%_HPD={0.2103825136612158,0.2103825136612159},height_median=0.21038251366121585,height_range={0.21038251366121563,0.21038251366121608},length=0.007177089967948108,length_95%_HPD={2.1107436784517652E-7,0.024010947753889983},length_median=0.004160150098348525,length_range={2.1107436784517652E-7,0.118423908979152}]:0.00416,'Choi-pt-1|2020-06-30'[&height=0.1939890710382315,height_95%_HPD={0.19398907103823143,0.19398907103823154},height_median=0.1939890710382315,height_range={0.19398907103823126,0.1939890710382317},length=0.023570419215592775,length_95%_HPD={0.016393653697352212,0.04040439037687435},length_median=0.02055359272133289,length_range={0.016393653697352212,0.13481735160213637}]:0.020554)[&height=0.21755996747076825,height_95%_HPD={0.2103827247355837,0.23439346141510584},height_median=0.21454282493212817,height_range={0.2103827247355837,0.32880642264036786},length=0.043331547723914364,length_95%_HPD={0.0023363765233132827,0.11842601338655684},length_median=0.03150607926301231,length_range={2.7108538367021096E-4,0.6605472860583679},posterior=0.9998889012331963]:0.033232,((('Choi-pt-1|2020-08-16'[&height=0.06557377049193747,height_95%_HPD={0.06557377049193741,0.06557377049193752},height_median=0.06557377049193747,height_range={0.06557377049193724,0.06557377049193769},length=0.007893326645862607,length_95%_HPD={1.2183485575967268E-6,0.024179723674216724},length_median=0.005298439726120929,length_range={1.2183485575967268E-6,0.10506792072782867}]:0.005298,'Choi-pt-1|2020-08-18'[&height=0.06010928961745776,height_95%_HPD={0.060109289617457706,0.06010928961745782},height_median=0.06010928961745776,height_range={0.06010928961745754,0.060109289617457984},length=0.013357807520342269,length_95%_HPD={0.005465699223037301,0.02964420454869643},length_median=0.010762920600600634,length_range={0.005465699223037301,0.11053240160230837}]:0.010763)[&height=0.07346709713780006,height_95%_HPD={0.06557498884049506,0.08975349416615419},height_median=0.07087221021805845,height_range={0.06557498884049506,0.17064169121976613},length=0.061452739583921195,length_95%_HPD={0.01225691478700347,0.11642186802968404},length_median=0.05682275020439387,length_range={0.002630605838821909,0.3231840951500391},posterior=1.0]:0.059258,'Choi-pt-1|2020-09-03'[&height=0.016393442622984367,height_95%_HPD={0.01639344262298431,0.016393442622984422},height_median=0.016393442622984367,height_range={0.016393442622984145,0.016393442622984478},length=0.11844714181002519,length_95%_HPD={0.06681306049523572,0.1777213862828843},length_median=0.11371093748283079,length_range={0.05437038101900854,0.3893580628919735}]:0.113737)[&height=0.13485424088061707,height_95%_HPD={0.08342542998810654,0.19414320072167957},height_median=0.1301305781624275,height_range={0.0707638236419929,0.40575150551495787},length=0.02292567970445477,length_95%_HPD={4.2255384146788755E-4,0.05745846260586565},length_median=0.01873633135178837,length_range={4.820000344185615E-6,0.18802007085157602},posterior=0.9957782468614599]:0.0272,('Choi-pt-1|2020-08-31'[&height=0.024590163934362863,height_95%_HPD={0.024590163934362863,0.024590163934362863},height_median=0.024590163934362863,height_range={0.02459016393436264,0.024590163934362974},length=0.11453655688090003,length_95%_HPD={0.03525003259639098,0.18822822494455155},length_median=0.11152141377633085,length_range={0.008116127051935151,0.45002294268896403}]:0.100163,'Choi-pt-1|2020-09-09'[&height=0.0,length=0.1393659150441178,length_95%_HPD={0.058298256193181686,0.21357712773597076},length_median=0.1359683446034875,length_range={0.032706290986298014,0.5230822089870157}]:0.124753)[&height=0.12834232114774924,height_95%_HPD={0.059471084681805286,0.20065110048259813},height_median=0.12475316720408353,height_range={0.032706290986298014,0.4746131066233269},length=0.03223669341300217,length_95%_HPD={1.8100136736309835E-5,0.0859793426429239},length_median=0.025373877719610305,length_range={1.8100136736309835E-5,0.20933874396857632},posterior=0.6444839462281968]:0.032578)[&height=0.16247791189995908,height_95%_HPD={0.09884579585889641,0.23477321607950077},height_median=0.15733103079568728,height_range={0.07519903689346569,0.5230822089870157},length=0.0984080927535374,length_95%_HPD={0.03650302967256169,0.15727838340063616},length_median=0.09645606419661268,length_range={0.011666327851370395,0.4061204528178969},posterior=1.0]:0.090443)[&height=0.2608427404050351,height_95%_HPD={0.2138718684761402,0.3415016437273577},height_median=0.24777434699463632,height_range={0.2113458719302743,0.8712683853549004},length=0.15911986905492,length_95%_HPD={0.08201213700817223,0.26950162997472427},length_median=0.14337993651812656,length_range={0.027040416716774873,0.6169060002264675},posterior=0.9998889012331963]:0.147632)[&height=0.4254961413297352,height_95%_HPD={0.36612058727680113,0.578479105576435},height_median=0.39540589093055456,height_range={0.36612058727680113,1.2431879647260489},length=0.0,posterior=1.0];
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=3.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute=null;
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="posterior";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=14;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=true;
+	set nodeLabels.significantDigits=2;
+	set nodeShapeExternal.colourAttribute=null;
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute=null;
+	set nodeShapeInternal.colourAttribute=null;
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute=null;
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=14.0;
+	set scaleAxis.isShown=true;
+	set scaleAxis.lineWidth=3.0;
+	set scaleAxis.majorTicks=0.05;
+	set scaleAxis.minorTicks=0.025;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=true;
+	set scaleAxis.showGrid=false;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=false;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.04;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=14;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=false;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
