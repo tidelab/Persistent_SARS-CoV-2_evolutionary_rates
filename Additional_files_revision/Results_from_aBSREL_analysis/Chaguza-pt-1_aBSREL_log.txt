@@ -1,0 +1,138 @@
+
+Analysis Description
+--------------------
+aBSREL (Adaptive branch-site random effects likelihood) uses an adaptive
+random effects branch-site model framework to test whether each branch
+has evolved under positive selection, using a procedure which infers an
+optimal number of rate categories per branch. v2.2 adds support for
+multiple-hit models. v2.3 adds support for SRV. v2.5 adds support for
+ancestral state reconstruction, identification of sites contributing to
+selection signal, and some diagnostics. 
+
+- __Requirements__: in-frame codon alignment and a phylogenetic tree
+
+- __Citation__:  Less Is More: An Adaptive Branch-Site Random Effects Model for
+Efficient Detection of Episodic Diversifying Selection (2015). Mol Biol
+Evol 32 (5): 1342-1353. 
+
+- __Written by__: Sergei L Kosakovsky Pond, Ben Murrell, Steven Weaver and Temple iGEM /
+UCSD viral evolution group
+
+- __Contact Information__: spond@temple.edu
+
+- __Analysis Version__: 2.5
+
+[Advanced option] Bag of little bootstrap alignment resampling rate (permissible range = [0.01,1], default value = 1): blb: 1
+
+>code => Universal
+/home/datamonkey/datamonkey-js-server/production/app/absrel/output/6862a2f2da513d2cae58757e.tre
+/home/datamonkey/datamonkey-js-server/production/app/absrel/output/6862a2f2da513d2cae58757e.tre
+
+>Loaded a multiple sequence alignment with **29** sequences, **9084** codons, and **1** partitions from `/home/datamonkey/datamonkey-js-server/production/app/absrel/output/6862a2f2da513d2cae58757e`
+
+>branches => FG
+
+>multiple-hits => None
+
+>srv => No
+
+
+### * Selected 55 branches for testing: `CHAGUZA_PT_1_2021_09_13, CHAGUZA_PT_1_2021_09_27, CHAGUZA_PT_1_2022_02_10, CHAGUZA_PT_1_2022_02_23, CHAGUZA_PT_1_2022_03_07, Node19, Node17, CHAGUZA_PT_1_2021_11_16, Node16, CHAGUZA_PT_1_2021_10_04, Node15, CHAGUZA_PT_1_2021_08_29, CHAGUZA_PT_1_2021_09_08, Node24, Node14, CHAGUZA_PT_1_2021_10_19, Node13, Node11, CHAGUZA_PT_1_2021_10_12, Node10, CHAGUZA_PT_1_2021_04_05, CHAGUZA_PT_1_2021_12_27, CHAGUZA_PT_1_2021_12_20, Node31, Node29, Node9, CHAGUZA_PT_1_2021_02_08, CHAGUZA_PT_1_2021_02_26, Node36, CHAGUZA_PT_1_2021_03_05, Node35, CHAGUZA_PT_1_2021_05_03, CHAGUZA_PT_1_2021_05_24, Node40, Node34, Node8, CHAGUZA_PT_1_2021_04_19, Node7, Node5, CHAGUZA_PT_1_2021_06_01, CHAGUZA_PT_1_2021_06_14, Node44, Node4, CHAGUZA_PT_1_2021_06_21, Node3, CHAGUZA_PT_1_2021_11_03, CHAGUZA_PT_1_2021_11_09, CHAGUZA_PT_1_2021_12_07, Node50, Node48, Node2, CHAGUZA_PT_1_2021_06_28, Node1, CHAGUZA_PT_1_2021_07_12, CHAGUZA_PT_1_2021_07_25`
+
+
+### Obtaining branch lengths and nucleotide substitution biases under the nucleotide GTR model
+
+>kill-zero-lengths => Yes
+
+### Deleted 7 zero-length internal branches: `Node1, Node11, Node13, Node2, Node48, Node5, Node8`
+* Log(L) = -37713.65, AIC-c = 75553.31 (63 estimated parameters)
+* 1 partition. Total tree length by partition (subs/site)  0.003
+
+### Fitting the baseline model with a single dN/dS class per branch, and no site-to-site variation. 
+* Log(L) = -36454.07, AIC-c = 73128.24 (110 estimated parameters)
+* Branch-level non-synonymous/synonymous rate ratio distribution has median  1.00, and 95% of the weight in  0.00 -  2.55
+
+### Determining the optimal number of rate classes per branch using a step up procedure
+
+|              Branch               |  Length  |  Rates   |     Max. dN/dS     |    Log(L)     |     AIC-c     |Best AIC-c so far|
+|-----------------------------------|----------|----------|--------------------|---------------|---------------|-----------------|
+|      CHAGUZA_PT_1_2021_12_20      |   0.00   |    2     |    0.75 (25.00%)   |   -36454.07   |   73132.24    |    73128.24     |
+|              Node31               |   0.00   |    2     |    5.49 (15.35%)   |   -36454.07   |   73132.24    |    73128.24     |
+|              Node10               |   0.00   |    2     |    0.77 ( 9.51%)   |   -36454.07   |   73132.24    |    73128.24     |
+|      CHAGUZA_PT_1_2021_12_27      |   0.00   |    2     |    9.00 (25.00%)   |   -36454.07   |   73132.24    |    73128.24     |
+|              Node17               |   0.00   |    2     |    0.75 (49.68%)   |   -36454.07   |   73132.24    |    73128.24     |
+|              Node16               |   0.00   |    2     |    0.80 (90.04%)   |   -36454.07   |   73132.24    |    73128.24     |
+|               Node7               |   0.00   |    2     |   27.64 ( 5.01%)   |   -36454.08   |   73132.25    |    73128.24     |
+|              Node19               |   0.00   |    2     |    2.00 (25.00%)   |   -36454.07   |   73132.24    |    73128.24     |
+|              Node15               |   0.00   |    2     |    2.00 (25.00%)   |   -36454.07   |   73132.24    |    73128.24     |
+|               Node3               |   0.00   |    2     |    0.26 (49.72%)   |   -36454.07   |   73132.24    |    73128.24     |
+|              Node36               |   0.00   |    2     |   >1000 ( 0.01%)   |   -36439.69   |   73103.47    |    73103.47     |
+|              Node36               |   0.00   |    3     |   >1000 ( 0.01%)   |   -36439.42   |   73106.93    |    73103.47     |
+|               Node9               |   0.00   |    2     |    0.75 (25.00%)   |   -36439.68   |   73107.46    |    73103.47     |
+|              Node50               |   0.00   |    2     |    0.00 ( 3.09%)   |   -36439.69   |   73107.47    |    73103.47     |
+|      CHAGUZA_PT_1_2022_02_10      |   0.00   |    2     |  >1000 (100.00%)   |   -36439.69   |   73107.47    |    73103.47     |
+|              Node40               |   0.00   |    2     |    0.30 (21.60%)   |   -36449.13   |   73126.37    |    73103.47     |
+|              Node14               |   0.00   |    2     |    0.29 (17.86%)   |   -36443.64   |   73115.37    |    73103.47     |
+|              Node35               |   0.00   |    2     |    1.72 (25.68%)   |   -36439.34   |   73106.77    |    73103.47     |
+|              Node44               |   0.00   |    2     |    0.00 ( 3.09%)   |   -36439.69   |   73107.47    |    73103.47     |
+|      CHAGUZA_PT_1_2021_10_19      |   0.00   |    2     |   1.00 (100.00%)   |   -36440.04   |   73108.18    |    73103.47     |
+|      CHAGUZA_PT_1_2021_04_05      |   0.00   |    2     |    0.29 (17.86%)   |   -36443.56   |   73115.22    |    73103.47     |
+|      CHAGUZA_PT_1_2021_03_05      |   0.00   |    2     |    0.29 (17.86%)   |   -36443.56   |   73115.22    |    73103.47     |
+|              Node29               |   0.00   |    2     |    0.29 (17.86%)   |   -36443.56   |   73115.22    |    73103.47     |
+|              Node34               |   0.00   |    2     |    0.29 (17.86%)   |   -36443.56   |   73115.23    |    73103.47     |
+|              Node24               |   0.00   |    2     |    0.28 (14.11%)   |   -36441.76   |   73111.62    |    73103.47     |
+|               Node4               |   0.00   |    2     |    0.20 (90.00%)   |   -36439.69   |   73107.47    |    73103.47     |
+|      CHAGUZA_PT_1_2021_08_29      |   0.00   |    2     |    0.25 (51.00%)   |   -36439.69   |   73107.47    |    73103.47     |
+|      CHAGUZA_PT_1_2021_06_01      |   0.00   |    2     |    0.25 (51.00%)   |   -36439.69   |   73107.47    |    73103.47     |
+|      CHAGUZA_PT_1_2021_05_24      |   0.00   |    2     |    0.25 ( 2.00%)   |   -36439.69   |   73107.47    |    73103.47     |
+|      CHAGUZA_PT_1_2021_02_08      |   0.00   |    2     |    0.25 ( 2.00%)   |   -36439.69   |   73107.47    |    73103.47     |
+|      CHAGUZA_PT_1_2021_06_21      |   0.00   |    2     |    0.25 ( 2.00%)   |   -36439.69   |   73107.47    |    73103.47     |
+|      CHAGUZA_PT_1_2021_02_26      |   0.00   |    2     |    0.25 ( 2.00%)   |   -36439.69   |   73107.47    |    73103.47     |
+|      CHAGUZA_PT_1_2021_05_03      |   0.00   |    2     |    0.25 ( 2.00%)   |   -36439.69   |   73107.47    |    73103.47     |
+|      CHAGUZA_PT_1_2021_06_14      |   0.00   |    2     |    0.25 (51.00%)   |   -36439.69   |   73107.47    |    73103.47     |
+|      CHAGUZA_PT_1_2021_04_19      |   0.00   |    2     |    0.25 ( 2.00%)   |   -36439.69   |   73107.47    |    73103.47     |
+|      CHAGUZA_PT_1_2021_12_07      |   0.00   |    2     |    0.25 ( 2.00%)   |   -36439.69   |   73107.47    |    73103.47     |
+|      CHAGUZA_PT_1_2021_11_03      |   0.00   |    2     |    0.25 ( 2.00%)   |   -36439.69   |   73107.47    |    73103.47     |
+|      CHAGUZA_PT_1_2021_11_09      |   0.00   |    2     |    0.25 ( 2.00%)   |   -36439.69   |   73107.47    |    73103.47     |
+|      CHAGUZA_PT_1_2021_09_08      |   0.00   |    2     |    0.25 (51.00%)   |   -36439.69   |   73107.47    |    73103.47     |
+|      CHAGUZA_PT_1_2021_11_16      |   0.00   |    2     |    0.25 (51.00%)   |   -36439.69   |   73107.47    |    73103.47     |
+|      CHAGUZA_PT_1_2021_09_13      |   0.00   |    2     |    0.25 (51.00%)   |   -36439.69   |   73107.47    |    73103.47     |
+|      CHAGUZA_PT_1_2022_03_07      |   0.00   |    2     |    0.25 ( 2.00%)   |   -36439.69   |   73107.47    |    73103.47     |
+|      CHAGUZA_PT_1_2021_09_27      |   0.00   |    2     |    0.25 ( 2.00%)   |   -36439.69   |   73107.47    |    73103.47     |
+|      CHAGUZA_PT_1_2022_02_23      |   0.00   |    2     |    0.25 ( 2.00%)   |   -36439.69   |   73107.47    |    73103.47     |
+|      CHAGUZA_PT_1_2021_07_12      |   0.00   |    2     |    0.25 (51.00%)   |   -36439.69   |   73107.47    |    73103.47     |
+|      CHAGUZA_PT_1_2021_10_12      |   0.00   |    2     |    0.25 ( 2.00%)   |   -36439.69   |   73107.47    |    73103.47     |
+|      CHAGUZA_PT_1_2021_07_25      |   0.00   |    2     |    0.25 ( 2.00%)   |   -36439.69   |   73107.47    |    73103.47     |
+|      CHAGUZA_PT_1_2021_06_28      |   0.00   |    2     |    0.25 ( 2.00%)   |   -36439.69   |   73107.47    |    73103.47     |
+|      CHAGUZA_PT_1_2021_10_04      |   0.00   |    2     |    0.25 ( 2.00%)   |   -36439.69   |   73107.47    |    73103.47     |
+
+### Rate class analyses summary
+*  47 branches with **1** rate classes
+*  1 branches with **2** rate classes
+
+### Improving parameter estimates of the adaptive rate class model
+* Log(L) = -36438.80, AIC-c = 73101.69 (112 estimated parameters)
+
+### Testing selected branches for selection
+
+|              Branch               |  Rates   |     Max. dN/dS     | Sites @ EBF>=100 |      Test LRT      |Uncorrected p-value |
+|-----------------------------------|----------|--------------------|------------------|--------------------|--------------------|
+|      CHAGUZA_PT_1_2021_12_20      |     1    |   0.63 (100.00%)   |       N/A        |        0.00        |       1.00000      |
+|              Node31               |     1    |   1.69 (100.00%)   |       N/A        |        0.43        |       0.34446      |
+|              Node10               |     1    |   0.61 (100.00%)   |       N/A        |        0.00        |       1.00000      |
+|      CHAGUZA_PT_1_2021_12_27      |     1    |   2.53 (100.00%)   |       N/A        |        0.91        |       0.25900      |
+|              Node17               |     1    |   0.37 (100.00%)   |       N/A        |        0.00        |       1.00000      |
+|              Node16               |     1    |   0.74 (100.00%)   |       N/A        |        0.00        |       1.00000      |
+|               Node7               |     1    |   2.08 (100.00%)   |       N/A        |        0.46        |       0.33709      |
+|              Node19               |     1    |   1.11 (100.00%)   |       N/A        |       -0.05        |       0.50000      |
+|              Node15               |     1    |   1.11 (100.00%)   |       N/A        |       -0.05        |       0.50000      |
+|               Node3               |     1    |   0.13 (100.00%)   |       N/A        |        0.00        |       1.00000      |
+|              Node36               |     2    |   >1000 ( 0.01%)   |          2       |       29.92        |       0.00000      |
+|               Node9               |     1    |   0.45 (100.00%)   |       N/A        |        0.00        |       1.00000      |
+|              Node50               |     1    |   0.00 (100.00%)   |       N/A        |        0.00        |       1.00000      |
+|      CHAGUZA_PT_1_2022_02_10      |     1    |  >1000 (100.00%)   |       N/A        |        1.36        |       0.20083      |
+|              Node40               |     1    |  >1000 (100.00%)   |       N/A        |        1.34        |       0.20258      |
+|              Node14               |     1    |  >1000 (100.00%)   |       N/A        |        0.75        |       0.28282      |
+|              Node35               |     1    |  >1000 (100.00%)   |       N/A        |       -0.05        |       0.50000      |
+|              Node44               |     1    |   0.00 (100.00%)   |       N/A        |        0.00        |       1.00000      |
+|      CHAGUZA_PT_1_2021_10_19      |     1    |  >1000 (100.00%)   |       N/A        |        0.65        |       0.30036      |

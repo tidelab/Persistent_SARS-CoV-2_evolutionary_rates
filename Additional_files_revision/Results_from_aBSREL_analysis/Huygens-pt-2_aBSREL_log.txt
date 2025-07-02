@@ -1,0 +1,90 @@
+
+Analysis Description
+--------------------
+aBSREL (Adaptive branch-site random effects likelihood) uses an adaptive
+random effects branch-site model framework to test whether each branch
+has evolved under positive selection, using a procedure which infers an
+optimal number of rate categories per branch. v2.2 adds support for
+multiple-hit models. v2.3 adds support for SRV. v2.5 adds support for
+ancestral state reconstruction, identification of sites contributing to
+selection signal, and some diagnostics. 
+
+- __Requirements__: in-frame codon alignment and a phylogenetic tree
+
+- __Citation__:  Less Is More: An Adaptive Branch-Site Random Effects Model for
+Efficient Detection of Episodic Diversifying Selection (2015). Mol Biol
+Evol 32 (5): 1342-1353. 
+
+- __Written by__: Sergei L Kosakovsky Pond, Ben Murrell, Steven Weaver and Temple iGEM /
+UCSD viral evolution group
+
+- __Contact Information__: spond@temple.edu
+
+- __Analysis Version__: 2.5
+
+[Advanced option] Bag of little bootstrap alignment resampling rate (permissible range = [0.01,1], default value = 1): blb: 1
+
+>code => Universal
+/home/datamonkey/datamonkey-js-server/production/app/absrel/output/686372acda513d2cae598caa.tre
+/home/datamonkey/datamonkey-js-server/production/app/absrel/output/686372acda513d2cae598caa.tre
+
+>Loaded a multiple sequence alignment with **13** sequences, **9084** codons, and **1** partitions from `/home/datamonkey/datamonkey-js-server/production/app/absrel/output/686372acda513d2cae598caa`
+
+>branches => FG
+
+>multiple-hits => None
+
+>srv => No
+
+
+### * Selected 23 branches for testing: `HUYGENS_PT_2_0_2022_01_06, HUYGENS_PT_2_118_2022_05_04, HUYGENS_PT_2_123_2022_05_09, Node6, HUYGENS_PT_2_160_2022_06_15, Node5, Node3, HUYGENS_PT_2_25_2022_01_31, HUYGENS_PT_2_32_2022_02_07, Node10, Node2, HUYGENS_PT_2_131_2022_05_17, Node1, HUYGENS_PT_2_139_2022_05_25, HUYGENS_PT_2_40_2022_02_15, Node14, HUYGENS_PT_2_53_2022_02_28, HUYGENS_PT_2_62_2022_03_09, HUYGENS_PT_2_76_2022_03_23, Node20, HUYGENS_PT_2_90_2022_04_06, Node19, Node17`
+
+
+### Obtaining branch lengths and nucleotide substitution biases under the nucleotide GTR model
+
+>kill-zero-lengths => Yes
+
+### Deleted 3 zero-length internal branches: `Node10, Node14, Node20`
+* Log(L) = -36972.13, AIC-c = 74006.27 (31 estimated parameters)
+* 1 partition. Total tree length by partition (subs/site)  0.001
+
+### Fitting the baseline model with a single dN/dS class per branch, and no site-to-site variation. 
+* Log(L) = -35730.49, AIC-c = 71569.04 (54 estimated parameters)
+* Branch-level non-synonymous/synonymous rate ratio distribution has median  0.34, and 95% of the weight in  0.00 - 10000000000.00
+
+### Determining the optimal number of rate classes per branch using a step up procedure
+
+|              Branch               |  Length  |  Rates   |     Max. dN/dS     |    Log(L)     |     AIC-c     |Best AIC-c so far|
+|-----------------------------------|----------|----------|--------------------|---------------|---------------|-----------------|
+|               Node5               |   0.00   |    2     |  >1000 (100.00%)   |   -35730.49   |   71573.04    |    71569.04     |
+|               Node2               |   0.00   |    2     |   1.00 (100.00%)   |   -35731.08   |   71574.21    |    71569.04     |
+|               Node3               |   0.00   |    2     |    0.74 (24.54%)   |   -35730.49   |   71573.04    |    71569.04     |
+|    HUYGENS_PT_2_160_2022_06_15    |   0.00   |    2     |    2.06 ( 4.62%)   |   -35730.49   |   71573.04    |    71569.04     |
+|    HUYGENS_PT_2_131_2022_05_17    |   0.00   |    2     |   1.00 (100.00%)   |   -35731.00   |   71574.05    |    71569.04     |
+|    HUYGENS_PT_2_139_2022_05_25    |   0.00   |    2     |    0.00 ( 1.91%)   |   -35730.49   |   71573.04    |    71569.04     |
+|               Node1               |   0.00   |    2     |    0.00 ( 1.91%)   |   -35730.49   |   71573.04    |    71569.04     |
+|     HUYGENS_PT_2_0_2022_01_06     |   0.00   |    2     |    0.29 (17.86%)   |   -35735.46   |   71582.96    |    71569.04     |
+|               Node6               |   0.00   |    2     |    0.29 (17.86%)   |   -35735.54   |   71583.14    |    71569.04     |
+|              Node19               |   0.00   |    2     |    0.25 ( 2.00%)   |   -35730.71   |   71573.48    |    71569.04     |
+|              Node17               |   0.00   |    2     |    0.25 ( 2.00%)   |   -35730.66   |   71573.38    |    71569.04     |
+|    HUYGENS_PT_2_123_2022_05_09    |   0.00   |    2     |    0.25 (51.00%)   |   -35730.49   |   71573.04    |    71569.04     |
+|    HUYGENS_PT_2_62_2022_03_09     |   0.00   |    2     |    0.25 ( 2.00%)   |   -35730.49   |   71573.04    |    71569.04     |
+|    HUYGENS_PT_2_118_2022_05_04    |   0.00   |    2     |    0.25 (51.00%)   |   -35730.49   |   71573.04    |    71569.04     |
+|    HUYGENS_PT_2_53_2022_02_28     |   0.00   |    2     |    0.25 ( 2.00%)   |   -35730.49   |   71573.04    |    71569.04     |
+|    HUYGENS_PT_2_90_2022_04_06     |   0.00   |    2     |    0.25 ( 2.00%)   |   -35730.49   |   71573.04    |    71569.04     |
+|    HUYGENS_PT_2_40_2022_02_15     |   0.00   |    2     |    0.25 ( 2.00%)   |   -35730.49   |   71573.04    |    71569.04     |
+|    HUYGENS_PT_2_25_2022_01_31     |   0.00   |    2     |    0.25 (51.00%)   |   -35730.49   |   71573.04    |    71569.04     |
+|    HUYGENS_PT_2_76_2022_03_23     |   0.00   |    2     |    0.25 ( 2.00%)   |   -35730.49   |   71573.04    |    71569.04     |
+|    HUYGENS_PT_2_32_2022_02_07     |   0.00   |    2     |    0.25 ( 2.00%)   |   -35730.49   |   71573.04    |    71569.04     |
+
+### Rate class analyses summary
+*  20 branches with **1** rate classes
+
+### Improving parameter estimates of the adaptive rate class model
+* Log(L) = -35730.48, AIC-c = 71569.02 (54 estimated parameters)
+
+### Testing selected branches for selection
+
+|              Branch               |  Rates   |     Max. dN/dS     | Sites @ EBF>=100 |      Test LRT      |Uncorrected p-value |
+|-----------------------------------|----------|--------------------|------------------|--------------------|--------------------|
+|               Node5               |     1    |  >1000 (100.00%)   |       N/A        |        1.72        |       0.16512      |
