@@ -1,0 +1,163 @@
+IQ-TREE multicore version 2.1.2 COVID-edition for Mac OS X 64-bit built Oct 22 2020
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    dlmp133362.w-staff.shh.mpg.de (AVX512, FMA3, 16 GB RAM)
+Command: /Users/oeversti/iqtree-2.1.2-MacOSX/bin/iqtree2 -s Caccuri-pt-1_maskedRefRemMafft.fasta -m MFP
+Seed:    583470 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon Jun 19 09:39:02 2023
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file Caccuri-pt-1_maskedRefRemMafft.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 265 sites contain only gaps or ambiguous characters.
+Alignment has 12 sequences with 29903 columns, 23 distinct patterns
+8 parsimony-informative, 6 singleton sites, 29889 constant sites
+                         Gap/Ambiguity  Composition  p-value
+   1  Caccuri-pt-1|2020-08-05    0.90%    passed    100.00%
+   2  Caccuri-pt-1|2020-04-02    0.89%    passed    100.00%
+   3  Caccuri-pt-1|2020-04-09    0.90%    passed    100.00%
+   4  Caccuri-pt-1|2020-04-22    0.89%    passed    100.00%
+   5  Caccuri-pt-1|2020-04-28    0.90%    passed    100.00%
+   6  Caccuri-pt-1|2020-05-06    0.90%    passed    100.00%
+   7  Caccuri-pt-1|2020-05-13    0.90%    passed    100.00%
+   8  Caccuri-pt-1|2020-05-20    0.90%    passed    100.00%
+   9  Caccuri-pt-1|2020-07-27    0.90%    passed    100.00%
+  10  Caccuri-pt-1|2020-08-26    0.90%    passed    100.00%
+  11  Caccuri-pt-1|2020-09-07    1.06%    passed     99.96%
+  12  Caccuri-pt-1|2020-11-10    0.90%    passed    100.00%
+****  TOTAL                      0.91%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: Caccuri-pt-1|2020-07-27 is identical to Caccuri-pt-1|2020-08-05 but kept for subsequent analysis
+NOTE: Caccuri-pt-1|2020-04-22 is identical to Caccuri-pt-1|2020-04-02 but kept for subsequent analysis
+NOTE: Caccuri-pt-1|2020-05-06 is identical to Caccuri-pt-1|2020-04-28 but kept for subsequent analysis
+NOTE: 2 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: Caccuri-pt-1|2020-05-13 (identical to Caccuri-pt-1|2020-04-28) is ignored but added at the end
+NOTE: Caccuri-pt-1|2020-05-20 (identical to Caccuri-pt-1|2020-04-28) is ignored but added at the end
+Alignment was printed to Caccuri-pt-1_maskedRefRemMafft.fasta.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to Caccuri-pt-1_maskedRefRemMafft.fasta.uniqueseq.phy
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.000 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -40352.580
+Optimal log-likelihood: -40352.498
+Rate parameters:  A-C: 2.26497  A-G: 1.60273  A-T: 0.00010  C-G: 0.00010  C-T: 5.39598  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Proportion of invariable sites: 0.500
+Gamma shape alpha: 998.448
+Parameters optimization took 1 rounds (0.001 sec)
+Time for fast ML tree search: 0.002 seconds
+
+NOTE: ModelFinder requires 0 MB RAM!
+ModelFinder will test up to 286 DNA models (sample size: 29903) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         40352.477    25  80754.954    80754.998    80962.597
+  2  GTR+F+I       40352.469    26  80756.938    80756.985    80972.887
+  3  GTR+F+G4      40352.469    26  80756.938    80756.985    80972.887
+  4  GTR+F+I+G4    40352.473    27  80758.945    80758.996    80983.199
+  5  GTR+F+R2      40352.463    27  80758.926    80758.977    80983.180
+  6  GTR+F+R3      40352.463    29  80762.927    80762.985    81003.793
+ 14  SYM           41236.283    22  82516.566    82516.600    82699.292
+ 27  TVM+F         40353.907    24  80755.815    80755.855    80955.152
+ 40  TVMe          41237.673    21  82517.346    82517.377    82691.766
+ 53  TIM3+F        40356.023    23  80758.046    80758.082    80949.077
+ 66  TIM3e         41239.718    20  82519.436    82519.464    82685.550
+ 79  TIM2+F        40356.399    23  80758.799    80758.836    80949.830
+ 92  TIM2e         41239.820    20  82519.641    82519.669    82685.755
+105  TIM+F         40352.566    23  80751.132    80751.169    80942.164
+118  TIMe          41236.318    20  82512.636    82512.664    82678.750
+131  TPM3u+F       40357.322    22  80758.644    80758.678    80941.369
+144  TPM3+F        40357.300    22  80758.601    80758.635    80941.326
+157  TPM2u+F       40357.815    22  80759.631    80759.665    80942.357
+170  TPM2+F        40357.815    22  80759.631    80759.665    80942.357
+183  K3Pu+F        40354.018    22  80752.035    80752.069    80934.761
+196  K3P           41237.738    19  82513.475    82513.501    82671.284
+209  TN+F          40356.365    22  80756.730    80756.764    80939.456
+222  TNe           41239.807    19  82517.614    82517.640    82675.423
+235  HKY+F         40357.779    21  80757.558    80757.589    80931.978
+248  K2P           41241.202    18  82518.403    82518.426    82667.906
+261  F81+F         40360.831    20  80761.663    80761.691    80927.777
+274  JC            41243.992    17  82521.984    82522.004    82663.181
+Akaike Information Criterion:           TIM+F
+Corrected Akaike Information Criterion: TIM+F
+Bayesian Information Criterion:         F81+F
+Best-fit model: F81+F chosen according to BIC
+
+All model information printed to Caccuri-pt-1_maskedRefRemMafft.fasta.model.gz
+CPU time for ModelFinder: 0.032 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.035 seconds (0h:0m:0s)
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -40360.831
+Optimal log-likelihood: -40360.831
+Rate parameters:  A-C: 1.00000  A-G: 1.00000  A-T: 1.00000  C-G: 1.00000  C-T: 1.00000  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Parameters optimization took 1 rounds (0.000 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.000493 sec (of wall-clock time) 0.000472 sec(of CPU time)
+Computing RapidNJ tree took 0.000041 sec (of wall-clock time) 0.000035 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -40361.257
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.022 second
+Computing log-likelihood of 94 initial trees ... 0.011 seconds
+Current best score: -40360.831
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -40360.831
+Iteration 10 / LogL: -40360.831 / Time: 0h:0m:0s
+Iteration 20 / LogL: -40360.831 / Time: 0h:0m:0s
+Finish initializing candidate tree set (4)
+Current best tree score: -40360.831 / CPU time: 0.040
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+UPDATE BEST LOG-LIKELIHOOD: -40360.831
+UPDATE BEST LOG-LIKELIHOOD: -40360.831
+Iteration 30 / LogL: -40360.831 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 40 / LogL: -40360.831 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 50 / LogL: -40376.629 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 60 / LogL: -40360.831 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 70 / LogL: -40360.831 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 80 / LogL: -40360.831 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 90 / LogL: -40360.831 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 100 / LogL: -40360.927 / Time: 0h:0m:0s (0h:0m:0s left)
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -40360.831
+Optimal log-likelihood: -40360.831
+Rate parameters:  A-C: 1.00000  A-G: 1.00000  A-T: 1.00000  C-G: 1.00000  C-T: 1.00000  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Parameters optimization took 1 rounds (0.000 sec)
+BEST SCORE FOUND : -40360.831
+Total tree length: 0.000
+
+Total number of iterations: 102
+CPU time used for tree search: 0.173 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.094 sec (0h:0m:0s)
+Total CPU time used: 0.180 sec (0h:0m:0s)
+Total wall-clock time used: 0.102 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                Caccuri-pt-1_maskedRefRemMafft.fasta.iqtree
+  Maximum-likelihood tree:       Caccuri-pt-1_maskedRefRemMafft.fasta.treefile
+  Likelihood distances:          Caccuri-pt-1_maskedRefRemMafft.fasta.mldist
+  Screen log file:               Caccuri-pt-1_maskedRefRemMafft.fasta.log
+
+Date and Time: Mon Jun 19 09:39:02 2023
