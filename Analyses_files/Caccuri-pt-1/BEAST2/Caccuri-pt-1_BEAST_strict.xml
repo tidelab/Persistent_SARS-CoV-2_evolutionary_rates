@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" required="" version="2.6">
+
+    <data
+id="Caccuri-pt-1_maskedRefRemMafft_DateCorrect"
+spec="Alignment"
+name="alignment">
+                        <sequence id="seq_Caccuri-pt-1|2020-04-02" spec="Sequence" taxon="Caccuri-pt-1|2020-04-02" totalcount="4" value=""/>
+                        <sequence id="seq_Caccuri-pt-1|2020-04-09" spec="Sequence" taxon="Caccuri-pt-1|2020-04-09" totalcount="4" value=""/>
+                        <sequence id="seq_Caccuri-pt-1|2020-04-22" spec="Sequence" taxon="Caccuri-pt-1|2020-04-22" totalcount="4" value=""/>
+                        <sequence id="seq_Caccuri-pt-1|2020-04-28" spec="Sequence" taxon="Caccuri-pt-1|2020-04-28" totalcount="4" value=""/>
+                        <sequence id="seq_Caccuri-pt-1|2020-05-06" spec="Sequence" taxon="Caccuri-pt-1|2020-05-06" totalcount="4" value=""/>
+                        <sequence id="seq_Caccuri-pt-1|2020-05-13" spec="Sequence" taxon="Caccuri-pt-1|2020-05-13" totalcount="4" value=""/>
+                        <sequence id="seq_Caccuri-pt-1|2020-05-20" spec="Sequence" taxon="Caccuri-pt-1|2020-05-20" totalcount="4" value=""/>
+                        <sequence id="seq_Caccuri-pt-1|2020-07-27" spec="Sequence" taxon="Caccuri-pt-1|2020-07-27" totalcount="4" value=""/>
+                        <sequence id="seq_Caccuri-pt-1|2020-08-05" spec="Sequence" taxon="Caccuri-pt-1|2020-08-05" totalcount="4" value=""/>
+                        <sequence id="seq_Caccuri-pt-1|2020-08-26" spec="Sequence" taxon="Caccuri-pt-1|2020-08-26" totalcount="4" value=""/>
+                        <sequence id="seq_Caccuri-pt-1|2020-09-07" spec="Sequence" taxon="Caccuri-pt-1|2020-09-07" totalcount="4" value=""/>
+                        <sequence id="seq_Caccuri-pt-1|2020-11-10" spec="Sequence" taxon="Caccuri-pt-1|2020-11-10" totalcount="4" value=""/>
+                    </data>
+
+
+    
+
+<map name="Uniform" >beast.math.distributions.Uniform</map>
+<map name="Exponential" >beast.math.distributions.Exponential</map>
+<map name="LogNormal" >beast.math.distributions.LogNormalDistributionModel</map>
+<map name="Normal" >beast.math.distributions.Normal</map>
+<map name="Beta" >beast.math.distributions.Beta</map>
+<map name="Gamma" >beast.math.distributions.Gamma</map>
+<map name="LaplaceDistribution" >beast.math.distributions.LaplaceDistribution</map>
+<map name="prior" >beast.math.distributions.Prior</map>
+<map name="InverseGamma" >beast.math.distributions.InverseGamma</map>
+<map name="OneOnX" >beast.math.distributions.OneOnX</map>
+
+<run id="mcmc" spec="MCMC" chainLength="20000000">
+    <state id="state" spec="State" storeEvery="5000">
+        <tree id="Tree.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="beast.evolution.tree.Tree" name="stateNode">
+            <trait id="dateTrait.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="beast.evolution.tree.TraitSet" dateFormat="yyyy-M-dd" traitname="date" value="Caccuri-pt-1|2020-08-05=2020-08-05,Caccuri-pt-1|2020-04-02=2020-04-02,Caccuri-pt-1|2020-04-09=2020-04-09,Caccuri-pt-1|2020-04-22=2020-04-22,Caccuri-pt-1|2020-04-28=2020-04-28,Caccuri-pt-1|2020-05-06=2020-05-06,Caccuri-pt-1|2020-05-13=2020-05-13,Caccuri-pt-1|2020-05-20=2020-05-20,Caccuri-pt-1|2020-07-27=2020-07-27,Caccuri-pt-1|2020-08-26=2020-08-26,Caccuri-pt-1|2020-09-07=2020-09-07,Caccuri-pt-1|2020-11-10=2020-11-10">
+                <taxa id="TaxonSet.Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="TaxonSet">
+                    <alignment idref="Caccuri-pt-1_maskedRefRemMafft_DateCorrect"/>
+                </taxa>
+            </trait>
+            <taxonset idref="TaxonSet.Caccuri-pt-1_maskedRefRemMafft_DateCorrect"/>
+        </tree>
+        <parameter id="clockRate.c:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+        <parameter id="kappa.s:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="parameter.RealParameter" lower="0.0" name="stateNode">2.0</parameter>
+        <parameter id="gammaShape.s:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+        <parameter id="bPopSizes.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="parameter.RealParameter" dimension="3" lower="0.0" name="stateNode">380.0</parameter>
+        <stateNode id="bGroupSizes.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="parameter.IntegerParameter" dimension="3">1</stateNode>
+        <parameter id="freqParameter.s:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="parameter.RealParameter" dimension="4" lower="0.0" name="stateNode" upper="1.0">0.25</parameter>
+    </state>
+    <init id="RandomTree.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="beast.evolution.tree.RandomTree" estimate="false" initial="@Tree.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" taxa="@Caccuri-pt-1_maskedRefRemMafft_DateCorrect">
+        <populationModel id="ConstantPopulation0.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="ConstantPopulation">
+            <parameter id="randomPopSize.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="parameter.RealParameter" name="popSize">1.0</parameter>
+        </populationModel>
+    </init>
+    <distribution id="posterior" spec="util.CompoundDistribution">
+        <distribution id="prior" spec="util.CompoundDistribution">
+            <distribution id="BayesianSkyline.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="BayesianSkyline" groupSizes="@bGroupSizes.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" popSizes="@bPopSizes.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect">
+                <treeIntervals id="BSPTreeIntervals.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="TreeIntervals" tree="@Tree.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect"/>
+            </distribution>
+            <distribution id="MarkovChainedPopSizes.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="beast.math.distributions.MarkovChainDistribution" jeffreys="true" parameter="@bPopSizes.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect"/>
+            <prior id="ClockPrior.c:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" name="distribution" x="@clockRate.c:Caccuri-pt-1_maskedRefRemMafft_DateCorrect">
+                <Uniform id="Uniform.0" name="distr"/>
+            </prior>
+            <prior id="FrequenciesPrior.s:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" name="distribution" x="@freqParameter.s:Caccuri-pt-1_maskedRefRemMafft_DateCorrect">
+                <Uniform id="Uniform.3" name="distr"/>
+            </prior>
+            <prior id="GammaShapePrior.s:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" name="distribution" x="@gammaShape.s:Caccuri-pt-1_maskedRefRemMafft_DateCorrect">
+                <Exponential id="Exponential.0" name="distr">
+                    <parameter id="RealParameter.0" spec="parameter.RealParameter" estimate="false" name="mean">1.0</parameter>
+                </Exponential>
+            </prior>
+            <prior id="KappaPrior.s:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" name="distribution" x="@kappa.s:Caccuri-pt-1_maskedRefRemMafft_DateCorrect">
+                <LogNormal id="LogNormalDistributionModel.0" name="distr">
+                    <parameter id="RealParameter.1" spec="parameter.RealParameter" estimate="false" name="M">1.0</parameter>
+                    <parameter id="RealParameter.2" spec="parameter.RealParameter" estimate="false" name="S">1.25</parameter>
+                </LogNormal>
+            </prior>
+        </distribution>
+        <distribution id="likelihood" spec="util.CompoundDistribution" useThreads="true">
+            <distribution id="treeLikelihood.Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="ThreadedTreeLikelihood" data="@Caccuri-pt-1_maskedRefRemMafft_DateCorrect" tree="@Tree.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect">
+                <siteModel id="SiteModel.s:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="SiteModel" gammaCategoryCount="4" shape="@gammaShape.s:Caccuri-pt-1_maskedRefRemMafft_DateCorrect">
+                    <parameter id="mutationRate.s:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="parameter.RealParameter" estimate="false" name="mutationRate">1.0</parameter>
+                    <parameter id="proportionInvariant.s:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="parameter.RealParameter" estimate="false" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
+                    <substModel id="hky.s:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="HKY" kappa="@kappa.s:Caccuri-pt-1_maskedRefRemMafft_DateCorrect">
+                        <frequencies id="estimatedFreqs.s:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="Frequencies" frequencies="@freqParameter.s:Caccuri-pt-1_maskedRefRemMafft_DateCorrect"/>
+                    </substModel>
+                </siteModel>
+                <branchRateModel id="StrictClock.c:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="beast.evolution.branchratemodel.StrictClockModel" clock.rate="@clockRate.c:Caccuri-pt-1_maskedRefRemMafft_DateCorrect"/>
+            </distribution>
+        </distribution>
+    </distribution>
+    <operator id="StrictClockRateScaler.c:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="ScaleOperator" parameter="@clockRate.c:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" weight="3.0"/>
+    <operator id="strictClockUpDownOperator.c:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="UpDownOperator" scaleFactor="0.75" weight="3.0">
+        <up idref="clockRate.c:Caccuri-pt-1_maskedRefRemMafft_DateCorrect"/>
+        <down idref="Tree.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect"/>
+    </operator>
+    <operator id="KappaScaler.s:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="ScaleOperator" parameter="@kappa.s:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" scaleFactor="0.5" weight="0.1"/>
+    <operator id="gammaShapeScaler.s:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="ScaleOperator" parameter="@gammaShape.s:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" scaleFactor="0.5" weight="0.1"/>
+    <operator id="BayesianSkylineTreeScaler.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="ScaleOperator" scaleFactor="0.5" tree="@Tree.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" weight="3.0"/>
+    <operator id="BayesianSkylineTreeRootScaler.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@Tree.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" weight="3.0"/>
+    <operator id="BayesianSkylineUniformOperator.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="Uniform" tree="@Tree.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" weight="30.0"/>
+    <operator id="BayesianSkylineSubtreeSlide.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="SubtreeSlide" tree="@Tree.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" weight="15.0"/>
+    <operator id="BayesianSkylineNarrow.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="Exchange" tree="@Tree.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" weight="15.0"/>
+    <operator id="BayesianSkylineWide.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="Exchange" isNarrow="false" tree="@Tree.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" weight="3.0"/>
+    <operator id="BayesianSkylineWilsonBalding.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="WilsonBalding" tree="@Tree.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" weight="3.0"/>
+    <operator id="popSizesScaler.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="ScaleOperator" parameter="@bPopSizes.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" weight="15.0"/>
+    <operator id="groupSizesDelta.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="DeltaExchangeOperator" integer="true" weight="6.0">
+        <intparameter idref="bGroupSizes.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect"/>
+    </operator>
+    <operator id="FrequenciesExchanger.s:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="DeltaExchangeOperator" delta="0.01" weight="0.1">
+        <parameter idref="freqParameter.s:Caccuri-pt-1_maskedRefRemMafft_DateCorrect"/>
+    </operator>
+    <logger id="tracelog" spec="Logger" fileName="$(filebase)_$(seed).log" logEvery="2000" model="@posterior" sanitiseHeaders="true" sort="smart">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+        <log idref="treeLikelihood.Caccuri-pt-1_maskedRefRemMafft_DateCorrect"/>
+        <log id="TreeHeight.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="beast.evolution.tree.TreeHeightLogger" tree="@Tree.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect"/>
+        <log idref="clockRate.c:Caccuri-pt-1_maskedRefRemMafft_DateCorrect"/>
+        <log idref="kappa.s:Caccuri-pt-1_maskedRefRemMafft_DateCorrect"/>
+        <log idref="gammaShape.s:Caccuri-pt-1_maskedRefRemMafft_DateCorrect"/>
+        <log idref="BayesianSkyline.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect"/>
+        <log idref="bPopSizes.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect"/>
+        <log idref="bGroupSizes.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect"/>
+        <log idref="freqParameter.s:Caccuri-pt-1_maskedRefRemMafft_DateCorrect"/>
+    </logger>
+    <logger id="screenlog" spec="Logger" logEvery="1000">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+    </logger>
+    <logger id="treelog.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="Logger" fileName="$(filebase)_$(seed).trees" logEvery="2000" mode="tree">
+        <log id="TreeWithMetaDataLogger.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree.t:Caccuri-pt-1_maskedRefRemMafft_DateCorrect"/>
+    </logger>
+    <operatorschedule id="OperatorSchedule" spec="OperatorSchedule"/>
+</run>
+</beast>
