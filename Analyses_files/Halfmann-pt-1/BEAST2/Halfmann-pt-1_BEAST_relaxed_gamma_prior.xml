@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" required="" version="2.6">
+
+    <data
+id="Halfmann-pt-1_maskedRefRemMafft"
+spec="Alignment"
+name="alignment">
+                        <sequence id="seq_Halfmann-pt-1_0|2020-12-27" spec="Sequence" taxon="Halfmann-pt-1_0|2020-12-27" totalcount="4" value=""/>
+                        <sequence id="seq_Halfmann-pt-1_11|2021-01-07" spec="Sequence" taxon="Halfmann-pt-1_11|2021-01-07" totalcount="4" value=""/>
+                        <sequence id="seq_Halfmann-pt-1_184|2021-06-29" spec="Sequence" taxon="Halfmann-pt-1_184|2021-06-29" totalcount="4" value=""/>
+                        <sequence id="seq_Halfmann-pt-1_18|2021-01-14" spec="Sequence" taxon="Halfmann-pt-1_18|2021-01-14" totalcount="4" value=""/>
+                        <sequence id="seq_Halfmann-pt-1_220|2021-08-04" spec="Sequence" taxon="Halfmann-pt-1_220|2021-08-04" totalcount="4" value=""/>
+                        <sequence id="seq_Halfmann-pt-1_275|2021-09-28" spec="Sequence" taxon="Halfmann-pt-1_275|2021-09-28" totalcount="4" value=""/>
+                        <sequence id="seq_Halfmann-pt-1_302|2021-10-25" spec="Sequence" taxon="Halfmann-pt-1_302|2021-10-25" totalcount="4" value=""/>
+                        <sequence id="seq_Halfmann-pt-1_304|2021-10-27" spec="Sequence" taxon="Halfmann-pt-1_304|2021-10-27" totalcount="4" value=""/>
+                        <sequence id="seq_Halfmann-pt-1_369|2021-12-31" spec="Sequence" taxon="Halfmann-pt-1_369|2021-12-31" totalcount="4" value=""/>
+                        <sequence id="seq_Halfmann-pt-1_373|2022-01-04" spec="Sequence" taxon="Halfmann-pt-1_373|2022-01-04" totalcount="4" value=""/>
+                        <sequence id="seq_Halfmann-pt-1_46|2021-02-11" spec="Sequence" taxon="Halfmann-pt-1_46|2021-02-11" totalcount="4" value=""/>
+                        <sequence id="seq_Halfmann-pt-1_85|2021-03-22" spec="Sequence" taxon="Halfmann-pt-1_85|2021-03-22" totalcount="4" value=""/>
+                    </data>
+
+    
+
+<map name="Uniform" >beast.math.distributions.Uniform</map>
+<map name="Exponential" >beast.math.distributions.Exponential</map>
+<map name="LogNormal" >beast.math.distributions.LogNormalDistributionModel</map>
+<map name="Normal" >beast.math.distributions.Normal</map>
+<map name="Beta" >beast.math.distributions.Beta</map>
+<map name="Gamma" >beast.math.distributions.Gamma</map>
+<map name="LaplaceDistribution" >beast.math.distributions.LaplaceDistribution</map>
+<map name="prior" >beast.math.distributions.Prior</map>
+<map name="InverseGamma" >beast.math.distributions.InverseGamma</map>
+<map name="OneOnX" >beast.math.distributions.OneOnX</map>
+
+<run id="mcmc" spec="MCMC" chainLength="10000000">
+    <state id="state" spec="State" storeEvery="5000">
+        <tree id="Tree.t:Halfmann-pt-1_maskedRefRemMafft" spec="beast.evolution.tree.Tree" name="stateNode">
+            <trait id="dateTrait.t:Halfmann-pt-1_maskedRefRemMafft" spec="beast.evolution.tree.TraitSet" dateFormat="yyyy-M-dd" traitname="date" value="Halfmann-pt-1_0|2020-12-27=2020-12-27,Halfmann-pt-1_11|2021-01-07=2021-01-07,Halfmann-pt-1_18|2021-01-14=2021-01-14,Halfmann-pt-1_46|2021-02-11=2021-02-11,Halfmann-pt-1_85|2021-03-22=2021-03-22,Halfmann-pt-1_184|2021-06-29=2021-06-29,Halfmann-pt-1_220|2021-08-04=2021-08-04,Halfmann-pt-1_275|2021-09-28=2021-09-28,Halfmann-pt-1_302|2021-10-25=2021-10-25,Halfmann-pt-1_304|2021-10-27=2021-10-27,Halfmann-pt-1_369|2021-12-31=2021-12-31,Halfmann-pt-1_373|2022-01-04=2022-01-04">
+                <taxa id="TaxonSet.Halfmann-pt-1_maskedRefRemMafft" spec="TaxonSet">
+                    <alignment idref="Halfmann-pt-1_maskedRefRemMafft"/>
+                </taxa>
+            </trait>
+            <taxonset idref="TaxonSet.Halfmann-pt-1_maskedRefRemMafft"/>
+        </tree>
+        <parameter id="gammaShape.s:Halfmann-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+        <parameter id="kappa.s:Halfmann-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" lower="0.0" name="stateNode">2.0</parameter>
+        <parameter id="ucldMean.c:Halfmann-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" name="stateNode">0.0008</parameter>
+        <parameter id="ucldStdev.c:Halfmann-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" lower="0.0" name="stateNode">0.1</parameter>
+        <stateNode id="rateCategories.c:Halfmann-pt-1_maskedRefRemMafft" spec="parameter.IntegerParameter" dimension="22">1</stateNode>
+        <parameter id="bPopSizes.t:Halfmann-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" dimension="3" lower="0.0" name="stateNode">380.0</parameter>
+        <stateNode id="bGroupSizes.t:Halfmann-pt-1_maskedRefRemMafft" spec="parameter.IntegerParameter" dimension="3">1</stateNode>
+        <parameter id="freqParameter.s:Halfmann-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" dimension="4" lower="0.0" name="stateNode" upper="1.0">0.25</parameter>
+    </state>
+    <init id="RandomTree.t:Halfmann-pt-1_maskedRefRemMafft" spec="beast.evolution.tree.RandomTree" estimate="false" initial="@Tree.t:Halfmann-pt-1_maskedRefRemMafft" taxa="@Halfmann-pt-1_maskedRefRemMafft">
+        <populationModel id="ConstantPopulation0.t:Halfmann-pt-1_maskedRefRemMafft" spec="ConstantPopulation">
+            <parameter id="randomPopSize.t:Halfmann-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" name="popSize">1.0</parameter>
+        </populationModel>
+    </init>
+    <distribution id="posterior" spec="util.CompoundDistribution">
+        <distribution id="prior" spec="util.CompoundDistribution">
+            <distribution id="BayesianSkyline.t:Halfmann-pt-1_maskedRefRemMafft" spec="BayesianSkyline" groupSizes="@bGroupSizes.t:Halfmann-pt-1_maskedRefRemMafft" popSizes="@bPopSizes.t:Halfmann-pt-1_maskedRefRemMafft">
+                <treeIntervals id="BSPTreeIntervals.t:Halfmann-pt-1_maskedRefRemMafft" spec="TreeIntervals" tree="@Tree.t:Halfmann-pt-1_maskedRefRemMafft"/>
+            </distribution>
+            <distribution id="MarkovChainedPopSizes.t:Halfmann-pt-1_maskedRefRemMafft" spec="beast.math.distributions.MarkovChainDistribution" jeffreys="true" parameter="@bPopSizes.t:Halfmann-pt-1_maskedRefRemMafft"/>
+            <prior id="FrequenciesPrior.s:Halfmann-pt-1_maskedRefRemMafft" name="distribution" x="@freqParameter.s:Halfmann-pt-1_maskedRefRemMafft">
+                <Uniform id="Uniform.3" name="distr"/>
+            </prior>
+            <prior id="GammaShapePrior.s:Halfmann-pt-1_maskedRefRemMafft" name="distribution" x="@gammaShape.s:Halfmann-pt-1_maskedRefRemMafft">
+                <Exponential id="Exponential.0" name="distr">
+                    <parameter id="RealParameter.0" spec="parameter.RealParameter" estimate="false" name="mean">1.0</parameter>
+                </Exponential>
+            </prior>
+            <prior id="KappaPrior.s:Halfmann-pt-1_maskedRefRemMafft" name="distribution" x="@kappa.s:Halfmann-pt-1_maskedRefRemMafft">
+                <LogNormal id="LogNormalDistributionModel.0" name="distr">
+                    <parameter id="RealParameter.1" spec="parameter.RealParameter" estimate="false" name="M">1.0</parameter>
+                    <parameter id="RealParameter.2" spec="parameter.RealParameter" estimate="false" name="S">1.25</parameter>
+                </LogNormal>
+            </prior>
+            <prior id="MeanRatePrior.c:Halfmann-pt-1_maskedRefRemMafft" name="distribution" x="@ucldMean.c:Halfmann-pt-1_maskedRefRemMafft">
+<!--                <Normal id="Normal.0" name="distr">
+                    <parameter id="RealParameter.6" spec="parameter.RealParameter" estimate="false" name="mean">8.0E-4</parameter>
+                    <parameter id="RealParameter.7" spec="parameter.RealParameter" estimate="false" name="sigma">0.0016</parameter>
+                </Normal> -->
+                <Gamma id="Gamma.9" mode="ShapeRate" name="distr">
+                    <parameter id="RealParameter.84" spec="parameter.RealParameter" estimate="false" name="alpha">8.0</parameter>
+                    <parameter id="RealParameter.85" spec="parameter.RealParameter" estimate="false" name="beta">10000.0</parameter>
+                </Gamma>
+            </prior>
+            <prior id="ucldStdevPrior.c:Halfmann-pt-1_maskedRefRemMafft" name="distribution" x="@ucldStdev.c:Halfmann-pt-1_maskedRefRemMafft">
+                <Gamma id="Gamma.0" name="distr">
+                    <parameter id="RealParameter.4" spec="parameter.RealParameter" estimate="false" name="alpha">0.5396</parameter>
+                    <parameter id="RealParameter.5" spec="parameter.RealParameter" estimate="false" name="beta">0.3819</parameter>
+                </Gamma>
+            </prior>
+        </distribution>
+        <distribution id="likelihood" spec="util.CompoundDistribution" useThreads="true">
+            <distribution id="treeLikelihood.Halfmann-pt-1_maskedRefRemMafft" spec="ThreadedTreeLikelihood" data="@Halfmann-pt-1_maskedRefRemMafft" tree="@Tree.t:Halfmann-pt-1_maskedRefRemMafft">
+                <siteModel id="SiteModel.s:Halfmann-pt-1_maskedRefRemMafft" spec="SiteModel" gammaCategoryCount="4" shape="@gammaShape.s:Halfmann-pt-1_maskedRefRemMafft">
+                    <parameter id="mutationRate.s:Halfmann-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" estimate="false" name="mutationRate">1.0</parameter>
+                    <parameter id="proportionInvariant.s:Halfmann-pt-1_maskedRefRemMafft" spec="parameter.RealParameter" estimate="false" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
+                    <substModel id="hky.s:Halfmann-pt-1_maskedRefRemMafft" spec="HKY" kappa="@kappa.s:Halfmann-pt-1_maskedRefRemMafft">
+                        <frequencies id="estimatedFreqs.s:Halfmann-pt-1_maskedRefRemMafft" spec="Frequencies" frequencies="@freqParameter.s:Halfmann-pt-1_maskedRefRemMafft"/>
+                    </substModel>
+                </siteModel>
+                <branchRateModel id="RelaxedClock.c:Halfmann-pt-1_maskedRefRemMafft" spec="beast.evolution.branchratemodel.UCRelaxedClockModel" clock.rate="@ucldMean.c:Halfmann-pt-1_maskedRefRemMafft" rateCategories="@rateCategories.c:Halfmann-pt-1_maskedRefRemMafft" tree="@Tree.t:Halfmann-pt-1_maskedRefRemMafft">
+                    <LogNormal id="LogNormalDistributionModel.c:Halfmann-pt-1_maskedRefRemMafft" S="@ucldStdev.c:Halfmann-pt-1_maskedRefRemMafft" meanInRealSpace="true" name="distr">
+                        <parameter id="RealParameter.3" spec="parameter.RealParameter" estimate="false" lower="0.0" name="M" upper="1.0">1.0</parameter>
+                    </LogNormal>
+                </branchRateModel>
+            </distribution>
+        </distribution>
+    </distribution>
+    <operator id="gammaShapeScaler.s:Halfmann-pt-1_maskedRefRemMafft" spec="ScaleOperator" parameter="@gammaShape.s:Halfmann-pt-1_maskedRefRemMafft" scaleFactor="0.5" weight="0.1"/>
+    <operator id="KappaScaler.s:Halfmann-pt-1_maskedRefRemMafft" spec="ScaleOperator" parameter="@kappa.s:Halfmann-pt-1_maskedRefRemMafft" scaleFactor="0.5" weight="0.1"/>
+    <operator id="ucldMeanScaler.c:Halfmann-pt-1_maskedRefRemMafft" spec="ScaleOperator" parameter="@ucldMean.c:Halfmann-pt-1_maskedRefRemMafft" scaleFactor="0.5" weight="1.0"/>
+    <operator id="ucldStdevScaler.c:Halfmann-pt-1_maskedRefRemMafft" spec="ScaleOperator" parameter="@ucldStdev.c:Halfmann-pt-1_maskedRefRemMafft" scaleFactor="0.5" weight="3.0"/>
+    <operator id="CategoriesRandomWalk.c:Halfmann-pt-1_maskedRefRemMafft" spec="IntRandomWalkOperator" parameter="@rateCategories.c:Halfmann-pt-1_maskedRefRemMafft" weight="10.0" windowSize="1"/>
+    <operator id="CategoriesSwapOperator.c:Halfmann-pt-1_maskedRefRemMafft" spec="SwapOperator" intparameter="@rateCategories.c:Halfmann-pt-1_maskedRefRemMafft" weight="10.0"/>
+    <operator id="CategoriesUniform.c:Halfmann-pt-1_maskedRefRemMafft" spec="UniformOperator" parameter="@rateCategories.c:Halfmann-pt-1_maskedRefRemMafft" weight="10.0"/>
+    <operator id="relaxedUpDownOperator.c:Halfmann-pt-1_maskedRefRemMafft" spec="UpDownOperator" scaleFactor="0.75" weight="3.0">
+        <up idref="ucldMean.c:Halfmann-pt-1_maskedRefRemMafft"/>
+        <down idref="Tree.t:Halfmann-pt-1_maskedRefRemMafft"/>
+    </operator>
+    <operator id="BayesianSkylineTreeScaler.t:Halfmann-pt-1_maskedRefRemMafft" spec="ScaleOperator" scaleFactor="0.5" tree="@Tree.t:Halfmann-pt-1_maskedRefRemMafft" weight="3.0"/>
+    <operator id="BayesianSkylineTreeRootScaler.t:Halfmann-pt-1_maskedRefRemMafft" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@Tree.t:Halfmann-pt-1_maskedRefRemMafft" weight="3.0"/>
+    <operator id="BayesianSkylineUniformOperator.t:Halfmann-pt-1_maskedRefRemMafft" spec="Uniform" tree="@Tree.t:Halfmann-pt-1_maskedRefRemMafft" weight="30.0"/>
+    <operator id="BayesianSkylineSubtreeSlide.t:Halfmann-pt-1_maskedRefRemMafft" spec="SubtreeSlide" tree="@Tree.t:Halfmann-pt-1_maskedRefRemMafft" weight="15.0"/>
+    <operator id="BayesianSkylineNarrow.t:Halfmann-pt-1_maskedRefRemMafft" spec="Exchange" tree="@Tree.t:Halfmann-pt-1_maskedRefRemMafft" weight="15.0"/>
+    <operator id="BayesianSkylineWide.t:Halfmann-pt-1_maskedRefRemMafft" spec="Exchange" isNarrow="false" tree="@Tree.t:Halfmann-pt-1_maskedRefRemMafft" weight="3.0"/>
+    <operator id="BayesianSkylineWilsonBalding.t:Halfmann-pt-1_maskedRefRemMafft" spec="WilsonBalding" tree="@Tree.t:Halfmann-pt-1_maskedRefRemMafft" weight="3.0"/>
+    <operator id="popSizesScaler.t:Halfmann-pt-1_maskedRefRemMafft" spec="ScaleOperator" parameter="@bPopSizes.t:Halfmann-pt-1_maskedRefRemMafft" weight="15.0"/>
+    <operator id="groupSizesDelta.t:Halfmann-pt-1_maskedRefRemMafft" spec="DeltaExchangeOperator" integer="true" weight="6.0">
+        <intparameter idref="bGroupSizes.t:Halfmann-pt-1_maskedRefRemMafft"/>
+    </operator>
+    <operator id="FrequenciesExchanger.s:Halfmann-pt-1_maskedRefRemMafft" spec="DeltaExchangeOperator" delta="0.01" weight="0.1">
+        <parameter idref="freqParameter.s:Halfmann-pt-1_maskedRefRemMafft"/>
+    </operator>
+    <logger id="tracelog" spec="Logger" fileName="$(filebase)_$(seed).log" logEvery="1000" model="@posterior" sanitiseHeaders="true" sort="smart">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+        <log idref="treeLikelihood.Halfmann-pt-1_maskedRefRemMafft"/>
+        <log id="TreeHeight.t:Halfmann-pt-1_maskedRefRemMafft" spec="beast.evolution.tree.TreeHeightLogger" tree="@Tree.t:Halfmann-pt-1_maskedRefRemMafft"/>
+        <log idref="gammaShape.s:Halfmann-pt-1_maskedRefRemMafft"/>
+        <log idref="kappa.s:Halfmann-pt-1_maskedRefRemMafft"/>
+        <log idref="ucldMean.c:Halfmann-pt-1_maskedRefRemMafft"/>
+        <log idref="ucldStdev.c:Halfmann-pt-1_maskedRefRemMafft"/>
+        <log id="rate.c:Halfmann-pt-1_maskedRefRemMafft" spec="beast.evolution.branchratemodel.RateStatistic" branchratemodel="@RelaxedClock.c:Halfmann-pt-1_maskedRefRemMafft" tree="@Tree.t:Halfmann-pt-1_maskedRefRemMafft"/>
+        <log idref="BayesianSkyline.t:Halfmann-pt-1_maskedRefRemMafft"/>
+        <log idref="bPopSizes.t:Halfmann-pt-1_maskedRefRemMafft"/>
+        <log idref="bGroupSizes.t:Halfmann-pt-1_maskedRefRemMafft"/>
+        <log idref="freqParameter.s:Halfmann-pt-1_maskedRefRemMafft"/>
+    </logger>
+    <logger id="screenlog" spec="Logger" logEvery="1000">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+    </logger>
+    <logger id="treelog.t:Halfmann-pt-1_maskedRefRemMafft" spec="Logger" fileName="$(filebase)_$(seed).trees" logEvery="1000" mode="tree">
+        <log id="TreeWithMetaDataLogger.t:Halfmann-pt-1_maskedRefRemMafft" spec="beast.evolution.tree.TreeWithMetaDataLogger" branchratemodel="@RelaxedClock.c:Halfmann-pt-1_maskedRefRemMafft" tree="@Tree.t:Halfmann-pt-1_maskedRefRemMafft"/>
+    </logger>
+    <operatorschedule id="OperatorSchedule" spec="OperatorSchedule"/>
+</run>
+</beast>
