@@ -1,0 +1,114 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=12;
+	taxlabels
+	'Caccuri-pt-1|2020-04-02'
+	'Caccuri-pt-1|2020-04-09'
+	'Caccuri-pt-1|2020-04-22'
+	'Caccuri-pt-1|2020-04-28'
+	'Caccuri-pt-1|2020-05-06'
+	'Caccuri-pt-1|2020-05-13'
+	'Caccuri-pt-1|2020-05-20'
+	'Caccuri-pt-1|2020-07-27'
+	'Caccuri-pt-1|2020-08-05'
+	'Caccuri-pt-1|2020-08-26'
+	'Caccuri-pt-1|2020-09-07'
+	'Caccuri-pt-1|2020-11-10'
+;
+end;
+
+begin trees;
+	tree TREE1 = [&R] ('Caccuri-pt-1|2020-04-02'[&height=0.6065573770495034,height_95%_HPD={0.6065573770492847,0.6065573770492847},height_median=0.6065573770492847,height_range={0.6065573770492845,0.6065573770492849},length=0.010025333369245264,length_95%_HPD={7.959329363371737E-7,0.03594661044226177},length_median=0.0051534299978751585,length_range={7.959329363371737E-7,0.2323814641278339}]:0.017421,(('Caccuri-pt-1|2020-04-09'[&height=0.5874316939891977,height_95%_HPD={0.5874316939891742,0.5874316939891742},height_median=0.5874316939891742,height_range={0.5874316939891739,0.5874316939891744},length=0.012210183725964692,length_95%_HPD={5.94096701389546E-7,0.03916730602503715},length_median=0.007056971696212111,length_range={5.94096701389546E-7,0.2645481001633119}]:0.007098,'Caccuri-pt-1|2020-04-22'[&height=0.5519125683059009,height_95%_HPD={0.5519125683060793,0.5519125683060793},height_median=0.5519125683060793,height_range={0.551912568306079,0.5519125683060795},length=0.038142417577227826,length_95%_HPD={3.713504098667997E-7,0.07341468778583737},length_median=0.03945755454969457,length_range={3.713504098667997E-7,0.3217560435177269}]:0.042617)[&height=0.5972817766127597,height_95%_HPD={0.5874323313999871,0.6146181068912684},height_median=0.5945292044831069,height_range={0.5874323313999871,0.7018761327996754},length=0.021864671339483745,length_95%_HPD={4.042655880054369E-6,0.05367252354353724},length_median=0.018758017045785502,length_range={4.042655880054369E-6,0.2287012979710994},posterior=0.4271429365035276]:-0.002011,('Caccuri-pt-1|2020-04-28'[&height=0.5355191256829634,height_95%_HPD={0.5355191256830949,0.5355191256830949},height_median=0.5355191256830949,height_range={0.5355191256830947,0.5355191256830951},length=0.007638518713688389,length_95%_HPD={3.3372227814520983E-7,0.025900774990112452},length_median=0.004250458346783059,length_range={3.3372227814520983E-7,0.15191031822706136}]:0.005864,('Caccuri-pt-1|2020-05-06'[&height=0.5136612021859299,height_95%_HPD={0.5136612021858582,0.5136612021858582},height_median=0.5136612021858582,height_range={0.513661202185858,0.5136612021858584},length=0.01143676245889248,length_95%_HPD={2.29411528884782E-7,0.03493796418708217},length_median=0.007152814940208363,length_range={2.29411528884782E-7,0.16616114079285726}]:0.007631,('Caccuri-pt-1|2020-05-13'[&height=0.49453551912581745,height_95%_HPD={0.49453551912574767,0.49453551912574767},height_median=0.49453551912574767,height_range={0.49453551912574745,0.4945355191257479},length=0.013500027288594223,length_95%_HPD={1.2427074081999834E-6,0.042984739895382984},length_median=0.008491731210765074,length_range={1.2427074081999834E-6,0.23018077614202426}]:0.007596,('Caccuri-pt-1|2020-05-20'[&height=0.4754098360655054,height_95%_HPD={0.47540983606563714,0.47540983606563714},height_median=0.47540983606563714,height_range={0.4754098360656369,0.47540983606563736},length=0.01860908870661088,length_95%_HPD={7.358164244575249E-7,0.05381811133707104},length_median=0.014130066774396377,length_range={7.358164244575249E-7,0.18639552697552975}]:0.007145,('Caccuri-pt-1|2020-07-27'[&height=0.2896174863389202,height_95%_HPD={0.28961748633878415,0.28961748633878415},height_median=0.28961748633878415,height_range={0.2896174863387839,0.28961748633878437},length=0.013659352718718773,length_95%_HPD={2.645583631610826E-7,0.04504247438705089},length_median=0.00830795631528175,length_range={2.645583631610826E-7,0.17325609036851392}]:0.014377,('Caccuri-pt-1|2020-08-05'[&height=0.2650273224044213,height_95%_HPD={0.2650273224044213,0.2650273224044213},height_median=0.2650273224044213,height_range={0.26502732240442106,0.2650273224044215},length=0.019554485243632982,length_95%_HPD={1.5838141079194124E-6,0.055953373349908464},length_median=0.014277007369253858,length_range={5.506185239978478E-7,0.17631902982355763}]:0.013184,(('Caccuri-pt-1|2020-08-26'[&height=0.20765027322418136,height_95%_HPD={0.20765027322408963,0.2076502732240897},height_median=0.2076502732240897,height_range={0.20765027322408947,0.2076502732240899},length=0.015743931658486057,length_95%_HPD={2.810690522325743E-6,0.048105738868959746},length_median=0.010463165068878622,length_range={2.810690522325743E-6,0.17544827507368843}]:0.010496,'Caccuri-pt-1|2020-09-07'[&height=0.17486338797804984,height_95%_HPD={0.1748633879781209,0.17486338797812095},height_median=0.17486338797812095,height_range={0.17486338797812073,0.17486338797812118},length=0.04847472248677631,length_95%_HPD={0.03278969593649106,0.08159575080206627},length_median=0.04324995712419677,length_range={5.132204340060897E-4,0.20823516031965716}]:0.043282)[&height=0.22341270223519513,height_95%_HPD={0.207653083914612,0.25575601209304943},height_median=0.21814584959929229,height_range={0.207653083914612,0.3830985482977781},length=0.049556266888098804,length_95%_HPD={0.001706704167546036,0.0993048592597901},length_median=0.047609738572587434,length_range={2.068575028853492E-4,0.2539746574849485},posterior=0.997444586411866]:0.034058,'Caccuri-pt-1|2020-11-10'[&height=0.0,length=0.2729047840204308,length_95%_HPD={0.21276384411807991,0.3301759463452457},length_median=0.2710815647156583,length_range={0.175376608412127,0.49411721305580225}]:0.252204)[&height=0.2537791117816285,height_95%_HPD={0.21251665697340333,0.2962465637900518},height_median=0.2522037183790937,height_range={0.2076550900856492,0.38653868606832725},length=0.03124363489473354,length_95%_HPD={3.005877020567649E-6,0.06768268938332211},length_median=0.029038286788343415,length_range={3.005877020567649E-6,0.1991491075938222},posterior=0.5283039831120493]:0.026008)[&height=0.2810201244896165,height_95%_HPD={0.2650289062185292,0.30613447541752115},height_median=0.27821128407904683,height_range={0.2650289062185292,0.4187060520647512},length=0.023262613077696587,length_95%_HPD={3.1463080630844686E-6,0.05112224880145616},length_median=0.021762155302562147,length_range={3.1463080630844686E-6,0.17055593522867207},posterior=0.6114104771957114]:0.025783)[&height=0.31131657388959777,height_95%_HPD={0.2896177508971473,0.357115207429975},height_median=0.3039947039479444,height_range={0.2896177508971473,0.4948633661123059},length=0.18427917003981553,length_95%_HPD={0.12865426767898563,0.23572274357118672},length_median=0.18528040320700623,length_range={0.04027624623631354,0.5240258915236811},posterior=1.0]:0.17856)[&height=0.48583517934951304,height_95%_HPD={0.4754105718820616,0.5065795889969054},height_median=0.48255504507238184,height_range={0.4754105718820616,0.5605961427848851},length=0.02269487158660781,length_95%_HPD={6.9226785840426075E-6,0.04932220307915819},length_median=0.019713270736570976,length_range={6.9226785840426075E-6,0.24418875003185925},posterior=0.6970723848675073]:0.019576)[&height=0.5050074968516608,height_95%_HPD={0.49453676183315587,0.5244941238112062},height_median=0.5021312885526252,height_range={0.49453676183315587,0.584429089758714},length=0.02065148959464978,length_95%_HPD={2.0692971263613913E-5,0.042283387956887575},length_median=0.01916386334087411,length_range={6.7387746993663455E-6,0.1323420654209908},posterior=0.7026831842675407]:0.019161)[&height=0.5238955597697301,height_95%_HPD={0.5136617550174536,0.5414848934470751},height_median=0.5212921846166321,height_range={0.5136617550174536,0.5972485705026449},length=0.019308046844674378,length_95%_HPD={5.730064902620402E-5,0.03526398714551393},length_median=0.019995246713052195,length_range={2.6084269304504915E-6,0.1567493964340707},posterior=0.7768457307927338]:0.020091)[&height=0.5462245916368565,height_95%_HPD={0.5355199258941293,0.5729957730277493},height_median=0.5413834644022149,height_range={0.5355199258941293,0.825359979438686},length=0.08543837711351038,length_95%_HPD={0.011006668667200459,0.22849972472548674},length_median=0.06230397699701745,length_range={0.005543413510975759,0.9317528569783221},posterior=0.9999444475306928]:0.051135)[&height=0.5960800000639057,height_95%_HPD={0.5874322880858756,0.6144682672586892},height_median=0.5925182904010088,height_range={0.5874322880858756,0.7624954050736389},length=0.018453774371838778,length_95%_HPD={1.1622553505619138E-5,0.034987891821010475},length_median=0.018694020225050956,length_range={1.1622553505619138E-5,0.19857562049958566},posterior=0.4791400477751236]:0.03146)[&height=0.6528722772649984,height_95%_HPD={0.606558172982221,0.7874303385819251},height_median=0.6239784222509813,height_range={0.606558172982221,1.5274758136884397},length=0.0,posterior=1.0];
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=3.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute=null;
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="posterior";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=14;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=true;
+	set nodeLabels.significantDigits=2;
+	set nodeShapeExternal.colourAttribute=null;
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute=null;
+	set nodeShapeInternal.colourAttribute=null;
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute=null;
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=14.0;
+	set scaleAxis.isShown=true;
+	set scaleAxis.lineWidth=3.0;
+	set scaleAxis.majorTicks=0.1;
+	set scaleAxis.minorTicks=0.05;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=true;
+	set scaleAxis.showGrid=false;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=false;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.07;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=14;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=false;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
